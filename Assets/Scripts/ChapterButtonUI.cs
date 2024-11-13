@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ChapterButtonUI : MonoBehaviour{
 
+    [Header("References")]
     public GameObject unlockedUI;
     public GameObject lockedUI;
 }

@@ -5,7 +5,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour{
+public class MainMenu : MonoBehaviour{
 
     [SerializeField] private int startDate;
     [SerializeField] private GameObject[] chapterButtons;
@@ -67,10 +67,10 @@ public class GameManager : MonoBehaviour{
         }
     }
 
-    public void EnterChapter(int dateToUnlock){
+    public void EnterChapter(int buttonId){
         DateTime dataCurrent = DateTime.Now;
 
-        if (dataCurrent.Day >= dateToUnlock){
+        if (dataCurrent.Day >= startDate + buttonId){
             Debug.Log("Enter this Chapter");
         } else {
             Debug.LogWarning("You can't enter this Chapter");
@@ -79,5 +79,9 @@ public class GameManager : MonoBehaviour{
 
     private class SaveObject {
         public int stressAmount;
+    }
+
+    public void Quit(){
+        Application.Quit();
     }
 }
