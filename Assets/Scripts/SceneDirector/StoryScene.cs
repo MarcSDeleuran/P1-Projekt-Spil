@@ -16,6 +16,23 @@ namespace SceneDirection
         {
             public string text;
             public Speaker speaker;
+            public List<Action> Actions;
+
+            [System.Serializable]
+            public struct Action
+            {
+                public Speaker Speaker;
+                public Type ActionType;
+                public int SpriteIndex;
+                public Vector2 Coords;
+                public float MoveSpeed;
+
+                [System.Serializable]
+                public enum Type
+                {
+                    NONE, APPEAR, MOVE, DISAPPEAR
+                }
+            }
 
         }
     }

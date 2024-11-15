@@ -10,5 +10,7 @@ namespace SceneDirection
     {
         public string speakerName;
         public Color textColor;
+        public List<Sprite> sprites;
+        public SpriteController prefab;
     }
 }

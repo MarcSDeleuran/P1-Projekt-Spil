@@ -18,4 +18,4 @@ MonoBehaviour:
   - text: Want to snort coke off my tits?
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
-  nextScene: {fileID: 11400000, guid: 81f7b305dd487c24b809e8add096d839, type: 2}
+  nextScene: {fileID: 11400000, guid: 7f0a103b86cbd7f46ad68c6a2aad94fa, type: 2}

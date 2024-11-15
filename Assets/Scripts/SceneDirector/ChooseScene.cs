@@ -13,11 +13,14 @@ namespace SceneDirection
     {
         public List<ChooseLabel> Options;
         public string QuestionText;
+
+
         [System.Serializable]
         public struct ChooseLabel
         {
             public string text;
             public StoryScene nextScene;
+         
         }
     }
 }

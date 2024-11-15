@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
   m_Name: test1
   m_EditorClassIdentifier: 
-  labels: []
+  Options:
+  - text: starttest
+    nextScene: {fileID: 11400000, guid: 1146e327a58507d4a9116b467d8aafa7, type: 2}
+  - text: secondtest
+    nextScene: {fileID: 11400000, guid: 81f7b305dd487c24b809e8add096d839, type: 2}
+  - text: thirdtest
+    nextScene: {fileID: 11400000, guid: 23b39d7fbcb22684fb973bd94f073884, type: 2}
+  QuestionText: click buttons to go to different scenes

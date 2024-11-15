@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -14,9 +15,12 @@ namespace SceneDirection
         public StoryScene currentScene;
         private DialogueState state = DialogueState.COMPLETED;
         private Animator animator;
-        private bool isHidden = false;
-        private void Start()
+        private bool isHidden = false;  
+        private Dictionary<Speaker, SpriteController> sprites;
+        public GameObject spritesPrefab;
+        private void Awake()
         {
+            sprites = new Dictionary<Speaker, SpriteController>();
             animator = GetComponent<Animator>();
         }
         private enum DialogueState
@@ -53,7 +57,68 @@ namespace SceneDirection
             SpeakerNameText.text = currentScene.Sentences[sentenceIndex].speaker.speakerName;
             SpeakerNameText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
             DialogueText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
+            ActSpeakers();
         }
+
+        private void ActSpeakers()
+        {
+            List<StoryScene.Sentence.Action> actions = currentScene.Sentences[sentenceIndex].Actions;
+            for (int i = 0; i < actions.Count; i++)
+            {
+                HandleSpeakerAction(actions[i]);
+            }
+        }
+
+        private void HandleSpeakerAction(StoryScene.Sentence.Action action)
+        {
+            SpriteController controller = null;
+            switch (action.ActionType)
+            {
+                case StoryScene.Sentence.Action.Type.APPEAR:
+                    if (!sprites.ContainsKey(action.Speaker))
+                    {
+                        controller = Instantiate(action.Speaker.prefab.gameObject, spritesPrefab.transform).GetComponent<SpriteController>();
+                        sprites.Add(action.Speaker, controller);
+                    }
+                    else
+                    {
+                        controller = sprites[action.Speaker];
+                    }
+                    controller.gameObject.SetActive(true);
+                    controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
+                    controller.SetPosition(action.Coords);
+                    return;
+                case StoryScene.Sentence.Action.Type.MOVE:
+                    if (sprites.ContainsKey(action.Speaker))
+                    {
+                        controller = sprites[action.Speaker];
+                        controller.Move(action.Coords, action.MoveSpeed);
+                    }
+                    break;
+                case StoryScene.Sentence.Action.Type.DISAPPEAR:
+                    if (sprites.ContainsKey(action.Speaker))
+                    {
+                        controller = sprites[action.Speaker];
+                        controller.gameObject.SetActive(false);
+                    }
+                    break;
+                case StoryScene.Sentence.Action.Type.NONE:
+                    if (sprites.ContainsKey(action.Speaker))
+                    {
+                        controller = sprites[action.Speaker];
+                    }
+
+                    break;
+
+
+            }
+            if (controller != null)
+            {
+                Debug.Log("spritecontroller was null");
+                controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
+            }
+        }
+
         public bool IsLastSentence()
         {
             return sentenceIndex + 1 == currentScene.Sentences.Count;
