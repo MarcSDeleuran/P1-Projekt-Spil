@@ -5,23 +5,28 @@ using UnityEngine.UI;
 
 namespace SceneDirection
 {
-    public class BackgroundController : MonoBehaviour
+    public class SpriteSwitcher : MonoBehaviour
     {
         public bool IsSwitched = false;
-        public Image Background1;
-        public Image Background2;
-        public Animator Animator;
+        public Image Image1;
+        public Image Image2;
+        private Animator Animator;
+
+        public void Awake()
+        {
+            Animator = GetComponent<Animator>();
+        }
 
         public void SwitchImage(Sprite sprite)
         {
             if (!IsSwitched)
             {
-                Background2.sprite = sprite;
+                Image2.sprite = sprite;
                 Animator.SetTrigger("SwitchFirst");
             }
             else
             {
-                Background1.sprite = sprite;
+                Image1.sprite = sprite;
                 Animator.SetTrigger("SwitchSecond");
             }
             IsSwitched = !IsSwitched;
@@ -30,12 +35,12 @@ namespace SceneDirection
         {
             if (!IsSwitched)
             {
-                Background1.sprite = sprite;
+                Image1.sprite = sprite;
 
             }
             else
             {
-                Background2.sprite = sprite;
+                Image2.sprite = sprite;
 
             }
         }

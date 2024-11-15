@@ -9,6 +9,10 @@ namespace SceneDirection
     public class SpriteController : MonoBehaviour
     {
         private RectTransform rect;
+        public void Awake()
+        {
+            rect = GetComponent<RectTransform>();
+        }
         public void Move(Vector2 coords, float speed)
         {
             StartCoroutine(MoveCoroutine(coords, speed));

@@ -86,7 +86,9 @@ namespace SceneDirection
                     }
                     controller.gameObject.SetActive(true);
                     controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
+                    Debug.Log("beforeswitch");
                     controller.SetPosition(action.Coords);
+                    Debug.Log("afterswitch");
                     return;
                 case StoryScene.Sentence.Action.Type.MOVE:
                     if (sprites.ContainsKey(action.Speaker))

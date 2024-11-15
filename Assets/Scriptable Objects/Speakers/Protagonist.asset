@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: "Bjarke Bj\xF8rn"
   textColor: {r: 1, g: 0.47346824, b: 0, a: 1}
+  sprites: []
+  prefab: {fileID: 7023515509398461041, guid: ed2af6e8f48fca544ba414909025ccf6, type: 3}

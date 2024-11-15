@@ -9,7 +9,7 @@ namespace SceneDirection
     {
         public GameScene currentScene;
         public DialogueController DC;
-        public BackgroundController BC;
+        public SpriteSwitcher SC;
         private SceneState state = SceneState.IDLE;
         public OptionSelectionController OSC;
         private enum SceneState
@@ -22,7 +22,7 @@ namespace SceneDirection
             {
                 StoryScene storyScene = (StoryScene)currentScene;
                 DC.PlayScene(storyScene);
-                BC.SetImage(storyScene.background);
+                SC.SetImage(storyScene.background);
             }
         }
 
@@ -63,7 +63,7 @@ namespace SceneDirection
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
-                BC.SwitchImage(storyScene.background);
+                SC.SwitchImage(storyScene.background);
                 yield return new WaitForSeconds(1f);
                 DC.ClearText();
                 DC.ShowBox();
