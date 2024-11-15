@@ -44,5 +44,19 @@ namespace SceneDirection
 
             }
         }
+        public Sprite GetImage()
+        {
+            if (!IsSwitched)
+            {
+                return Image1.sprite;
+
+            }
+            else
+            {
+                return Image2.sprite;
+
+            }
+        }
+
     }
 }

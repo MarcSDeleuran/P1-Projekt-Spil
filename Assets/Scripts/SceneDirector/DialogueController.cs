@@ -84,11 +84,8 @@ namespace SceneDirection
                     {
                         controller = sprites[action.Speaker];
                     }
-                    controller.gameObject.SetActive(true);
-                    controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
-                    Debug.Log("beforeswitch");
-                    controller.SetPosition(action.Coords);
-                    Debug.Log("afterswitch");
+                    controller.Setup(action.Speaker.sprites[action.SpriteIndex]);
+                    controller.Show(action.Coords);
                     return;
                 case StoryScene.Sentence.Action.Type.MOVE:
                     if (sprites.ContainsKey(action.Speaker))
@@ -101,7 +98,7 @@ namespace SceneDirection
                     if (sprites.ContainsKey(action.Speaker))
                     {
                         controller = sprites[action.Speaker];
-                        controller.gameObject.SetActive(false);
+                        controller.Hide();
                     }
                     break;
                 case StoryScene.Sentence.Action.Type.NONE:

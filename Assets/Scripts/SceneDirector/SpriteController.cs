@@ -3,15 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 
 namespace SceneDirection
 {
     public class SpriteController : MonoBehaviour
     {
+        private SpriteSwitcher switcher;
         private RectTransform rect;
+        private Animator animator;
         public void Awake()
         {
+            switcher = GetComponent<SpriteSwitcher>();
+            animator = GetComponent<Animator>();
             rect = GetComponent<RectTransform>();
+        }
+        public void Setup(Sprite sprite)
+        {
+            switcher.SetImage(sprite);
+        }
+        public void Show(Vector2 coords)
+        {
+            animator.SetTrigger("ShowCharacter");
+            rect.localPosition = coords;
+
+        }
+        public void Hide()
+        {
+            animator.SetTrigger("HideCharacter");
         }
         public void Move(Vector2 coords, float speed)
         {
@@ -26,15 +45,12 @@ namespace SceneDirection
                 yield return new WaitForSeconds(0.01f);
             }
         }
-        public void SetPosition(Vector2 pos)
-        {
-            rect.localPosition = pos;
-        }
+
         public void SwitchSprite(Sprite sprite)
         {
-            if (GetComponentInChildren<Image>().sprite != sprite)
+            if (switcher.GetImage() != sprite)
             {
-                GetComponentInChildren<Image>().sprite = sprite;
+                switcher.SwitchImage(sprite);
             }
         }
     }
