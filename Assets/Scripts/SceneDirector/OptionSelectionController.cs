@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SceneDirection
 {
@@ -13,7 +14,7 @@ namespace SceneDirection
         private RectTransform rectTransform;
         private Animator animator;
         public TextMeshProUGUI QuestionText;
-
+        public Image CharacterSprite;
         private void Start()
         {
             animator = GetComponent<Animator>();
@@ -22,6 +23,7 @@ namespace SceneDirection
         }
         public void SetupChoose(ChooseScene scene)
         {
+            CharacterSprite.gameObject.SetActive(true);
             DestroyOptions();
             animator.SetTrigger("ShowSelection");
             QuestionText.text = scene.QuestionText;

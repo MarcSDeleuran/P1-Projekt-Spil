@@ -31,7 +31,7 @@ namespace SceneDirection
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                 if (state == SceneState.IDLE && DC.IsCompleted())
                 {
-                    
+
                     if (DC.IsLastSentence())
                     {
                         PlayScene((currentScene as StoryScene).nextScene);
@@ -40,6 +40,11 @@ namespace SceneDirection
                     else
                         DC.PlayNextSentence();
                 }
+                else
+                {
+                    DC.TextSpeed = 0.01f;
+                }
+
 
 
         }
@@ -55,7 +60,7 @@ namespace SceneDirection
                 Debug.Log("nextScene Not available");
                 yield break;
             }
-                
+
             state = SceneState.ANIMATE;
             currentScene = scene;
             DC.HideBox();

@@ -18,6 +18,8 @@ namespace SceneDirection
         private bool isHidden = false;  
         private Dictionary<Speaker, SpriteController> sprites;
         public GameObject spritesPrefab;
+        public float DefaultTextSpeed = 0.04f;
+        public float TextSpeed;
         private void Awake()
         {
             sprites = new Dictionary<Speaker, SpriteController>();
@@ -113,7 +115,7 @@ namespace SceneDirection
             }
             if (controller != null)
             {
-                Debug.Log("spritecontroller was null");
+                Debug.Log("spritecontroller wasn't null");
                 controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
             }
         }
@@ -131,11 +133,12 @@ namespace SceneDirection
             DialogueText.text = "";
             state = DialogueState.PLAYING;
             int wordIndex = 0;
+            TextSpeed = DefaultTextSpeed;
 
             while (state != DialogueState.COMPLETED)
             {
                 DialogueText.text += text[wordIndex];
-                yield return new WaitForSeconds(0.05f);
+                yield return new WaitForSeconds(TextSpeed);
                 //ska gøres til en public variabel for indstillinger
                 if (++wordIndex == text.Length)
                 {
