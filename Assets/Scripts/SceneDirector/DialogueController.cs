@@ -108,7 +108,6 @@ namespace SceneDirection
                     {
                         controller = sprites[action.Speaker];
                     }
-
                     break;
 
 

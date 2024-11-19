@@ -44,9 +44,6 @@ namespace SceneDirection
                 {
                     DC.TextSpeed = 0.01f;
                 }
-
-
-
         }
 
         public void PlayScene(GameScene scene)
