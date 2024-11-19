@@ -21,8 +21,6 @@ namespace SceneDirection
 
         public void SwitchImage(Sprite sprite)
         {
-            if (sprite == GetImage())
-                return;
             if (!IsSwitched)
             {
                 Image2.sprite = sprite;

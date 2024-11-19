@@ -116,6 +116,9 @@ namespace SceneDirection
             if (controller != null)
             {
                 Debug.Log("spritecontroller wasn't null");
+                if (action.ActionType == StoryScene.Sentence.Action.Type.DISAPPEAR)
+                    return;
+
                 controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
             }
         }
