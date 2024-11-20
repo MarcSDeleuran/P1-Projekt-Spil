@@ -18,6 +18,9 @@ namespace SceneDirection
             public Speaker speaker;
             public List<Action> Actions;
 
+            public AudioClip Music;
+            public AudioClip Sound;
+
             [System.Serializable]
             public struct Action
             {
@@ -30,7 +33,7 @@ namespace SceneDirection
                 [System.Serializable]
                 public enum Type
                 {
-                    NONE, APPEAR, MOVE, DISAPPEAR
+                    NONE, APPEAR, MOVE, FLIP, DISAPPEAR
                 }
             }
 

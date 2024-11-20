@@ -12,5 +12,6 @@ namespace SceneDirection
         public Color textColor;
         public List<Sprite> sprites;
         public SpriteController prefab;
+        public bool LeftSide = false;
     }
 }

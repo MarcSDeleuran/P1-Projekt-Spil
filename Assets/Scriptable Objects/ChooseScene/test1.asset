@@ -20,3 +20,5 @@ MonoBehaviour:
   - text: thirdtest
     nextScene: {fileID: 11400000, guid: 23b39d7fbcb22684fb973bd94f073884, type: 2}
   QuestionText: click buttons to go to different scenes
+  Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
+  Sound: {fileID: 0}

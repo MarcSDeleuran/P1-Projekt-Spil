@@ -11,7 +11,6 @@ namespace SceneDirection
         public Image Image1;
         public Image Image2;
         private Animator Animator;
-        public Sprite currentImage;
 
         public void Awake()
         {
@@ -21,15 +20,17 @@ namespace SceneDirection
 
         public void SwitchImage(Sprite sprite)
         {
-            if (sprite == GetImage())
-                return;
             if (!IsSwitched)
             {
+                if (Image1.sprite == sprite)
+                    return;
                 Image2.sprite = sprite;
                 Animator.SetTrigger("SwitchFirst");
             }
             else
             {
+                if (Image2.sprite == sprite)
+                    return;
                 Image1.sprite = sprite;
                 Animator.SetTrigger("SwitchSecond");
             }
@@ -52,15 +53,28 @@ namespace SceneDirection
         {
             if (!IsSwitched)
             {
-                Debug.Log(Image1.sprite.name);
+               
                 return Image1.sprite;
             }
             else
             {
-                Debug.Log(Image2.sprite.name);
+                
                 return Image2.sprite;
             }
             
+        }
+        public Sprite GetOtherImage()
+        {
+            if (IsSwitched)
+            {
+
+                return Image1.sprite;
+            }
+            else
+            {
+
+                return Image2.sprite;
+            }
         }
 
     }

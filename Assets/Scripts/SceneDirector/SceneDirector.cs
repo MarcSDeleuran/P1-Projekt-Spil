@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static SceneDirection.StoryScene;
 
 namespace SceneDirection
 {
@@ -9,9 +10,10 @@ namespace SceneDirection
     {
         public GameScene currentScene;
         public DialogueController DC;
-        public SpriteSwitcher SC;
+        public SpriteSwitcher BackgroundSwitcher;
         private SceneState state = SceneState.IDLE;
         public OptionSelectionController OSC;
+        public AudioManager AudioManager;
         private enum SceneState
         {
             IDLE, ANIMATE, CHOOSE
@@ -22,7 +24,9 @@ namespace SceneDirection
             {
                 StoryScene storyScene = (StoryScene)currentScene;
                 DC.PlayScene(storyScene);
-                SC.SetImage(storyScene.background);
+                BackgroundSwitcher.SetImage(storyScene.background);
+                if (storyScene.Sentences.Count != 0)
+                    PlayAudio(storyScene.Sentences[0]);
             }
         }
 
@@ -38,7 +42,12 @@ namespace SceneDirection
 
                     }
                     else
+                    {
                         DC.PlayNextSentence();
+                        PlayAudio((currentScene as StoryScene).Sentences[DC.SentenceIndex]);
+                    }
+
+
                 }
                 else
                 {
@@ -68,8 +77,15 @@ namespace SceneDirection
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
-                SC.SwitchImage(storyScene.background);
-                yield return new WaitForSeconds(1f);
+                if (BackgroundSwitcher.GetImage() != storyScene.background)
+                {
+                    BackgroundSwitcher.SwitchImage(storyScene.background);
+                    yield return new WaitForSeconds(1f);
+                }
+                    
+                PlayAudio(storyScene.Sentences[0]);
+
+                
                 DC.ClearText();
                 DC.ShowBox();
                 yield return new WaitForSeconds(1f);
@@ -79,8 +95,18 @@ namespace SceneDirection
             else
             {
                 state = SceneState.CHOOSE;
+                PlayAudio(scene as ChooseScene);
                 OSC.SetupChoose(scene as ChooseScene);
             }
+        }
+
+        private void PlayAudio(StoryScene.Sentence sentence)
+        {
+            AudioManager.PlayAudio(sentence.Music, sentence.Sound);
+        }
+        private void PlayAudio(ChooseScene chooseScene)
+        {
+            AudioManager.PlayAudio(chooseScene.Music, chooseScene.Sound);
         }
 
     }

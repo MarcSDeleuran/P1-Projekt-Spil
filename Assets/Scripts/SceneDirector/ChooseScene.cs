@@ -13,7 +13,9 @@ namespace SceneDirection
     {
         public List<ChooseLabel> Options;
         public string QuestionText;
-
+        public AudioClip Music;
+        public AudioClip Sound;
+        
 
         [System.Serializable]
         public struct ChooseLabel

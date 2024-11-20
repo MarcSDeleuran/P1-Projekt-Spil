@@ -9,13 +9,15 @@ namespace SceneDirection
     public class DialogueController : MonoBehaviour
     {
         public TextMeshProUGUI DialogueText;
-        public TextMeshProUGUI SpeakerNameText;
-
+        private TextMeshProUGUI SpeakerNameText;
+        public TextMeshProUGUI LeftSpeakerNameText;
+        public TextMeshProUGUI RightSpeakerNameText;
         private int sentenceIndex = -1;
+        public int SentenceIndex { get { return sentenceIndex; } }
         public StoryScene currentScene;
         private DialogueState state = DialogueState.COMPLETED;
         private Animator animator;
-        private bool isHidden = false;  
+        private bool isHidden = false;
         private Dictionary<Speaker, SpriteController> sprites;
         public GameObject spritesPrefab;
         public float DefaultTextSpeed = 0.04f;
@@ -24,6 +26,8 @@ namespace SceneDirection
         {
             sprites = new Dictionary<Speaker, SpriteController>();
             animator = GetComponent<Animator>();
+            SpeakerNameText = LeftSpeakerNameText;
+
         }
         private enum DialogueState
         {
@@ -56,9 +60,27 @@ namespace SceneDirection
         public void PlayNextSentence()
         {
             StartCoroutine(TypeText(currentScene.Sentences[++sentenceIndex].text));
-            SpeakerNameText.text = currentScene.Sentences[sentenceIndex].speaker.speakerName;
-            SpeakerNameText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
-            DialogueText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
+            if (currentScene.Sentences[sentenceIndex].speaker != null)
+            {
+                SpeakerNameText.gameObject.SetActive(true);
+                if (currentScene.Sentences[sentenceIndex].speaker.LeftSide)
+                {
+                    RightSpeakerNameText.gameObject.SetActive(false);
+                    LeftSpeakerNameText.gameObject.SetActive(true);
+                    SpeakerNameText = LeftSpeakerNameText;
+                }
+                else
+                {
+                    RightSpeakerNameText.gameObject.SetActive(true);
+                    LeftSpeakerNameText.gameObject.SetActive(false);
+                    SpeakerNameText = RightSpeakerNameText;
+                }
+                SpeakerNameText.text = currentScene.Sentences[sentenceIndex].speaker.speakerName;
+                SpeakerNameText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
+                DialogueText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
+            }
+            else if (SpeakerNameText != null)
+                SpeakerNameText.gameObject.SetActive(false);
             ActSpeakers();
         }
 
@@ -94,13 +116,22 @@ namespace SceneDirection
                     {
                         controller = sprites[action.Speaker];
                         controller.Move(action.Coords, action.MoveSpeed);
+                        controller = sprites[action.Speaker];
                     }
                     break;
                 case StoryScene.Sentence.Action.Type.DISAPPEAR:
                     if (sprites.ContainsKey(action.Speaker))
                     {
                         controller = sprites[action.Speaker];
+                        Debug.Log(action.SpriteIndex);
                         controller.Hide();
+                    }
+                    break;
+                case StoryScene.Sentence.Action.Type.FLIP:
+                    if (sprites.ContainsKey(action.Speaker))
+                    {
+                        controller = sprites[action.Speaker];
+                        controller.gameObject.transform.Rotate(0, 180, 0);
                     }
                     break;
                 case StoryScene.Sentence.Action.Type.NONE:
@@ -117,9 +148,10 @@ namespace SceneDirection
             {
                 Debug.Log("spritecontroller wasn't null");
                 controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
+                Debug.Log(action.SpriteIndex);
             }
         }
-
+        #region Bools/Getters
         public bool IsLastSentence()
         {
             return sentenceIndex + 1 == currentScene.Sentences.Count;
@@ -128,6 +160,7 @@ namespace SceneDirection
         {
             return state == DialogueState.COMPLETED;
         }
+        #endregion
         private IEnumerator TypeText(string text)
         {
             DialogueText.text = "";
