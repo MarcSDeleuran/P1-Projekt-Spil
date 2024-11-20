@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour{
 
+    public static MainMenu Instance { get; private set; }
+
     private class SaveObject {
         public int stressAmount;
         public int academicAmount;
@@ -24,6 +26,8 @@ public class MainMenu : MonoBehaviour{
     private int activeSave;
 
     private void Awake(){
+        Instance = this;
+
         // Opdater save filer
         UpdateSaveFiles();
         
@@ -105,18 +109,11 @@ public class MainMenu : MonoBehaviour{
         socialText.text = "Social: " + saveObject.socialAmount;
     }
 
-    public void EnterChapter(int buttonId){
-        DateTime dataCurrent = DateTime.Now; // Få datoen
-
-        if (dataCurrent.Day >= startDate + buttonId){  // Hvis datoen er over startDatoen + ugedag
-            Debug.Log("Enter this Chapter");
-            // Skift scene
-        } else { // Hvis datoen ikke er over startDatoen + ugedag
-            Debug.LogWarning("You can't enter this Chapter");
-        }
-    }
-
     public void Quit(){
         Application.Quit();
+    }
+
+    public int GetStartDate(){
+        return startDate;
     }
 }
