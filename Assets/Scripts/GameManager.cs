@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private GameManager instance;
 
     public static GameManager Instance { get; private set; }
     public void Awake()
@@ -18,6 +17,4 @@ public class GameManager : MonoBehaviour
 
         Application.targetFrameRate = 60;
     }
-
-
 }
