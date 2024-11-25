@@ -1,19 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName ="NewStoryScene", menuName ="Data/New StoryScene")]
-[System.Serializable]
-public class StoryScene : ScriptableObject
+namespace SceneDirection
 {
-    public List<Sentence> Sentences;
-    public Sprite background;
-    public StoryScene nextScene;
-
+    [CreateAssetMenu(fileName = "NewStoryScene", menuName = "Data/New StoryScene")]
     [System.Serializable]
-    public struct Sentence
+    public class StoryScene : GameScene
     {
-        public string text;
-        public Speaker speaker;
+        public List<Sentence> Sentences;
+        public Sprite background;
+        public GameScene nextScene;
 
+        [System.Serializable]
+        public struct Sentence
+        {
+            public string text;
+            public Speaker speaker;
+            public List<Action> Actions;
+
+            public AudioClip Music;
+            public AudioClip Sound;
+
+            [System.Serializable]
+            public struct Action
+            {
+                public Speaker Speaker;
+                public Type ActionType;
+                public int SpriteIndex;
+                public Vector2 Coords;
+                public float MoveSpeed;
+
+                [System.Serializable]
+                public enum Type
+                {
+                    NONE, APPEAR, MOVE, FLIP, DISAPPEAR
+                }
+            }
+
+        }
     }
+
+    public class GameScene : ScriptableObject { }
 }

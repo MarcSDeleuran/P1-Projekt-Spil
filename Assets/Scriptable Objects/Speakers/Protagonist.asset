@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Protagonist
   m_EditorClassIdentifier: 
   speakerName: "Bjarke Bj\xF8rn"
-  textColor: {r: 1, g: 0.47346824, b: 0, a: 1}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  sprites:
+  - {fileID: 21300000, guid: 95cca58618b6a0a40a3dfdc9655ffcd5, type: 3}
+  prefab: {fileID: 8239614979854761332, guid: cd9687bed4d697b4e9a0bab4eba015df, type: 3}
+  LeftSide: 1
