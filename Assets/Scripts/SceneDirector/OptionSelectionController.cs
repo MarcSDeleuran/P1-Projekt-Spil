@@ -11,11 +11,12 @@ namespace SceneDirection
         public List<GameObject> Options = new List<GameObject>(); 
         public OptionController option;
         public SceneDirector SC;
+        public FlagManager FM;
         private RectTransform rectTransform;
         private Animator animator;
         public TextMeshProUGUI QuestionText;
         public Image CharacterSprite;
-        public STORYFLAG[] flags;
+
         private void Start()
         {
             animator = GetComponent<Animator>();
@@ -31,10 +32,19 @@ namespace SceneDirection
             QuestionText.gameObject.SetActive(true);
             for (int i = 0; i < scene.Options.Count; i++)
             {
-                
-                Options[i].GetComponent<OptionController>().scene = scene.Options[i].nextScene;
-                Options[i].GetComponent<OptionController>().textMesh.text = scene.Options[i].text;
-                Options[i].gameObject.SetActive(true);
+                if (scene.Options[i].flag == STORYFLAG.NONE || FM.CheckFlag(scene.Options[i].flag))
+                {
+                    Options[i].GetComponent<OptionController>().scene = scene.Options[i].nextScene;
+                    Options[i].GetComponent<OptionController>().textMesh.text = scene.Options[i].text;
+                    Options[i].gameObject.SetActive(true);
+                    if (scene.Options[i].FlagToSet != STORYFLAG.NONE)
+                    {
+                        Options[i].GetComponent<OptionController>().flag = scene.Options[i].FlagToSet;
+                        Options[i].GetComponent<OptionController>().SetFlagTrue = scene.Options[i].setFlagTrue;
+                    }
+                        
+                }
+
 
             }
         }
@@ -53,11 +63,6 @@ namespace SceneDirection
         }
         
     }
-    public enum STORYFLAG
-    {
-        NONE = 0,
-        GOODBOY = 1,
 
-    }
 
 }

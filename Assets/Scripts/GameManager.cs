@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] chapterButtons;
     public SceneDirection.SceneDirector SD;
     public DataHolder DH;
+    public FlagManager FM;
     private int activeSave;
 
     public void Awake()
@@ -110,6 +111,7 @@ public class GameManager : MonoBehaviour
             SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
             saveObject = new SaveData
             {
+                flags = FM.flags,
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
                 stressAmount = 0,

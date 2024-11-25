@@ -16,6 +16,7 @@ public class DataHolder : ScriptableObject
 
 public struct SaveData
 {
+    public Dictionary<STORYFLAG, Boolean> flags;
     public int sentence;
     public List<int> prevScenes;
     public int stressAmount;

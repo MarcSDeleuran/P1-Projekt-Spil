@@ -15,7 +15,7 @@ namespace SceneDirection
         public string QuestionText;
         public AudioClip Music;
         public AudioClip Sound;
-        
+
 
         [System.Serializable]
         public struct ChooseLabel
@@ -23,7 +23,12 @@ namespace SceneDirection
             public string text;
             public StoryScene nextScene;
             public STORYFLAG flag;
-         
+
+            public bool setFlagTrue;
+            public STORYFLAG FlagToSet;
+            
+
+
         }
     }
 

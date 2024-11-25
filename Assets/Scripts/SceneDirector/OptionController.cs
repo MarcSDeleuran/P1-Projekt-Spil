@@ -10,6 +10,8 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public Color hoverColor;
     public StoryScene scene;
     public TextMeshProUGUI textMesh;
+    public STORYFLAG flag = STORYFLAG.NONE;
+    public bool SetFlagTrue;
 
 
     void Awake()
@@ -20,7 +22,11 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (flag != STORYFLAG.NONE)
+            gameObject.GetComponentInParent<OptionSelectionController>().FM.SetFlag(flag, SetFlagTrue);
+
         gameObject.GetComponentInParent<OptionSelectionController>().PerformOption(scene);
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)
