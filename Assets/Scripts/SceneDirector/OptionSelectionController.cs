@@ -15,6 +15,7 @@ namespace SceneDirection
         private Animator animator;
         public TextMeshProUGUI QuestionText;
         public Image CharacterSprite;
+        public STORYFLAG[] flags;
         private void Start()
         {
             animator = GetComponent<Animator>();
@@ -30,9 +31,11 @@ namespace SceneDirection
             QuestionText.gameObject.SetActive(true);
             for (int i = 0; i < scene.Options.Count; i++)
             {
+                
                 Options[i].GetComponent<OptionController>().scene = scene.Options[i].nextScene;
                 Options[i].GetComponent<OptionController>().textMesh.text = scene.Options[i].text;
                 Options[i].gameObject.SetActive(true);
+
             }
         }
         public void PerformOption(StoryScene scene)
@@ -48,6 +51,13 @@ namespace SceneDirection
                 option.SetActive(false);
             }
         }
+        
+    }
+    public enum STORYFLAG
+    {
+        NONE = 0,
+        GOODBOY = 1,
+
     }
 
 }

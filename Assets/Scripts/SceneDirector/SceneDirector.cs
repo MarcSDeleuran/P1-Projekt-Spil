@@ -14,6 +14,11 @@ namespace SceneDirection
         private SceneState state = SceneState.IDLE;
         public OptionSelectionController OSC;
         public AudioManager AudioManager;
+
+        public List<StoryScene> history;
+
+
+
         private enum SceneState
         {
             IDLE, ANIMATE, CHOOSE
@@ -23,6 +28,7 @@ namespace SceneDirection
             if (currentScene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)currentScene;
+                history.Add(storyScene);
                 DC.PlayScene(storyScene);
                 BackgroundSwitcher.SetImage(storyScene.background);
                 if (storyScene.Sentences.Count != 0)
@@ -32,27 +38,32 @@ namespace SceneDirection
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
-                if (state == SceneState.IDLE && DC.IsCompleted())
-                {
-
-                    if (DC.IsLastSentence())
+            if (state == SceneState.IDLE)
+            {
+                if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                    if (DC.IsCompleted())
                     {
-                        PlayScene((currentScene as StoryScene).nextScene);
+                        DC.StopTyping();
+
+                        if (DC.IsLastSentence())
+                        {
+                            PlayScene((currentScene as StoryScene).nextScene);
+
+                        }
+                        else
+                        {
+                            DC.PlayNextSentence();
+                            PlayAudio((currentScene as StoryScene).Sentences[DC.SentenceIndex]);
+                        }
+
 
                     }
                     else
                     {
-                        DC.PlayNextSentence();
-                        PlayAudio((currentScene as StoryScene).Sentences[DC.SentenceIndex]);
+                        DC.SpeedUp();
                     }
+            }
 
-
-                }
-                else
-                {
-                    DC.TextSpeed = 0.01f;
-                }
         }
 
         public void PlayScene(GameScene scene)
@@ -74,6 +85,7 @@ namespace SceneDirection
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
+                history.Add(storyScene);
                 if (BackgroundSwitcher.GetImage() != storyScene.background)
                 {
                     BackgroundSwitcher.SwitchImage(storyScene.background);

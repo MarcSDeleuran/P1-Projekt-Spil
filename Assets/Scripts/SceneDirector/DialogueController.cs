@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using TMPro;
 using UnityEngine;
 
 namespace SceneDirection
 {
+  
     public class DialogueController : MonoBehaviour
     {
         public TextMeshProUGUI DialogueText;
@@ -20,8 +22,15 @@ namespace SceneDirection
         private bool isHidden = false;
         private Dictionary<Speaker, SpriteController> sprites;
         public GameObject spritesPrefab;
-        public float DefaultTextSpeed = 0.04f;
         public float TextSpeed;
+        private Coroutine typingCoroutine;
+        public float defaultTextSpeed = 1;
+
+        private enum DialogueState
+
+        {
+            PLAYING, SPEEDED_UP, COMPLETED
+        }
         private void Awake()
         {
             sprites = new Dictionary<Speaker, SpriteController>();
@@ -29,10 +38,29 @@ namespace SceneDirection
             SpeakerNameText = LeftSpeakerNameText;
 
         }
-        private enum DialogueState
+ 
+        #region Bools/Getters
+        public bool IsLastSentence()
         {
-            PLAYING, COMPLETED
+            return sentenceIndex + 1 == currentScene.Sentences.Count;
         }
+        public bool IsCompleted()
+        {
+            return state == DialogueState.COMPLETED || state == DialogueState.SPEEDED_UP;
+        }
+        #endregion
+        public void SpeedUp()
+        {
+            state = DialogueState.SPEEDED_UP;
+            TextSpeed = 0.25f;
+        }
+        public void StopTyping()
+        {
+            DialogueText.text = currentScene.Sentences[sentenceIndex].text;
+            state = DialogueState.COMPLETED;
+            StopCoroutine(typingCoroutine);
+        }
+
         public void HideBox()
         {
             if (!isHidden)
@@ -59,7 +87,7 @@ namespace SceneDirection
         }
         public void PlayNextSentence()
         {
-            StartCoroutine(TypeText(currentScene.Sentences[++sentenceIndex].text));
+            typingCoroutine = StartCoroutine(TypeText(currentScene.Sentences[++sentenceIndex].text));
             if (currentScene.Sentences[sentenceIndex].speaker != null)
             {
                 SpeakerNameText.gameObject.SetActive(true);
@@ -153,27 +181,18 @@ namespace SceneDirection
                 Debug.Log(action.SpriteIndex);
             }
         }
-        #region Bools/Getters
-        public bool IsLastSentence()
-        {
-            return sentenceIndex + 1 == currentScene.Sentences.Count;
-        }
-        public bool IsCompleted()
-        {
-            return state == DialogueState.COMPLETED;
-        }
-        #endregion
+
         private IEnumerator TypeText(string text)
         {
             DialogueText.text = "";
             state = DialogueState.PLAYING;
             int wordIndex = 0;
-            TextSpeed = DefaultTextSpeed;
+            TextSpeed = defaultTextSpeed;
 
             while (state != DialogueState.COMPLETED)
             {
                 DialogueText.text += text[wordIndex];
-                yield return new WaitForSeconds(TextSpeed);
+                yield return new WaitForSeconds(TextSpeed * 0.05f);
                 //ska gøres til en public variabel for indstillinger
                 if (++wordIndex == text.Length)
                 {
@@ -183,6 +202,8 @@ namespace SceneDirection
 
             }
         }
-
     }
+
+
 }
+

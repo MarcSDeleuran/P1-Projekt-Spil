@@ -22,7 +22,9 @@ namespace SceneDirection
         {
             public string text;
             public StoryScene nextScene;
+            public STORYFLAG flag;
          
         }
     }
+
 }
