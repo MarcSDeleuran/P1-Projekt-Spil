@@ -5,12 +5,10 @@ using TMPro;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
+using SceneDirection;
 
 public class GameManager : MonoBehaviour
 {
-
-    public static GameManager Instance { get; private set; }
-
 
     [SerializeField] private int startDate;
     [SerializeField] private TextMeshProUGUI stressText;
@@ -22,15 +20,24 @@ public class GameManager : MonoBehaviour
     public DataHolder DH;
     public FlagManager FM;
     private int activeSave;
-
+    public static GameManager Instance { get; private set; }
+    public int StressAmount;
+    public int AcademicAmount;
+    public int SocialAmount;
+    public string CharacterName;
     public void Awake()
     {
-        if (Instance == null || Instance != this)
+
+        if (Instance != null && Instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
-        else 
+        else
+        {
             Instance = this;
+        }
+
+
 
         Application.targetFrameRate = 60;
         UpdateSaveFiles();
@@ -104,20 +111,39 @@ public class GameManager : MonoBehaviour
             // Unders�g Json fil
             string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt");
             saveObject = JsonUtility.FromJson<SaveData>(saveString);
+            FM.flags = saveObject.flags;
+            
+            saveObject.prevScenes.ForEach(scene =>
+            {
+                SD.history.Add(this.DH.scenes[scene] as StoryScene);
+            });
+            SD.currentScene = SD.history[SD.history.Count - 1];
+            SD.history.RemoveAt(SD.history.Count - 1);
+            SD.DC.SetIndex(saveObject.sentence);
+            StressAmount = saveObject.stressAmount;
+            AcademicAmount = saveObject.academicAmount;
+            SocialAmount = saveObject.socialAmount;
+            CharacterName = saveObject.characterName;
+            SD.VNACTIVE = true;
+
         }
         else
         { // Lav en ny Save
           // S�t default v�rdier (Skal nok �ndres)
             List<int> historyIndices = new List<int>();
             SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
+
             saveObject = new SaveData
             {
                 flags = FM.flags,
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
-                stressAmount = 0,
-                academicAmount = 0,
-                socialAmount = 0
+
+                stressAmount = StressAmount,
+                academicAmount = AcademicAmount,
+                socialAmount = SocialAmount,
+                characterName = CharacterName
+
             };
 
             // Konverter til Json fil

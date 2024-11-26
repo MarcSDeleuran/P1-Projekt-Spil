@@ -38,6 +38,10 @@ namespace SceneDirection
             SpeakerNameText = LeftSpeakerNameText;
 
         }
+        public void SetIndex(int i)
+        {
+            sentenceIndex = i;
+        }
  
         #region Bools/Getters
         public bool IsLastSentence()
@@ -87,7 +91,9 @@ namespace SceneDirection
         }
         public void PlayNextSentence()
         {
-            typingCoroutine = StartCoroutine(TypeText(currentScene.Sentences[++sentenceIndex].text));
+            string text = currentScene.Sentences[++sentenceIndex].text;
+            text.Replace("NAME", "bob");
+            typingCoroutine = StartCoroutine(TypeText(text));
             if (currentScene.Sentences[sentenceIndex].speaker != null)
             {
                 SpeakerNameText.gameObject.SetActive(true);

@@ -107,6 +107,8 @@ public class StatsAndJournal : MonoBehaviour {
         });
     }
 
+
+
     private IEnumerator WaitBeforeUpdating(){
         yield return new WaitForSeconds(0.25f);
 

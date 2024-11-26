@@ -22,4 +22,5 @@ public struct SaveData
     public int stressAmount;
     public int academicAmount;
     public int socialAmount;
+    public string characterName;
 }

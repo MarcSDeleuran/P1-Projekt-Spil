@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Thank you for coming in today.
+  - text: Thank you for coming in today, NAME .
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
