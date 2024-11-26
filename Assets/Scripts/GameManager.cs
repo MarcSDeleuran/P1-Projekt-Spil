@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI stressText;
     [SerializeField] private TextMeshProUGUI academicText;
     [SerializeField] private TextMeshProUGUI socialText;
+    [SerializeField] private GameObject mainMenuUI;
+    [SerializeField] private GameObject gameSceneUI;
     [SerializeField] private GameObject[] saveFileButtons;
     [SerializeField] private GameObject[] chapterButtons;
     public SceneDirection.SceneDirector SD;
@@ -97,6 +99,7 @@ public class GameManager : MonoBehaviour
         File.WriteAllText(Application.dataPath + "/Saves/save" + activeSave + ".txt", json);
 
         // Visuelt opdater tekst og knapper
+        Debug.Log("Opdatere");
         stressText.text = "Stress: " + saveObject.stressAmount;
         academicText.text = "Academic: " + saveObject.academicAmount;
         socialText.text = "Social: " + saveObject.socialAmount;
@@ -170,7 +173,8 @@ public class GameManager : MonoBehaviour
         if (dataCurrent.Day >= startDate + buttonId)
         {  // Hvis datoen er over startDatoen + ugedag
             Debug.Log("Enter this Chapter");
-            // Skift scene
+            mainMenuUI.SetActive(false);
+            gameSceneUI.SetActive(true);
         }
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
