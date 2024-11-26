@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
         {
             chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(false);
             chapterButtons[i].GetComponent<ChapterButtonUI>().lockedUI.SetActive(false);
+            chapterButtons[i].GetComponent<ChapterButtonUI>().dayText.text = "Unlocks: " + (dataCurrent.Day + i - 1) + ". nov";
             if (dataCurrent.Day >= startDate + i)
             { // Hvis datoen er over startDatoen + ugedage
                 chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(true);
@@ -79,12 +80,12 @@ public class GameManager : MonoBehaviour
     public void RandomizeValues()
     {
         SaveData saveObject = new SaveData
-        { // Opdaterer værdier
+        { // Opdaterer vï¿½rdier
             stressAmount = UnityEngine.Random.Range(1, 100),
             academicAmount = UnityEngine.Random.Range(1, 100),
             socialAmount = UnityEngine.Random.Range(1, 100),
         };
-        // Undersøg Json fil
+        // Undersï¿½g Json fil
         string json = JsonUtility.ToJson(saveObject);
         File.WriteAllText(Application.dataPath + "/Saves/save" + activeSave + ".txt", json);
 
@@ -100,13 +101,13 @@ public class GameManager : MonoBehaviour
 
         if (File.Exists(Application.dataPath + "/Saves/save" + saveFileId + ".txt"))
         { // Load en Save
-            // Undersøg Json fil
+            // Undersï¿½g Json fil
             string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt");
             saveObject = JsonUtility.FromJson<SaveData>(saveString);
         }
         else
         { // Lav en ny Save
-          // Sæt default værdier (Skal nok ændres)
+          // Sï¿½t default vï¿½rdier (Skal nok ï¿½ndres)
             List<int> historyIndices = new List<int>();
             SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
             saveObject = new SaveData
@@ -136,4 +137,18 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    public void EnterChapter(int buttonId)
+    {
+        DateTime dataCurrent = DateTime.Now; // FÃ¥ datoen
+
+        if (dataCurrent.Day >= startDate + buttonId)
+        {  // Hvis datoen er over startDatoen + ugedag
+            Debug.Log("Enter this Chapter");
+            // Skift scene
+        }
+        else
+        { // Hvis datoen ikke er over startDatoen + ugedag
+            Debug.LogWarning("You can't enter this Chapter");
+        }
+    }
 }
