@@ -30,11 +30,11 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-      ActionType: 0
+      ActionType: 4
       SpriteIndex: 1
       Coords: {x: 200, y: 0}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 8154401f2c1f08d4faeb1bf1aa8ef9b7, type: 2}
