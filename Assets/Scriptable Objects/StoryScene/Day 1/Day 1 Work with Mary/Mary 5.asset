@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Mary 5
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: You walk on, coming to a crossroads where you could either take the shortcut
+      through a small garden or follow the longer main path to the library.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: '"Shortcut through the garden, or main path?"'
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  background: {fileID: 21300000, guid: b5e0bf903fca83a438e7731d62a954f1, type: 3}
+  nextScene: {fileID: 11400000, guid: 45610888c0829e747a666c5c50871925, type: 2}
