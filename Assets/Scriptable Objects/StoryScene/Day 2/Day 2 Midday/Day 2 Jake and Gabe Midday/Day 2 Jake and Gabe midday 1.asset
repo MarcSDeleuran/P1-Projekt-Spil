@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Day 2 Jake and Gabe midday 1
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: "You find Jake and Gabe In the corner table of the cafeteria. Jake halfway
+      through a sm\xF8rrebr\xF8d, while Gabe is meticulously highlighting notes in
+      his textbook. "
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: "\u201COoooh look who decided to grace us with their presence! My lord.
+      My lord.\u201D "
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: "\u201CLet me guess, you\u2019re here to procrastinate with me, and not
+      nerd out with Gabe.\u201D "
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: "\u201CJake, you need to learn, some of us just prefer to stay ahead. Deadlines
+      don\u2019t disappear just because you choose to ignore them.\u201D "
+    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: 'The player sits down, feeling the different energies from the two friends '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  background: {fileID: 21300000, guid: a34a4d0cae49cae4ab9a0fc2aee9df51, type: 3}
+  nextScene: {fileID: 11400000, guid: 1812a25fee7832948b62747a07535e03, type: 2}

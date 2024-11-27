@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 2 Mary midday filler 1
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CWhy hide when I can stress out in Public?\u201D"
+    nextScene: {fileID: 11400000, guid: 03a07f1b3fa60514c9f18a712523e96c, type: 2}
+  - text: "\"I just figured we could tackle this little mess together.\u201D"
+    nextScene: {fileID: 11400000, guid: 8ca9e1fe3fa259042afac9e04c214b5b, type: 2}
+  QuestionText: 
+  Music: {fileID: 0}
+  Sound: {fileID: 0}
