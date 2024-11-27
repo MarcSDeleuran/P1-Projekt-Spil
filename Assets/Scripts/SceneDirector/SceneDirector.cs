@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 using static SceneDirection.StoryScene;
 
 namespace SceneDirection
@@ -17,6 +19,7 @@ namespace SceneDirection
 
         public List<StoryScene> history;
         public bool VNACTIVE;
+        public GameObject NameField;
 
         private enum SceneState
         {
@@ -70,7 +73,16 @@ namespace SceneDirection
 
 
         }
+        public void SaveName()
+        {
+            GameManager.Instance.CharacterName = NameField.GetComponentInChildren<TMPro.TMP_InputField>().text;
+            VNACTIVE = true;
+            WriteScene ws = currentScene as WriteScene;
+            PlayScene(ws.NextScene);
+            NameField.SetActive(false);
+            
 
+        }
         public void PlayScene(GameScene scene)
         {
             StartCoroutine(SwitchScene(scene));
@@ -91,7 +103,11 @@ namespace SceneDirection
             }
                 
             currentScene = scene;
-            
+            if (scene is WriteScene)
+            {
+                VNACTIVE = false;
+                NameField.SetActive(true);
+            }
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
@@ -111,7 +127,7 @@ namespace SceneDirection
                 DC.PlayScene(storyScene);
                 state = SceneState.IDLE;
             }
-            else
+            else if (scene is ChooseScene)
             {
                 state = SceneState.CHOOSE;
                 PlayAudio(scene as ChooseScene);
@@ -126,6 +142,10 @@ namespace SceneDirection
         private void PlayAudio(ChooseScene chooseScene)
         {
             AudioManager.PlayAudio(chooseScene.Music, chooseScene.Sound);
+        }
+        private void PlayAudio(WriteScene writeScene)
+        {
+            AudioManager.PlayAudio(writeScene.Music, writeScene.Sound);
         }
 
     }
