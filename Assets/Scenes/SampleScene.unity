@@ -3013,7 +3013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1195188634107529232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3518,6 +3518,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 2093347392536252727}
   lockedUI: {fileID: 3243352504632304348}
   dayText: {fileID: 5518311343897190092}
+  ChapterStartScene: {fileID: 0}
 --- !u!1 &1425319411671706353
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,8 +4769,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8555523380375289115}
   - component: {fileID: 3502344016692696934}
-  - component: {fileID: 7573968537895311305}
   - component: {fileID: 2767081886912180744}
+  - component: {fileID: 7573968537895311305}
   m_Layer: 5
   m_Name: Option1
   m_TagString: Untagged
@@ -4794,7 +4795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1779552648175049329
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5361,7 +5362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2017020175322794977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5407,6 +5408,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 3960718727613214502}
   lockedUI: {fileID: 8580175770728995396}
   dayText: {fileID: 3947890531839338344}
+  ChapterStartScene: {fileID: 0}
 --- !u!1 &2057373007675451660
 GameObject:
   m_ObjectHideFlags: 0
@@ -7584,6 +7586,8 @@ MonoBehaviour:
   textMesh: {fileID: 4502361786585782924}
   flag: 0
   SetFlagTrue: 0
+  statChange: 0
+  changeAmount: 0
 --- !u!224 &2767676858236185941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7924,6 +7928,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 3947361390659278203}
   lockedUI: {fileID: 3106476385740003029}
   dayText: {fileID: 7932098161279872844}
+  ChapterStartScene: {fileID: 11400000, guid: 11266ddef0895f74e845ba077ace15b2, type: 2}
 --- !u!224 &2864727319206142116
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8784,6 +8789,8 @@ MonoBehaviour:
   textMesh: {fileID: 2800399659609850525}
   flag: 0
   SetFlagTrue: 0
+  statChange: 0
+  changeAmount: 0
 --- !u!114 &3102754848373203174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10297,7 +10304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5176471}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10921,6 +10928,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 8001814270381582989}
   lockedUI: {fileID: 5561500601357065908}
   dayText: {fileID: 7637509980333052097}
+  ChapterStartScene: {fileID: 0}
 --- !u!224 &3910172760454038437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11368,6 +11376,8 @@ MonoBehaviour:
   textMesh: {fileID: 551006811204246247}
   flag: 0
   SetFlagTrue: 0
+  statChange: 0
+  changeAmount: 0
 --- !u!1 &4015753290973684420
 GameObject:
   m_ObjectHideFlags: 0
@@ -18125,6 +18135,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 6560860374627393339}
   lockedUI: {fileID: 7510449459922437595}
   dayText: {fileID: 4447993795600766821}
+  ChapterStartScene: {fileID: 0}
 --- !u!224 &7012209236200235190
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19066,6 +19077,8 @@ MonoBehaviour:
   textMesh: {fileID: 5144756299314332963}
   flag: 0
   SetFlagTrue: 0
+  statChange: 0
+  changeAmount: 0
 --- !u!224 &7352070373789687978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20839,7 +20852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7926481608514087546
 RectTransform:
   m_ObjectHideFlags: 0

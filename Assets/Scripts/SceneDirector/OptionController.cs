@@ -13,6 +13,9 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public STORYFLAG flag = STORYFLAG.NONE;
     public bool SetFlagTrue;
 
+    public STATCHANGE statChange;
+    public int changeAmount;
+
 
     void Awake()
     {
@@ -24,11 +27,30 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     {
         if (flag != STORYFLAG.NONE)
             gameObject.GetComponentInParent<OptionSelectionController>().FM.SetFlag(flag, SetFlagTrue);
+        ChangeStats();
+
 
         gameObject.GetComponentInParent<OptionSelectionController>().PerformOption(scene);
 
     }
+    private void ChangeStats()
+    {
+        switch (statChange)
+        {
+            case STATCHANGE.NONE:
+                break;
+            case STATCHANGE.SOCIAL:
+                GameManager.Instance.SocialAmount += changeAmount;
+                break;
+            case STATCHANGE.ACADEMICS:
+                GameManager.Instance.AcademicAmount += changeAmount;
+                break;
+            case STATCHANGE.STRESS:
+                GameManager.Instance.StressAmount += changeAmount;
+                break;
 
+        }
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         textMesh.color = hoverColor;

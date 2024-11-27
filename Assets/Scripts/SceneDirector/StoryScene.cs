@@ -21,6 +21,9 @@ namespace SceneDirection
             public AudioClip Music;
             public AudioClip Sound;
 
+            public STATCHANGE statChange;
+            public int changeAmount;
+
             [System.Serializable]
             public struct Action
             {

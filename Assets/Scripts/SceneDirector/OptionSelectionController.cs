@@ -44,7 +44,8 @@ namespace SceneDirection
                     }
                         
                 }
-
+                Options[i].GetComponent<OptionController>().statChange = scene.Options[i].statChange;
+                Options[i].GetComponent<OptionController>().changeAmount = scene.Options[i].changeAmount;
 
             }
         }

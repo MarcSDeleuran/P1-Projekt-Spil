@@ -19,15 +19,21 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 2
+    changeAmount: -35
   - text: But you know what?
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: There are ways to manage it.
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
   nextScene: {fileID: 11400000, guid: 624446e50fa56944ba644f9a83599695, type: 2}

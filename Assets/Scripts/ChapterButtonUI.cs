@@ -1,3 +1,4 @@
+using SceneDirection;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,4 +10,5 @@ public class ChapterButtonUI : MonoBehaviour{
     public GameObject unlockedUI;
     public GameObject lockedUI;
     public TextMeshProUGUI dayText;
+    public StoryScene ChapterStartScene;
 }
