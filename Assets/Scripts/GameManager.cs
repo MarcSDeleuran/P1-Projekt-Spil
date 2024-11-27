@@ -102,7 +102,6 @@ public class GameManager : MonoBehaviour
         File.WriteAllText(Application.dataPath + "/Saves/save" + activeSave + ".txt", json);
 
         // Visuelt opdater tekst og knapper
-        Debug.Log("Opdatere");
         stressText.text = "Stress: " + saveObject.stressAmount + "%";
         academicText.text = "Academic: " + saveObject.academicAmount + "%";
         socialText.text = "Social: " + saveObject.socialAmount + "%";
