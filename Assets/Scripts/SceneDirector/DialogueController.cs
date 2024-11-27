@@ -94,8 +94,8 @@ namespace SceneDirection
         public void PlayNextSentence()
         {
             string text = currentScene.Sentences[++sentenceIndex].text;
-            text.Replace("NAME", "bob");
-            typingCoroutine = StartCoroutine(TypeText(text));
+            string newText = text.Replace("NAME", GameManager.Instance.CharacterName);
+            typingCoroutine = StartCoroutine(TypeText(newText));
             if (currentScene.Sentences[sentenceIndex].speaker != null)
             {
                 SpeakerNameText.gameObject.SetActive(true);
