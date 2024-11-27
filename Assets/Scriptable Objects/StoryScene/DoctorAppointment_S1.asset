@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Thank you for coming in today, [NAME] .
+  - text: Yes? ah, Thank you for coming in today
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -35,8 +35,7 @@ MonoBehaviour:
     Sound: {fileID: 0}
     statChange: 2
     changeAmount: 0
-  - text: "I understand you\u2019ve been feeling a bit overwhelmed lately. Can you
-      tell me more about what\u2019s going on?"
+  - text: "I understand you\u2019ve been feeling a bit overwhelmed lately, mr. uhh.."
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
@@ -48,5 +47,12 @@ MonoBehaviour:
     Sound: {fileID: 8300000, guid: 9e82d370216b6ae439fbda67efc6ab8d, type: 3}
     statChange: 1
     changeAmount: 0
+  - text: I'm terribly sorry, but would you remind me. What is your name again?
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 8300000, guid: 9e82d370216b6ae439fbda67efc6ab8d, type: 3}
+    statChange: 1
+    changeAmount: 0
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
-  nextScene: {fileID: 11400000, guid: 48f0bd856c36183499f88f1f7692376b, type: 2}
+  nextScene: {fileID: 11400000, guid: bdcf1513a3dc0f04690adb918dbf459c, type: 2}

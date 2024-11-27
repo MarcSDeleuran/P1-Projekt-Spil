@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4624341a2f615854e97b66f1324cd981, type: 3}
   m_Name: EnterName
   m_EditorClassIdentifier: 
-  QuestionText: 
+  QuestionText: d
   Music: {fileID: 0}
   Sound: {fileID: 0}
+  NextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
