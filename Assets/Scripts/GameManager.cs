@@ -115,14 +115,18 @@ public class GameManager : MonoBehaviour
             string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt");
             saveObject = JsonUtility.FromJson<SaveData>(saveString);
             FM.flags = saveObject.flags;
-            
+
             saveObject.prevScenes.ForEach(scene =>
             {
                 SD.history.Add(this.DH.scenes[scene] as StoryScene);
             });
-            SD.currentScene = SD.history[SD.history.Count - 1];
-            SD.history.RemoveAt(SD.history.Count - 1);
-            SD.DC.SetIndex(saveObject.sentence);
+            if (saveObject.prevScenes.Count > 0)
+            {
+                SD.currentScene = SD.history[SD.history.Count - 1];
+                SD.history.RemoveAt(SD.history.Count - 1);
+            }
+            if (saveObject.sentence != -1)
+                SD.DC.SetIndex(saveObject.sentence);
             StressAmount = saveObject.stressAmount;
             AcademicAmount = saveObject.academicAmount;
             SocialAmount = saveObject.socialAmount;
@@ -180,5 +184,9 @@ public class GameManager : MonoBehaviour
         { // Hvis datoen ikke er over startDatoen + ugedag
             Debug.LogWarning("You can't enter this Chapter");
         }
+        gameSceneUI.SetActive(true);
+        GameObject go = gameSceneUI.GetComponentInChildren<DialogueController>().gameObject;
+        SD.VNACTIVE = true;
+        SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
     }
 }

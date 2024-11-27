@@ -33,6 +33,8 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 8300000, guid: 45f34178c4a62824b91c6875475bcd14, type: 3}
     Sound: {fileID: 0}
+    statChange: 2
+    changeAmount: 70
   - text: "I understand you\u2019ve been feeling a bit overwhelmed lately. Can you
       tell me more about what\u2019s going on?"
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -44,5 +46,7 @@ MonoBehaviour:
       MoveSpeed: 0.7
     Music: {fileID: 0}
     Sound: {fileID: 8300000, guid: 9e82d370216b6ae439fbda67efc6ab8d, type: 3}
+    statChange: 1
+    changeAmount: 4
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
   nextScene: {fileID: 11400000, guid: 48f0bd856c36183499f88f1f7692376b, type: 2}

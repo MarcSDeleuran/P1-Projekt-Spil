@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace SceneDirection
 {
-  
+
     public class DialogueController : MonoBehaviour
     {
         public TextMeshProUGUI DialogueText;
@@ -42,7 +42,7 @@ namespace SceneDirection
         {
             sentenceIndex = i;
         }
- 
+
         #region Bools/Getters
         public bool IsLastSentence()
         {
@@ -60,8 +60,10 @@ namespace SceneDirection
         }
         public void StopTyping()
         {
-            DialogueText.text = currentScene.Sentences[sentenceIndex].text;
+            if (sentenceIndex != -1)
+                DialogueText.text = currentScene.Sentences[sentenceIndex].text;
             state = DialogueState.COMPLETED;
+            if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
         }
 
@@ -116,8 +118,28 @@ namespace SceneDirection
             else if (SpeakerNameText != null)
                 SpeakerNameText.gameObject.SetActive(false);
             ActSpeakers();
+            ChangeStats(currentScene.Sentences[sentenceIndex].statChange, currentScene.Sentences[sentenceIndex].changeAmount);
         }
 
+        private void ChangeStats(STATCHANGE statChange, int statAmount)
+        {
+            switch (statChange)
+            {
+                case STATCHANGE.NONE: 
+                    break;
+                case STATCHANGE.SOCIAL:
+                    GameManager.Instance.SocialAmount += statAmount;
+                    break;
+                case STATCHANGE.ACADEMICS:
+                    GameManager.Instance.AcademicAmount += statAmount;
+                    break;
+                case STATCHANGE.STRESS:
+                    GameManager.Instance.StressAmount += statAmount;
+                    break;
+
+            }
+        }
+            
         private void ActSpeakers()
         {
             List<StoryScene.Sentence.Action> actions = currentScene.Sentences[sentenceIndex].Actions;
