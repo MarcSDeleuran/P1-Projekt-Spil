@@ -4,56 +4,62 @@ using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
-{
+public class MainMenu : MonoBehaviour {
 
-    private class SaveObject
-    {
-        public int stressAmount;
-        public int academicAmount;
-        public int socialAmount;
-    }
+    [SerializeField] private Button quitButton;
+    [SerializeField] private Slider masterVolumeSlider;
+    [SerializeField] private Slider sfxVolumeSlider;
+    [SerializeField] private Slider musicVolumeSlider;
+    [Space(5)]
+    [SerializeField] private AudioMixer audioMixer;
 
-    [SerializeField] private int startDate;
-    [SerializeField] private TextMeshProUGUI stressText;
-    [SerializeField] private TextMeshProUGUI academicText;
-    [SerializeField] private TextMeshProUGUI socialText;
-    [SerializeField] private GameObject[] saveFileButtons;
-    [SerializeField] private GameObject[] chapterButtons;
+    private void Awake(){
+        quitButton.onClick.AddListener(() => {
+            Application.Quit();
+        });
+        masterVolumeSlider.onValueChanged.AddListener( delegate {
+            SetMasterVolume(masterVolumeSlider.value);
+        });
+        sfxVolumeSlider.onValueChanged.AddListener( delegate {
+            SetSFXVolume(sfxVolumeSlider.value);
+        });
+        musicVolumeSlider.onValueChanged.AddListener( delegate {
+            SetMusicVolume(musicVolumeSlider.value);
+        });
 
-    
-
-    private void Awake()
-    {
-        // Opdater save filer
-
-    }
-
-    public void EnterChapter(int buttonId)
-    {
-        DateTime dataCurrent = DateTime.Now; // Få datoen
-
-        if (dataCurrent.Day >= startDate + buttonId)
-        {  // Hvis datoen er over startDatoen + ugedag
-            Debug.Log("Enter this Chapter");
-            // Skift scene
-        }
-        else
-        { // Hvis datoen ikke er over startDatoen + ugedag
-            Debug.LogWarning("You can't enter this Chapter");
+        if (PlayerPrefs.HasKey("MasterVolume")){ // Har spilleren en gemt playerPref (Hvis den ikke har MasterVolume har den ikke nogle af dem)
+            masterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume");
+            sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume"); // Juster sliderne til den gemte værdi
+            musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+        } else { // Hvis spilleren ikke har gemt nogle playerPref (Det er første boot-up)
+            PlayerPrefs.SetFloat("MasterVolume", 1f);
+            PlayerPrefs.SetFloat("SFXVolume", 1f); // Sæt standard values
+            PlayerPrefs.SetFloat("MusicVolume", 1f);
         }
     }
 
+    private void Start(){
+        // Juster volumerne
+        SetMasterVolume(PlayerPrefs.GetFloat("MasterVolume"));
+        SetSFXVolume(PlayerPrefs.GetFloat("SFXVolume"));
+        SetMusicVolume(PlayerPrefs.GetFloat("MusicVolume"));
+    }
 
+    private void SetMasterVolume(float value){
+        audioMixer.SetFloat("MasterVolume", Mathf.Log10(value)*20);
+        PlayerPrefs.SetFloat("MasterVolume", value);
+    }
 
+    private void SetSFXVolume(float value){
+        audioMixer.SetFloat("SFXVolume", Mathf.Log10(value)*20);
+        PlayerPrefs.SetFloat("SFXVolume", value);
+    }
 
-
-
-
-    public void Quit()
-    {
-        Application.Quit();
+    private void SetMusicVolume(float value){
+        audioMixer.SetFloat("MusicVolume", Mathf.Log10(value)*20);
+        PlayerPrefs.SetFloat("MusicVolume", value);
     }
 }
