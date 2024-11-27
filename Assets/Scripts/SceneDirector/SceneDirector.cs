@@ -46,7 +46,7 @@ namespace SceneDirection
                 {
                     if (currentScene == null) return;
 
-                    if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+                    if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) && CheckSideOfMouse())
                         if (DC.IsCompleted())
                         {
                             DC.StopTyping();
@@ -72,6 +72,16 @@ namespace SceneDirection
             }
 
 
+        }
+        public bool CheckSideOfMouse()
+        {
+            Vector3 mousePosition = Input.mousePosition;
+
+            float screenWidth = Screen.width;
+
+            if (mousePosition.x > screenWidth / 2)
+                return true;
+            else return false;
         }
         public void SaveName()
         {
