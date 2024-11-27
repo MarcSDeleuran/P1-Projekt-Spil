@@ -4357,7 +4357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1683756077970794981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4795,7 +4795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1779552648175049329
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6294,7 +6294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82114dd923375ee4aaf5b82230ca8fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: {fileID: 11400000, guid: 11266ddef0895f74e845ba077ace15b2, type: 2}
+  currentScene: {fileID: 0}
   DC: {fileID: 3541394706249804973}
   BackgroundSwitcher: {fileID: 5737901218490267982}
   OSC: {fileID: 1588265719216675041}
@@ -9849,7 +9849,7 @@ MonoBehaviour:
   DialogueText: {fileID: 3581712750046675459}
   LeftSpeakerNameText: {fileID: 3380451931429075128}
   RightSpeakerNameText: {fileID: 4094519288224607525}
-  currentScene: {fileID: 11400000, guid: 1146e327a58507d4a9116b467d8aafa7, type: 2}
+  currentScene: {fileID: 0}
   spritesPrefab: {fileID: 1188098996871490424}
   TextSpeed: 0
   defaultTextSpeed: 1
@@ -9978,7 +9978,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

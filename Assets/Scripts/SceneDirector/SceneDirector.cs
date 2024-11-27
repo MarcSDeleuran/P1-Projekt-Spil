@@ -41,6 +41,8 @@ namespace SceneDirection
             {
                 if (state == SceneState.IDLE)
                 {
+                    if (currentScene == null) return;
+
                     if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
                         if (DC.IsCompleted())
                         {
@@ -65,7 +67,7 @@ namespace SceneDirection
                         }
                 }
             }
-            
+
 
         }
 
@@ -82,9 +84,14 @@ namespace SceneDirection
             }
 
             state = SceneState.ANIMATE;
+            if (currentScene != null)
+            {
+                DC.HideBox();
+                yield return new WaitForSeconds(1f);
+            }
+                
             currentScene = scene;
-            DC.HideBox();
-            yield return new WaitForSeconds(1f);
+            
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
@@ -94,10 +101,10 @@ namespace SceneDirection
                     BackgroundSwitcher.SwitchImage(storyScene.background);
                     yield return new WaitForSeconds(1f);
                 }
-                    
+
                 PlayAudio(storyScene.Sentences[0]);
 
-                
+
                 DC.ClearText();
                 DC.ShowBox();
                 yield return new WaitForSeconds(1f);
