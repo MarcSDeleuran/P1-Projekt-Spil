@@ -14,8 +14,8 @@ public class SaveFileButtonUI : MonoBehaviour{
     public void UpdateVisual(int saveFileID, bool activate, int stressAmount, int academicAmount, int socialAmount){
         statsGameObject.SetActive(activate);
         saveFileNameText.text = "Save #" + saveFileID;
-        stressText.text = "Stress: " + stressAmount;
-        academicText.text = "Academic: " + academicAmount;
-        socialText.text = "Social: " + socialAmount;
+        stressText.text = "Stress: " + stressAmount + "%";
+        academicText.text = "Academic: " + academicAmount + "%";
+        socialText.text = "Social: " + socialAmount + "%";
     }
 }

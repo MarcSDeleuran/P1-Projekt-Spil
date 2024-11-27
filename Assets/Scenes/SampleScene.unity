@@ -6414,9 +6414,9 @@ MonoBehaviour:
   SD: {fileID: 2392239762029088324}
   DH: {fileID: 11400000, guid: 49850149ffb56dd4888312d343a7bda5, type: 2}
   FM: {fileID: 1750162135}
-  StressAmount: 0
-  AcademicAmount: 0
-  SocialAmount: 0
+  StressAmount: -1
+  AcademicAmount: -1
+  SocialAmount: -1
   CharacterName: 
 --- !u!1 &2463731466394336344
 GameObject:

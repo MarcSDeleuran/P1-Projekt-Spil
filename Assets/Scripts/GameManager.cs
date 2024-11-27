@@ -23,9 +23,9 @@ public class GameManager : MonoBehaviour
     public FlagManager FM;
     private int activeSave;
     public static GameManager Instance { get; private set; }
-    public int StressAmount;
-    public int AcademicAmount;
-    public int SocialAmount;
+    public int StressAmount = -1;
+    public int AcademicAmount = -1;
+    public int SocialAmount = -1;
     public string CharacterName;
     public void Awake()
     {
@@ -94,15 +94,18 @@ public class GameManager : MonoBehaviour
             academicAmount = UnityEngine.Random.Range(1, 100),
             socialAmount = UnityEngine.Random.Range(1, 100),
         };
+        StressAmount = saveObject.stressAmount;
+        AcademicAmount = saveObject.academicAmount;
+        SocialAmount = saveObject.socialAmount;
         // Unders�g Json fil
         string json = JsonUtility.ToJson(saveObject);
         File.WriteAllText(Application.dataPath + "/Saves/save" + activeSave + ".txt", json);
 
         // Visuelt opdater tekst og knapper
         Debug.Log("Opdatere");
-        stressText.text = "Stress: " + saveObject.stressAmount;
-        academicText.text = "Academic: " + saveObject.academicAmount;
-        socialText.text = "Social: " + saveObject.socialAmount;
+        stressText.text = "Stress: " + saveObject.stressAmount + "%";
+        academicText.text = "Academic: " + saveObject.academicAmount + "%";
+        socialText.text = "Social: " + saveObject.socialAmount + "%";
         UpdateSaveFiles();
     }
     public void EnterSaveFile(int saveFileId)
@@ -146,12 +149,14 @@ public class GameManager : MonoBehaviour
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
 
-                stressAmount = StressAmount,
-                academicAmount = AcademicAmount,
-                socialAmount = SocialAmount,
+                stressAmount = 50,
+                academicAmount = 50,
+                socialAmount = 50,
                 characterName = CharacterName
-
             };
+            StressAmount = saveObject.stressAmount;
+            AcademicAmount = saveObject.academicAmount;
+            SocialAmount = saveObject.socialAmount;
 
             // Konverter til Json fil
             string json = JsonUtility.ToJson(saveObject);
