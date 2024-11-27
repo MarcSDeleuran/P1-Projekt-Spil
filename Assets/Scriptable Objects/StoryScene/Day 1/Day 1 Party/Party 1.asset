@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Party 1
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: "The 3 musketeers arrive, the club is bouncing with upbeat music and happy
+      people. \L[PlayerName] guides the group towards a few empty seats at the bar."
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: "You shrug and look at the others \L\u201COkay.. you got me here now, what
+      are we doing?\u201D"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: "Jake looks at you with a big smile on his face.\L\u201CDrinks on me tonight
+      !!\u201D\LMary cannot hide her excitement. (She practically skips a heartbeat
+      with excitement)?"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: "Jake: Jake looks at you with a big smile on his face.\L\u201CDrinks on
+      me tonight !!\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  - text: 'Mary cannot hide her excitement, she practically skips a heartbeat with
+      excitement '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 16551fc882a41f547a9470830c3dc5e1, type: 3}
+  nextScene: {fileID: 11400000, guid: 9bd9325d9683b564394bf9519cfdc609, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee402589795ae643be1a92c9c0f3d0c, type: 3}
+  m_Name: Mrs. Smith
+  m_EditorClassIdentifier: 
+  speakerName: Mrs. Smith
+  textColor: {r: 0.39656338, g: 0.4811321, b: 0, a: 0}
+  sprites:
+  - {fileID: 21300000, guid: 217ec07e7d1089040908393f4fb1a3c9, type: 3}
+  prefab: {fileID: 8239614979854761332, guid: cd9687bed4d697b4e9a0bab4eba015df, type: 3}
+  LeftSide: 0

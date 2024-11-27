@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: DoctorAppointment_S2A
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: Yes of course! mr NAME
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: "well, from what i've read, it sounds like you\u2019re experiencing quite
+      a bit of stress. That\u2019s perfectly normal, especially when studies demand
+      so much of your time and energy."
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 2
+    changeAmount: 0
+  - text: But you know what?
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: There are ways to manage it.
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
+  nextScene: {fileID: 11400000, guid: 624446e50fa56944ba644f9a83599695, type: 2}

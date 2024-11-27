@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Rate jakes joke
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CWhat a shit joke Jake\u201D"
+    nextScene: {fileID: 11400000, guid: 2c693ef6131ec2a4c87121a6bb8e5774, type: 2}
+  - text: "\u201CHAHAHAHHA, i love that one.\u201D"
+    nextScene: {fileID: 11400000, guid: 6ed747859b577ed42b241f2a3a18274d, type: 2}
+  QuestionText: How do you respond to Jakes joke
+  Music: {fileID: 0}
+  Sound: {fileID: 0}
