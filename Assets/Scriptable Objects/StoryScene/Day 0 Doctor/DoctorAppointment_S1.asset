@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Yes? ah, Thank you for coming in today
+  - text: Yes? Ah, Thank you for coming in today.
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -25,7 +25,7 @@ MonoBehaviour:
     Sound: {fileID: 0}
     statChange: 2
     changeAmount: 0
-  - text: "I understand you\u2019ve been feeling a bit overwhelmed lately, mr. uhh.."
+  - text: "I understand you\u2019ve been feeling a bit overwhelmed lately, mr. uhh..."
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}

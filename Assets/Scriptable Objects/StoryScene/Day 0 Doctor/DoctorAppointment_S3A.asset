@@ -16,71 +16,95 @@ MonoBehaviour:
   - text: "The first step is actually becoming more aware of how your daily choices
       affect you. Here\u2019s what I'd suggest for this week:"
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: "Every day, you\u2019ll make choices that impact your well-being in different
       ways."
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: How will that work?
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "I\u2019m giving you a smartwatch that will track your stress level, happiness
-      and grades."
+    statChange: 0
+    changeAmount: 0
+    Actions: []
+  - text: 'I will give you a smartwatch that will track your: Stress levels, Happiness,
+      and Grades.'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: "Throughout the week, you\u2019ll be able to see how your choices impact
       these three areas."
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: "What should I do if my stress level gets too high? And what about happiness
       \u2013 how can I increase that?"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: "That\u2019s exactly what we\u2019ll be exploring."
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: For example, some choices will reduce your stress but might come at the
       cost of other things, like study time. Some choices will boost your happiness,
       while others will help improve your grades.
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: The goal is to find a balance.
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: "So I\u2019ll need to constantly consider what\u2019s most important?"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
-  - text: Exactly.
+    statChange: 0
+    changeAmount: 0
+    Actions: []
+  - text: Exactly!
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   - text: "Try experimenting to see what works best for you. After each day, you\u2019ll
       get a summary to reflect on your choices. At the end of the week, we\u2019ll
       meet again to discuss what you\u2019ve learned."
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+    Actions: []
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
   nextScene: {fileID: 11400000, guid: 05c33f6f008a58b4fa2659cccb3cc0ab, type: 2}

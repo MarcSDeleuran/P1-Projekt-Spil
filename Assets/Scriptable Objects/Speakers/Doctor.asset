@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Doctor
   m_EditorClassIdentifier: 
   speakerName: Doctor Yuku
-  textColor: {r: 0.5660378, g: 0.23716445, b: 0, a: 1}
+  nameColor: {r: 0.3137255, g: 0.2509804, b: 0.24313726, a: 1}
+  textColor: {r: 1, g: 0.6901961, b: 0.627451, a: 1}
   sprites:
   - {fileID: 21300000, guid: 217ec07e7d1089040908393f4fb1a3c9, type: 3}
   - {fileID: 21300000, guid: af9e3f2e202bdda4f91a6db87f57f1a9, type: 3}

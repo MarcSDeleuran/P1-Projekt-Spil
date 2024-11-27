@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Jake
   m_EditorClassIdentifier: 
   speakerName: Jake
-  textColor: {r: 0.15587272, g: 0.38679248, b: 0, a: 0}
+  nameColor: {r: 0.38039216, g: 0.25490198, b: 0.16862746, a: 1}
+  textColor: {r: 0.87058824, g: 0.5137255, b: 0.25882354, a: 1}
   sprites:
   - {fileID: 21300000, guid: a43c1da3e95479645bc7ab975771076f, type: 3}
   prefab: {fileID: 8239614979854761332, guid: cd9687bed4d697b4e9a0bab4eba015df, type: 3}

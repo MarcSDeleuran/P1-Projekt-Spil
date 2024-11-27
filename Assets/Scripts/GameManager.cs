@@ -1,24 +1,22 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using System.IO;
-using UnityEngine.UI;
 using SceneDirection;
 
 public class GameManager : MonoBehaviour
 {
-
     [SerializeField] private int startDate;
     [SerializeField] private TextMeshProUGUI stressText;
     [SerializeField] private TextMeshProUGUI academicText;
     [SerializeField] private TextMeshProUGUI socialText;
     [SerializeField] private GameObject mainMenuUI;
     [SerializeField] private GameObject gameSceneUI;
+    [SerializeField] private GameObject mainMenuCanvas;
     [SerializeField] private GameObject[] saveFileButtons;
     [SerializeField] private GameObject[] chapterButtons;
-    public SceneDirection.SceneDirector SD;
+    public SceneDirector SD;
     public DataHolder DH;
     public FlagManager FM;
     private int activeSave;
@@ -27,19 +25,17 @@ public class GameManager : MonoBehaviour
     public int AcademicAmount = -1;
     public int SocialAmount = -1;
     public string CharacterName;
+
     public void Awake()
     {
-
         if (Instance != null && Instance != this)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else
         {
             Instance = this;
         }
-
-
 
         Application.targetFrameRate = 60;
         UpdateSaveFiles();
@@ -51,6 +47,7 @@ public class GameManager : MonoBehaviour
             Directory.CreateDirectory(Application.dataPath + "/Saves/");
         }
     }
+
     #region SaveAndLoadFunctions
     private void UpdateAvailableChapters()
     {
@@ -71,6 +68,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     private void UpdateSaveFiles()
     {
         int maxFiles = 3;
@@ -86,10 +84,11 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
     public void RandomizeValues()
     {
         SaveData saveObject = new SaveData
-        { // Opdaterer v�rdier
+        { // Opdaterer værdier
             stressAmount = UnityEngine.Random.Range(1, 100),
             academicAmount = UnityEngine.Random.Range(1, 100),
             socialAmount = UnityEngine.Random.Range(1, 100),
@@ -97,7 +96,7 @@ public class GameManager : MonoBehaviour
         StressAmount = saveObject.stressAmount;
         AcademicAmount = saveObject.academicAmount;
         SocialAmount = saveObject.socialAmount;
-        // Unders�g Json fil
+        // Undersøg Json fil
         string json = JsonUtility.ToJson(saveObject);
         File.WriteAllText(Application.dataPath + "/Saves/save" + activeSave + ".txt", json);
 
@@ -107,13 +106,14 @@ public class GameManager : MonoBehaviour
         socialText.text = "Social: " + saveObject.socialAmount + "%";
         UpdateSaveFiles();
     }
+
     public void EnterSaveFile(int saveFileId)
     {
         SaveData saveObject;
 
         if (File.Exists(Application.dataPath + "/Saves/save" + saveFileId + ".txt"))
         { // Load en Save
-            // Unders�g Json fil
+            // Undersøg Json fil
             string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt");
             saveObject = JsonUtility.FromJson<SaveData>(saveString);
             FM.flags = saveObject.flags;
@@ -138,7 +138,7 @@ public class GameManager : MonoBehaviour
         }
         else
         { // Lav en ny Save
-          // S�t default v�rdier (Skal nok �ndres)
+          // Sæt default værdier (Skal nok ændres)
             List<int> historyIndices = new List<int>();
             SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
 
@@ -189,6 +189,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("You can't enter this Chapter");
         }
         gameSceneUI.SetActive(true);
+        mainMenuCanvas.SetActive(false);
         GameObject go = gameSceneUI.GetComponentInChildren<DialogueController>().gameObject;
         SD.VNACTIVE = true;
         SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);

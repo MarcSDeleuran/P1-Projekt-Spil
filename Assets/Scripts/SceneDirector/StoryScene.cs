@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 namespace SceneDirection
@@ -39,7 +38,6 @@ namespace SceneDirection
                     NONE, APPEAR, MOVE, FLIP, DISAPPEAR
                 }
             }
-
         }
     }
 

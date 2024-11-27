@@ -1,12 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class FlagManager : MonoBehaviour
 {
-
-
     public Dictionary<STORYFLAG, bool> flags = new Dictionary<STORYFLAG, bool>();
 
     public void SetFlag(STORYFLAG flag, bool value = true)
@@ -24,6 +20,7 @@ public class FlagManager : MonoBehaviour
     }
 
 }
+
 public enum STORYFLAG
 {
     NONE,

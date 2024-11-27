@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -107,8 +106,6 @@ public class StatsAndJournal : MonoBehaviour {
             }
         });
     }
-
-
 
     private IEnumerator WaitBeforeUpdating(){
         yield return new WaitForSeconds(0.25f);

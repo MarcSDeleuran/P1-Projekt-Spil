@@ -1,9 +1,8 @@
 using SceneDirection;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+
 public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Color defaultColor;
@@ -15,7 +14,6 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     public STATCHANGE statChange;
     public int changeAmount;
-
 
     void Awake()
     {
@@ -29,10 +27,9 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
             gameObject.GetComponentInParent<OptionSelectionController>().FM.SetFlag(flag, SetFlagTrue);
         ChangeStats();
 
-
         gameObject.GetComponentInParent<OptionSelectionController>().PerformOption(scene);
-
     }
+
     private void ChangeStats()
     {
         switch (statChange)
@@ -48,9 +45,9 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
             case STATCHANGE.STRESS:
                 GameManager.Instance.StressAmount += changeAmount;
                 break;
-
         }
     }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         textMesh.color = hoverColor;

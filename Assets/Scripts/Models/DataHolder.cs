@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using SceneDirection;
 
-
 [CreateAssetMenu(fileName = "NewDataHolder", menuName = "Data/ New Data Holder")]
-[System.Serializable]
+[Serializable]
 public class DataHolder : ScriptableObject
 {
     public List<GameScene> scenes;

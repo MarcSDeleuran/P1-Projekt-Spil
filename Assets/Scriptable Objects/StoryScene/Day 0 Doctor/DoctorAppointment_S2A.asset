@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S2A
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Yes of course! mr NAME
+  - text: Yes of course! mr [PlayerName]
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     statChange: 0
     changeAmount: 0
-  - text: "well, from what i've read, it sounds like you\u2019re experiencing quite
+  - text: "Well, from what I've read, it sounds like you\u2019re experiencing quite
       a bit of stress. That\u2019s perfectly normal, especially when studies demand
       so much of your time and energy."
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -36,7 +36,7 @@ MonoBehaviour:
     Sound: {fileID: 0}
     statChange: 0
     changeAmount: 0
-  - text: There are ways to manage it.
+  - text: There are ways to manage it!
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}

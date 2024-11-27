@@ -13,26 +13,30 @@ namespace SceneDirection
         private SpriteSwitcher switcher;
         private RectTransform rect;
         private Animator animator;
+
         public void Awake()
         {
             switcher = GetComponent<SpriteSwitcher>();
             animator = GetComponent<Animator>();
             rect = GetComponent<RectTransform>();
         }
+
         public void Setup(Sprite sprite)
         {
             switcher.SetImage(sprite);
         }
+
         public void Show(Vector2 coords)
         {
             animator.SetTrigger("ShowCharacter");
             rect.localPosition = coords;
-
         }
+
         public void Hide()
         {
             animator.SetTrigger("HideCharacter");
         }
+
         public void Move(Vector2 coords, float speed)
         {
             StartCoroutine(MoveCoroutine(coords, speed));
