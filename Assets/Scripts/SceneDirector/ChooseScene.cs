@@ -20,16 +20,19 @@ namespace SceneDirection
         [System.Serializable]
         public struct ChooseLabel
         {
+            [Header("Main")]
             public string text;
             public StoryScene nextScene;
-            public STORYFLAG flag;
 
-            public bool setFlagTrue;
-            public STORYFLAG FlagToSet;
-
+            [Header("Stat Changes")]
             public int StressChange;
             public int AcademicChange;
             public int SocialChange;
+
+            [Header("Flags")]
+            public STORYFLAG flag;
+            public bool setFlagTrue;
+            public STORYFLAG FlagToSet;
         }
     }
 }

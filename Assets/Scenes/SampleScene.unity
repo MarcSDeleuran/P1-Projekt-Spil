@@ -5642,7 +5642,7 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 7516914852471858673}
           m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-          m_MethodName: SetTrigger
+          m_MethodName: ResetTrigger
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12492,8 +12492,9 @@ MonoBehaviour:
   textMesh: {fileID: 4502361786585782924}
   flag: 0
   SetFlagTrue: 0
-  statChange: 0
-  changeAmount: 0
+  StressChange: 0
+  AcademicChange: 0
+  SocialChange: 0
 --- !u!224 &2767676858236185941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13714,8 +13715,9 @@ MonoBehaviour:
   textMesh: {fileID: 2800399659609850525}
   flag: 0
   SetFlagTrue: 0
-  statChange: 0
-  changeAmount: 0
+  StressChange: 0
+  AcademicChange: 0
+  SocialChange: 0
 --- !u!114 &3102754848373203174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14684,12 +14686,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 3581712750046675459}
-  leftSpeakerName: {fileID: 1719455062}
-  rightSpeakerName: {fileID: 402648766}
+  leftSpeakerName: {fileID: 0}
+  rightSpeakerName: {fileID: 0}
   LeftSpeakerNameText: {fileID: 653102542}
   RightSpeakerNameText: {fileID: 1675683426}
-  leftSpeakerNameBackground: {fileID: 1113242778}
-  rightSpeakerNameBackground: {fileID: 1268642804}
+  leftSpeakerNameBackground: {fileID: 0}
+  rightSpeakerNameBackground: {fileID: 0}
   currentScene: {fileID: 0}
   spritesPrefab: {fileID: 1188098996871490424}
   TextSpeed: 0
@@ -16219,8 +16221,9 @@ MonoBehaviour:
   textMesh: {fileID: 551006811204246247}
   flag: 0
   SetFlagTrue: 0
-  statChange: 0
-  changeAmount: 0
+  StressChange: 0
+  AcademicChange: 0
+  SocialChange: 0
 --- !u!1 &4015753290973684420
 GameObject:
   m_ObjectHideFlags: 0
@@ -23789,8 +23792,9 @@ MonoBehaviour:
   textMesh: {fileID: 5144756299314332963}
   flag: 0
   SetFlagTrue: 0
-  statChange: 0
-  changeAmount: 0
+  StressChange: 0
+  AcademicChange: 0
+  SocialChange: 0
 --- !u!224 &7352070373789687978
 RectTransform:
   m_ObjectHideFlags: 0
