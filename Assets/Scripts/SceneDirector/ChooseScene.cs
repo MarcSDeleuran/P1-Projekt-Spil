@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace SceneDirection
@@ -12,6 +16,7 @@ namespace SceneDirection
         public AudioClip Music;
         public AudioClip Sound;
 
+
         [System.Serializable]
         public struct ChooseLabel
         {
@@ -22,6 +27,7 @@ namespace SceneDirection
             public bool setFlagTrue;
             public STORYFLAG FlagToSet;
 
+<<<<<<< HEAD
             public STATCHANGE statChange;
             public int changeAmount;
         }
@@ -34,4 +40,18 @@ namespace SceneDirection
         ACADEMICS,
         STRESS
     }
+=======
+            public int StressChange;
+            public int AcademicChange;
+            public int SocialChange;
+
+
+
+
+
+        }
+    }
+
+
+>>>>>>> 3692831a8fc5f4036218b97d2e8df0b91b1d61f1
 }
