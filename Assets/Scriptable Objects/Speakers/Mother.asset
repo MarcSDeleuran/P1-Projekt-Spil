@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee402589795ae643be1a92c9c0f3d0c, type: 3}
   m_Name: Mother
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Mother
+  nameColor: {r: 0, g: 0, b: 0, a: 0}
   textColor: {r: 0, g: 0, b: 0, a: 0}
-  sprites: []
+  sprites:
+  - {fileID: 21300000, guid: 9548caaaa497b0941a15015061156cf3, type: 3}
+  - {fileID: 21300000, guid: b9a52fde2eeca804ca098652a72bf685, type: 3}
   prefab: {fileID: 8239614979854761332, guid: cd9687bed4d697b4e9a0bab4eba015df, type: 3}
   LeftSide: 0

@@ -16,6 +16,9 @@ MonoBehaviour:
   nameColor: {r: 0.21960784, g: 0.2784314, b: 0.3137255, a: 1}
   textColor: {r: 0.5764706, g: 0.78039217, b: 0.91764706, a: 1}
   sprites:
-  - {fileID: 21300000, guid: 217ec07e7d1089040908393f4fb1a3c9, type: 3}
+  - {fileID: 21300000, guid: fbbd12e109638bf4884ded53eb09d802, type: 3}
+  - {fileID: 21300000, guid: 2e768f38802592442a78919120374e3e, type: 3}
+  - {fileID: 21300000, guid: 24e17538558e1f54396c257cf67f499f, type: 3}
+  - {fileID: 21300000, guid: 41eef4734cdb3d2459542eaffdf29dab, type: 3}
   prefab: {fileID: 8239614979854761332, guid: cd9687bed4d697b4e9a0bab4eba015df, type: 3}
   LeftSide: 0

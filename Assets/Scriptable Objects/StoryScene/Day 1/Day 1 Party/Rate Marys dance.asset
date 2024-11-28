@@ -15,8 +15,18 @@ MonoBehaviour:
   Options:
   - text: "\u201CNot really my taste\u201D"
     nextScene: {fileID: 11400000, guid: 129868378da1b494aab98a1c9362d48c, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CWOW, where did you learn that\u201D"
     nextScene: {fileID: 11400000, guid: 4a4e4e27c14772e40ab9563c1b6a6c33, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: Did you like Marys moves?
   Music: {fileID: 0}
   Sound: {fileID: 0}

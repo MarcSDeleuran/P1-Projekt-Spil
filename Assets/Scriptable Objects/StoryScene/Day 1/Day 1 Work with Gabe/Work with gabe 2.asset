@@ -19,98 +19,132 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CYes boss\u201D you nod, \u201CWhere do we start?\u201D you try to
       match his energy."
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CLet\u2019s find a good spot to sit, maybe one of the study sofas
       are free?\u201D "
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CSounds like a great idea Gabe\u201D"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: 'You find a study sofa and sit down. After unpacking your things you rub
       your hands and look at Gabe '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CFill me in on the exam, where do we start\u201D"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: Gabe explains the whole exam and every possible thing you need to prepare
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "You look in awe at Gabe, \u201CWow...\u201D you don\u2019t quite know
       what to say... \u201CSounds like you already prepared the whole thing\u201D."
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "Gabe looks very proud, he smiles and cracks a joke \u201CIt pays off to
       pay attention in class you know, maybe you should try it someday\u201D"
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CHaha very funny mister smart guy\u201D you grin and fire back \u201CMaybe
       you should try hitting the gym someday\u201D you joke and pinch his tiny arm."
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: You go back and forth for a few minutes until Gabe raises his voice
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CANYWAY, we need to get going right away!\u201D Gabe says as he puts
       on his serious face."
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "You jokingly raise your hand to your head like a soldier saluting \u201CSIR
       YES SIR\u201D "
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "Gabe rolls his eyes. \u201CJust do what it says on the document I sent
       you.\u201D "
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: You start reading the document, but quickly your attention is drawn to
       the vibrating phone in your pocket.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: You pull out your phone and see a message from Jake, he asks you to come
       with him and Mary to a party later
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: ' [Fuck... I promised Gabe to work on the exam...] You think to yourself...
+    statChange: 0
+    changeAmount: 0
+  - text: '[Fuck... I promised Gabe to work on the exam...] You think to yourself...
       [Maybe if i work hard for 30 minutes I can convince Gabe to go home early,
       then we can just catch up on the exam tomorrow...] '
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   background: {fileID: 21300000, guid: 118d77cca44441b488cd80af6c039f23, type: 3}
   nextScene: {fileID: 11400000, guid: 93e06ec3d9dbece489a10f43962f7988, type: 2}

@@ -15,9 +15,19 @@ MonoBehaviour:
   Options:
   - text: "\"Conquer the world? Let\u2019s start by surviving this week.\u201D "
     nextScene: {fileID: 11400000, guid: 52d7f50293d1f7943991c10d0c48e179, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CI don\u2019t know if I will ever be ready. This week is already
       killing me\u201D "
     nextScene: {fileID: 11400000, guid: 12e5927f137b9b64eb1318709a287126, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: What do you reply?
   Music: {fileID: 0}
   Sound: {fileID: 0}

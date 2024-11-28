@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Day 2 Talking with parents
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: You sit down and continue the conversation over a hot homecooked meal.
+    speaker: {fileID: 0}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 200, y: 0}
+      MoveSpeed: 0
+    - Speaker: {fileID: 11400000, guid: ed28a80baf3e362428fc8d7fbf9afe2e, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: -100, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: "\u201CI hope you can stay on top of things, those assignment can sneak
+      up on you, and stress isn\u2019t good for your health.\u201D "
+    speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
+    Actions:
+    - Speaker: {fileID: 0}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: "\u201CI hope you can stay on top of things, those assignment can sneak
+      up on you, and stress isn\u2019t good for your health.\u201D "
+    speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
+    Actions:
+    - Speaker: {fileID: 0}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  background: {fileID: 21300000, guid: c38e1798cbc58d0428c19d567ae71721, type: 3}
+  nextScene: {fileID: 11400000, guid: 314454d1f82ec8c43b7f613cb4320ef3, type: 2}

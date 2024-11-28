@@ -16,10 +16,25 @@ MonoBehaviour:
   - text: "\u201CI\u2019m thinking of starting tomorrow assignment during the lunch
       break\u201D "
     nextScene: {fileID: 11400000, guid: 5768cf35f7507d94798e3960f23dd725, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CLunch first, then I will figure the rest out later\u201D "
     nextScene: {fileID: 11400000, guid: 8ff3ba4e6e140f34a96e2af08eee61d5, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CHonestly, no clue where to start, it\u2019s all just so much.\u201D "
     nextScene: {fileID: 11400000, guid: 94882ff7f9402f04dafc6b9f616604bf, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: What is your response?
   Music: {fileID: 0}
   Sound: {fileID: 0}

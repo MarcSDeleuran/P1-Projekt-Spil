@@ -15,8 +15,18 @@ MonoBehaviour:
   Options:
   - text: Don't say anything
     nextScene: {fileID: 11400000, guid: 4ae50d35b98db8045ae5004219115664, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: Try to calm the others down
     nextScene: {fileID: 11400000, guid: 27dfbeca71231d74d83646f5c0fbc09a, type: 2}
-  QuestionText: What is your reaction
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: How do you react?
   Music: {fileID: 0}
   Sound: {fileID: 0}

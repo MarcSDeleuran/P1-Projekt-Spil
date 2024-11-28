@@ -16,9 +16,19 @@ MonoBehaviour:
   - text: "\u201CYeah, my bad for missing it. But hey i got my quality sleep. Yeah
       im ready to dive in!\u201D "
     nextScene: {fileID: 11400000, guid: 6ad45b971efe2544191b02fa9af45af3, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CHope you guys had a fun evening. Let\u2019s focus on this assignment
       now\u201D "
     nextScene: {fileID: 11400000, guid: 9fac44771b735e64ba1844c4b2305687, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: What do you reply?
   Music: {fileID: 0}
   Sound: {fileID: 0}
