@@ -1,11 +1,8 @@
 using SceneDirection;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SocialPlatforms;
+
 public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Color defaultColor;
@@ -15,11 +12,8 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public STORYFLAG flag = STORYFLAG.NONE;
     public bool SetFlagTrue;
 
-    public int StressChange;
-    public int AcademicChange;
-    public int SocialChange;
-    
-
+    public STATCHANGE statChange;
+    public int changeAmount;
 
     void Awake()
     {
@@ -38,24 +32,20 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
 
     private void ChangeStats()
     {
-
-        if (GameManager.Instance.StressAmount < 0)
-            GameManager.Instance.StressAmount = 0;
-        if (GameManager.Instance.StressAmount > 200)
-            GameManager.Instance.StressAmount = 200;
-
-        GameManager.Instance.AcademicAmount += AcademicChange;
-        if (GameManager.Instance.AcademicAmount < 0)
-            GameManager.Instance.AcademicAmount = 0;
-        if (GameManager.Instance.AcademicAmount > 200)
-            GameManager.Instance.AcademicAmount = 200;
-
-        GameManager.Instance.SocialAmount += SocialChange;
-        if (GameManager.Instance.SocialAmount < 0)
-            GameManager.Instance.SocialAmount = 0;
-        if (GameManager.Instance.SocialAmount > 200)
-            GameManager.Instance.SocialAmount = 200;
-
+        switch (statChange)
+        {
+            case STATCHANGE.NONE:
+                break;
+            case STATCHANGE.SOCIAL:
+                GameManager.Instance.SocialAmount += changeAmount;
+                break;
+            case STATCHANGE.ACADEMICS:
+                GameManager.Instance.AcademicAmount += changeAmount;
+                break;
+            case STATCHANGE.STRESS:
+                GameManager.Instance.StressAmount += changeAmount;
+                break;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

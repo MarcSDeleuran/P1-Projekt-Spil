@@ -1,19 +1,21 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SceneDirection
 {
-
     public class DialogueController : MonoBehaviour
     {
         public TextMeshProUGUI DialogueText;
         private TextMeshProUGUI SpeakerNameText;
+        public GameObject leftSpeakerName;
+        public GameObject rightSpeakerName;
         public TextMeshProUGUI LeftSpeakerNameText;
         public TextMeshProUGUI RightSpeakerNameText;
+        public Image leftSpeakerNameBackground;
+        public Image rightSpeakerNameBackground;
         private int sentenceIndex = -1;
         public int SentenceIndex { get { return sentenceIndex; } }
         public StoryScene currentScene;
@@ -27,17 +29,18 @@ namespace SceneDirection
         public float defaultTextSpeed = 1;
 
         private enum DialogueState
-
         {
             PLAYING, SPEEDED_UP, COMPLETED
         }
+
         private void Awake()
         {
             sprites = new Dictionary<Speaker, SpriteController>();
             animator = GetComponent<Animator>();
             SpeakerNameText = LeftSpeakerNameText;
-
+            animator.SetTrigger("Hide");
         }
+
         public void SetIndex(int i)
         {
             sentenceIndex = i;
@@ -53,18 +56,20 @@ namespace SceneDirection
             return state == DialogueState.COMPLETED || state == DialogueState.SPEEDED_UP;
         }
         #endregion
+
         public void SpeedUp()
         {
             state = DialogueState.SPEEDED_UP;
             TextSpeed = 0.25f;
         }
+
         public void StopTyping()
         {
             if (sentenceIndex != -1)
                 DialogueText.text = currentScene.Sentences[sentenceIndex].text;
             state = DialogueState.COMPLETED;
             if (typingCoroutine != null)
-                StopCoroutine(typingCoroutine);
+            StopCoroutine(typingCoroutine);
         }
 
         public void HideBox()
@@ -74,75 +79,75 @@ namespace SceneDirection
                 animator.SetTrigger("HideBox");
                 isHidden = true;
             }
-
         }
+
         public void ShowBox()
         {
             animator.SetTrigger("ShowBox");
             isHidden = false;
         }
+
         public void ClearText()
         {
             DialogueText.text = "";
         }
+
         public void PlayScene(StoryScene scene)
         {
             currentScene = scene;
             sentenceIndex = -1;
             PlayNextSentence();
         }
+
         public void PlayNextSentence()
         {
             string text = currentScene.Sentences[++sentenceIndex].text;
-            string newText = text.Replace("NAME", GameManager.Instance.CharacterName);
+            string newText = text.Replace("[PlayerName]", GameManager.Instance.CharacterName);
             typingCoroutine = StartCoroutine(TypeText(newText));
             if (currentScene.Sentences[sentenceIndex].speaker != null)
             {
                 SpeakerNameText.gameObject.SetActive(true);
                 if (currentScene.Sentences[sentenceIndex].speaker.LeftSide)
                 {
-                    RightSpeakerNameText.gameObject.SetActive(false);
-                    LeftSpeakerNameText.gameObject.SetActive(true);
+                    rightSpeakerName.SetActive(false);
+                    leftSpeakerName.SetActive(true);
                     SpeakerNameText = LeftSpeakerNameText;
                 }
                 else
                 {
-                    RightSpeakerNameText.gameObject.SetActive(true);
-                    LeftSpeakerNameText.gameObject.SetActive(false);
+                    rightSpeakerName.SetActive(true); // Den her virker ikke af en eller anden grund. Man kan ikke sætte den aktiv selv i editoren, det er vidst noget med animatoren da det virker når man slår den fra
+                    leftSpeakerName.SetActive(false);
                     SpeakerNameText = RightSpeakerNameText;
                 }
                 SpeakerNameText.text = currentScene.Sentences[sentenceIndex].speaker.speakerName;
-                SpeakerNameText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
+                leftSpeakerNameBackground.color = currentScene.Sentences[sentenceIndex].speaker.nameColor;
+                rightSpeakerNameBackground.color = currentScene.Sentences[sentenceIndex].speaker.nameColor;
                 DialogueText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
             }
             else if (SpeakerNameText != null)
                 SpeakerNameText.gameObject.SetActive(false);
             ActSpeakers();
-            ChangeStats(currentScene.Sentences[sentenceIndex].SocialChange, currentScene.Sentences[sentenceIndex].AcademicChange, currentScene.Sentences[sentenceIndex]. StressChange);
+            ChangeStats(currentScene.Sentences[sentenceIndex].statChange, currentScene.Sentences[sentenceIndex].changeAmount);
         }
 
-        private void ChangeStats(int social, int academic, int stress)
+        private void ChangeStats(STATCHANGE statChange, int statAmount)
         {
-            GameManager.Instance.StressAmount += stress;
-            if (GameManager.Instance.StressAmount < 0)
-                GameManager.Instance.StressAmount = 0;
-            if (GameManager.Instance.StressAmount > 200)
-                GameManager.Instance.StressAmount = 200;
-
-            GameManager.Instance.AcademicAmount += academic;
-            if (GameManager.Instance.AcademicAmount < 0)
-                GameManager.Instance.AcademicAmount = 0;
-            if (GameManager.Instance.AcademicAmount > 200)
-                GameManager.Instance.AcademicAmount = 200;
-
-            GameManager.Instance.SocialAmount += social;
-            if (GameManager.Instance.SocialAmount < 0)
-                GameManager.Instance.SocialAmount = 0;
-            if (GameManager.Instance.SocialAmount > 200)
-                GameManager.Instance.SocialAmount = 200;
-
+            switch (statChange)
+            {
+                case STATCHANGE.NONE: 
+                    break;
+                case STATCHANGE.SOCIAL:
+                    GameManager.Instance.SocialAmount += statAmount;
+                    break;
+                case STATCHANGE.ACADEMICS:
+                    GameManager.Instance.AcademicAmount += statAmount;
+                    break;
+                case STATCHANGE.STRESS:
+                    GameManager.Instance.StressAmount += statAmount;
+                    break;
+            }
         }
-
+            
         private void ActSpeakers()
         {
             List<StoryScene.Sentence.Action> actions = currentScene.Sentences[sentenceIndex].Actions;
@@ -199,9 +204,8 @@ namespace SceneDirection
                         controller = sprites[action.Speaker];
                     }
                     break;
-
-
             }
+
             if (controller != null)
             {
                 Debug.Log("spritecontroller wasn't null");
@@ -224,17 +228,14 @@ namespace SceneDirection
             {
                 DialogueText.text += text[wordIndex];
                 yield return new WaitForSeconds(TextSpeed * 0.05f);
-                //ska g�res til en public variabel for indstillinger
+                //ska g�res til en public variabel for indstillinger
                 if (++wordIndex == text.Length)
                 {
                     state = DialogueState.COMPLETED;
                     break;
                 }
-
             }
         }
     }
-
-
 }
 

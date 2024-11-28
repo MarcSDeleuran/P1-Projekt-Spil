@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -12,7 +11,6 @@ namespace SceneDirection
         public OptionController option;
         public SceneDirector SC;
         public FlagManager FM;
-        private RectTransform rectTransform;
         private Animator animator;
         public TextMeshProUGUI QuestionText;
         public Image CharacterSprite;
@@ -20,9 +18,8 @@ namespace SceneDirection
         private void Start()
         {
             animator = GetComponent<Animator>();
-            rectTransform = GetComponent<RectTransform>();
-
         }
+
         public void SetupChoose(ChooseScene scene)
         {
             CharacterSprite.gameObject.SetActive(true);
@@ -42,14 +39,12 @@ namespace SceneDirection
                         Options[i].GetComponent<OptionController>().flag = scene.Options[i].FlagToSet;
                         Options[i].GetComponent<OptionController>().SetFlagTrue = scene.Options[i].setFlagTrue;
                     }
-                        
                 }
-                Options[i].GetComponent<OptionController>().StressChange = scene.Options[i].StressChange;
-                Options[i].GetComponent<OptionController>().AcademicChange = scene.Options[i].AcademicChange;
-                Options[i].GetComponent<OptionController>().SocialChange = scene.Options[i].SocialChange;
-
+                Options[i].GetComponent<OptionController>().statChange = scene.Options[i].statChange;
+                Options[i].GetComponent<OptionController>().changeAmount = scene.Options[i].changeAmount;
             }
         }
+
         public void PerformOption(StoryScene scene)
         {
             SC.PlayScene(scene);
@@ -63,8 +58,5 @@ namespace SceneDirection
                 option.SetActive(false);
             }
         }
-        
     }
-
-
 }

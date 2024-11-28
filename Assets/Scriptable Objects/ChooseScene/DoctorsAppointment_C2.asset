@@ -18,17 +18,15 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    statChange: 3
+    changeAmount: -45
   - text: "I\u2019ve tried ignoring it, but that doesn\u2019t help."
     nextScene: {fileID: 11400000, guid: 696dbf3676a2df447b037e5bd41dbb89, type: 2}
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    statChange: 0
+    changeAmount: 0
   QuestionText: There are ways to manage it.
   Music: {fileID: 0}
   Sound: {fileID: 0}
