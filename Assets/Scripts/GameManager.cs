@@ -180,7 +180,6 @@ public class GameManager : MonoBehaviour
 
         if (dataCurrent.Day >= startDate + buttonId)
         {  // Hvis datoen er over startDatoen + ugedag
-            Debug.Log("Enter this Chapter");
             mainMenuUI.SetActive(false);
             gameSceneUI.SetActive(true);
         }
