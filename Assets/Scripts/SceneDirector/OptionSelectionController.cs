@@ -44,8 +44,9 @@ namespace SceneDirection
                     }
                         
                 }
-                Options[i].GetComponent<OptionController>().statChange = scene.Options[i].statChange;
-                Options[i].GetComponent<OptionController>().changeAmount = scene.Options[i].changeAmount;
+                Options[i].GetComponent<OptionController>().StressChange = scene.Options[i].StressChange;
+                Options[i].GetComponent<OptionController>().AcademicChange = scene.Options[i].AcademicChange;
+                Options[i].GetComponent<OptionController>().SocialChange = scene.Options[i].SocialChange;
 
             }
         }
