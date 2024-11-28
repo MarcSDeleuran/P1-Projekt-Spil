@@ -15,8 +15,18 @@ MonoBehaviour:
   Options:
   - text: "\u201CWhy hide when I can stress out in Public?\u201D"
     nextScene: {fileID: 11400000, guid: 03a07f1b3fa60514c9f18a712523e96c, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\"I just figured we could tackle this little mess together.\u201D"
     nextScene: {fileID: 11400000, guid: 8ca9e1fe3fa259042afac9e04c214b5b, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: Joke or honest answer?
   Music: {fileID: 0}
   Sound: {fileID: 0}

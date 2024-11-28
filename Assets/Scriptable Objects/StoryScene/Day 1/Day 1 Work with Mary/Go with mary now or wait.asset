@@ -15,8 +15,18 @@ MonoBehaviour:
   Options:
   - text: "\u201CLets head out\u201D"
     nextScene: {fileID: 11400000, guid: 013afdc71ec345245af3e21586860377, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CWait, I need to talk to the teacher first\u201D"
     nextScene: {fileID: 11400000, guid: 28b8fdbed6f2b7241b495cdb657ca42c, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: Head out now or later?
   Music: {fileID: 0}
   Sound: {fileID: 0}

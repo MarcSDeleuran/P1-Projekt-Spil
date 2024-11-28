@@ -19,6 +19,8 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "The feeling of regret creeps up on you, you knew Jake would act like this
       and yet you still picked him. \u201CMaybe you should use the night to get some
       good sleep instead of playing video games, that would make you less tired you
@@ -27,17 +29,23 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "Jake looks angry \u201CFuck off...\u201D he mutters as he starts to pack
       bag \u201CI\u2019m going home, text me what I need to do for tomorrow.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: Jake leaves in a hurry
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "[Was i too harsh?] you think to yourself... [No that was the right thing
       to do, if I don\u2019t set some boundaries now, this will never work]. You
       reassure yourself and start working"
@@ -45,6 +53,8 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: Hours pass before you check the time again. You send Jake a few tasks to
       prepare for tomorrow, knowing he will do 1 or 2 if you are lucky.   Feeling
       good about the work you did you pack your bag and head home. You feel very
@@ -53,5 +63,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   background: {fileID: 21300000, guid: 118d77cca44441b488cd80af6c039f23, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: d3cfebf62849c2a47b67dcce0f593cc6, type: 2}

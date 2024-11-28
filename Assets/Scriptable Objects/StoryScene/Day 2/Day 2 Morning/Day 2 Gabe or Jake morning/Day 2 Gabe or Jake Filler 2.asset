@@ -16,9 +16,19 @@ MonoBehaviour:
   - text: "\u201CLunch, obviously, can\u2019t stress on an empty stomach\u201D you
       jokingly answer"
     nextScene: {fileID: 11400000, guid: 408fc684040dcac48b61df7ce2f12e5f, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CI'm considering finding a quiet corner and starting on one of these
       assignments, time is not on our side\u201D "
     nextScene: {fileID: 11400000, guid: 0b86cf2b7d9c73947a27840e956f73d3, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: What is your response?
   Music: {fileID: 0}
   Sound: {fileID: 0}

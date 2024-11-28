@@ -19,16 +19,22 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: It's a message from Mary
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "\u201CHey player name, thanks for joining last night! I hope you\u2019re
-      not too hammered out, we drank quite a bit XD. Ready to take care the assignment?\u201D "
+    statChange: 0
+    changeAmount: 0
+  - text: "\u201CHey NAME, thanks for joining last night! I hope you\u2019re not
+      too hammered out, we drank quite a bit XD. Ready to take care the assignment?\u201D "
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 16db5bcb783b23a4db41ca7d73eb801f, type: 2}

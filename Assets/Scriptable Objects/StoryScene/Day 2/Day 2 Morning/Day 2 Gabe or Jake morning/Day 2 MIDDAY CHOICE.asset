@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 2 MIDDAY CHOICE
+  m_EditorClassIdentifier: 
+  Options:
+  - text: Follow Jake and Gabe to the cafeteria
+    nextScene: {fileID: 11400000, guid: 45bacea81cc84bb43b38e78cad86f3e6, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  - text: Tell Jake and Gabe "Hey, Mary just asked me to go study with her, so i
+      will head out, see you later."
+    nextScene: {fileID: 11400000, guid: 3642fc271035e7a4c87e6fa56fe0db93, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: Lunch with Jake and Gabe or study with Mary?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

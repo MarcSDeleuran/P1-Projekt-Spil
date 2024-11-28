@@ -16,8 +16,18 @@ MonoBehaviour:
   - text: "\u201CIf we work really hard for 30 minutes, I think that should be enough
       for today, is that alright with you?\u201D"
     nextScene: {fileID: 11400000, guid: 8164e4709fc12324d93d1c539ee5eddb, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: Stay and work on the exam as you promised
     nextScene: {fileID: 11400000, guid: d617ea86d841b7243af86839a7a27c39, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: What are you going to do?
   Music: {fileID: 0}
   Sound: {fileID: 0}

@@ -19,11 +19,15 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: '*You sit in silence and consider what to say, you know you should get
-      ahead on the exam, but missing the party would suck. * '
+    statChange: 0
+    changeAmount: 0
+  - text: You sit in silence and consider what to say, you know you should get ahead
+      on the exam, but missing the party would suck.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   background: {fileID: 21300000, guid: 118d77cca44441b488cd80af6c039f23, type: 3}
   nextScene: {fileID: 11400000, guid: 1d48f3b0f8467274781ad411d1a52655, type: 2}

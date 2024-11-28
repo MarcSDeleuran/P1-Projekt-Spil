@@ -18,7 +18,9 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: ' Hey [PlayerName], you just made it '
+    statChange: 0
+    changeAmount: 0
+  - text: '"Hey NAME, you just made it."'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
@@ -28,38 +30,50 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: Oh hey Mary. Have you had a good day?
+    statChange: 0
+    changeAmount: 0
+  - text: '"Oh hey Mary. Have you had a good day?"'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "[\u201CHave you had a good day\u201D? It is morning you moron]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: ' yeah.. I guess... '
+    statChange: 0
+    changeAmount: 0
+  - text: '"yeah.. I guess..."'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: Did I make, It make it?!
+    statChange: 0
+    changeAmount: 0
+  - text: '"Did I make it?!"'
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: -1200, y: 0}
+      Coords: {x: -900, y: 0}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: Yeah yeah, you made it. We know.. the world wouldn't blow up if you were
-      5 minutes late
+    statChange: 0
+    changeAmount: 0
+  - text: '"Yeah yeah, you made it. We know.. the world wouldn''t blow up if you
+      were 5 minutes late"'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: I know... But still...
+    statChange: 0
+    changeAmount: 0
+  - text: '"I know... But still..."'
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
@@ -74,58 +88,103 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: '*Teacher walks in* '
+    statChange: 0
+    changeAmount: 0
+  - text: You find and seat and sit down as the teacher walks in.
     speaker: {fileID: 0}
     Actions:
     - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
-      ActionType: 0
+      ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 100, y: 0}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: 'Good morning class. I hope everyone had a wonderful weekend '
+    statChange: 0
+    changeAmount: 0
+  - text: '"Good morning class. I hope everyone had a wonderful weekend."'
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: 'I have some news regarding your exams.... '
+    statChange: 0
+    changeAmount: 0
+  - text: '"I have some news regarding your exams...."'
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: We have rescheduled, and your exams will be taking place on Friday.
+    statChange: 0
+    changeAmount: 0
+  - text: '"We have rescheduled, and your exams will be taking place on Friday."'
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: ' [What!!? I have only a week?? That is so unfair. There is no way I can
+    statChange: 0
+    changeAmount: 0
+  - text: '[What!!? I only have a week?? That is so unfair. There is no way I can
       get that done] '
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: You are allowed to work with one partner. Good luck everyone!
+    statChange: 0
+    changeAmount: 0
+  - text: '"You are allowed to work with one partner. Good luck everyone!"'
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: '[This is so unrealistic. I am never going to finsh before that deadline] '
+    statChange: 0
+    changeAmount: 0
+  - text: '[This is so unrealistic. I am never going to finsh before that deadline.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: You feel the stress slowly creeping up on you...
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: You collect your thoughts and spot a very calm Gabe, [Maybe he will have
+      something smart to say], you think to yourself.
+    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CHey, Gabe. Did you hear about the exam being rescheduled?\u201D"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 200, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "Oh, yeah, I just found out. Honestly, I\u2019m not too bothered, i already
+    statChange: 0
+    changeAmount: 0
+  - text: "\"Oh, yeah, I just found out. Honestly, I\u2019m not too bothered, i already
       did alot of preperation for the exam. I made a list of possible exams questions
       if you are interested?\u201D"
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
   nextScene: {fileID: 11400000, guid: c8fc3ac41300c154b96131a262b1bca2, type: 2}

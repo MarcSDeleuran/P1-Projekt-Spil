@@ -16,8 +16,18 @@ MonoBehaviour:
   - text: "\"I\u2019m not usually a party person\u2026 but I think I\u2019ll make
       an exception.\""
     nextScene: {fileID: 11400000, guid: d3ad4948450243d4caad544a5e12cb04, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\"I think I\u2019ll pass. Gotta stay focused for the exams.\""
     nextScene: {fileID: 11400000, guid: 775537ffec74e4441b5b594d1a7f2b76, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: Do you go with Mary or not?
   Music: {fileID: 0}
   Sound: {fileID: 0}

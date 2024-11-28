@@ -16,9 +16,19 @@ MonoBehaviour:
   - text: "\u201CLet\u2019s work for an hour and then take a break, then we will
       have an idea of how much work we need to do before Friday.\u201D"
     nextScene: {fileID: 11400000, guid: bcfde5ee4de6a2e4aa126ad0a9197b15, type: 2}
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
   - text: "\u201CWe have to get a head start on this exam, if we want a good grade
       we need to work hard. Is that fine with you?"
     nextScene: {fileID: 11400000, guid: 2e1ad317423a0414085f3db6d1a1ee37, type: 2}
-  QuestionText: 
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    statChange: 0
+    changeAmount: 0
+  QuestionText: What do you tell Jake?
   Music: {fileID: 0}
   Sound: {fileID: 0}

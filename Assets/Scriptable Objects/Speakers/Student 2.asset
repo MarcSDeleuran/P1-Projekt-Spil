@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eee402589795ae643be1a92c9c0f3d0c, type: 3}
   m_Name: Student 2
   m_EditorClassIdentifier: 
-  speakerName: 
+  speakerName: Student 2
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   textColor: {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 1}
   sprites: []
