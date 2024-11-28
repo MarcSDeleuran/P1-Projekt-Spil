@@ -14686,12 +14686,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueText: {fileID: 3581712750046675459}
-  leftSpeakerName: {fileID: 0}
-  rightSpeakerName: {fileID: 0}
+  leftSpeakerName: {fileID: 1719455062}
+  rightSpeakerName: {fileID: 402648766}
   LeftSpeakerNameText: {fileID: 653102542}
   RightSpeakerNameText: {fileID: 1675683426}
-  leftSpeakerNameBackground: {fileID: 0}
-  rightSpeakerNameBackground: {fileID: 0}
+  leftSpeakerNameBackground: {fileID: 1113242778}
+  rightSpeakerNameBackground: {fileID: 1268642804}
   currentScene: {fileID: 0}
   spritesPrefab: {fileID: 1188098996871490424}
   TextSpeed: 0
