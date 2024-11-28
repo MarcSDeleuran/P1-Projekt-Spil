@@ -71,7 +71,7 @@ namespace SceneDirection
                 DialogueText.text = currentScene.Sentences[sentenceIndex].text;
             state = DialogueState.COMPLETED;
             if (typingCoroutine != null)
-            StopCoroutine(typingCoroutine);
+                StopCoroutine(typingCoroutine);
         }
 
         public void HideBox()
@@ -100,9 +100,59 @@ namespace SceneDirection
             sentenceIndex = -1;
             PlayNextSentence();
         }
+        public bool SentenceCondition()
+        {
 
+            int reqs = currentScene.Sentences[++sentenceIndex].conditions.Count;
+            for (int i = 0; i < reqs; i++)
+            {
+                StatReq statReq = currentScene.Sentences[++sentenceIndex].conditions[i].statreq;
+                int amount = currentScene.Sentences[++sentenceIndex].conditions[i].amount;
+                bool fulfilled = false;
+                switch (statReq)
+                {
+                    case StatReq.AboveSocialLevel:
+                        if (amount > GameManager.Instance.SocialAmount)
+                            fulfilled = true;
+                        break;
+                    case StatReq.BelowSocialLevel:
+                        if (amount < GameManager.Instance.SocialAmount)
+                            fulfilled = true;
+                        break;
+                    case StatReq.AboveAcademicsLevel:
+                        if (amount > GameManager.Instance.AcademicAmount)
+                            fulfilled = true;
+                        break;
+                    case StatReq.BelowAcademicsLevel:
+                        if (amount < GameManager.Instance.AcademicAmount)
+                            fulfilled = true;
+                        break;
+                    case StatReq.AboveStressLevel:
+                        if (amount > GameManager.Instance.StressAmount)
+                            fulfilled = true;
+                        break;
+                    case StatReq.BelowStressLevel:
+                        if (amount < GameManager.Instance.StressAmount)
+                            fulfilled = true;
+                        break;
+
+
+                }
+                if (!fulfilled)
+                    return false;
+            }
+            return true;
+
+        }
         public void PlayNextSentence()
         {
+            if (currentScene.Sentences[++sentenceIndex].conditions.Count > 0)
+            {
+                if (!SentenceCondition())
+                {
+                    return;
+                }
+            }
             string text = currentScene.Sentences[++sentenceIndex].text;
             string newText = text.Replace("[PlayerName]", GameManager.Instance.CharacterName);
             typingCoroutine = StartCoroutine(TypeText(newText));
@@ -152,7 +202,7 @@ namespace SceneDirection
             if (GameManager.Instance.SocialAmount > 200)
                 GameManager.Instance.SocialAmount = 200;
         }
-            
+
         private void ActSpeakers()
         {
             List<StoryScene.Sentence.Action> actions = currentScene.Sentences[sentenceIndex].Actions;

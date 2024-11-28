@@ -62,7 +62,8 @@ namespace SceneDirection
                         }
                         else
                         {
-                            DC.SpeedUp();
+                            //DC.SpeedUp();
+                            DC.StopTyping();
                         }
                 }
             }

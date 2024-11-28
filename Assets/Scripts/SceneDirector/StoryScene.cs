@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 namespace SceneDirection
 {
@@ -15,6 +16,8 @@ namespace SceneDirection
         {
             public string text;
             public Speaker speaker;
+            
+            public List<Condition> conditions;
             public List<Action> Actions;
 
             public AudioClip Music;
@@ -39,7 +42,23 @@ namespace SceneDirection
                     NONE, APPEAR, MOVE, FLIP, DISAPPEAR
                 }
             }
+            [System.Serializable]
+            public struct Condition
+            {
+                public StatReq statreq;
+                public int amount;
+            }
         }
+    }
+    public enum StatReq
+    {
+        AboveStressLevel,
+        BelowStressLevel,
+        AboveSocialLevel,
+        BelowSocialLevel,
+        AboveAcademicsLevel,
+        BelowAcademicsLevel
+
     }
 
     public class GameScene : ScriptableObject { }
