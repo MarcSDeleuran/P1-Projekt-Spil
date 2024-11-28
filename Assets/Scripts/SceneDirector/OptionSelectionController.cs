@@ -17,6 +17,7 @@ namespace SceneDirection
         public TextMeshProUGUI QuestionText;
         public Image CharacterSprite;
 
+
         private void Start()
         {
             animator = GetComponent<Animator>();
@@ -44,15 +45,12 @@ namespace SceneDirection
                     }
                         
                 }
-<<<<<<< HEAD
-                Options[i].GetComponent<OptionController>().statChange = scene.Options[i].statChange;
-                Options[i].GetComponent<OptionController>().changeAmount = scene.Options[i].changeAmount;
-=======
+
                 Options[i].GetComponent<OptionController>().StressChange = scene.Options[i].StressChange;
                 Options[i].GetComponent<OptionController>().AcademicChange = scene.Options[i].AcademicChange;
                 Options[i].GetComponent<OptionController>().SocialChange = scene.Options[i].SocialChange;
 
->>>>>>> 3692831a8fc5f4036218b97d2e8df0b91b1d61f1
+
             }
         }
         public void PerformOption(StoryScene scene)

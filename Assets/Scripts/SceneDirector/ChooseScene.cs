@@ -27,31 +27,14 @@ namespace SceneDirection
             public bool setFlagTrue;
             public STORYFLAG FlagToSet;
 
-<<<<<<< HEAD
-            public STATCHANGE statChange;
-            public int changeAmount;
-        }
-    }
-
-    public enum STATCHANGE
-    {
-        NONE,
-        SOCIAL,
-        ACADEMICS,
-        STRESS
-    }
-=======
             public int StressChange;
             public int AcademicChange;
             public int SocialChange;
-
-
-
-
-
         }
     }
-
-
->>>>>>> 3692831a8fc5f4036218b97d2e8df0b91b1d61f1
 }
+
+
+
+
+

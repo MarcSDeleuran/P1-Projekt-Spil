@@ -1,10 +1,5 @@
 using SceneDirection;
-<<<<<<< HEAD
-using TMPro;
-using UnityEngine;
-using UnityEngine.EventSystems;
 
-=======
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SocialPlatforms;
->>>>>>> 3692831a8fc5f4036218b97d2e8df0b91b1d61f1
+
 public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Color defaultColor;
@@ -22,8 +17,9 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public STORYFLAG flag = STORYFLAG.NONE;
     public bool SetFlagTrue;
 
-    public STATCHANGE statChange;
-    public int changeAmount;
+    public int StressChange;
+    public int AcademicChange;
+    public int SocialChange;
 
 
     void Awake()
@@ -44,22 +40,7 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     }
     private void ChangeStats()
     {
-<<<<<<< HEAD
-        switch (statChange)
-        {
-            case STATCHANGE.NONE:
-                break;
-            case STATCHANGE.SOCIAL:
-                GameManager.Instance.SocialAmount += changeAmount;
-                break;
-            case STATCHANGE.ACADEMICS:
-                GameManager.Instance.AcademicAmount += changeAmount;
-                break;
-            case STATCHANGE.STRESS:
-                GameManager.Instance.StressAmount += changeAmount;
-                break;
-        }
-=======
+
         GameManager.Instance.StressAmount += StressChange;
         if (GameManager.Instance.StressAmount < 0)
             GameManager.Instance.StressAmount = 0;
@@ -78,7 +59,7 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
         if (GameManager.Instance.SocialAmount > 200)
             GameManager.Instance.SocialAmount = 200;
 
->>>>>>> 3692831a8fc5f4036218b97d2e8df0b91b1d61f1
+
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
 namespace SceneDirection
@@ -127,25 +129,28 @@ namespace SceneDirection
             else if (SpeakerNameText != null)
                 SpeakerNameText.gameObject.SetActive(false);
             ActSpeakers();
-            ChangeStats(currentScene.Sentences[sentenceIndex].statChange, currentScene.Sentences[sentenceIndex].changeAmount);
+            ChangeStats(currentScene.Sentences[sentenceIndex].SocialChange, currentScene.Sentences[sentenceIndex].AcademicChange, currentScene.Sentences[sentenceIndex].StressChange);
         }
 
-        private void ChangeStats(STATCHANGE statChange, int statAmount)
+        private void ChangeStats(int social, int academic, int stress)
         {
-            switch (statChange)
-            {
-                case STATCHANGE.NONE: 
-                    break;
-                case STATCHANGE.SOCIAL:
-                    GameManager.Instance.SocialAmount += statAmount;
-                    break;
-                case STATCHANGE.ACADEMICS:
-                    GameManager.Instance.AcademicAmount += statAmount;
-                    break;
-                case STATCHANGE.STRESS:
-                    GameManager.Instance.StressAmount += statAmount;
-                    break;
-            }
+            GameManager.Instance.StressAmount += stress;
+            if (GameManager.Instance.StressAmount < 0)
+                GameManager.Instance.StressAmount = 0;
+            if (GameManager.Instance.StressAmount > 200)
+                GameManager.Instance.StressAmount = 200;
+
+            GameManager.Instance.AcademicAmount += academic;
+            if (GameManager.Instance.AcademicAmount < 0)
+                GameManager.Instance.AcademicAmount = 0;
+            if (GameManager.Instance.AcademicAmount > 200)
+                GameManager.Instance.AcademicAmount = 200;
+
+            GameManager.Instance.SocialAmount += social;
+            if (GameManager.Instance.SocialAmount < 0)
+                GameManager.Instance.SocialAmount = 0;
+            if (GameManager.Instance.SocialAmount > 200)
+                GameManager.Instance.SocialAmount = 200;
         }
             
         private void ActSpeakers()
