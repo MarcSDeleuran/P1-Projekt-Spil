@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public int AcademicAmount = -1;
     public int SocialAmount = -1;
     public string CharacterName;
-
+    public StatChangeAnimator STA;
     public void Awake()
     {
         if (Instance != null && Instance != this)

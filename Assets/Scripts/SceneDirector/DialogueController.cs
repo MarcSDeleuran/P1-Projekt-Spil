@@ -134,11 +134,17 @@ namespace SceneDirection
 
         private void ChangeStats(int social, int academic, int stress)
         {
+            StatChangeAnimator STA = GameManager.Instance.STA;
             GameManager.Instance.StressAmount += stress;
             if (GameManager.Instance.StressAmount < 0)
                 GameManager.Instance.StressAmount = 0;
             if (GameManager.Instance.StressAmount > 200)
                 GameManager.Instance.StressAmount = 200;
+
+            if (stress > 0 && stress != 0)
+                STA.ShowStatChange("Stress", true);
+            else if (stress != 0)
+                STA.ShowStatChange("Stress", false);
 
             GameManager.Instance.AcademicAmount += academic;
             if (GameManager.Instance.AcademicAmount < 0)
@@ -146,11 +152,21 @@ namespace SceneDirection
             if (GameManager.Instance.AcademicAmount > 200)
                 GameManager.Instance.AcademicAmount = 200;
 
+            if (academic > 0 && academic != 0)
+                STA.ShowStatChange("Academics", true);
+            else if (academic != 0)
+                STA.ShowStatChange("Academics", false);
+
             GameManager.Instance.SocialAmount += social;
             if (GameManager.Instance.SocialAmount < 0)
                 GameManager.Instance.SocialAmount = 0;
             if (GameManager.Instance.SocialAmount > 200)
                 GameManager.Instance.SocialAmount = 200;
+
+            if (social > 0 && social != 0)
+                STA.ShowStatChange("Social", true);
+            else if (social != 0)
+                STA.ShowStatChange("Social", false);
         }
             
         private void ActSpeakers()

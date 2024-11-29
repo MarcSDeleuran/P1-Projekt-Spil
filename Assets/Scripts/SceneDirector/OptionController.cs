@@ -20,7 +20,7 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public int StressChange;
     public int AcademicChange;
     public int SocialChange;
-
+    
 
     void Awake()
     {
@@ -40,6 +40,7 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     }
     private void ChangeStats()
     {
+        StatChangeAnimator STA = GameManager.Instance.STA;
 
         GameManager.Instance.StressAmount += StressChange;
         if (GameManager.Instance.StressAmount < 0)
@@ -47,17 +48,33 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
         if (GameManager.Instance.StressAmount > 200)
             GameManager.Instance.StressAmount = 200;
 
+        if (StressChange > 0 && StressChange != 0)
+            STA.ShowStatChange("Stress", true);
+        else if (StressChange != 0)
+            STA.ShowStatChange("Stress", false);
+
         GameManager.Instance.AcademicAmount += AcademicChange;
         if (GameManager.Instance.AcademicAmount < 0)
             GameManager.Instance.AcademicAmount = 0;
         if (GameManager.Instance.AcademicAmount > 200)
             GameManager.Instance.AcademicAmount = 200;
 
+        if (AcademicChange > 0 && AcademicChange != 0)
+            STA.ShowStatChange("Academics", true);
+        else if (StressChange != 0)
+            STA.ShowStatChange("Academics", false);
+
         GameManager.Instance.SocialAmount += SocialChange;
         if (GameManager.Instance.SocialAmount < 0)
             GameManager.Instance.SocialAmount = 0;
         if (GameManager.Instance.SocialAmount > 200)
             GameManager.Instance.SocialAmount = 200;
+
+
+        if (SocialChange > 0 && SocialChange != 0)
+            STA.ShowStatChange("Social", true);
+        else if (StressChange != 0)
+            STA.ShowStatChange("Social", false);
 
 
     }
