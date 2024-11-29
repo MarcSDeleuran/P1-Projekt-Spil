@@ -7,6 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SocialPlatforms;
+using UnityEngine.UI;
 
 public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
@@ -20,7 +21,8 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public int StressChange;
     public int AcademicChange;
     public int SocialChange;
-    
+    public Color HoverBackgroundColor;
+    public Color DefaultBackgroundColor;
 
     void Awake()
     {
@@ -81,10 +83,12 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public void OnPointerEnter(PointerEventData eventData)
     {
         textMesh.color = hoverColor;
+        GetComponent<Image>().color = HoverBackgroundColor;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         textMesh.color = defaultColor;
+        GetComponent<Image>().color = DefaultBackgroundColor;
     }
 }
