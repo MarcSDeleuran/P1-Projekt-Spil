@@ -16,19 +16,21 @@ MonoBehaviour:
   - text: "I\u2019ve just had a hard time finding balance between my studies and
       everything else."
     nextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
+    StressChange: 4
+    AcademicChange: -10
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 3
-    changeAmount: 70
   - text: "It feels like there\u2019s always something I should be doing, and I rarely
       have time to relax."
     nextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 2
-    changeAmount: 35
   QuestionText: "Can you tell me more about what\u2019s going on?"
   Music: {fileID: 0}
   Sound: {fileID: 0}
