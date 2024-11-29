@@ -23,6 +23,7 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public int SocialChange;
     public Color HoverBackgroundColor;
     public Color DefaultBackgroundColor;
+    public Image ChoiceIcon;
 
     void Awake()
     {

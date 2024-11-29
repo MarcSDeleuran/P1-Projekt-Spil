@@ -81,11 +81,15 @@ namespace SceneDirection
                     optionController.AcademicChange = option.AcademicChange;
                     optionController.SocialChange = option.SocialChange;
 
+                    if (option.ChoiceIcon != null)
+                        optionController.ChoiceIcon.sprite = option.ChoiceIcon;
+                    else
+                        optionController.ChoiceIcon.gameObject.SetActive(false);
  
                     TMP_Text buttonText = newButton.GetComponentInChildren<TMP_Text>();
                     buttonText.text = option.text;
 
-
+                    Options.Add(newButton);
                     newButton.gameObject.SetActive(true);
                 }
             }
@@ -101,9 +105,9 @@ namespace SceneDirection
 
         private void DestroyOptions()
         {
-            foreach (GameObject option in Options)
+            for (int i = 0; i < Options.Count; i++) 
             {
-                option.SetActive(false);
+                Destroy(Options[i]);
             }
         }
         

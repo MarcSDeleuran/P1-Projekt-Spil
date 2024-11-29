@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SceneDirection
 {
@@ -33,6 +34,7 @@ namespace SceneDirection
             public STORYFLAG flag;
             public bool setFlagTrue;
             public STORYFLAG FlagToSet;
+            public Sprite ChoiceIcon;
         }
     }
 }

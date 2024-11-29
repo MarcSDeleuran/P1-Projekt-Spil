@@ -22,6 +22,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 21300000, guid: 8f576a5978c1e41a7889d43ddbaaa0b0, type: 3}
   - text: "It feels like there\u2019s always something I should be doing, and I rarely
       have time to relax."
     nextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
@@ -31,6 +32,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 21300000, guid: ab9d13e534d22bf4aae327ffbabf8c80, type: 3}
   QuestionText: "Can you tell me more about what\u2019s going on?"
   Music: {fileID: 0}
   Sound: {fileID: 0}
