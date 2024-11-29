@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 4.2 S
+  m_Name: 4.1
   m_EditorClassIdentifier: 
   Sentences:
   - text: The main character starts to panic, the heartbeat is rising
@@ -72,4 +72,4 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 033cb54722e168c408ac2b8d71ee24f2, type: 2}

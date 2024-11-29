@@ -10,26 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 4.3a S
+  m_Name: 4.0.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: '[I need to be ready tho.. I am not ready for this Exam at all.]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: "[I don\u2019t want to disappoint me parents\u2026]"
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: '[I need this to go well, so I have to push myself]'
+  - text: "[I haven\u2019t prepared enough. I\u2019ll need to work hard today to
+      catch up]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}

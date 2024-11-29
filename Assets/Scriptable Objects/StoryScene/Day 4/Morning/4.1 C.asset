@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: Day 4.1 C
+  m_Name: 4.1 C
   m_EditorClassIdentifier: 
   Options:
   - text: (Low academic score)
-    nextScene: {fileID: 11400000, guid: c3de41208bed65748a395648cb1c8a1e, type: 2}
+    nextScene: {fileID: 11400000, guid: 08480a0ef751f8c4db1bf5dcc47ee886, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
   - text: (High stress score)
-    nextScene: {fileID: 11400000, guid: b8d5aaa104c293e4a81ee819d53854af, type: 2}
+    nextScene: {fileID: 11400000, guid: 40a0be7a9325d88408b745eff200801d, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
