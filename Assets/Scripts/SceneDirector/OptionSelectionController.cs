@@ -16,7 +16,8 @@ namespace SceneDirection
         private Animator animator;
         public TextMeshProUGUI QuestionText;
         public Image CharacterSprite;
-
+        public GameObject Choice;
+        public GameObject ChoiceContainer;
 
         private void Start()
         {
@@ -24,34 +25,73 @@ namespace SceneDirection
             rectTransform = GetComponent<RectTransform>();
 
         }
+        //public void SetupChoose(ChooseScene scene)
+        //{
+        //    CharacterSprite.gameObject.SetActive(true);
+        //    DestroyOptions();
+        //    animator.SetTrigger("ShowSelection");
+        //    QuestionText.text = scene.QuestionText;
+        //    QuestionText.gameObject.SetActive(true);
+        //    for (int i = 0; i < scene.Options.Count; i++)
+        //    {
+
+        //        if (scene.Options[i].flag == STORYFLAG.NONE || FM.CheckFlag(scene.Options[i].flag))
+        //        {
+        //            Options[i].GetComponent<OptionController>().scene = scene.Options[i].nextScene;
+        //            Options[i].GetComponent<OptionController>().textMesh.text = scene.Options[i].text;
+        //            Options[i].gameObject.SetActive(true);
+        //            if (scene.Options[i].FlagToSet != STORYFLAG.NONE)
+        //            {
+        //                Options[i].GetComponent<OptionController>().flag = scene.Options[i].FlagToSet;
+        //                Options[i].GetComponent<OptionController>().SetFlagTrue = scene.Options[i].setFlagTrue;
+        //            }
+
+        //        }
+
+        //        Options[i].GetComponent<OptionController>().StressChange = scene.Options[i].StressChange;
+        //        Options[i].GetComponent<OptionController>().AcademicChange = scene.Options[i].AcademicChange;
+        //        Options[i].GetComponent<OptionController>().SocialChange = scene.Options[i].SocialChange;
+
+
+        //    }
+        //}
         public void SetupChoose(ChooseScene scene)
         {
-            CharacterSprite.gameObject.SetActive(true);
+
             DestroyOptions();
-            animator.SetTrigger("ShowSelection");
+
+
+            CharacterSprite.gameObject.SetActive(true);
             QuestionText.text = scene.QuestionText;
             QuestionText.gameObject.SetActive(true);
-            for (int i = 0; i < scene.Options.Count; i++)
+
+
+            foreach (var option in scene.Options)
             {
-                if (scene.Options[i].flag == STORYFLAG.NONE || FM.CheckFlag(scene.Options[i].flag))
+                if (option.flag == STORYFLAG.NONE || FM.CheckFlag(option.flag))
                 {
-                    Options[i].GetComponent<OptionController>().scene = scene.Options[i].nextScene;
-                    Options[i].GetComponent<OptionController>().textMesh.text = scene.Options[i].text;
-                    Options[i].gameObject.SetActive(true);
-                    if (scene.Options[i].FlagToSet != STORYFLAG.NONE)
-                    {
-                        Options[i].GetComponent<OptionController>().flag = scene.Options[i].FlagToSet;
-                        Options[i].GetComponent<OptionController>().SetFlagTrue = scene.Options[i].setFlagTrue;
-                    }
-                        
+
+                    GameObject newButton = Instantiate(Choice, ChoiceContainer.transform); 
+                    OptionController optionController = newButton.GetComponent<OptionController>();
+
+                    optionController.scene = option.nextScene;
+                    optionController.flag = option.FlagToSet;
+                    optionController.SetFlagTrue = option.setFlagTrue;
+                    optionController.StressChange = option.StressChange;
+                    optionController.AcademicChange = option.AcademicChange;
+                    optionController.SocialChange = option.SocialChange;
+
+ 
+                    TMP_Text buttonText = newButton.GetComponentInChildren<TMP_Text>();
+                    buttonText.text = option.text;
+
+
+                    newButton.gameObject.SetActive(true);
                 }
-
-                Options[i].GetComponent<OptionController>().StressChange = scene.Options[i].StressChange;
-                Options[i].GetComponent<OptionController>().AcademicChange = scene.Options[i].AcademicChange;
-                Options[i].GetComponent<OptionController>().SocialChange = scene.Options[i].SocialChange;
-
-
             }
+
+
+            animator.SetTrigger("ShowSelection");
         }
         public void PerformOption(StoryScene scene)
         {
