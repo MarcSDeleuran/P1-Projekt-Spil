@@ -13,12 +13,14 @@ MonoBehaviour:
   m_Name: OutsideDoctors
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Click on the right side of the screen, or use your space bar to advance
+  - text: Press [Space] to advance.
     speaker: {fileID: 0}
+    characterSprite: {fileID: 0}
     Actions: []
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
   background: {fileID: 21300000, guid: af61006b1a7b2fd48ac82ba12d882627, type: 3}
   nextScene: {fileID: 11400000, guid: 943695e70e893d54a8133a8ab8805094, type: 2}

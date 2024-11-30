@@ -15,32 +15,35 @@ MonoBehaviour:
   Sentences:
   - text: Yes? Ah, Thank you for coming in today.
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    characterSprite: {fileID: 21300000, guid: 217ec07e7d1089040908393f4fb1a3c9, type: 3}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
       ActionType: 1
       SpriteIndex: 0
       Coords: {x: 200, y: 0}
       MoveSpeed: 0
-    Music: {fileID: 8300000, guid: 45f34178c4a62824b91c6875475bcd14, type: 3}
-    Sound: {fileID: 0}
-    StressChange: 34
-    AcademicChange: 32
-    SocialChange: 5
-  - text: "I understand you\u2019ve been feeling a bit overwhelmed lately, mr. uhh..."
-    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 8300000, guid: 9e82d370216b6ae439fbda67efc6ab8d, type: 3}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: I'm terribly sorry, but would you remind me. What is your name again?
+    Music: {fileID: 8300000, guid: 45f34178c4a62824b91c6875475bcd14, type: 3}
+    Sound: {fileID: 0}
+  - text: "I understand you\u2019ve been feeling a bit overwhelmed lately, mr. uhh..."
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    characterSprite: {fileID: 21300000, guid: af9e3f2e202bdda4f91a6db87f57f1a9, type: 3}
     Actions: []
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
     Music: {fileID: 0}
     Sound: {fileID: 8300000, guid: 9e82d370216b6ae439fbda67efc6ab8d, type: 3}
-    StressChange: 20
-    AcademicChange: -40
+  - text: I'm terribly sorry, but would you remind me. What is your name again?
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    characterSprite: {fileID: 21300000, guid: 217ec07e7d1089040908393f4fb1a3c9, type: 3}
+    Actions: []
+    StressChange: 0
+    AcademicChange: 0
     SocialChange: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 8300000, guid: 9e82d370216b6ae439fbda67efc6ab8d, type: 3}
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
   nextScene: {fileID: 11400000, guid: bdcf1513a3dc0f04690adb918dbf459c, type: 2}

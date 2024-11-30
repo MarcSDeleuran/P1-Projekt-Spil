@@ -11,6 +11,7 @@ public class StatsAndJournal : MonoBehaviour {
     [SerializeField] private Button journalBackButton;
     [SerializeField] private GameObject statsUI;
     [SerializeField] private GameObject journalUI;
+    [SerializeField] private GameObject inGameUI;
     [Space(10)]
     [SerializeField] private Slider stressSlider;
     [SerializeField] private Slider academicSlider;
@@ -40,16 +41,17 @@ public class StatsAndJournal : MonoBehaviour {
         statsButton.onClick.AddListener(() => {
             StartCoroutine(WaitBeforeUpdating());
             statsUI.SetActive(true);
-            GameManager.Instance.SD.VNACTIVE = false;
+            inGameUI.SetActive(false);
+
             // Start fra bunden
             stressSlider.value = 0;
             academicSlider.value = 0;
             socialSlider.value = 0;
         });
         statsBackButton.onClick.AddListener(() => {
-            GameManager.Instance.SD.VNACTIVE = true;
             inStats = false;
             statsUI.SetActive(false);
+            inGameUI.SetActive(true);
         });
         journalButton.onClick.AddListener(() => {
             journalUI.SetActive(true);
@@ -115,15 +117,15 @@ public class StatsAndJournal : MonoBehaviour {
 
     private void Update(){
         if (inStats){
-            float stressScore = GameManager.Instance.StressAmount; // Skal udskiftes med score score
+            float stressScore = SavedData.Instance.StressAmount; // Skal udskiftes med score score
             if (stressSlider.value != stressScore){
                 stressSlider.value = Mathf.Lerp(stressSlider.value, stressScore, 4f * Time.deltaTime);
             }
-            float academicScore = GameManager.Instance.AcademicAmount;// Skal udskiftes med academic score
+            float academicScore = SavedData.Instance.AcademicAmount;// Skal udskiftes med academic score
             if (academicSlider.value != academicScore){
                 academicSlider.value = Mathf.Lerp(academicSlider.value, academicScore, 4f * Time.deltaTime);
             }
-            float socialScore = GameManager.Instance.SocialAmount;
+            float socialScore = SavedData.Instance.SocialAmount;
             if (socialSlider.value != socialScore){
                 socialSlider.value = Mathf.Lerp(socialSlider.value, socialScore, 4f * Time.deltaTime);
             }

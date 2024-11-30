@@ -1,95 +1,70 @@
-using SceneDirection;
-
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
-public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
-{
-    public Color defaultColor;
-    public Color hoverColor;
-    public StoryScene scene;
-    public TextMeshProUGUI textMesh;
-    public STORYFLAG flag = STORYFLAG.NONE;
-    public bool SetFlagTrue;
+public class OptionController : MonoBehaviour {
 
+    [Header("Stats")]
     public int StressChange;
     public int AcademicChange;
     public int SocialChange;
-    public Color HoverBackgroundColor;
-    public Color DefaultBackgroundColor;
-    public Image ChoiceIcon;
 
-    void Awake()
-    {
-        textMesh = GetComponentInChildren<TextMeshProUGUI>();
-        textMesh.color = defaultColor;
+    [Header("References")]
+    public StorySceneSO scene;
+    public TextMeshProUGUI textMesh;
+
+    private void Awake(){
+        GetComponent<Button>().onClick.AddListener(() => {
+            ChangeStats();
+            GameManager.Instance.PlayGameScene(scene);
+            GameManager.Instance.choiceUI.GetComponent<Animator>().SetTrigger("Out");
+        });
     }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (flag != STORYFLAG.NONE)
-            gameObject.GetComponentInParent<OptionSelectionController>().FM.SetFlag(flag, SetFlagTrue);
-        ChangeStats();
+    private void ChangeStats(){
+        SavedData.Instance.StressAmount += StressChange;
+        if (SavedData.Instance.StressAmount < 0){
+            SavedData.Instance.StressAmount = 0;
+        }
+            
+        if (SavedData.Instance.StressAmount > 200){
+            SavedData.Instance.StressAmount = 200;
+        }
 
+        if (StressChange > 0 && StressChange != 0){
+            GameManager.Instance.ShowStatChange("Stress", true, true);
+        } else if (StressChange != 0){
+            GameManager.Instance.ShowStatChange("Stress", false, true);
+        }
+            
+        SavedData.Instance.AcademicAmount += AcademicChange;
+        if (SavedData.Instance.AcademicAmount < 0){
+            SavedData.Instance.AcademicAmount = 0;
+        }
 
-        gameObject.GetComponentInParent<OptionSelectionController>().PerformOption(scene);
+        if (SavedData.Instance.AcademicAmount > 200){
+            SavedData.Instance.AcademicAmount = 200;
+        }
 
-    }
-    private void ChangeStats()
-    {
-        StatChangeAnimator STA = GameManager.Instance.STA;
+        if (AcademicChange > 0 && AcademicChange != 0){
+            GameManager.Instance.ShowStatChange("Academics", true, false);
+        } else if (StressChange != 0){
+            GameManager.Instance.ShowStatChange("Academics", false, false);
+        }
+            
+        SavedData.Instance.SocialAmount += SocialChange;
+        if (SavedData.Instance.SocialAmount < 0){
+            SavedData.Instance.SocialAmount = 0;
+        }
+            
+        if (SavedData.Instance.SocialAmount > 200){
+            SavedData.Instance.SocialAmount = 200;
+        } 
 
-        GameManager.Instance.StressAmount += StressChange;
-        if (GameManager.Instance.StressAmount < 0)
-            GameManager.Instance.StressAmount = 0;
-        if (GameManager.Instance.StressAmount > 200)
-            GameManager.Instance.StressAmount = 200;
-
-        if (StressChange > 0 && StressChange != 0)
-            STA.ShowStatChange("Stress", true);
-        else if (StressChange != 0)
-            STA.ShowStatChange("Stress", false);
-
-        GameManager.Instance.AcademicAmount += AcademicChange;
-        if (GameManager.Instance.AcademicAmount < 0)
-            GameManager.Instance.AcademicAmount = 0;
-        if (GameManager.Instance.AcademicAmount > 200)
-            GameManager.Instance.AcademicAmount = 200;
-
-        if (AcademicChange > 0 && AcademicChange != 0)
-            STA.ShowStatChange("Academics", true);
-        else if (StressChange != 0)
-            STA.ShowStatChange("Academics", false);
-
-        GameManager.Instance.SocialAmount += SocialChange;
-        if (GameManager.Instance.SocialAmount < 0)
-            GameManager.Instance.SocialAmount = 0;
-        if (GameManager.Instance.SocialAmount > 200)
-            GameManager.Instance.SocialAmount = 200;
-
-
-        if (SocialChange > 0 && SocialChange != 0)
-            STA.ShowStatChange("Social", true);
-        else if (StressChange != 0)
-            STA.ShowStatChange("Social", false);
-
-
-    }
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        textMesh.color = hoverColor;
-        GetComponent<Image>().color = HoverBackgroundColor;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        textMesh.color = defaultColor;
-        GetComponent<Image>().color = DefaultBackgroundColor;
+        if (SocialChange > 0 && SocialChange != 0){
+            GameManager.Instance.ShowStatChange("Social", true, false);
+        } else if (StressChange != 0){
+            GameManager.Instance.ShowStatChange("Social", false, false);
+        }
     }
 }
