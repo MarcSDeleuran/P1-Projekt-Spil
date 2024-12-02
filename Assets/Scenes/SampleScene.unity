@@ -10792,7 +10792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2f306666b441b4395ea4d9aafe8129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDate: 25
+  startDate: 2
   stressText: {fileID: 4685932806515806339}
   academicText: {fileID: 3312672623191912042}
   socialText: {fileID: 2519771144418735075}

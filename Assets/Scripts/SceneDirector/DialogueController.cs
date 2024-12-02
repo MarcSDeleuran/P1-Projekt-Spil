@@ -78,14 +78,14 @@ namespace SceneDirection
         {
             if (!isHidden)
             {
-                animator.SetTrigger("HideBox");
+                animator.SetTrigger("Hide");
                 isHidden = true;
             }
         }
 
         public void ShowBox()
         {
-            animator.SetTrigger("ShowBox");
+            animator.SetTrigger("Show");
             isHidden = false;
         }
 

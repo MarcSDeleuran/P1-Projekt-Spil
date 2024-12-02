@@ -81,6 +81,8 @@ namespace SceneDirection
         }
         public void SaveName()
         {
+            if (NameField.GetComponentInChildren<TMPro.TMP_InputField>().text == "")
+                return;
             GameManager.Instance.CharacterName = NameField.GetComponentInChildren<TMPro.TMP_InputField>().text;
             VNACTIVE = true;
             WriteScene ws = currentScene as WriteScene;
