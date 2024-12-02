@@ -19,7 +19,7 @@ namespace SceneDirection
 
         public void ShowStatChange(string statName, bool isIncrease)
         {
-            bool inverseColors = statName == "statName";
+            bool inverseColors = statName == "Stress";
 
             GameObject statChangeInstance = Instantiate(statChangePrefab, statChangeContainer);
             StatChangeUI statChangeComponent = statChangeInstance.GetComponent<StatChangeUI>();
