@@ -63,6 +63,7 @@ namespace SceneDirection
                 Debug.Log(scene.Options[i].ChoiceIcon);
                 if (scene.Options[i].ChoiceIcon != null){
                     optionController.ChoiceIcon.sprite = scene.Options[i].ChoiceIcon;
+                    optionController.ChoiceIcon.gameObject.SetActive(true);
                 } else {
                     optionController.ChoiceIcon.gameObject.SetActive(false);
                 }

@@ -158,16 +158,15 @@ public class GameManager : MonoBehaviour
             List<int> historyIndices = new List<int>();
             SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
 
-            int defaultValue = 100;
             saveObject = new SaveData
             {
                 flags = FM.flags,
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
 
-                stressAmount = defaultValue,
-                academicAmount = defaultValue,
-                socialAmount = defaultValue,
+                stressAmount = 50,
+                academicAmount = 100,
+                socialAmount = 100,
                 characterName = CharacterName
             };
             StressAmount = saveObject.stressAmount;
