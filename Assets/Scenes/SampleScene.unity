@@ -20478,8 +20478,8 @@ MonoBehaviour:
   currentScene: {fileID: 0}
   animator: {fileID: 6102676566779400105}
   spritesPrefab: {fileID: 1188098996871490424}
-  TextSpeed: 0
-  defaultTextSpeed: 0.5
+  TextSpeed: 0.8
+  defaultTextSpeed: 0.8
 --- !u!114 &3542800590428018251
 MonoBehaviour:
   m_ObjectHideFlags: 0

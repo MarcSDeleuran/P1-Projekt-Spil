@@ -128,6 +128,8 @@ namespace SceneDirection
             }
             else if (SpeakerNameText != null)
                 SpeakerNameText.gameObject.SetActive(false);
+                DialogueText.color = Color.white;
+
             ActSpeakers();
             ChangeStats(currentScene.Sentences[sentenceIndex].SocialChange, currentScene.Sentences[sentenceIndex].AcademicChange, currentScene.Sentences[sentenceIndex].StressChange);
         }

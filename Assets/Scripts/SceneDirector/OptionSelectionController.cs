@@ -33,6 +33,19 @@ namespace SceneDirection
             choicesBackground.sizeDelta = new Vector3(1720, choicesBackgroundHeight);
             QuestionText.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, choicesBackgroundHeight + 490);
 
+            foreach (Transform child in ChoiceContainer.transform){
+                GameObject referencedButton = child.gameObject;
+                OptionController optionController = referencedButton.GetComponent<OptionController>();
+                optionController.textMesh.text = "";
+
+                optionController.scene = null;
+                optionController.SetFlagTrue = false;
+                optionController.StressChange = 0;
+                optionController.AcademicChange = 0;
+                optionController.SocialChange = 0;
+                referencedButton.SetActive(false);
+            }
+
             for (int i = 0; i < scene.Options.Count; i++){
                 GameObject referencedButton = ChoiceContainer.transform.GetChild(i).gameObject;
                 OptionController optionController = referencedButton.GetComponent<OptionController>();
@@ -46,15 +59,15 @@ namespace SceneDirection
                 optionController.AcademicChange = scene.Options[i].AcademicChange;
                 optionController.SocialChange = scene.Options[i].SocialChange;
 
-                if (option[i].ChoiceIcon != null)
+                if (scene.Options[i].ChoiceIcon != null){
                     optionController.ChoiceIcon.sprite = scene.Options[i].ChoiceIcon;
-                else
+                } else {
                     optionController.ChoiceIcon.gameObject.SetActive(false);
+                }
  
-                TMP_Text buttonText = referencedButton.GetComponentInChildren<TMP_Text>();
-                buttonText.text = scene.Options[i].text;
+                optionController.textMesh.text = scene.Options[i].text;
                 if (option[i].flag != STORYFLAG.NONE /*|| FM.CheckFlag(option[i].flag)*/){
-                    buttonText.color = Color.red;
+                    optionController.textMesh.color = Color.red;
                 }
             }
 
