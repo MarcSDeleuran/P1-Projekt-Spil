@@ -16,7 +16,7 @@ namespace SceneDirection
         public List<StoryScene> history;
         public bool VNACTIVE;
         public GameObject NameField;
-
+        public float SwitchTime;
         private enum SceneState
         {
             IDLE, ANIMATE, CHOOSE
@@ -131,7 +131,7 @@ namespace SceneDirection
 
                 DC.ClearText();
                 DC.ShowBox();
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(SwitchTime);
                 DC.PlayScene(storyScene);
                 state = SceneState.IDLE;
             }
