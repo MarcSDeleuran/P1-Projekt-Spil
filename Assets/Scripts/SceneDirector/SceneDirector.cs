@@ -116,6 +116,14 @@ namespace SceneDirection
                 VNACTIVE = false;
                 NameField.SetActive(true);
             }
+            if (scene is FlowScene)
+            {
+                FlowScene FlowScene = (FlowScene)scene;
+                foreach (var sr in FlowScene.scenes)
+                {
+                    // to be implemented
+                }
+            }
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
