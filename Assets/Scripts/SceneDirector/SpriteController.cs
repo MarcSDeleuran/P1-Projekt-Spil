@@ -19,6 +19,7 @@ namespace SceneDirection
             switcher = GetComponent<SpriteSwitcher>();
             animator = GetComponent<Animator>();
             rect = GetComponent<RectTransform>();
+            animator.SetFloat("speedmultiplier", GameManager.Instance.animationMultiplier);
         }
 
         public void Setup(Sprite sprite)

@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using System.IO;
 using SceneDirection;
+using UnityEditor.Animations;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
     public int SocialAmount = -1;
     public string CharacterName;
     public StatChangeAnimator STA;
+    public float animationMultiplier;
+    
     public void Awake()
     {
         if (Instance != null && Instance != this)
@@ -46,6 +49,19 @@ public class GameManager : MonoBehaviour
         { // Opret 'Save' mappe hvis den ikke findes
             Directory.CreateDirectory(Application.dataPath + "/Saves/");
         }
+    }
+    
+    public void ChangeAnimationMultiplier(float f)
+    {
+        SD.BackgroundSwitcher.GetComponent<Animator>().SetFloat("speedmultiplier", f);
+        for (int i = 0; i < SD.DC.spritesPrefab.transform.childCount; i++)
+        {
+            SD.DC.spritesPrefab.transform.GetChild(i).GetComponent<Animator>().SetFloat("speedmultiplier", f);
+        }
+        SD.DC.GetComponent<Animator>().SetFloat("speedmultiplier", f);
+        SD.OSC.GetComponent<Animator>().SetFloat("speedmultiplier", f);
+        SD.SwitchTime = 1 / f;
+
     }
 
     #region SaveAndLoadFunctions

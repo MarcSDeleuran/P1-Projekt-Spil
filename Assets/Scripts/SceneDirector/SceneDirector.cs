@@ -62,7 +62,7 @@ namespace SceneDirection
                         }
                         else
                         {
-                            DC.SpeedUp();
+                            DC.StopTyping();
                         }
                 }
             }
@@ -107,7 +107,7 @@ namespace SceneDirection
             if (currentScene != null)
             {
                 DC.HideBox();
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(SwitchTime);
             }
                 
             currentScene = scene;
@@ -123,7 +123,7 @@ namespace SceneDirection
                 if (BackgroundSwitcher.GetImage() != storyScene.background)
                 {
                     BackgroundSwitcher.SwitchImage(storyScene.background);
-                    yield return new WaitForSeconds(1f);
+                    yield return new WaitForSeconds(SwitchTime);
                 }
 
                 PlayAudio(storyScene.Sentences[0]);
