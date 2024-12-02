@@ -5,6 +5,18 @@ using UnityEngine.UI;
 
 public class StatsAndJournal : MonoBehaviour {
 
+    [SerializeField] private bool chapter1Completed;
+    [SerializeField] private bool chapter2Completed;
+    [SerializeField] private bool chapter3Completed;
+    [SerializeField] private bool chapter4Completed;
+    [SerializeField] private bool chapter5Completed;
+    [Space(5)]
+    [SerializeField] private GameObject chapter1Locked;
+    [SerializeField] private GameObject chapter2Locked;
+    [SerializeField] private GameObject chapter3Locked;
+    [SerializeField] private GameObject chapter4Locked;
+    [SerializeField] private GameObject chapter5Locked;
+    [Space(5)]
     [SerializeField] private Button statsButton;
     [SerializeField] private Button statsBackButton;
     [SerializeField] private Button journalButton;
@@ -45,6 +57,21 @@ public class StatsAndJournal : MonoBehaviour {
             stressSlider.value = 0;
             academicSlider.value = 0;
             socialSlider.value = 0;
+            if (!chapter1Completed){
+                chapter1Locked.SetActive(true);
+            }
+            if (!chapter2Completed){
+                chapter2Locked.SetActive(true);
+            }
+            if (!chapter3Completed){
+                chapter3Locked.SetActive(true);
+            }
+            if (!chapter4Completed){
+                chapter4Locked.SetActive(true);
+            }
+            if (!chapter5Completed){
+                chapter5Locked.SetActive(true);
+            }
         });
         statsBackButton.onClick.AddListener(() => {
             GameManager.Instance.SD.VNACTIVE = true;
