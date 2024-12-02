@@ -22,9 +22,9 @@ public class GameManager : MonoBehaviour
     public FlagManager FM;
     private int activeSave;
     public static GameManager Instance { get; private set; }
-    public int StressAmount = -1;
-    public int AcademicAmount = -1;
-    public int SocialAmount = -1;
+    [Range(0, 200)] public int StressAmount = -1;
+    [Range(0, 200)] public int AcademicAmount = -1;
+    [Range(0, 200)] public int SocialAmount = -1;
     public string CharacterName;
     public StatChangeAnimator STA;
     public float animationMultiplier;
@@ -105,9 +105,9 @@ public class GameManager : MonoBehaviour
     {
         SaveData saveObject = new SaveData
         { // Opdaterer værdier
-            stressAmount = UnityEngine.Random.Range(1, 100),
-            academicAmount = UnityEngine.Random.Range(1, 100),
-            socialAmount = UnityEngine.Random.Range(1, 100),
+            stressAmount = UnityEngine.Random.Range(1, 200),
+            academicAmount = UnityEngine.Random.Range(1, 200),
+            socialAmount = UnityEngine.Random.Range(1, 200),
         };
         StressAmount = saveObject.stressAmount;
         AcademicAmount = saveObject.academicAmount;
@@ -158,15 +158,16 @@ public class GameManager : MonoBehaviour
             List<int> historyIndices = new List<int>();
             SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
 
+            int defaultValue = 100;
             saveObject = new SaveData
             {
                 flags = FM.flags,
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
 
-                stressAmount = 50,
-                academicAmount = 50,
-                socialAmount = 50,
+                stressAmount = defaultValue,
+                academicAmount = defaultValue,
+                socialAmount = defaultValue,
                 characterName = CharacterName
             };
             StressAmount = saveObject.stressAmount;

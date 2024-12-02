@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoctorsAppointment_C2
   m_EditorClassIdentifier: 
   Options:
-  - text: Really? What can i do to find more balance?
+  - text: Really? What can I do to find more balance?
     nextScene: {fileID: 11400000, guid: 696dbf3676a2df447b037e5bd41dbb89, type: 2}
     StressChange: 40
     AcademicChange: -21
@@ -21,7 +21,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    ChoiceIcon: {fileID: 21300000, guid: 8f576a5978c1e41a7889d43ddbaaa0b0, type: 3}
+    ChoiceIcon: {fileID: 0}
   - text: "I\u2019ve tried ignoring it, but that doesn\u2019t help."
     nextScene: {fileID: 11400000, guid: 696dbf3676a2df447b037e5bd41dbb89, type: 2}
     StressChange: 0

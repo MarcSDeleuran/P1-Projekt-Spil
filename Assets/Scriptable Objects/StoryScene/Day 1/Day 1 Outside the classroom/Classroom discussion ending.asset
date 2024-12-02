@@ -19,30 +19,34 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: '"Cool.. NAME ,We are working together right?"'
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Cool.. [PlayerName] ,We are working together right?"'
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: '"Uhhh...."'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: '"Well, shouldnt we let NAME decide who he wants to work with?"'
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Well, shouldnt we let [PlayerName] decide who he wants to work with?"'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: '"NAME, the choice is yours."'
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"[PlayerName], the choice is yours."'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
@@ -62,7 +66,8 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
   nextScene: {fileID: 11400000, guid: 3f3c3a00149d63543b052e59a8486dd1, type: 2}

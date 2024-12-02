@@ -18,14 +18,16 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: '[I should probably check out the book Doc gave me]  '
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: af61006b1a7b2fd48ac82ba12d882627, type: 3}
   nextScene: {fileID: 11400000, guid: b541f575d6770804fb9dbc3d82f52b0b, type: 2}

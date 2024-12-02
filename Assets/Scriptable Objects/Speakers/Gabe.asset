@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Gabe
   m_EditorClassIdentifier: 
   speakerName: Gabe
-  nameColor: {r: 0.21960784, g: 0.2784314, b: 0.3137255, a: 1}
-  textColor: {r: 0.5764706, g: 0.78039217, b: 0.91764706, a: 1}
+  nameColor: {r: 0.20392157, g: 0.15686275, b: 0.12941177, a: 1}
+  textColor: {r: 0.50980395, g: 0.39215687, b: 0.36862746, a: 1}
   sprites:
   - {fileID: 21300000, guid: fbbd12e109638bf4884ded53eb09d802, type: 3}
   - {fileID: 21300000, guid: 2e768f38802592442a78919120374e3e, type: 3}

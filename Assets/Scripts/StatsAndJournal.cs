@@ -23,6 +23,9 @@ public class StatsAndJournal : MonoBehaviour {
     [SerializeField] private Button journalBackButton;
     [SerializeField] private GameObject statsUI;
     [SerializeField] private GameObject journalUI;
+    [SerializeField] private RectTransform stressMeter;
+    [SerializeField] private GameObject[] statsButtonCharacters;
+    [SerializeField] private GameObject[] statsUICharacters;
     [Space(10)]
     [SerializeField] private Slider stressSlider;
     [SerializeField] private Slider academicSlider;
@@ -153,6 +156,52 @@ public class StatsAndJournal : MonoBehaviour {
             float socialScore = GameManager.Instance.SocialAmount;
             if (socialSlider.value != socialScore){
                 socialSlider.value = Mathf.Lerp(socialSlider.value, socialScore, 4f * Time.deltaTime);
+            }
+        }
+        if (stressMeter.sizeDelta.y != GameManager.Instance.StressAmount * 1.35f){
+            Vector2 targetHeight = new Vector2(300, GameManager.Instance.StressAmount * 1.35f);
+            float newHeightY = Mathf.Lerp(stressMeter.sizeDelta.y, targetHeight.y, 4f * Time.deltaTime);
+            stressMeter.sizeDelta = new Vector2(stressMeter.sizeDelta.x, newHeightY);
+            if (GameManager.Instance.StressAmount > 150){
+                statsButtonCharacters[0].SetActive(false);
+                statsButtonCharacters[1].SetActive(false);
+                statsButtonCharacters[2].SetActive(false);
+                statsButtonCharacters[3].SetActive(true);
+
+                statsUICharacters[0].SetActive(false);
+                statsUICharacters[1].SetActive(false);
+                statsUICharacters[2].SetActive(false);
+                statsUICharacters[3].SetActive(true);
+            } else if (GameManager.Instance.StressAmount > 100){
+                statsButtonCharacters[0].SetActive(false);
+                statsButtonCharacters[1].SetActive(false);
+                statsButtonCharacters[2].SetActive(true);
+                statsButtonCharacters[3].SetActive(false);
+
+                statsUICharacters[0].SetActive(false);
+                statsUICharacters[1].SetActive(false);
+                statsUICharacters[2].SetActive(true);
+                statsUICharacters[3].SetActive(false);
+            } else if (GameManager.Instance.StressAmount > 50){
+                statsButtonCharacters[0].SetActive(false);
+                statsButtonCharacters[1].SetActive(true);
+                statsButtonCharacters[2].SetActive(false);
+                statsButtonCharacters[3].SetActive(false);
+
+                statsUICharacters[0].SetActive(false);
+                statsUICharacters[1].SetActive(true);
+                statsUICharacters[2].SetActive(false);
+                statsUICharacters[3].SetActive(false);
+            } else {
+                statsButtonCharacters[0].SetActive(true);
+                statsButtonCharacters[1].SetActive(false);
+                statsButtonCharacters[2].SetActive(false);
+                statsButtonCharacters[3].SetActive(false);
+
+                statsUICharacters[0].SetActive(true);
+                statsUICharacters[1].SetActive(false);
+                statsUICharacters[2].SetActive(false);
+                statsUICharacters[3].SetActive(false);
             }
         }
     }

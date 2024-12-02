@@ -59,6 +59,8 @@ namespace SceneDirection
                 optionController.AcademicChange = scene.Options[i].AcademicChange;
                 optionController.SocialChange = scene.Options[i].SocialChange;
 
+                Debug.Log(scene.Options[i]);
+                Debug.Log(scene.Options[i].ChoiceIcon);
                 if (scene.Options[i].ChoiceIcon != null){
                     optionController.ChoiceIcon.sprite = scene.Options[i].ChoiceIcon;
                 } else {

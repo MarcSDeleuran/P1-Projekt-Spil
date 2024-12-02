@@ -68,7 +68,7 @@ namespace SceneDirection
         public void StopTyping()
         {
             if (sentenceIndex != -1)
-                DialogueText.text = currentScene.Sentences[sentenceIndex].text;
+                DialogueText.text = currentScene.Sentences[sentenceIndex].text.Replace("[PlayerName]", GameManager.Instance.CharacterName);
             state = DialogueState.COMPLETED;
             if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
@@ -78,6 +78,8 @@ namespace SceneDirection
         {
             if (!isHidden)
             {
+                rightSpeakerName.SetActive(false);
+                leftSpeakerName.SetActive(false);
                 animator.SetTrigger("Hide");
                 isHidden = true;
             }
@@ -117,7 +119,7 @@ namespace SceneDirection
                 }
                 else
                 {
-                    rightSpeakerName.SetActive(true); // Den her virker ikke af en eller anden grund. Man kan ikke sætte den aktiv selv i editoren, det er vidst noget med animatoren da det virker når man slår den fra
+                    rightSpeakerName.SetActive(true);
                     leftSpeakerName.SetActive(false);
                     SpeakerNameText = RightSpeakerNameText;
                 }
@@ -126,9 +128,13 @@ namespace SceneDirection
                 rightSpeakerNameBackground.color = currentScene.Sentences[sentenceIndex].speaker.nameColor;
                 DialogueText.color = currentScene.Sentences[sentenceIndex].speaker.textColor;
             }
-            else if (SpeakerNameText != null)
+            else 
+            {
                 SpeakerNameText.gameObject.SetActive(false);
                 DialogueText.color = Color.white;
+                rightSpeakerName.SetActive(false);
+                leftSpeakerName.SetActive(false);
+            }
 
             ActSpeakers();
             ChangeStats(currentScene.Sentences[sentenceIndex].SocialChange, currentScene.Sentences[sentenceIndex].AcademicChange, currentScene.Sentences[sentenceIndex].StressChange);
