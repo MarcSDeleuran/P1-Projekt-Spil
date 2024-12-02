@@ -197,16 +197,14 @@ public class GameManager : MonoBehaviour
         if (dataCurrent.Day >= startDate + buttonId)
         {  // Hvis datoen er over startDatoen + ugedag
             mainMenuUI.SetActive(false);
+            mainMenuCanvas.SetActive(false);
             gameSceneUI.SetActive(true);
+            SD.VNACTIVE = true;
+            SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
         }
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
             Debug.LogWarning("You can't enter this Chapter");
         }
-        gameSceneUI.SetActive(true);
-        mainMenuCanvas.SetActive(false);
-        GameObject go = gameSceneUI.GetComponentInChildren<DialogueController>().gameObject;
-        SD.VNACTIVE = true;
-        SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
     }
 }

@@ -21,18 +21,6 @@ namespace SceneDirection
         {
             IDLE, ANIMATE, CHOOSE
         }
-        private void Start()
-        {
-            //if (currentScene is StoryScene)
-            //{
-            //    StoryScene storyScene = (StoryScene)currentScene;
-            //    history.Add(storyScene);
-            //    DC.PlayScene(storyScene);
-            //    BackgroundSwitcher.SetImage(storyScene.background);
-            //    if (storyScene.Sentences.Count != 0)
-            //        PlayAudio(storyScene.Sentences[0]);
-            //}
-        }
 
         private void Update()
         {
@@ -95,6 +83,7 @@ namespace SceneDirection
         {
             StartCoroutine(SwitchScene(scene));
         }
+
         private IEnumerator SwitchScene(GameScene scene)
         {
             if (scene == null)

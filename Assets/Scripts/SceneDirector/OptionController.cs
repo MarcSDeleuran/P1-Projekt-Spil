@@ -9,10 +9,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
 
-public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+public class OptionController : MonoBehaviour
 {
-    public Color defaultColor;
-    public Color hoverColor;
     public StoryScene scene;
     public TextMeshProUGUI textMesh;
     public STORYFLAG flag = STORYFLAG.NONE;
@@ -21,26 +19,19 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
     public int StressChange;
     public int AcademicChange;
     public int SocialChange;
-    public Color HoverBackgroundColor;
-    public Color DefaultBackgroundColor;
     public Image ChoiceIcon;
 
-    void Awake()
-    {
-        textMesh = GetComponentInChildren<TextMeshProUGUI>();
-        textMesh.color = defaultColor;
+    private void Awake(){
+        GetComponent<Button>().onClick.AddListener(() => {
+            if (flag != STORYFLAG.NONE){
+                gameObject.GetComponentInParent<OptionSelectionController>().FM.SetFlag(flag, SetFlagTrue);
+            }
+            
+            ChangeStats();
+            gameObject.GetComponentInParent<OptionSelectionController>().PerformOption(scene);
+        });
     }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (flag != STORYFLAG.NONE)
-            gameObject.GetComponentInParent<OptionSelectionController>().FM.SetFlag(flag, SetFlagTrue);
-        ChangeStats();
-
-
-        gameObject.GetComponentInParent<OptionSelectionController>().PerformOption(scene);
-
-    }
     private void ChangeStats()
     {
         StatChangeAnimator STA = GameManager.Instance.STA;
@@ -78,18 +69,5 @@ public class OptionController : MonoBehaviour, IPointerClickHandler, IPointerEnt
             STA.ShowStatChange("Social", true);
         else if (StressChange != 0)
             STA.ShowStatChange("Social", false);
-
-
-    }
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        textMesh.color = hoverColor;
-        GetComponent<Image>().color = HoverBackgroundColor;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        textMesh.color = defaultColor;
-        GetComponent<Image>().color = DefaultBackgroundColor;
     }
 }

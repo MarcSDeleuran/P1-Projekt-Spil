@@ -22,7 +22,7 @@ namespace SceneDirection
         public int SentenceIndex { get { return sentenceIndex; } }
         public StoryScene currentScene;
         private DialogueState state = DialogueState.COMPLETED;
-        private Animator animator;
+        public Animator animator;
         private bool isHidden = false;
         private Dictionary<Speaker, SpriteController> sprites;
         public GameObject spritesPrefab;
@@ -40,7 +40,7 @@ namespace SceneDirection
             sprites = new Dictionary<Speaker, SpriteController>();
             animator = GetComponent<Animator>();
             SpeakerNameText = LeftSpeakerNameText;
-            animator.SetTrigger("Hide");
+            animator.SetTrigger("Start");
         }
 
         public void SetIndex(int i)
