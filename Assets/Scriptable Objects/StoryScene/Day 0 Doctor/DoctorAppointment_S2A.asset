@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S2A
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Yes of course! Mr [PlayerName]
+  - text: Yes of course! Mr. [PlayerName]
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}

@@ -19,7 +19,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 200, y: 0}
+      Coords: {x: 0, y: 0}
       MoveSpeed: 0
     Music: {fileID: 8300000, guid: 45f34178c4a62824b91c6875475bcd14, type: 3}
     Sound: {fileID: 0}

@@ -13,34 +13,54 @@ MonoBehaviour:
   m_Name: Work with Gabe 1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "\u201COkay... \u201C he pauses, thinking what to say next \"We can do
-      that, but you have to promise that you will take it seriously\u201D"
+  - text: "\u201COkay...\u201C he pauses, thinking what to say next \"We can do that,
+      but you have to promise that you will take it seriously\u201D"
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "You: You sigh \u201Cyeah yeah... I promise\u201D already wondering if
-      you made the right choice "
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"You sigh \u201Cyeah yeah... I promise\u201D already wondering if you
+      made the right choice\""
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "\"And we have to work here.. We have to work effectively\u201D.   *Gabe
-      is looking at you trying to figure out if you really want this.*"
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"And we have to work here.. We have to work effectively\u201D. Gabe is
+      looking at you trying to figure out if you really want this."
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CFine.....\u201D  "
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CGood. Lets begin after class\u201D he says and smiles \u201CIt will
       be fun, don\u2019t worry\u201D"
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
   nextScene: {fileID: 11400000, guid: aafc9772f5ad43f4e81aaded022ffdad, type: 2}

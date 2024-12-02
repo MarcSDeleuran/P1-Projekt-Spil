@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Classroom discussion ending
   m_EditorClassIdentifier: 
   Sentences:
-  - text: '"Well.. We have to get started. You heard mrs. Smith. We have to work
+  - text: '"Well.. We have to get started. You heard Mrs. Smith. We have to work
       in pairs."'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
@@ -22,7 +22,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '"Cool.. [PlayerName] ,We are working together right?"'
+  - text: '"Cool.. [PlayerName], We are working together right?"'
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -38,7 +38,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '"Well, shouldnt we let [PlayerName] decide who he wants to work with?"'
+  - text: '"Well, shouldn''t we let [PlayerName] decide who he wants to work with?"'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}

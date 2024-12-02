@@ -13,23 +13,39 @@ MonoBehaviour:
   m_Name: Jake Choice 1.1.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "\u201COf course, I'll just grab a quick snack, need anything?  You: \u201CNo
-      I'm good\u201D. "
+  - text: "\u201COf course, I'll just grab a quick snack, need anything?"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CNo I'm good\u201D"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: Jake nods and walks out. You lay down and open the book the doctor gave
       you. You swipe through the pages and find the methods page.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: A few minutes pass and you head out, you and Jake head towards the bar
       where Mary is waiting
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 9b58e1b3e6fd42241bd4ef52ebe68b1f, type: 3}
   nextScene: {fileID: 11400000, guid: 086dc38861a0db24e833a170a70460fd, type: 2}

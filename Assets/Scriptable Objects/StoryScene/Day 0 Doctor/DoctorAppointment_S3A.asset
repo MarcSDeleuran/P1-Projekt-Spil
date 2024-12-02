@@ -101,7 +101,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: Exactly!
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   - text: "Try experimenting to see what works best for you. After each day, you\u2019ll
       get a summary to reflect on your choices. At the end of the week, we\u2019ll
       meet again to discuss what you\u2019ve learned."
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
     Sound: {fileID: 0}
