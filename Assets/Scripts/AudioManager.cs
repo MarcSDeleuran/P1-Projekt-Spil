@@ -16,6 +16,10 @@ public class AudioManager : MonoBehaviour
         {
             StartCoroutine(SwitchMusic(music));
         }
+        if (music == null)
+        {
+            musicSource.volume = 0.5f;
+        }
     }
 
     private IEnumerator SwitchMusic(AudioClip music)
