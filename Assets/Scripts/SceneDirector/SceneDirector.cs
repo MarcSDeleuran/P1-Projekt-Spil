@@ -17,6 +17,7 @@ namespace SceneDirection
         public bool VNACTIVE;
         public GameObject NameField;
         public float SwitchTime;
+        public GameObject journalUI;
         private enum SceneState
         {
             IDLE, ANIMATE, CHOOSE
@@ -100,6 +101,7 @@ namespace SceneDirection
             }
                 
             currentScene = scene;
+
             if (scene is WriteScene)
             {
                 VNACTIVE = false;
@@ -108,6 +110,13 @@ namespace SceneDirection
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
+                if (storyScene.OpenJournal)
+                {
+                    journalUI.SetActive(true);
+                    GameManager.Instance.MustAssignStats = true;
+                    VNACTIVE = false;
+                }
+                    
                 history.Add(storyScene);
                 if (BackgroundSwitcher.GetImage() != storyScene.background)
                 {

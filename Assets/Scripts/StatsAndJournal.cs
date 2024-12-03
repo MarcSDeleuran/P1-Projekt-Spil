@@ -3,7 +3,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatsAndJournal : MonoBehaviour {
+public class StatsAndJournal : MonoBehaviour
+{
 
     [SerializeField] private bool chapter1Completed;
     [SerializeField] private bool chapter2Completed;
@@ -50,9 +51,12 @@ public class StatsAndJournal : MonoBehaviour {
     private int schoolPoints;
     private int socialPoints;
     private int relaxPoints;
+    private bool ChangeAllowed = true;
 
-    private void Awake(){
-        statsButton.onClick.AddListener(() => {
+    private void Awake()
+    {
+        statsButton.onClick.AddListener(() =>
+        {
             StartCoroutine(WaitBeforeUpdating());
             statsUI.SetActive(true);
             GameManager.Instance.SD.VNACTIVE = false;
@@ -60,85 +64,126 @@ public class StatsAndJournal : MonoBehaviour {
             stressSlider.value = 0;
             academicSlider.value = 0;
             socialSlider.value = 0;
-            if (!chapter1Completed){
+            if (!chapter1Completed)
+            {
                 chapter1Locked.SetActive(true);
-            } else {
+            }
+            else
+            {
                 chapter1Locked.SetActive(false);
             }
-            if (!chapter2Completed){
+            if (!chapter2Completed)
+            {
                 chapter2Locked.SetActive(true);
-            } else {
+            }
+            else
+            {
                 chapter2Locked.SetActive(false);
             }
-            if (!chapter3Completed){
+            if (!chapter3Completed)
+            {
                 chapter3Locked.SetActive(true);
-            } else {
+            }
+            else
+            {
                 chapter3Locked.SetActive(false);
             }
-            if (!chapter4Completed){
+            if (!chapter4Completed)
+            {
                 chapter4Locked.SetActive(true);
-            } else {
+            }
+            else
+            {
                 chapter4Locked.SetActive(false);
             }
-            if (!chapter5Completed){
+            if (!chapter5Completed)
+            {
                 chapter5Locked.SetActive(true);
-            } else {
+            }
+            else
+            {
                 chapter5Locked.SetActive(false);
             }
         });
-        statsBackButton.onClick.AddListener(() => {
+        statsBackButton.onClick.AddListener(() =>
+        {
             GameManager.Instance.SD.VNACTIVE = true;
             inStats = false;
             statsUI.SetActive(false);
         });
-        journalButton.onClick.AddListener(() => {
+        journalButton.onClick.AddListener(() =>
+        {
             journalUI.SetActive(true);
         });
-        journalBackButton.onClick.AddListener(() => {
-            journalUI.SetActive(false);
+        journalBackButton.onClick.AddListener(() =>
+        {
+            if (GameManager.Instance.MustAssignStats)
+            {
+                if (pointsRemaining <= 0)
+                {
+                    journalUI.SetActive(false);
+                    GameManager.Instance.SD.VNACTIVE = true;
+                    ChangeAllowed = false;
+                }
+                    
+            }
+            else
+                journalUI.SetActive(false);
         });
-        schoolLeftButton.onClick.AddListener(() => {
-            if (schoolPoints >= 1){
+        schoolLeftButton.onClick.AddListener(() =>
+        {
+            if (schoolPoints >= 1 && ChangeAllowed)
+            {
                 pointsRemaining++;
                 totalPointsText.text = pointsRemaining.ToString();
                 schoolPoints--;
                 schoolPointsText.text = schoolPoints.ToString();
             }
         });
-        schoolRightButton.onClick.AddListener(() => {
-            if (pointsRemaining >= 1){
+        schoolRightButton.onClick.AddListener(() =>
+        {
+            if (pointsRemaining >= 1 && ChangeAllowed)
+            {
                 pointsRemaining--;
                 totalPointsText.text = pointsRemaining.ToString();
                 schoolPoints++;
                 schoolPointsText.text = schoolPoints.ToString();
             }
         });
-        socialLeftButton.onClick.AddListener(() => {
-            if (socialPoints >= 1){
+        socialLeftButton.onClick.AddListener(() =>
+        {
+            if (socialPoints >= 1 && ChangeAllowed)
+            {
                 pointsRemaining++;
                 totalPointsText.text = pointsRemaining.ToString();
                 socialPoints--;
                 socialPointsText.text = socialPoints.ToString();
             }
         });
-        socialRightButton.onClick.AddListener(() => {
-            if (pointsRemaining >= 1){
+        socialRightButton.onClick.AddListener(() =>
+        {
+            if (pointsRemaining >= 1 && ChangeAllowed)
+            {
                 pointsRemaining--;
                 totalPointsText.text = pointsRemaining.ToString();
                 socialPoints++;
                 socialPointsText.text = socialPoints.ToString();
             }
         });
-        relaxLeftButton.onClick.AddListener(() => {
-            if (relaxPoints >= 1){
+        relaxLeftButton.onClick.AddListener(() =>
+        {
+            if (relaxPoints >= 1 && ChangeAllowed)
+            {
                 pointsRemaining++;
                 totalPointsText.text = pointsRemaining.ToString();
                 relaxPoints--;
                 relaxPointsText.text = relaxPoints.ToString();
             }
         });
-        relaxRightButton.onClick.AddListener(() => {
-            if (pointsRemaining >= 1){
+        relaxRightButton.onClick.AddListener(() =>
+        {
+            if (pointsRemaining >= 1 && ChangeAllowed)
+            {
                 pointsRemaining--;
                 totalPointsText.text = pointsRemaining.ToString();
                 relaxPoints++;
@@ -147,32 +192,40 @@ public class StatsAndJournal : MonoBehaviour {
         });
     }
 
-    private IEnumerator WaitBeforeUpdating(){
+    private IEnumerator WaitBeforeUpdating()
+    {
         yield return new WaitForSeconds(0.25f);
 
         inStats = true;
     }
 
-    private void Update(){
-        if (inStats){
+    private void Update()
+    {
+        if (inStats)
+        {
             float stressScore = GameManager.Instance.StressAmount; // Skal udskiftes med score score
-            if (stressSlider.value != stressScore){
+            if (stressSlider.value != stressScore)
+            {
                 stressSlider.value = Mathf.Lerp(stressSlider.value, stressScore, 4f * Time.deltaTime);
             }
             float academicScore = GameManager.Instance.AcademicAmount;// Skal udskiftes med academic score
-            if (academicSlider.value != academicScore){
+            if (academicSlider.value != academicScore)
+            {
                 academicSlider.value = Mathf.Lerp(academicSlider.value, academicScore, 4f * Time.deltaTime);
             }
             float socialScore = GameManager.Instance.SocialAmount;
-            if (socialSlider.value != socialScore){
+            if (socialSlider.value != socialScore)
+            {
                 socialSlider.value = Mathf.Lerp(socialSlider.value, socialScore, 4f * Time.deltaTime);
             }
         }
-        if (stressMeter.sizeDelta.y != GameManager.Instance.StressAmount * 1.35f){
+        if (stressMeter.sizeDelta.y != GameManager.Instance.StressAmount * 1.35f)
+        {
             Vector2 targetHeight = new Vector2(300, GameManager.Instance.StressAmount * 1.35f);
             float newHeightY = Mathf.Lerp(stressMeter.sizeDelta.y, targetHeight.y, 4f * Time.deltaTime);
             stressMeter.sizeDelta = new Vector2(stressMeter.sizeDelta.x, newHeightY);
-            if (GameManager.Instance.StressAmount > 150){
+            if (GameManager.Instance.StressAmount > 150)
+            {
                 statsButtonCharacters[0].SetActive(false);
                 statsButtonCharacters[1].SetActive(false);
                 statsButtonCharacters[2].SetActive(false);
@@ -182,7 +235,9 @@ public class StatsAndJournal : MonoBehaviour {
                 statsUICharacters[1].SetActive(false);
                 statsUICharacters[2].SetActive(false);
                 statsUICharacters[3].SetActive(true);
-            } else if (GameManager.Instance.StressAmount > 100){
+            }
+            else if (GameManager.Instance.StressAmount > 100)
+            {
                 statsButtonCharacters[0].SetActive(false);
                 statsButtonCharacters[1].SetActive(false);
                 statsButtonCharacters[2].SetActive(true);
@@ -192,7 +247,9 @@ public class StatsAndJournal : MonoBehaviour {
                 statsUICharacters[1].SetActive(false);
                 statsUICharacters[2].SetActive(true);
                 statsUICharacters[3].SetActive(false);
-            } else if (GameManager.Instance.StressAmount > 50){
+            }
+            else if (GameManager.Instance.StressAmount > 50)
+            {
                 statsButtonCharacters[0].SetActive(false);
                 statsButtonCharacters[1].SetActive(true);
                 statsButtonCharacters[2].SetActive(false);
@@ -202,7 +259,9 @@ public class StatsAndJournal : MonoBehaviour {
                 statsUICharacters[1].SetActive(true);
                 statsUICharacters[2].SetActive(false);
                 statsUICharacters[3].SetActive(false);
-            } else {
+            }
+            else
+            {
                 statsButtonCharacters[0].SetActive(true);
                 statsButtonCharacters[1].SetActive(false);
                 statsButtonCharacters[2].SetActive(false);

@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public string CharacterName;
     public StatChangeAnimator STA;
     public float animationMultiplier;
+    public bool MustAssignStats = false;
     
     public void Awake()
     {

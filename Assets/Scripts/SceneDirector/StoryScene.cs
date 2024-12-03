@@ -9,7 +9,7 @@ namespace SceneDirection
         public List<Sentence> Sentences;
         public Sprite background;
         public GameScene nextScene;
-
+        public bool OpenJournal = false;
         [System.Serializable]
         public struct Sentence
         {
