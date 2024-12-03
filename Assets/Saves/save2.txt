@@ -1,0 +1,1 @@
+{"sentence":0,"prevScenes":[],"stressAmount":132,"academicAmount":116,"socialAmount":126,"characterName":""}

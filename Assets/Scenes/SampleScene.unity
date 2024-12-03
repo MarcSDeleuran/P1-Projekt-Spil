@@ -17984,6 +17984,10 @@ MonoBehaviour:
   VNACTIVE: 0
   NameField: {fileID: 363106816}
   SwitchTime: 1
+  journalUI: {fileID: 0}
+  ES: {fileID: 0}
+  SAJ: {fileID: 0}
+  InGameUI: {fileID: 0}
 --- !u!1 &2399869860871314333
 GameObject:
   m_ObjectHideFlags: 0
@@ -18078,7 +18082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2f306666b441b4395ea4d9aafe8129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDate: 2
+  startDate: 0
   stressText: {fileID: 4685932806515806339}
   academicText: {fileID: 3312672623191912042}
   socialText: {fileID: 2519771144418735075}
@@ -18104,6 +18108,7 @@ MonoBehaviour:
   CharacterName: 
   STA: {fileID: 2121036367}
   animationMultiplier: 2
+  MustAssignStats: 0
 --- !u!1 &2463731466394336344
 GameObject:
   m_ObjectHideFlags: 0
@@ -22110,7 +22115,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 8001814270381582989}
   lockedUI: {fileID: 5561500601357065908}
   dayText: {fileID: 7637509980333052097}
-  ChapterStartScene: {fileID: 0}
+  ChapterStartScene: {fileID: 11400000, guid: 27a46a71259278b4fa1695c5d0c970f0, type: 2}
 --- !u!224 &3910172760454038437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22872,6 +22877,9 @@ MonoBehaviour:
   relaxLeftButton: {fileID: 2319611283912771659}
   relaxRightButton: {fileID: 6114500882606788717}
   relaxPointsText: {fileID: 4062205610139330101}
+  schoolPoints: 0
+  socialPoints: 0
+  relaxPoints: 0
 --- !u!1 &4118758232667666117
 GameObject:
   m_ObjectHideFlags: 0
