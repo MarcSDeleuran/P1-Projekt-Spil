@@ -13,6 +13,7 @@ namespace SceneDirection
         private SpriteSwitcher switcher;
         private RectTransform rect;
         private Animator animator;
+        public bool hidden;
 
         public void Awake()
         {
@@ -30,12 +31,14 @@ namespace SceneDirection
         public void Show(Vector2 coords)
         {
             animator.SetTrigger("ShowCharacter");
+            hidden = false;
             rect.localPosition = coords;
         }
 
         public void Hide()
         {
             animator.SetTrigger("HideCharacter");
+            hidden = true;
         }
 
         public void Move(Vector2 coords, float speed)

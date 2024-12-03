@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SceneDirection
 {
@@ -44,8 +45,8 @@ namespace SceneDirection
                                 if ((currentScene as StoryScene).FinalScene)
                                 {
                                     VNACTIVE = false;
-                                    
-                                    
+
+
                                     string stats = $"Stress: {GameManager.Instance.StressAmount} \n" +
                                         $"Academics: {GameManager.Instance.AcademicAmount} \n" +
                                         $"Social: {GameManager.Instance.SocialAmount}";
@@ -60,7 +61,7 @@ namespace SceneDirection
 
                                 }
                                 else
-                                PlayScene((currentScene as StoryScene).nextScene);
+                                    PlayScene((currentScene as StoryScene).nextScene);
 
                             }
                             else
@@ -99,7 +100,7 @@ namespace SceneDirection
             WriteScene ws = currentScene as WriteScene;
             PlayScene(ws.NextScene);
             NameField.SetActive(false);
-            
+
 
         }
         public void PlayScene(GameScene scene)
@@ -121,7 +122,7 @@ namespace SceneDirection
                 DC.HideBox();
                 yield return new WaitForSeconds(SwitchTime);
             }
-                
+
             currentScene = scene;
 
             if (scene is WriteScene)
@@ -138,11 +139,21 @@ namespace SceneDirection
                     GameManager.Instance.MustAssignStats = true;
                     VNACTIVE = false;
                 }
-                    
+
                 history.Add(storyScene);
                 if (BackgroundSwitcher.GetImage() != storyScene.background)
                 {
                     BackgroundSwitcher.SwitchImage(storyScene.background);
+                    int count = DC.spritesPrefab.transform.childCount;
+                    for (int i = 0; i < count; i++)
+                    {
+                        if (!DC.spritesPrefab.transform.GetChild(i).GetComponent<SpriteController>().hidden)
+                        {
+                            DC.spritesPrefab.transform.GetChild(i).GetComponent<Animator>().SetTrigger("HideCharacter");
+                            DC.spritesPrefab.transform.GetChild(i).GetComponent<SpriteController>().hidden = true;
+                        }
+                            
+                    }
                     yield return new WaitForSeconds(SwitchTime);
                 }
 
