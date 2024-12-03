@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: After Lunch 1.1.2.1.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: Take the break
+    nextScene: {fileID: 11400000, guid: 1f405f9fad1a76f41a479dfa902bcb14, type: 2}
+    StressChange: -5
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  - text: Work through it
+    nextScene: {fileID: 11400000, guid: bdb6e327a657d4d429dcc185c75a8acd, type: 2}
+    StressChange: 10
+    AcademicChange: 5
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  QuestionText: What do tou do?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: After Lunch 1.1.1.X Minichoice
+  m_EditorClassIdentifier: 
+  Options:
+  - text: '[I have to power through this, I have get this done. Whatever it takes.]'
+    nextScene: {fileID: 11400000, guid: 6bf48ed6b0c8153498280999046fceb8, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  - text: '[Take 5 minutes to calm down and then return to the assignment.]'
+    nextScene: {fileID: 11400000, guid: c35d8b08a45abd046a903ab7a944e26f, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  QuestionText: What do you tell yourself?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}
