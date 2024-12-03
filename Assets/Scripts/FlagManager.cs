@@ -24,7 +24,7 @@ public class FlagManager : MonoBehaviour
 public enum STORYFLAG
 {
     NONE,
-    MetCharacterA,
-    DidntKillYourself,
-    DoesEatAss
+    Gabe,
+    Jake,
+    Mary,
 }
