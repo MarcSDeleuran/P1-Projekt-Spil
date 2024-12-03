@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Day 2 Mary Filler 1
   m_EditorClassIdentifier: 
   Options:
-  - text: "\u201CI barely made it out alive XD, lets meet at school!\u201D "
+  - text: "\u201CI barely made it out alive XD, let's meet at school!\u201D "
     nextScene: {fileID: 11400000, guid: 9d9dc1ac74b80a44ea3226a10396484c, type: 2}
     StressChange: 0
     AcademicChange: 0

@@ -19,42 +19,28 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 200, y: 0}
+      Coords: {x: 300, y: 0}
       MoveSpeed: 0
     - Speaker: {fileID: 11400000, guid: ed28a80baf3e362428fc8d7fbf9afe2e, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: -100, y: 0}
+      Coords: {x: -300, y: 0}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CI hope you can stay on top of things, those assignment can sneak
       up on you, and stress isn\u2019t good for your health.\u201D "
     speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
-    Actions:
-    - Speaker: {fileID: 0}
-      ActionType: 0
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: "\u201CI hope you can stay on top of things, those assignment can sneak
-      up on you, and stress isn\u2019t good for your health.\u201D "
-    speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
-    Actions:
-    - Speaker: {fileID: 0}
-      ActionType: 0
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: c38e1798cbc58d0428c19d567ae71721, type: 3}
   nextScene: {fileID: 11400000, guid: 314454d1f82ec8c43b7f613cb4320ef3, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

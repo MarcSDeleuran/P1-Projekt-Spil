@@ -20,19 +20,20 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "\u201CHi NAME! I wasn\u2019t sure you would show up. Thought you would
-      be hiding in a pile of Gabes notes by now.\u201D She grins, pointing to the
-      empty seat beside her."
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CHi [PlayerName]! I wasn\u2019t sure you would show up. Thought you
+      would be hiding in a pile of Gabe's notes by now.\u201D She grins, pointing
+      to the empty seat beside her."
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "\u201CHi NAME! I wasn\u2019t sure you would show up. Thought you would
-      be hiding in a pile of Gabes notes by now.\u201D She grins, pointing to the
-      empty seat beside her."
-    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 73ace7d55bb76e8469a24cb7bb8ab173, type: 3}
   nextScene: {fileID: 11400000, guid: 68df5942b2d702a46b574c891a7a5d4b, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

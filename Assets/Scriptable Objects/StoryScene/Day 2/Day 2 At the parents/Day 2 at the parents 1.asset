@@ -18,8 +18,9 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CThere you are sweety! Dinner is almost ready.\u201D You share a
       warm hug."
     speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
@@ -31,9 +32,10 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: "\u201CYour dad is in the living room, go say hi to him\u201D  "
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CYour dad is in the living room, go say 'Hi' to him\u201D  "
     speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
@@ -43,7 +45,10 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: c38e1798cbc58d0428c19d567ae71721, type: 3}
   nextScene: {fileID: 11400000, guid: daeff535f82ec834294e6369f9bb574a, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

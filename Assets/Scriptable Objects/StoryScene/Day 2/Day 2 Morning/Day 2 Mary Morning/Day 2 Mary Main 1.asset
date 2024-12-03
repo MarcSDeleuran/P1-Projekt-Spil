@@ -13,34 +13,40 @@ MonoBehaviour:
   m_Name: Day 2 Mary Main 1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: 'After some more back and forth, the player name heads to school, ready
-      for the first class of the day. '
+  - text: After some more back and forth, you head to school, ready for the first
+      class of the day.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: On the way to school, the player receive a message on the school app
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: On the way to school, you receive a message on the school app.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "It\u2019s an announcement about a new assignment, due this Wednesday evening. "
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: The player name feels a knot tighten in their chest.
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: The [PlayerName] feels a knot tighten in their chest.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: b5e0bf903fca83a438e7731d62a954f1, type: 3}
   nextScene: {fileID: 11400000, guid: 8dd1bc240db07c34ca25c8e089484f45, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "\u201CI will rather feel the pain now than regret it later.\u201D "
+  - text: "\u201CI would rather feel the pain now than regret it later\u201D"
     nextScene: {fileID: 11400000, guid: ffd7297ba54f3a240ae1fe6539399431, type: 2}
     StressChange: 3
     AcademicChange: -1

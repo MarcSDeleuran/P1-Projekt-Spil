@@ -20,15 +20,19 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: You end they day with a productive talk, you put together a plan for the
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: You end the day with a productive talk, you put together a plan for the
       rest of the week and share a laugh. Now it's time to go home.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 118d77cca44441b488cd80af6c039f23, type: 3}
   nextScene: {fileID: 11400000, guid: d3cfebf62849c2a47b67dcce0f593cc6, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

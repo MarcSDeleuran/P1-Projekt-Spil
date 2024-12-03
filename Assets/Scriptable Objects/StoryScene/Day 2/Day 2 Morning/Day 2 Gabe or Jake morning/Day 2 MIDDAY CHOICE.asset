@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: Tell Jake and Gabe "Hey, Mary just asked me to go study with her, so i
+  - text: Tell Jake and Gabe "Hey, Mary just asked me to go study with her, so I
       will head out, see you later."
     nextScene: {fileID: 11400000, guid: 3642fc271035e7a4c87e6fa56fe0db93, type: 2}
     StressChange: 2

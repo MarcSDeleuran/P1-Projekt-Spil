@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Student 1
   m_EditorClassIdentifier: 
   speakerName: Student 1
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
-  textColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
+  nameColor: {r: 0.20754719, g: 0.034264863, b: 0.12294998, a: 1}
+  textColor: {r: 0.8018868, g: 0.49550554, b: 0.6367343, a: 1}
   sprites: []
   prefab: {fileID: 8239614979854761332, guid: cd9687bed4d697b4e9a0bab4eba015df, type: 3}
   LeftSide: 0

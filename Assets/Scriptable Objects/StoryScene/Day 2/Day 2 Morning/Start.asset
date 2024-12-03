@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 2 Jake and Gabe midday filler 2.1
+  m_Name: Start
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "Jake grins, pointing at you. \u201CExactly, see? Balance, Gabe, balance.\u201D
-      Gabe laughs, clearly understanding your intent."
-    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+  - text: You get message. OMG
+    speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: a34a4d0cae49cae4ab9a0fc2aee9df51, type: 3}
-  nextScene: {fileID: 11400000, guid: dcdca0f9a705c9846b51b8997cda1f9e, type: 2}
+  background: {fileID: 21300000, guid: af61006b1a7b2fd48ac82ba12d882627, type: 3}
+  nextScene: {fileID: 11400000, guid: 3d43ac0b967384e428fc5c9428cca7b7, type: 2}
   OpenJournal: 0
   FinalScene: 0

@@ -13,24 +13,24 @@ MonoBehaviour:
   m_Name: Day 2 talking to Dad ending
   m_EditorClassIdentifier: 
   Sentences:
-  - text: They conversation is cut short as your mom calls from the dining room
+  - text: The conversation is cut short as your mom calls from the dining room.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: '"We better be quick or she will bring out the belt." Dad says with a chuckle.'
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"We better be quick or she will bring out the belt." Dad says while performing
+      a right knee-slapper.'
     speaker: {fileID: 11400000, guid: ed28a80baf3e362428fc8d7fbf9afe2e, type: 2}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: ed28a80baf3e362428fc8d7fbf9afe2e, type: 2}
-      ActionType: 4
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: a3400fa4227408442aee116123078265, type: 3}
   nextScene: {fileID: 11400000, guid: a8538b710ee74ff48b91b497b1e5c017, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

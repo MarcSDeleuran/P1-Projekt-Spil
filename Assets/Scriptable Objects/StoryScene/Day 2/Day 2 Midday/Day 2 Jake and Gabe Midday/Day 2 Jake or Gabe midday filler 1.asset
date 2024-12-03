@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Day 2 Jake or Gabe midday filler 1
   m_EditorClassIdentifier: 
   Options:
-  - text: "Side with Jake: \u201CYeah, Cause I'm here to ruin your productive streak
+  - text: "Side with Jake: \u201CYeah, because I'm here to ruin your productive streak
       Jake, oh wait you don\u2019t have one\u201D "
     nextScene: {fileID: 11400000, guid: ce0808602a9c40140b5b8ca5dc66c39a, type: 2}
     StressChange: 0

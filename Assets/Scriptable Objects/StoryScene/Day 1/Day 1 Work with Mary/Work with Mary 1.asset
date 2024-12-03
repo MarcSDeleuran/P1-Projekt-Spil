@@ -34,7 +34,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '"Hey..."'
+  - text: '"Hey... :("'
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -50,9 +50,14 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '"Yeah, lets do that"'
+  - text: '"Yeah, let''s do that"'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -67,10 +72,15 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CHey, We survived the lecture, Huh? I was about to fall asleep.\u201D\LShe
-      follows with a short laugh"
+  - text: "\u201CHey, We survived the lecture, Huh? I was about to fall asleep.\u201D
+      She follows with a short laugh"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -86,7 +96,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: "\u201CNo not really, that\u2019s why I got exciting when you picked me,
-      I hoped you would have understand it\u201D"
+      I hoped you would have understoodd it\u201D"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -95,7 +105,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: '[Feeling a slight flutter of excitement. Studying with Mary feels more
-      like a dream then a study session.]'
+      like a dream than a study session.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -113,3 +123,5 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
   nextScene: {fileID: 11400000, guid: 757d2ed5a5d25f446984041ca781f516, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

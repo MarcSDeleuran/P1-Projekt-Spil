@@ -19,17 +19,28 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CAre they serious right now?!, Two major assignments in one week?
       It\u2019s not possibly\u201D "
     speaker: {fileID: 11400000, guid: 6c7ef3a254f03e2439798fad96734ff9, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CAt least we got an extra day for the big one. Imagine if they both
-      were for tomorrow\u201D "
+      were due tomorrow\u201D "
     speaker: {fileID: 11400000, guid: c0387d27e9a165d46bce5924940528b2, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
   nextScene: {fileID: 11400000, guid: 0522b76c1f5e18b4baac3f0adcc22c65, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

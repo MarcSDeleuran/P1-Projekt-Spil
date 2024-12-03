@@ -13,28 +13,36 @@ MonoBehaviour:
   m_Name: Day 2 Gabe or Jake morning 2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: You walk into the classroom and find a seat. The teacher comes in carrying
-      a huge stack of papers.
+  - text: You walk into the classroom and find a seat. The teacher walks in while
+      carrying a huge stack of papers.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CAlright everyone, take a seat, quiet down.\u201D"
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: The class pause, looking lost at the teacher
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: The class pauses, looking lost at the teacher
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CLet\u2019s focus class, and yes, I know you\u2019re all feeling
       stressed. Let me clarify the new assignment is due Wednesday night. And yes,
       I know that sounds unrealistic.\u201D "
@@ -42,8 +50,9 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CSo, you should\u2019ve started on the main project by now.... Remember,
       it\u2019s due Friday. Both of these are critical, so you need to plan your
       time wisely.\" "
@@ -51,23 +60,38 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: 'A deep silence envelops the class, you quickly look around, Gabe already
       deep in his notes, Jake besides you, leans back in his chair, arms crossed.  '
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: "Jake whispers \u201CTwo assignments? Who do they think WE are, geniuses
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Jake whispers \u201CTwo assignments? Who do they think we are, geniuses
       like Gabe?\u201D "
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
   nextScene: {fileID: 11400000, guid: a69dac27c74e69646ac2d7c74f440b50, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

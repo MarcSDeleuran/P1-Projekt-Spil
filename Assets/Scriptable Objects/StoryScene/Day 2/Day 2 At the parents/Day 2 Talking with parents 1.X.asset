@@ -15,7 +15,7 @@ MonoBehaviour:
   Options:
   - text: "\u201CYeah, I got a plan. It\u2019s been a bit hectic with these two assignments,
       but I'll get everything done\u201D "
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: b1d4f3ff03ac57f4488702284a86fc63, type: 2}
     StressChange: -5
     AcademicChange: 0
     SocialChange: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
     ChoiceIcon: {fileID: 0}
   - text: "\u201CI\u2019m trying, I really am... but it feels like there is not enough
       time for everything they want me to do\u201D "
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 7e5742f08fd319644a14fa7e2d196e57, type: 2}
     StressChange: -2
     AcademicChange: 0
     SocialChange: 0
@@ -35,7 +35,7 @@ MonoBehaviour:
     ChoiceIcon: {fileID: 0}
   - text: "\u201CEnough about school! What\u2019s going on with you two.\u201D You
       try to sell it with a big smile."
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 87e277f3f1c7693498ed91e4faadfe3e, type: 2}
     StressChange: 3
     AcademicChange: 0
     SocialChange: 0

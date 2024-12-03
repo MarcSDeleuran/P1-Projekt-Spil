@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Go with mary now or wait
   m_EditorClassIdentifier: 
   Options:
-  - text: "\u201CLets head out\u201D"
+  - text: "\u201CLet's head out\u201D"
     nextScene: {fileID: 11400000, guid: 013afdc71ec345245af3e21586860377, type: 2}
     StressChange: 0
     AcademicChange: 0

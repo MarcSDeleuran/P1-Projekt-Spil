@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Day 2 Mary midday filler 1
   m_EditorClassIdentifier: 
   Options:
-  - text: "\u201CWhy hide when I can stress out in Public?\u201D"
+  - text: "\u201CWhy hide when I can stress out in public?\u201D"
     nextScene: {fileID: 11400000, guid: 03a07f1b3fa60514c9f18a712523e96c, type: 2}
     StressChange: 0
     AcademicChange: 0
