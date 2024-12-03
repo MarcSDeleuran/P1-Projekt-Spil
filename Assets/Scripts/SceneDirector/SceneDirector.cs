@@ -18,6 +18,9 @@ namespace SceneDirection
         public GameObject NameField;
         public float SwitchTime;
         public GameObject journalUI;
+        public EndScreen ES;
+        public StatsAndJournal SAJ;
+        public GameObject InGameUI;
         private enum SceneState
         {
             IDLE, ANIMATE, CHOOSE
@@ -38,6 +41,25 @@ namespace SceneDirection
 
                             if (DC.IsLastSentence())
                             {
+                                if ((currentScene as StoryScene).FinalScene)
+                                {
+                                    VNACTIVE = false;
+                                    
+                                    
+                                    string stats = $"Stress: {GameManager.Instance.StressAmount} \n" +
+                                        $"Academics: {GameManager.Instance.AcademicAmount} \n" +
+                                        $"Social: {GameManager.Instance.SocialAmount}";
+                                    ES.Stats.text = stats;
+
+                                    string goals = $"Stress {SAJ.relaxPoints} \n" +
+                                        $"social {SAJ.schoolPoints} \n" +
+                                        $"school {SAJ.schoolPoints}";
+                                    ES.Goals.text = goals;
+                                    InGameUI.SetActive(false);
+                                    ES.gameObject.SetActive(true);
+
+                                }
+                                else
                                 PlayScene((currentScene as StoryScene).nextScene);
 
                             }

@@ -10,6 +10,8 @@ namespace SceneDirection
         public Sprite background;
         public GameScene nextScene;
         public bool OpenJournal = false;
+        public bool FinalScene = false;
+
         [System.Serializable]
         public struct Sentence
         {

@@ -48,9 +48,9 @@ public class StatsAndJournal : MonoBehaviour
     [SerializeField] private TextMeshProUGUI relaxPointsText;
     private bool inStats;
     private int pointsRemaining = 10;
-    private int schoolPoints;
-    private int socialPoints;
-    private int relaxPoints;
+    public int schoolPoints;
+    public int socialPoints;
+    public int relaxPoints;
     private bool ChangeAllowed = true;
 
     private void Awake()
