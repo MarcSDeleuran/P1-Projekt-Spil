@@ -15,18 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\u201CI barely made it out alive XD, lets meet at school!\u201D "
     nextScene: {fileID: 11400000, guid: 9d9dc1ac74b80a44ea3226a10396484c, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CYeah, I just really hope we're gonna get it done in time\u201D "
     nextScene: {fileID: 11400000, guid: da46a216bbcc0c5429207a85aac893ee, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you reply?
   Music: {fileID: 0}
   Sound: {fileID: 0}

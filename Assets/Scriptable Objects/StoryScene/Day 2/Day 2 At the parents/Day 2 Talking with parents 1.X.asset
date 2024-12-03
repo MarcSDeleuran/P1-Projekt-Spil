@@ -16,27 +16,33 @@ MonoBehaviour:
   - text: "\u201CYeah, I got a plan. It\u2019s been a bit hectic with these two assignments,
       but I'll get everything done\u201D "
     nextScene: {fileID: 0}
+    StressChange: -5
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI\u2019m trying, I really am... but it feels like there is not enough
       time for everything they want me to do\u201D "
     nextScene: {fileID: 0}
+    StressChange: -2
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CEnough about school! What\u2019s going on with you two.\u201D You
       try to sell it with a big smile."
     nextScene: {fileID: 0}
+    StressChange: 3
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you tell your parents?
   Music: {fileID: 0}
   Sound: {fileID: 0}

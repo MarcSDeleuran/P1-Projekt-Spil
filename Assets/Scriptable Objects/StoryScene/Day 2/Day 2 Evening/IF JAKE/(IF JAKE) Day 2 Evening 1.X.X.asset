@@ -16,18 +16,22 @@ MonoBehaviour:
   - text: "\u201CAll right, I'm in. Sounds better than staring at my desk and praying
       for multiple miracles.\u201D "
     nextScene: {fileID: 11400000, guid: 9c80f21b0eba88f4e91d36cefe59b31f, type: 2}
+    StressChange: -3
+    AcademicChange: -5
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI really can\u2019t. These assignments won\u2019t finish themselves.\u201D "
     nextScene: {fileID: 11400000, guid: 56a8e2ed4f158ab4dba5aede0508e0b9, type: 2}
+    StressChange: 3
+    AcademicChange: 5
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: Do you go to Jakes or stay at home and finish the assignment.
   Music: {fileID: 0}
   Sound: {fileID: 0}

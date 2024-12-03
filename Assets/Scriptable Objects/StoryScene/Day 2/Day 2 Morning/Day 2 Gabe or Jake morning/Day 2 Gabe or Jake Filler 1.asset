@@ -15,19 +15,23 @@ MonoBehaviour:
   Options:
   - text: "\u201CI mean, maybe if we combined our forces, we would equal half a Gabe\u201D "
     nextScene: {fileID: 11400000, guid: ee4cb05592401dd4faa21e7a554d3a17, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 2
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CWe\u2019re not getting out of this one. We better start praying
       and planning.\u201D "
     nextScene: {fileID: 11400000, guid: 65e2fd07c5c1eee42b270ae5cca59ba1, type: 2}
+    StressChange: -2
+    AcademicChange: 2
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: Crack a joke or answer seriously?
   Music: {fileID: 0}
   Sound: {fileID: 0}

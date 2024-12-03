@@ -15,26 +15,32 @@ MonoBehaviour:
   Options:
   - text: "\u201CDoing great dad! Just busy, you remember how it is.\u201D"
     nextScene: {fileID: 11400000, guid: ac382045277f2454c9542a7e8e5e6fb3, type: 2}
+    StressChange: 1
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CIt\u2019s been... a lot. We got two assignments this week, and I'm
       really feeling the pressure.\u201D"
     nextScene: {fileID: 11400000, guid: 1403bd5498534004bb3ae9747ceeb366, type: 2}
+    StressChange: -3
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CSame old, same old. What\u2019s up with you guys? Anything new?\u201D"
     nextScene: {fileID: 11400000, guid: a818e51385faefc4fa06656da550cdb3, type: 2}
+    StressChange: 5
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you tell your dad?
   Music: {fileID: 0}
   Sound: {fileID: 0}
