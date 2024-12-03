@@ -15,19 +15,23 @@ MonoBehaviour:
   Options:
   - text: "\u201CYeah, that sounds like fun\u201D"
     nextScene: {fileID: 11400000, guid: 9c76fc6e4692788459663111bdcf8487, type: 2}
+    StressChange: -2
+    AcademicChange: -5
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CNo, we should stay and work here. I think we would get more work
       done\u201D"
     nextScene: {fileID: 11400000, guid: 40fbbc911a4f3ed4bbba58aaff2c76f6, type: 2}
+    StressChange: 5
+    AcademicChange: 5
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What is your response?
   Music: {fileID: 0}
   Sound: {fileID: 0}

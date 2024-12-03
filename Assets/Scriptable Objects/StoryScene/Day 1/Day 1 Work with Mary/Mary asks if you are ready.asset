@@ -15,8 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\"Honestly? Not really. But hey, that\u2019s what studying\u2019s for.\""
     nextScene: {fileID: 11400000, guid: 3a6c1bcbe8ec5424fa02f2fd034b06ea, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\"With you around? I\u2019m not sure I\u2019ll get any studying done.\""
     nextScene: {fileID: 11400000, guid: f80d38fa33c2e0f40a1d714622db1187, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: Are you ready?
   Music: {fileID: 0}
   Sound: {fileID: 0}

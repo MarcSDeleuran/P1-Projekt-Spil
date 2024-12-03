@@ -15,8 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\u201CWhat a shit joke Jake\u201D"
     nextScene: {fileID: 11400000, guid: 2c693ef6131ec2a4c87121a6bb8e5774, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: -5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CHAHAHAHHA, i love that one.\u201D"
     nextScene: {fileID: 11400000, guid: 6ed747859b577ed42b241f2a3a18274d, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: How do you respond to Jakes joke
   Music: {fileID: 0}
   Sound: {fileID: 0}

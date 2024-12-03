@@ -15,8 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\u201CWhatever let\u2019s just get started\u201D"
     nextScene: {fileID: 11400000, guid: 8dd3c616fc34a6f4d998d8298ce445b2, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CCome on man, you need to step up here or we will fail the exam.\u201D"
     nextScene: {fileID: 11400000, guid: 3151a2b7f2cdfa24684b7188993a6dec, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: -3
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: "\u201CI\u2019m just not made for this school shit...\u201D"
   Music: {fileID: 0}
   Sound: {fileID: 0}

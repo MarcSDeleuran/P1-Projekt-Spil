@@ -15,18 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\"Beers like usual Jake?\u201D"
     nextScene: {fileID: 11400000, guid: dda8b64df4aa64a4aaf8d82238c454b7, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 2
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI\u2019ll have whatever you are having Mary\u201D"
     nextScene: {fileID: 11400000, guid: 23a5081eaad0b3f4db5b1fc6147f23fc, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What is your choice of drink?
   Music: {fileID: 0}
   Sound: {fileID: 0}

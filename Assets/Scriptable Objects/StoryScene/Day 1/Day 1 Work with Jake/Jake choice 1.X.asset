@@ -15,8 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\u201CAny chance to spend time with Mary is a yes from me\u201D  "
     nextScene: {fileID: 11400000, guid: f7fdf08e2d9ffe144893aa166a24d4cd, type: 2}
+    StressChange: 0
+    AcademicChange: -5
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CShouldn\u2019t we be working on the exam? We barely even started...\u201D"
     nextScene: {fileID: 11400000, guid: 5054c9081ac76c5448434986a69dcfee, type: 2}
+    StressChange: 2
+    AcademicChange: 5
+    SocialChange: -5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: "\u201CMary just texted me, she asks us if we want to join her at
     a party later?\u201D"
   Music: {fileID: 0}

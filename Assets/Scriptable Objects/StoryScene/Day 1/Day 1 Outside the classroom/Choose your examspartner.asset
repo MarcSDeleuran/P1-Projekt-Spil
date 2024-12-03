@@ -15,27 +15,27 @@ MonoBehaviour:
   Options:
   - text: Work with Jake
     nextScene: {fileID: 11400000, guid: c46fd3b26cfc18b4790e793f3303431b, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: -5
+    AcademicChange: -5
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 21300000, guid: 0ce26c608a7ef54429611c6ae93efa3f, type: 3}
   - text: Work with Mary
     nextScene: {fileID: 11400000, guid: 24fd34f50e406bf4baa84b717b035dde, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: 3
+    AcademicChange: 2
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 21300000, guid: 4870b70c73584ea499e04a16118c64c5, type: 3}
   - text: Work with Gabe
     nextScene: {fileID: 11400000, guid: 6fe732d6e06469e488ceea7de3786413, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: 3
+    AcademicChange: 5
+    SocialChange: -1
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0

@@ -15,8 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\"I\u2019m just trying to impress my study partner.\""
     nextScene: {fileID: 11400000, guid: 6e73cc4d6a8bb8e46adfab4a875b445e, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: '"Good point. Pacing myself is probably smart."'
     nextScene: {fileID: 11400000, guid: 0a954301bd6c02946a3f14163b7d726b, type: 2}
+    StressChange: -3
+    AcademicChange: 3
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: "\"Hey, don\u2019t burn out in the first five minutes. We\u2019ve
     got a whole week ahead of us.\""
   Music: {fileID: 0}
