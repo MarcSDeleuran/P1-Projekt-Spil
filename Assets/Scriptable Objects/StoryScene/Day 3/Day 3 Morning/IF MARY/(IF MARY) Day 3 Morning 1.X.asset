@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: (IF MARY) Day 3 Morning 1.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201COf course! I'm on it, nothing\u2019s stopping us now!\u201D"
+    nextScene: {fileID: 11400000, guid: 603d17400cdd26546b1eb0847bfb8262, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  - text: "\u201CI don\u2019t know..... fells like there\u2019s too much going on
+      right now\u201D "
+    nextScene: {fileID: 11400000, guid: 425815cce2fe7cc4f9e4562ca0ef064f, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  QuestionText: What do you reply?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

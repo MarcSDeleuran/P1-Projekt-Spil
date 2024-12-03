@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: After Lunch Jake 1
+  m_Name: After Lunch Jake 1.2.X.2 Continued
   m_EditorClassIdentifier: 
   Sentences:
-  - text: As you walk over to Jake, you start to think about what Jake said yesterday.
+  - text: 'As you walk home you feel relieved '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,7 +21,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[Jake could actually fail this exam.]'
+  - text: '[It felt so good finally getting through to Jake.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -29,7 +29,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[And if he does.. He will be kicked out]'
+  - text: '[I felt like I really had purpose.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -37,8 +37,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: You start feeling anxiety when you realize that you could lose your best
-      friend.
+  - text: You start to think about everything you have learned from the doctor.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -46,7 +45,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[He would be left behind in the system.]'
+  - text: '[All of these things I have learned...]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -54,7 +53,15 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[I have to do something.]'
+  - text: '[They actually make a difference.]'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '[Not only for me, but also for others.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -63,4 +70,4 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 56733ca6335f5594cbc8de8658d68992, type: 3}
-  nextScene: {fileID: 11400000, guid: b4c487a878056c947bfb8ade633b80f5, type: 2}
+  nextScene: {fileID: 11400000, guid: caecf4bd69dad8a4c8e5dba17e32006c, type: 2}

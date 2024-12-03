@@ -10,12 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: 4.3 C
+  m_Name: Day 3 Getting to School 1.X
   m_EditorClassIdentifier: 
   Options:
-  - text: Kiss her
-    nextScene: {fileID: 11400000, guid: 22159c4a91e524c5ea2e3f610b971869, type: 2}
-    StressChange: 0
+  - text: "Grab a coffee. [Five minutes won\u2019t be the end of me, and the caffeine
+      won\u2019t hurt either.]"
+    nextScene: {fileID: 0}
+    StressChange: -2
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  - text: Head to class. [No time for breaks. Just going to get to class and take
+      it from there.]
+    nextScene: {fileID: 0}
+    StressChange: 2
     AcademicChange: 0
     SocialChange: 0
     flag: 0

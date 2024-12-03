@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: After Lunch Jake 1
+  m_Name: Day 4 Evening 1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: As you walk over to Jake, you start to think about what Jake said yesterday.
+  - text: 'As the day comes to a close, the reality of the exam hits you '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,7 +21,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[Jake could actually fail this exam.]'
+  - text: '[Just one day left. I feel like the week has gone by so quickly.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -29,7 +29,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[And if he does.. He will be kicked out]'
+  - text: '(High academic) You: [But I feel ready for this. I have studied effectively
+      the whole week.] '
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -37,16 +38,9 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: You start feeling anxiety when you realize that you could lose your best
-      friend.
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: '[He would be left behind in the system.]'
+  - text: "(Low academic) You: [I don\u2019t feel quite ready. I probably should
+      have prioritized studying more this week. There are just so many things that
+      I want to do.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -54,7 +48,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[I have to do something.]'
+  - text: '[I should probably go to bed. I need to be well-rested for tomorrow.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -62,5 +56,14 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 56733ca6335f5594cbc8de8658d68992, type: 3}
-  nextScene: {fileID: 11400000, guid: b4c487a878056c947bfb8ade633b80f5, type: 2}
+  - text: '[On the other hand, I could use a little more time reviewing my notes
+      tonight before turning in the exam.]'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
+  nextScene: {fileID: 11400000, guid: 360822bf4a1be6a49892f7e0e41fd09b, type: 2}

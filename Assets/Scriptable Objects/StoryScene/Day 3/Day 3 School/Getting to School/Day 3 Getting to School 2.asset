@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: After Lunch Jake 1
+  m_Name: Day 3 Getting to School 2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: As you walk over to Jake, you start to think about what Jake said yesterday.
+  - text: You enter the classroom, the feeling of nervousness from the impending
+      exam is clear to see.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,24 +22,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[Jake could actually fail this exam.]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: '[And if he does.. He will be kicked out]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: You start feeling anxiety when you realize that you could lose your best
-      friend.
+  - text: The classroom feels different than usual, the looming deadline is overloading
+      everyone.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -46,21 +31,40 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[He would be left behind in the system.]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+  - text: You find a seat near the middle of the room. Jake is already there, Gabe
+      is flipping through his notes. Mary comes in shortly after, looking unusually
+      focused.
+    speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[I have to do something.]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+  - text: The room quietens as the teacher walks in.
+    speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 56733ca6335f5594cbc8de8658d68992, type: 3}
-  nextScene: {fileID: 11400000, guid: b4c487a878056c947bfb8ade633b80f5, type: 2}
+  - text: "\u201CAlright, everyone, settle down please. I know this week is a lot,
+      but let\u2019s stay on track.\u201D"
+    speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: While the teacher scribbles some notes on the blackboard you look around.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
+  nextScene: {fileID: 11400000, guid: e2c976fcd93cc464eb67452ef46043eb, type: 2}

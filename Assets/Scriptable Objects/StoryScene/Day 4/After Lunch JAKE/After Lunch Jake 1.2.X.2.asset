@@ -10,10 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: After Lunch Jake 1
+  m_Name: After Lunch Jake 1.2.X.2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: As you walk over to Jake, you start to think about what Jake said yesterday.
+  - text: "\u201CWell, I have to get home and work on the exam.\u201C"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CBut Jake. You got this. I believe in you.\u201D"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: 'Jake smiles '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,46 +37,22 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[Jake could actually fail this exam.]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+  - text: "\u201CThank you. You are a really good friend.\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[And if he does.. He will be kicked out]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+  - text: "\u201CI know I haven\u2019t been easy to work with. But I really needed
+      this push.\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: You start feeling anxiety when you realize that you could lose your best
-      friend.
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: '[He would be left behind in the system.]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: '[I have to do something.]'
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  background: {fileID: 21300000, guid: 56733ca6335f5594cbc8de8658d68992, type: 3}
-  nextScene: {fileID: 11400000, guid: b4c487a878056c947bfb8ade633b80f5, type: 2}
+  background: {fileID: 21300000, guid: 9b58e1b3e6fd42241bd4ef52ebe68b1f, type: 3}
+  nextScene: {fileID: 11400000, guid: caecf4bd69dad8a4c8e5dba17e32006c, type: 2}
