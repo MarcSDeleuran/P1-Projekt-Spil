@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -124,7 +125,67 @@ namespace SceneDirection
             }
 
             currentScene = scene;
+            if (scene is CheckScene)
+            {
+                CheckScene checkScene = (CheckScene)scene;
+                foreach (var req in checkScene.Requirement)
+                {
+                    if (req.AcademicReq != 0)
+                    {
+                        if (GameManager.Instance.AcademicAmount >= req.AcademicReq)
+                        {
+                            PlayScene(req.nextScene);
+                            break;
+                        }
+                    }
 
+                    if (req.SocialReq != 0)
+                    {
+                        if (GameManager.Instance.SocialAmount >= req.SocialReq)
+                        {
+                            PlayScene(req.nextScene);
+                            break;
+                        }
+                    }
+
+                    if (req.StressReq != 0)
+                    {
+                        if (GameManager.Instance.StressAmount >= req.StressReq)
+                        {
+                            PlayScene(req.nextScene);
+                            break;
+                        }
+                    }
+
+                    if (req.AcademicUnderReq != 0)
+                    {
+                        if (GameManager.Instance.AcademicAmount <= req.AcademicUnderReq)
+                        {
+                            PlayScene(req.nextScene);
+                            break;
+                        }
+                    }
+
+                    if (req.SocialUnderReq != 0)
+                    {
+                        if (GameManager.Instance.SocialAmount <= req.SocialUnderReq)
+                        {
+                            PlayScene(req.nextScene);
+                            break;
+                        }
+                    }
+
+                    if (req.StressUnderReq != 0)
+                    {
+                        if (GameManager.Instance.StressAmount <= req.StressUnderReq)
+                        {
+                            PlayScene(req.nextScene);
+                            break;
+                        }
+                    }
+                }
+                PlayScene(checkScene.DefaultScene);
+            }
             if (scene is WriteScene)
             {
                 VNACTIVE = false;
