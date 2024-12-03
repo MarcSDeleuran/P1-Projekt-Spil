@@ -19,35 +19,40 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 300, y: 0}
+      Coords: {x: 500, y: 0}
       MoveSpeed: 0
     - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 100, y: 0}
+      Coords: {x: 0, y: 0}
       MoveSpeed: 0
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: -100, y: 0}
+      Coords: {x: 500, y: 0}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
-  - text: '"Dont call me that!!"'
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Don''t call me that!!"'
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: '"Okay guys. Lets just calm down.. We are all in this together."'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
   nextScene: {fileID: 11400000, guid: 293ccd037a1305846856146f4034f28a, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

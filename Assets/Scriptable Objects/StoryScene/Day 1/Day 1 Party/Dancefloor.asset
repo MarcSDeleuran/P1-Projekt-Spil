@@ -13,24 +13,35 @@ MonoBehaviour:
   m_Name: Dancefloor
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "With atleast 50 others you start groovin\u2019\L\u201DYou know this one
-      guys? Its called the griddy\u201D\L You say, now mimicking a dance move you
+  - text: "With atleast 50 others you start groovin\u2019 \u201DYou know this one
+      guys? It's called the griddy\u201D You say, now mimicking a dance move you
       saw on TikTok weeks ago"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "Mary laughing and shaking her head at you \u201CThat is god awful\u201D
       Let me show you one instead"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-  - text: "Mary starts swinging her arms and legs in a crazy dance routine.  \u201CHow
-      about them apples\u201D  She shouts, the confidence shining out her eyes."
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Mary starts swinging her arms and legs in a crazy dance routine. \u201CHow
+      about them apples\u201D She shouts, the confidence shining out her eyes."
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: e06d561787c6fdd41867b14a4281d31b, type: 3}
   nextScene: {fileID: 11400000, guid: 2bbe735cd6a0f684980f43d530b560ca, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

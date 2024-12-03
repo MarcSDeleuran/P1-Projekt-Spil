@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Work with Jake 1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "\u201CThats what I wanna hear.\u201D"
+  - text: "\u201CThat's what I wanna hear.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
@@ -36,3 +36,5 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
   nextScene: {fileID: 11400000, guid: 1629c690a67547f49b6da5183de7ba78, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

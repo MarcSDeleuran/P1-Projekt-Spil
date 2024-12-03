@@ -165,7 +165,7 @@ public class GameManager : MonoBehaviour
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
 
-                stressAmount = 50,
+                stressAmount = 25,
                 academicAmount = 100,
                 socialAmount = 100,
                 characterName = CharacterName

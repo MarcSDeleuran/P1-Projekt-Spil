@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "\u201CHAHAHAHHA, i love that one.\u201D"
+  - text: "\u201CHAHAHAHHA, I love that one.\u201D"
     nextScene: {fileID: 11400000, guid: 6ed747859b577ed42b241f2a3a18274d, type: 2}
     StressChange: 0
     AcademicChange: 0

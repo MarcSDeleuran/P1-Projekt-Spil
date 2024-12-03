@@ -28,7 +28,6 @@ namespace SceneDirection
         public GameObject spritesPrefab;
         public float TextSpeed;
         private Coroutine typingCoroutine;
-        public float defaultTextSpeed = 1;
 
         private enum DialogueState
         {
@@ -237,12 +236,10 @@ namespace SceneDirection
 
             if (controller != null)
             {
-                Debug.Log("spritecontroller wasn't null");
                 if (action.ActionType == StoryScene.Sentence.Action.Type.DISAPPEAR)
                     return;
 
                 controller.SwitchSprite(action.Speaker.sprites[action.SpriteIndex]);
-                Debug.Log(action.SpriteIndex);
             }
         }
 
@@ -251,7 +248,6 @@ namespace SceneDirection
             DialogueText.text = "";
             state = DialogueState.PLAYING;
             int wordIndex = 0;
-            TextSpeed = defaultTextSpeed;
 
             while (state != DialogueState.COMPLETED)
             {

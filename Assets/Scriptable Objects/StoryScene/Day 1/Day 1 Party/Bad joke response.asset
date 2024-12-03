@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Bad joke response
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "Jake seems a little disappointed by youre remark\L\u201DOh come on you
+  - text: "Jake seems a little disappointed by you're remark \u201DOh come on you
       love it.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 16551fc882a41f547a9470830c3dc5e1, type: 3}
   nextScene: {fileID: 11400000, guid: f8d1a8d111b75454fa6971219042884f, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

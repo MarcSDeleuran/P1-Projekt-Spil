@@ -47,10 +47,10 @@ public class StatsAndJournal : MonoBehaviour
     [SerializeField] private Button relaxRightButton;
     [SerializeField] private TextMeshProUGUI relaxPointsText;
     private bool inStats;
-    private int pointsRemaining = 10;
-    public int schoolPoints;
-    public int socialPoints;
-    public int relaxPoints;
+    private int pointsRemaining = 0;
+    public int schoolPoints = 100;
+    public int socialPoints = 100;
+    public int relaxPoints = 100;
     private bool ChangeAllowed = true;
 
     private void Awake()

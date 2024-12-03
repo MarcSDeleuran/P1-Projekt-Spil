@@ -23,7 +23,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "\u201CWhatever man, you just go the party, i will keep working on this...
+  - text: "\u201CWhatever man, you just go the party, I will keep working on this...
       But you will owe me one\u201D"
     nextScene: {fileID: 11400000, guid: 735223e6c2f71b54aaa33b1428ab1b08, type: 2}
     StressChange: 2
@@ -33,7 +33,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "\u201CFine then, you convinced me. Let me pack my bag, then im ready.\u201D"
+  - text: "\u201CFine then, you convinced me. Let me pack my bag, then I'm ready.\u201D"
     nextScene: {fileID: 11400000, guid: 086dc38861a0db24e833a170a70460fd, type: 2}
     StressChange: 2
     AcademicChange: -5

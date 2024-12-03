@@ -15,7 +15,12 @@ MonoBehaviour:
   Sentences:
   - text: Yes of course! Mr. [PlayerName]
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -41,7 +46,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: There are ways to manage it!
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -49,3 +59,5 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
   nextScene: {fileID: 11400000, guid: 624446e50fa56944ba644f9a83599695, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
