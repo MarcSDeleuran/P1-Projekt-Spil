@@ -62,18 +62,28 @@ public class StatsAndJournal : MonoBehaviour {
             socialSlider.value = 0;
             if (!chapter1Completed){
                 chapter1Locked.SetActive(true);
+            } else {
+                chapter1Locked.SetActive(false);
             }
             if (!chapter2Completed){
                 chapter2Locked.SetActive(true);
+            } else {
+                chapter2Locked.SetActive(false);
             }
             if (!chapter3Completed){
                 chapter3Locked.SetActive(true);
+            } else {
+                chapter3Locked.SetActive(false);
             }
             if (!chapter4Completed){
                 chapter4Locked.SetActive(true);
+            } else {
+                chapter4Locked.SetActive(false);
             }
             if (!chapter5Completed){
                 chapter5Locked.SetActive(true);
+            } else {
+                chapter5Locked.SetActive(false);
             }
         });
         statsBackButton.onClick.AddListener(() => {
