@@ -16,9 +16,9 @@ MonoBehaviour:
   - text: "\u201CShe actually did. Right before how\u2019s the wife and kids.\u201D
       Jake sends a dying laughing emoji."
     nextScene: {fileID: 11400000, guid: 9c80f21b0eba88f4e91d36cefe59b31f, type: 2}
-    StressChange: 0
+    StressChange: -3
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   - text: "\u201CI\u2019m sure they mean well, but it\u2019s just... I\u2019m already
       feeling behind, and now I got to deal with their pressure.\u201D"
     nextScene: {fileID: 11400000, guid: 56a8e2ed4f158ab4dba5aede0508e0b9, type: 2}
-    StressChange: 0
+    StressChange: 3
     AcademicChange: 0
     SocialChange: 0
     flag: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     nextScene: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0

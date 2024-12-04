@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Day 3 Evening end
   m_EditorClassIdentifier: 
   Sentences:
-  - text: 'You collapse on the bed, all the events of the day running through your
-      mind. '
+  - text: You collapse on the bed, all the events of the day running through your
+      mind.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

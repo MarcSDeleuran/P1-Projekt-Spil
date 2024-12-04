@@ -18,18 +18,20 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: eb434e0ae26d66d49a9a3ad40314a726, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CIt would never come to that, you\u2019re a smart guy Jake.\u201D "
     nextScene: {fileID: 11400000, guid: 7a955e41987d1874b859a3b76f42267a, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

@@ -21,6 +21,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: Work with Jake and Gabe
     nextScene: {fileID: 11400000, guid: 222551901e3807540a4f1124207e8acd, type: 2}
     StressChange: 0
@@ -29,6 +30,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: As the class ends you decide who to work with.
   Music: {fileID: 0}
   Sound: {fileID: 0}

@@ -19,14 +19,19 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: -3
+    AcademicChange: 0
+    SocialChange: 3
   - text: "Dad does a small laugh and continues, \u201CIt\u2019s just different today.\u201D"
     speaker: {fileID: 11400000, guid: ed28a80baf3e362428fc8d7fbf9afe2e, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: a3400fa4227408442aee116123078265, type: 3}
   nextScene: {fileID: 11400000, guid: 4ff2beb9d65da724b87864c4d9787abc, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

@@ -28,8 +28,8 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
+    StressChange: -5
+    AcademicChange: 5
     SocialChange: 0
   - text: As the sun is going down, you get a notification, it's a reminder about
       the assignment due tonight.

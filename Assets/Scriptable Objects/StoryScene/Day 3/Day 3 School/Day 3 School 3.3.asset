@@ -38,6 +38,9 @@ MonoBehaviour:
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
   nextScene: {fileID: 11400000, guid: 821152ae8ab73f94a8a3b1ea6eb5e65d, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

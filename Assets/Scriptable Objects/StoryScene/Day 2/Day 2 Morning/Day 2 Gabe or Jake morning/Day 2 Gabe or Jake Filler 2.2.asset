@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Day 2 Gabe or Jake Filler 2.2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Jake is surprised, but nods
+  - text: Jake is surprised, but nods.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
   nextScene: {fileID: 11400000, guid: e192f399f55377149900860e96b5d084, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0
