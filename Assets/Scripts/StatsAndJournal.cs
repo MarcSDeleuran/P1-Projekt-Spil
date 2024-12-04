@@ -17,7 +17,7 @@ public class StatsAndJournal : MonoBehaviour
     [SerializeField] private GameObject chapter3Locked;
     [SerializeField] private GameObject chapter4Locked;
     [SerializeField] private GameObject chapter5Locked;
-    
+
     [Space(5)]
     [SerializeField] private Button statsButton;
     [SerializeField] private Button statsBackButton;
@@ -47,6 +47,7 @@ public class StatsAndJournal : MonoBehaviour
     [SerializeField] private Button relaxLeftButton;
     [SerializeField] private Button relaxRightButton;
     [SerializeField] private TextMeshProUGUI relaxPointsText;
+    public Image Vignette;
     private bool inStats;
     private int pointsRemaining = 0;
     public int schoolPoints = 100;
@@ -126,7 +127,7 @@ public class StatsAndJournal : MonoBehaviour
                     GameManager.Instance.SD.VNACTIVE = true;
                     ChangeAllowed = false;
                 }
-                    
+
             }
             else
                 journalUI.SetActive(false);
@@ -202,6 +203,18 @@ public class StatsAndJournal : MonoBehaviour
 
     private void Update()
     {
+        if (!GameManager.Instance.SD.VNACTIVE || GameManager.Instance.StressAmount < 160)
+        {
+            Vignette.color = new Color(1, 0, 0, 0); 
+        }
+        else
+        {
+
+            float stressNormalized = Mathf.Clamp01((GameManager.Instance.StressAmount - 140f) / 60f);
+            float alpha = Mathf.Lerp(0, 1, stressNormalized);
+
+            Vignette.color = new Color(1, 0, 0, alpha);
+        }
         if (inStats)
         {
             float stressScore = GameManager.Instance.StressAmount; // Skal udskiftes med score score

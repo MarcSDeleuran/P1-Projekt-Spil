@@ -38,7 +38,7 @@ namespace SceneDirection
                 GameObject referencedButton = child.gameObject;
                 OptionController optionController = referencedButton.GetComponent<OptionController>();
                 optionController.textMesh.text = "";
-
+                optionController.textMesh.color = Color.white;
                 optionController.scene = null;
                 optionController.SetFlagTrue = false;
                 optionController.StressChange = 0;
@@ -52,7 +52,7 @@ namespace SceneDirection
                 GameObject referencedButton = ChoiceContainer.transform.GetChild(i).gameObject;
                 OptionController optionController = referencedButton.GetComponent<OptionController>();
                 optionController.textMesh.text = scene.Options[i].text;
-
+                referencedButton.GetComponent<Button>().interactable = true;
                 referencedButton.SetActive(true);
                 optionController.scene = scene.Options[i].nextScene;
                 optionController.flag = scene.Options[i].FlagToSet;
@@ -74,8 +74,8 @@ namespace SceneDirection
                 optionController.textMesh.text = scene.Options[i].text;
                 if (scene.Options[i].flag != STORYFLAG.NONE && !FM.CheckFlag(scene.Options[i].flag))
                 {
-                    referencedButton.SetActive(false);
-                    optionController.textMesh.color = Color.red;
+                    referencedButton.GetComponent<Button>().interactable = false;
+                    optionController.textMesh.color = new Color(255, 255, 255, 30f/255f);
                 }
             }
 
