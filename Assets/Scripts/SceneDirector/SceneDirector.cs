@@ -300,9 +300,9 @@ namespace SceneDirection
             }
 
             state = SceneState.ANIMATE;
-            if (currentScene != null)
+            if (currentScene == null)
             {
-                DC.HideBox();
+                DC.ShowBox();
                 yield return new WaitForSeconds(SwitchTime);
             }
 
