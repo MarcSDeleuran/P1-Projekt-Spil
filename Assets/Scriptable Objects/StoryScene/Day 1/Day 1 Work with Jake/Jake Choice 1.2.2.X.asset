@@ -17,8 +17,8 @@ MonoBehaviour:
       will never get it done.\u201D"
     nextScene: {fileID: 11400000, guid: 78fea805b91fd884894789e35d8147af, type: 2}
     StressChange: 0
-    AcademicChange: 5
-    SocialChange: -2
+    AcademicChange: 10
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -26,9 +26,9 @@ MonoBehaviour:
   - text: "\u201CWhatever man, you just go the party, I will keep working on this...
       But you will owe me one\u201D"
     nextScene: {fileID: 11400000, guid: 735223e6c2f71b54aaa33b1428ab1b08, type: 2}
-    StressChange: 2
-    AcademicChange: 5
-    SocialChange: -5
+    StressChange: 10
+    AcademicChange: 15
+    SocialChange: -10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0

@@ -16,17 +16,17 @@ MonoBehaviour:
   - text: "\"I\u2019m not usually a party person\u2026 but I think I\u2019ll make
       an exception.\""
     nextScene: {fileID: 11400000, guid: d3ad4948450243d4caad544a5e12cb04, type: 2}
-    StressChange: 4
-    AcademicChange: -5
-    SocialChange: 5
+    StressChange: -5
+    AcademicChange: -20
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
   - text: "\"I think I\u2019ll pass. Gotta stay focused for the exams.\""
     nextScene: {fileID: 11400000, guid: 775537ffec74e4441b5b594d1a7f2b76, type: 2}
-    StressChange: -2
-    AcademicChange: 5
+    StressChange: 0
+    AcademicChange: 20
     SocialChange: -5
     flag: 0
     setFlagTrue: 0

@@ -24,7 +24,7 @@ MonoBehaviour:
     ChoiceIcon: {fileID: 0}
   - text: '"Good point. Pacing myself is probably smart."'
     nextScene: {fileID: 11400000, guid: 0a954301bd6c02946a3f14163b7d726b, type: 2}
-    StressChange: -3
+    StressChange: -10
     AcademicChange: 3
     SocialChange: 0
     flag: 0

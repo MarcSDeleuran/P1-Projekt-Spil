@@ -16,8 +16,22 @@ MonoBehaviour:
   - text: "\u201CSo you told her I was coming... I guess I'll have to come then\u201D
       you can\u2019t help but smile"
     nextScene: {fileID: 11400000, guid: 2be6ff7ade7967148a9d4f0355d3b9e2, type: 2}
+    StressChange: 10
+    AcademicChange: -20
+    SocialChange: 20
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CRight, you better get going then. I\u2019ll see you tomorrow\u201D"
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: d3cfebf62849c2a47b67dcce0f593cc6, type: 2}
+    StressChange: -10
+    AcademicChange: 10
+    SocialChange: -10
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

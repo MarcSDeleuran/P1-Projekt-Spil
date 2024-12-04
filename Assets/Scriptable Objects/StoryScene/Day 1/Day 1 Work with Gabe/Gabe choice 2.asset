@@ -15,18 +15,18 @@ MonoBehaviour:
   Options:
   - text: "\u201CI\u2019m just joking don\u2019t worry.. Let\u2019s get to work.\u201D"
     nextScene: {fileID: 11400000, guid: 08e6ce91941d70647a30fbf14b9f99e2, type: 2}
-    StressChange: -3
-    AcademicChange: 5
-    SocialChange: -2
+    StressChange: -20
+    AcademicChange: 10
+    SocialChange: -10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
   - text: Stay and work on the exam as you promised
     nextScene: {fileID: 11400000, guid: d617ea86d841b7243af86839a7a27c39, type: 2}
-    StressChange: 3
-    AcademicChange: 5
-    SocialChange: -2
+    StressChange: -10
+    AcademicChange: 15
+    SocialChange: -20
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0

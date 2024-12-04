@@ -25,7 +25,7 @@ MonoBehaviour:
   - text: "\u201CWait, I need to talk to the teacher first\u201D"
     nextScene: {fileID: 11400000, guid: 28b8fdbed6f2b7241b495cdb657ca42c, type: 2}
     StressChange: 0
-    AcademicChange: 2
+    AcademicChange: 5
     SocialChange: 0
     flag: 0
     setFlagTrue: 0

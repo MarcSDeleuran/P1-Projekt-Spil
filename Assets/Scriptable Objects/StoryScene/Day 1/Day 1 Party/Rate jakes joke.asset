@@ -17,7 +17,7 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 2c693ef6131ec2a4c87121a6bb8e5774, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: -5
+    SocialChange: -10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 6ed747859b577ed42b241f2a3a18274d, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 5
+    SocialChange: 20
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0

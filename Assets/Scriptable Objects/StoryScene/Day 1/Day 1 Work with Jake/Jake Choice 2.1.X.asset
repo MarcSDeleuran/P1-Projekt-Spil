@@ -16,9 +16,9 @@ MonoBehaviour:
   - text: "\u201CFuck it let\u2019s go then\u201D, you quickly pack your stuff and
       drop your stuff off at home before heading for the city. "
     nextScene: {fileID: 11400000, guid: 086dc38861a0db24e833a170a70460fd, type: 2}
-    StressChange: -2
-    AcademicChange: -5
-    SocialChange: 5
+    StressChange: -5
+    AcademicChange: -10
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
       will fail\u201D. "
     nextScene: {fileID: 11400000, guid: 3eb326df2e31bf34695652897df0a196, type: 2}
     StressChange: 0
-    AcademicChange: 5
+    AcademicChange: 10
     SocialChange: -5
     flag: 0
     setFlagTrue: 0

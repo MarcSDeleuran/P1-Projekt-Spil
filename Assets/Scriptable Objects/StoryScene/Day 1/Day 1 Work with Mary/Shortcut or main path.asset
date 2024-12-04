@@ -15,18 +15,18 @@ MonoBehaviour:
   Options:
   - text: "\"Let\u2019s take the garden route. Faster to the books!\""
     nextScene: {fileID: 11400000, guid: d1883d0bbb343c846bf8c30587d43590, type: 2}
-    StressChange: 0
-    AcademicChange: 2
-    SocialChange: 2
+    StressChange: 5
+    AcademicChange: 10
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
   - text: "\"The main path\u2014it\u2019s a nice day, so why not enjoy it?\""
     nextScene: {fileID: 11400000, guid: 1d6cae2c6be6fee499b773d1fc70f39a, type: 2}
-    StressChange: -5
-    AcademicChange: -2
-    SocialChange: 2
+    StressChange: -10
+    AcademicChange: -20
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0

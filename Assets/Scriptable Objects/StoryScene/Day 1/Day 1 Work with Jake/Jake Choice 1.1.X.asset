@@ -16,9 +16,9 @@ MonoBehaviour:
   - text: "\u201CGive me 5 minutes, I just need to lay down for a bit... My doctor
       told me to have some pauses throughout the day\u201D"
     nextScene: {fileID: 11400000, guid: f4c44d2ebe587d2448d608693c3bb41c, type: 2}
-    StressChange: -2
+    StressChange: -10
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -26,9 +26,9 @@ MonoBehaviour:
   - text: "\u201CYea let\u2019s get out of here, can\u2019t leave Mary waiting\u201D
       you wink at Jake"
     nextScene: {fileID: 11400000, guid: ba492908aa869ff459b57bec4ad143d5, type: 2}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 0
-    SocialChange: 3
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
