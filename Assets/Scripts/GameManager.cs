@@ -34,8 +34,19 @@ public class GameManager : MonoBehaviour
     public StatChangeAnimator STA;
     public float animationMultiplier;
     public bool MustAssignStats = false;
-    public int SaveFileId;
-
+    public int SaveFileId;   
+    public bool day1Achievement = false;
+    public bool day2Achievement = false;
+    public bool day3Achievement = false;
+    public bool day4Achievement = false;
+    public bool day5Achievement = false;
+    public GameObject day1Trophy;
+    public GameObject day2Trophy;
+    public GameObject day3Trophy;
+    public GameObject day4Trophy;
+    public GameObject day5Trophy;
+    public int currentChapter;
+    
 
     public void Awake()
     {
@@ -243,9 +254,12 @@ public class GameManager : MonoBehaviour
     public void EnterChapter(int buttonId)
     {
         DateTime dataCurrent = DateTime.Now; // Få datoen
+        
+        SD.TimeManagementReward.gameObject.SetActive(false);
 
         if (buttonId == 0 && dataCurrent.Day >= startDate + 0)
         {  // Hvis datoen er over startDatoen + ugedag
+
             StartGame(0);
         }
         else if (buttonId == 1 && dataCurrent.Day >= startDate + 1 && SAJ.chapter2Completed)
@@ -263,6 +277,14 @@ public class GameManager : MonoBehaviour
         else if (buttonId == 4 && dataCurrent.Day >= startDate + 4 && SAJ.chapter5Completed)
         {
             StartGame(4);
+
+            mainMenuUI.SetActive(false);
+            mainMenuCanvas.SetActive(false);
+            gameSceneUI.SetActive(true);
+            SD.VNACTIVE = true;
+            SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
+            currentChapter = buttonId + 1;
+
         }
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
@@ -272,11 +294,17 @@ public class GameManager : MonoBehaviour
 
 
     private void StartGame(int buttonId){
+       // mainMenuUI.SetActive(false);
+       // mainMenuCanvas.SetActive(false);
+       // gameSceneUI.SetActive(true);
+      //  SD.VNACTIVE = true;
+      //  SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
         mainMenuUI.SetActive(false);
-        mainMenuCanvas.SetActive(false);
-        gameSceneUI.SetActive(true);
-        SD.VNACTIVE = true;
-        SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
+            mainMenuCanvas.SetActive(false);
+            gameSceneUI.SetActive(true);
+            SD.VNACTIVE = true;
+            SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
+            currentChapter = buttonId + 1;
     }
 
 
