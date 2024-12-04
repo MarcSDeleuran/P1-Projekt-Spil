@@ -262,19 +262,19 @@ public class GameManager : MonoBehaviour
 
             StartGame(0);
         }
-        else if (buttonId == 1 && dataCurrent.Day >= startDate + 1 && SAJ.chapter2Completed)
+        else if (buttonId == 1 && dataCurrent.Day >= startDate + 1 && chaptersCompleted[1])
         {
             StartGame(1);
         }
-        else if (buttonId == 2 && dataCurrent.Day >= startDate + 2 && SAJ.chapter3Completed)
+        else if (buttonId == 2 && dataCurrent.Day >= startDate + 2 && chaptersCompleted[2])
         {
             StartGame(2);
         }
-        else if (buttonId == 3 && dataCurrent.Day >= startDate + 3 && SAJ.chapter4Completed)
+        else if (buttonId == 3 && dataCurrent.Day >= startDate + 3 && chaptersCompleted[3])
         {
             StartGame(3);
         }
-        else if (buttonId == 4 && dataCurrent.Day >= startDate + 4 && SAJ.chapter5Completed)
+        else if (buttonId == 4 && dataCurrent.Day >= startDate + 4 && chaptersCompleted[4])
         {
             StartGame(4);
 
