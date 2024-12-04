@@ -92,7 +92,7 @@ namespace SceneDirection
                                         BackgroundSwitcher.transform.GetChild(i).GetComponent<Image>().sprite = null;
                                     }
                                     DC.ResetSprites();
-                                    //GameManager.Instance.chaptersCompleted[(currentScene as StoryScene).FinalSceneChapterId] = true;
+                                    GameManager.Instance.chaptersCompleted[(currentScene as StoryScene).FinalSceneChapterId] = true;
 
                                     int stressAmoutLower = SAJ.relaxPoints - 10;
                                     int stressAmoutUpper = SAJ.relaxPoints + 10;
