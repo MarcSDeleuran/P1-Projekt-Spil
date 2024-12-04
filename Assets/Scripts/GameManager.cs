@@ -172,10 +172,10 @@ public class GameManager : MonoBehaviour
             SD.VNACTIVE = true;
             bool[] CC = new bool[5];
             CC[0] = true;
-            CC[1] = saveObject.chapterCompletes[1];
-            CC[2] = saveObject.chapterCompletes[2];
-            CC[3] = saveObject.chapterCompletes[3];
-            CC[4] = saveObject.chapterCompletes[4];
+            CC[1] = saveObject.chapterCompletes[0];
+            CC[2] = saveObject.chapterCompletes[1];
+            CC[3] = saveObject.chapterCompletes[2];
+            CC[4] = saveObject.chapterCompletes[3];
             chaptersCompleted = new bool[5];
             chaptersCompleted = CC;
             
@@ -240,10 +240,10 @@ public class GameManager : MonoBehaviour
         SD.VNACTIVE = false;
         
         saveObject.chapterCompletes[0] = true;
-        saveObject.chapterCompletes[1] = chaptersCompleted[1];
-        saveObject.chapterCompletes[2] = chaptersCompleted[2];
-        saveObject.chapterCompletes[3] = chaptersCompleted[3];
-        saveObject.chapterCompletes[4] = chaptersCompleted[4];
+        saveObject.chapterCompletes[1] = chaptersCompleted[0];
+        saveObject.chapterCompletes[2] = chaptersCompleted[1];
+        saveObject.chapterCompletes[3] = chaptersCompleted[2];
+        saveObject.chapterCompletes[4] = chaptersCompleted[3];
         string json = JsonUtility.ToJson(saveObject);
         File.WriteAllText(Application.dataPath + "/Saves/save" + saveObject.saveFileId + ".txt", json);
 
@@ -262,19 +262,19 @@ public class GameManager : MonoBehaviour
 
             StartGame(0);
         }
-        else if (buttonId == 1 && dataCurrent.Day >= startDate + 1 && chaptersCompleted[1])
+        else if (buttonId == 1 && dataCurrent.Day >= startDate + 1 && chaptersCompleted[0])
         {
             StartGame(1);
         }
-        else if (buttonId == 2 && dataCurrent.Day >= startDate + 2 && chaptersCompleted[2])
+        else if (buttonId == 2 && dataCurrent.Day >= startDate + 2 && chaptersCompleted[1])
         {
             StartGame(2);
         }
-        else if (buttonId == 3 && dataCurrent.Day >= startDate + 3 && chaptersCompleted[3])
+        else if (buttonId == 3 && dataCurrent.Day >= startDate + 3 && chaptersCompleted[2])
         {
             StartGame(3);
         }
-        else if (buttonId == 4 && dataCurrent.Day >= startDate + 4 && chaptersCompleted[4])
+        else if (buttonId == 4 && dataCurrent.Day >= startDate + 4 && chaptersCompleted[3])
         {
             StartGame(4);
 
