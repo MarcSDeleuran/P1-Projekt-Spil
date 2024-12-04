@@ -39,7 +39,7 @@ namespace SceneDirection
             sprites = new Dictionary<Speaker, SpriteController>();
             animator = GetComponent<Animator>();
             SpeakerNameText = LeftSpeakerNameText;
-            animator.SetTrigger("Start");
+            animator.SetTrigger("Show");
         }
         public void ResetSprites()
         {

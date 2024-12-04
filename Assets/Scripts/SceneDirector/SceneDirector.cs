@@ -298,7 +298,7 @@ namespace SceneDirection
                 Debug.Log("nextScene Not available");
                 yield break;
             }
-
+            
             state = SceneState.ANIMATE;
             if (currentScene != null)
             {

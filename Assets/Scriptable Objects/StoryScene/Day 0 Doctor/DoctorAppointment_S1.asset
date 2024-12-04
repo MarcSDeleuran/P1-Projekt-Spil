@@ -44,7 +44,7 @@ MonoBehaviour:
       Coords: {x: 0, y: 0}
       MoveSpeed: 0
     Music: {fileID: 0}
-    Sound: {fileID: 8300000, guid: 9e82d370216b6ae439fbda67efc6ab8d, type: 3}
+    Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
@@ -52,3 +52,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: bdcf1513a3dc0f04690adb918dbf459c, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0
