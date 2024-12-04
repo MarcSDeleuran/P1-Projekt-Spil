@@ -13,7 +13,7 @@ namespace SceneDirection
         public SpriteSwitcher BackgroundSwitcher;
         private SceneState state = SceneState.IDLE;
         public OptionSelectionController OSC;
-        public AudioManager AudioManager;
+        public AudioManager audioManager;
 
         public List<StoryScene> history;
         public bool VNACTIVE;
@@ -61,6 +61,19 @@ namespace SceneDirection
                                     InGameUI.SetActive(false);
                                     ES.gameObject.SetActive(true);
                                     mainMenuCanvas.SetActive(true);
+                                    audioManager.musicSource.Stop();
+                                    int c = DC.spritesPrefab.transform.childCount;
+                                    for (int i = 0; i < c; i++)
+                                    {
+                                        Destroy(DC.spritesPrefab.transform.GetChild(i).gameObject);
+                                    }
+                                    int bc = BackgroundSwitcher.gameObject.transform.childCount;
+                                    for ( int i = 0; i < bc; i++)
+                                    {
+                                        BackgroundSwitcher.transform.GetChild(i).GetComponent<Image>().sprite = null;
+                                    }
+                                    DC.ResetSprites();
+                                    GameManager.Instance.chaptersCompleted[(currentScene as StoryScene).FinalSceneChapterId] = true;
 
                                 }
                                 else
@@ -247,15 +260,15 @@ namespace SceneDirection
 
         private void PlayAudio(StoryScene.Sentence sentence)
         {
-            AudioManager.PlayAudio(sentence.Music, sentence.Sound);
+            audioManager.PlayAudio(sentence.Music, sentence.Sound);
         }
         private void PlayAudio(ChooseScene chooseScene)
         {
-            AudioManager.PlayAudio(chooseScene.Music, chooseScene.Sound);
+            audioManager.PlayAudio(chooseScene.Music, chooseScene.Sound);
         }
         private void PlayAudio(WriteScene writeScene)
         {
-            AudioManager.PlayAudio(writeScene.Music, writeScene.Sound);
+            audioManager.PlayAudio(writeScene.Music, writeScene.Sound);
         }
 
     }

@@ -13,7 +13,7 @@ public class DataHolder : ScriptableObject
 public struct SaveData
 {
     public int saveFileId;
-    public Dictionary<STORYFLAG, Boolean> flags;
+    public List<StoryFlag> flags;
     public int sentence;
     public List<int> prevScenes;
     public int stressAmount;
@@ -21,4 +21,10 @@ public struct SaveData
     public int socialAmount;
     public string characterName;
     public bool[] chapterCompletes;
+}
+[Serializable]
+public struct StoryFlag
+{
+    public string key;
+    public bool value;
 }

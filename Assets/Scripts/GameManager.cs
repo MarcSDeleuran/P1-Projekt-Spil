@@ -5,6 +5,7 @@ using UnityEngine;
 using System.IO;
 using SceneDirection;
 using UnityEditor.Animations;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject InGameUI;
     [SerializeField] private GameObject[] saveFileButtons;
     [SerializeField] private GameObject[] chapterButtons;
+    [SerializeField] public bool[] chaptersCompleted;
     public SceneDirector SD;
     public DataHolder DH;
     public FlagManager FM;
@@ -33,8 +35,8 @@ public class GameManager : MonoBehaviour
     public float animationMultiplier;
     public bool MustAssignStats = false;
     public int SaveFileId;
-    
-    
+
+
     public void Awake()
     {
         if (Instance != null && Instance != this)
@@ -45,18 +47,18 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
-
+        chaptersCompleted = new bool[5];
         Application.targetFrameRate = 60;
         UpdateSaveFiles();
 
-        
+
 
         if (!Directory.Exists(Application.dataPath + "/Saves/"))
         { // Opret 'Save' mappe hvis den ikke findes
             Directory.CreateDirectory(Application.dataPath + "/Saves/");
         }
     }
-    
+
     public void ChangeAnimationMultiplier(float f)
     {
         SD.BackgroundSwitcher.GetComponent<Animator>().SetFloat("speedmultiplier", f);
@@ -80,7 +82,7 @@ public class GameManager : MonoBehaviour
             chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(false);
             chapterButtons[i].GetComponent<ChapterButtonUI>().lockedUI.SetActive(false);
             chapterButtons[i].GetComponent<ChapterButtonUI>().dayText.text = "Unlocks: " + (dataCurrent.Day + i - 1) + ". nov";
-            if (dataCurrent.Day >= startDate + i && SAJ.chaptersCompleted[i] == true)
+            if (dataCurrent.Day >= startDate + i)
             { // Hvis datoen er over startDatoen + ugedage
                 chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(true);
             }
@@ -138,7 +140,8 @@ public class GameManager : MonoBehaviour
             // Undersøg Json fil
             string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt");
             saveObject = JsonUtility.FromJson<SaveData>(saveString);
-            FM.flags = saveObject.flags;
+
+                FM.flags = saveObject.flags.ToDictionary(f => Enum.Parse<STORYFLAG>(f.key), f => f.value);
 
             saveObject.prevScenes.ForEach(scene =>
             {
@@ -158,13 +161,14 @@ public class GameManager : MonoBehaviour
             SD.VNACTIVE = true;
             bool[] CC = new bool[5];
             CC[0] = true;
-            CC[1] = SAJ.chapter2Completed;
-            CC[2] = SAJ.chapter3Completed; 
-            CC[3] = SAJ.chapter4Completed;
-            CC[4] = SAJ.chapter5Completed;
-            SAJ.chaptersCompleted = CC;
-            saveObject.saveFileId = saveFileId;
-            SaveFileId = saveFileId + 1;
+            CC[1] = saveObject.chapterCompletes[1];
+            CC[2] = saveObject.chapterCompletes[2];
+            CC[3] = saveObject.chapterCompletes[3];
+            CC[4] = saveObject.chapterCompletes[4];
+            chaptersCompleted = new bool[5];
+            chaptersCompleted = CC;
+            
+            SaveFileId = saveFileId;
         }
         else
         { // Lav en ny Save
@@ -174,7 +178,8 @@ public class GameManager : MonoBehaviour
 
             saveObject = new SaveData
             {
-                flags = FM.flags,
+
+                flags = FM.flags.Select(kvp => new StoryFlag { key = kvp.Key.ToString(), value = kvp.Value }).ToList(),
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
 
@@ -182,13 +187,14 @@ public class GameManager : MonoBehaviour
                 academicAmount = 100,
                 socialAmount = 100,
                 characterName = CharacterName,
-                chapterCompletes = new bool[4]
-                
+                chapterCompletes = new bool[5],
+                saveFileId = saveFileId,
+
             };
             StressAmount = saveObject.stressAmount;
             AcademicAmount = saveObject.academicAmount;
             SocialAmount = saveObject.socialAmount;
-
+            SaveFileId = saveFileId;
             // Konverter til Json fil
             string json = JsonUtility.ToJson(saveObject);
             File.WriteAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt", json);
@@ -211,29 +217,26 @@ public class GameManager : MonoBehaviour
         SaveData saveObject;
         string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + GameManager.Instance.SaveFileId + ".txt");
         saveObject = JsonUtility.FromJson<SaveData>(saveString);
-        FM.flags = saveObject.flags;
 
-        saveObject.prevScenes.ForEach(scene =>
-        {
-            SD.history.Add(this.DH.scenes[scene] as StoryScene);
-        });
-        if (saveObject.prevScenes.Count > 0)
-        {
-            SD.currentScene = SD.history[SD.history.Count - 1];
-            SD.history.RemoveAt(SD.history.Count - 1);
-        }
-        if (saveObject.sentence != -1)
-            SD.DC.SetIndex(saveObject.sentence);
-        StressAmount = saveObject.stressAmount;
-        AcademicAmount = saveObject.academicAmount;
-        SocialAmount = saveObject.socialAmount;
-        CharacterName = saveObject.characterName;
-        SD.VNACTIVE = true;
-        saveObject.chapterCompletes[0] = SAJ.chapter1Completed;
-        saveObject.chapterCompletes[1] = SAJ.chapter2Completed;
-        saveObject.chapterCompletes[2] = SAJ.chapter3Completed;
-        saveObject.chapterCompletes[3] = SAJ.chapter4Completed;
-        saveObject.chapterCompletes[4] = SAJ.chapter5Completed;
+        saveObject.flags = FM.flags.Select(kvp => new StoryFlag { key = kvp.Key.ToString(), value = kvp.Value }).ToList();
+        List<int> historyIndices = new List<int>();
+        SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
+
+        saveObject.stressAmount = StressAmount;
+        saveObject.academicAmount = AcademicAmount;
+        saveObject.socialAmount = SocialAmount;
+        saveObject.characterName = CharacterName;
+        SD.VNACTIVE = false;
+        
+        saveObject.chapterCompletes[0] = true;
+        saveObject.chapterCompletes[1] = chaptersCompleted[1];
+        saveObject.chapterCompletes[2] = chaptersCompleted[2];
+        saveObject.chapterCompletes[3] = chaptersCompleted[3];
+        saveObject.chapterCompletes[4] = chaptersCompleted[4];
+        string json = JsonUtility.ToJson(saveObject);
+        File.WriteAllText(Application.dataPath + "/Saves/save" + saveObject.saveFileId + ".txt", json);
+
+
     }
     #endregion
 
@@ -267,6 +270,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     private void StartGame(int buttonId){
         mainMenuUI.SetActive(false);
         mainMenuCanvas.SetActive(false);
@@ -275,11 +279,15 @@ public class GameManager : MonoBehaviour
         SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
     }
 
-    public void MainMenuButton(){
+
+    public void MainMenuButton()
+    {
+
         mainMenuUI.SetActive(true);
         gameSceneUI.SetActive(false);
         mainMenuCanvas.SetActive(true);
         endSceneUI.SetActive(false);
         InGameUI.SetActive(true);
+        SaveCompletionData();
     }
 }

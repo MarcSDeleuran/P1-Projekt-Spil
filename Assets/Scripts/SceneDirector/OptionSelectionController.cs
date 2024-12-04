@@ -72,7 +72,7 @@ namespace SceneDirection
                 }
 
                 optionController.textMesh.text = scene.Options[i].text;
-                if (option[i].flag != STORYFLAG.NONE || !FM.CheckFlag(option[i].flag))
+                if (scene.Options[i].flag != STORYFLAG.NONE && !FM.CheckFlag(scene.Options[i].flag))
                 {
                     referencedButton.SetActive(false);
                     optionController.textMesh.color = Color.red;

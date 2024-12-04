@@ -11,6 +11,7 @@ namespace SceneDirection
         public GameScene nextScene;
         public bool OpenJournal = false;
         public bool FinalScene = false;
+        public int FinalSceneChapterId;
 
         [System.Serializable]
         public struct Sentence

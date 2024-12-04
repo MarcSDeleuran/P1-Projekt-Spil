@@ -11,7 +11,6 @@ public class StatsAndJournal : MonoBehaviour
     [SerializeField] public bool chapter3Completed;
     [SerializeField] public bool chapter4Completed;
     [SerializeField] public bool chapter5Completed;
-    [SerializeField] public bool[] chaptersCompleted;
     [Space(5)]
     [SerializeField] private GameObject chapter1Locked;
     [SerializeField] private GameObject chapter2Locked;
