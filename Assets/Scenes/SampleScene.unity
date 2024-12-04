@@ -15454,7 +15454,7 @@ GameObject:
   - component: {fileID: 5525876788516734086}
   - component: {fileID: 1635671400683336797}
   m_Layer: 5
-  m_Name: SchoolText
+  m_Name: AcademicText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15817,7 +15817,7 @@ GameObject:
   - component: {fileID: 3641267271108500348}
   - component: {fileID: 2319611283912771659}
   m_Layer: 5
-  m_Name: RelaxLeftButton
+  m_Name: StressLeftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16013,7 +16013,7 @@ GameObject:
   - component: {fileID: 2411062940221570932}
   - component: {fileID: 4062205610139330101}
   m_Layer: 5
-  m_Name: RelaxPointsText
+  m_Name: StressPointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16671,7 +16671,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 2093347392536252727}
   lockedUI: {fileID: 3243352504632304348}
   dayText: {fileID: 5518311343897190092}
-  ChapterStartScene: {fileID: 0}
+  ChapterStartScene: {fileID: 11400000, guid: 78ce06d171fc1404c84311c680ac5b60, type: 2}
 --- !u!1 &1425319411671706353
 GameObject:
   m_ObjectHideFlags: 0
@@ -16765,7 +16765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9171308473086729889}
   m_Layer: 5
-  m_Name: School
+  m_Name: Academic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17277,7 +17277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'School:'
+  m_text: 'Academic:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
   m_sharedMaterial: {fileID: -7960924289519326761, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
@@ -17454,7 +17454,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -70, y: 15}
+  m_AnchoredPosition: {x: -50, y: 15}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1715987382883779559
@@ -18416,7 +18416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: -2}
+  m_AnchoredPosition: {x: 5, y: -2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &2113008771409938257
@@ -18842,7 +18842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Relax:'
+  m_text: 'Stress:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
   m_sharedMaterial: {fileID: -7960924289519326761, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
@@ -19021,9 +19021,9 @@ RectTransform:
   - {fileID: 5897354399814110766}
   - {fileID: 4536427033790265221}
   - {fileID: 3756371050608117964}
+  - {fileID: 2962488430144286451}
   - {fileID: 9171308473086729889}
   - {fileID: 4505827553460046527}
-  - {fileID: 2962488430144286451}
   - {fileID: 41717143174036497}
   m_Father: {fileID: 9076502575168403249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19480,7 +19480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: af61006b1a7b2fd48ac82ba12d882627, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20787,7 +20787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: -110}
+  m_AnchoredPosition: {x: -290, y: 90}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &2969594746110437236
@@ -21632,7 +21632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -15}
+  m_AnchoredPosition: {x: 60, y: -15}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &3273393591074863487
@@ -22068,7 +22068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: -2}
+  m_AnchoredPosition: {x: 5, y: -2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &3541394706249804973
@@ -22093,7 +22093,7 @@ MonoBehaviour:
   currentScene: {fileID: 0}
   animator: {fileID: 6102676566779400105}
   spritesPrefab: {fileID: 1188098996871490424}
-  TextSpeed: 0.7
+  TextSpeed: 0.5
 --- !u!114 &3542800590428018251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24275,7 +24275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: -10}
+  m_AnchoredPosition: {x: -290, y: -110}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4508170506594971001
@@ -24545,7 +24545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -70, y: 15}
+  m_AnchoredPosition: {x: -50, y: 15}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &4678809909402171036
@@ -24905,7 +24905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -15}
+  m_AnchoredPosition: {x: 60, y: -15}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &4873368379250661408
@@ -25458,7 +25458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -15}
+  m_AnchoredPosition: {x: 60, y: -15}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &5143924373399964138
@@ -26195,7 +26195,7 @@ GameObject:
   - component: {fileID: 1070998551342490452}
   - component: {fileID: 7797095775233777623}
   m_Layer: 5
-  m_Name: SchoolRightButton
+  m_Name: AcademicRightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28042,7 +28042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2962488430144286451}
   m_Layer: 5
-  m_Name: Relax
+  m_Name: Stress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28203,7 +28203,7 @@ GameObject:
   - component: {fileID: 1455816322013830364}
   - component: {fileID: 2320496131532271375}
   m_Layer: 5
-  m_Name: RelaxText
+  m_Name: StressText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28706,7 +28706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -15, y: -2}
+  m_AnchoredPosition: {x: 5, y: -2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &6694955265278726165
@@ -30544,7 +30544,7 @@ GameObject:
   - component: {fileID: 8584569141502202972}
   - component: {fileID: 6114500882606788717}
   m_Layer: 5
-  m_Name: RelaxRightButton
+  m_Name: StressRightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31220,7 +31220,7 @@ GameObject:
   - component: {fileID: 289797934282849308}
   - component: {fileID: 9059185547723162297}
   m_Layer: 5
-  m_Name: SchoolPointsText
+  m_Name: AcademicPointsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31356,7 +31356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: af61006b1a7b2fd48ac82ba12d882627, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31728,7 +31728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -70, y: 15}
+  m_AnchoredPosition: {x: -50, y: 15}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!224 &7980848134484039911
@@ -33592,7 +33592,7 @@ GameObject:
   - component: {fileID: 5778577466349696734}
   - component: {fileID: 4220960509561319752}
   m_Layer: 5
-  m_Name: SchoolLeftButton
+  m_Name: AcademicLeftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34466,7 +34466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: 90}
+  m_AnchoredPosition: {x: -290, y: -10}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9182749468899059005

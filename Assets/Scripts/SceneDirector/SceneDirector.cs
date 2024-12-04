@@ -35,7 +35,7 @@ namespace SceneDirection
                 {
                     if (currentScene == null) return;
 
-                    if (Input.GetKeyDown(KeyCode.Space) /* Det her kan vi eventuelt slette */ || Input.GetMouseButtonDown(0) && CheckSideOfMouse())
+                    if (/*Input.GetKeyDown(KeyCode.Space) ||*/ Input.GetMouseButtonDown(0) && CheckSideOfMouse())
                         if (DC.IsCompleted())
                         {
                             DC.StopTyping();
