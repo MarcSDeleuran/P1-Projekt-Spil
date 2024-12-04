@@ -26,6 +26,14 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: -2
+    AcademicChange: 0
+    SocialChange: 0
+  - text: Your pace follows the beat of the music, as you stroll towards school.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
@@ -38,13 +46,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: Your pace follows the beat of the music, as you stroll towards school.
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
   background: {fileID: 21300000, guid: b5e0bf903fca83a438e7731d62a954f1, type: 3}
   nextScene: {fileID: 11400000, guid: ad9cd3bf4c37f20408c41e7ce9ffd3bb, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

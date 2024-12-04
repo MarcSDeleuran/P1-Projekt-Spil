@@ -10,24 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: Day 3 Working with Gabe 1.X
+  m_Name: Day 2 Talking with Parents bonus
   m_EditorClassIdentifier: 
   Options:
-  - text: "\u201CYou\u2019re just focused, and I think that\u2019s a good thing.\u201D"
-    nextScene: {fileID: 11400000, guid: a8abb256c79520240841c145d4331fad, type: 2}
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: 7b75097748313cf409b8e8e94e9da403, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 5
-    flag: 0
+    SocialChange: 0
+    flag: 1
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "\u201CWho really needs fun when you got assignment to work on, right?\u201D "
-    nextScene: {fileID: 11400000, guid: 8318e767b8e3dab45ac8b095ced83b0a, type: 2}
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: e25a79f5df3242b40a50476e9d4d2ba8, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 5
-    flag: 0
+    SocialChange: 0
+    flag: 2
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: 4c34f50d80107034a8004dcae02e3519, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 3
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}

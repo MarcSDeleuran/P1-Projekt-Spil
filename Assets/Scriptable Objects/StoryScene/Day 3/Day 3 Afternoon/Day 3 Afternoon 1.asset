@@ -19,16 +19,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: "You pick up your phone, scrolling through all the messages from different
-      group chats, before you stop at Mary\u2019s name."
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 3
     AcademicChange: 0
     SocialChange: 0
   - text: "You pick up your phone, scrolling through all the messages from different
@@ -56,7 +47,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: -2
+    StressChange: -3
     AcademicChange: 0
     SocialChange: 0
   - text: Your moment is cut short as a text ticks in...
@@ -68,7 +59,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: "It's from Mary \u201CHope that you can survive this madness! Pep talk?
-      Or distraction?\u201D "
+      Or distraction?\u201D"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -78,3 +69,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
   nextScene: {fileID: 11400000, guid: f65b75dd530073747beb48a504aeb5ec, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

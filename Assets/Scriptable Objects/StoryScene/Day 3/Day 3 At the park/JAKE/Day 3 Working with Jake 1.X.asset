@@ -15,12 +15,13 @@ MonoBehaviour:
   Options:
   - text: "\u201CYou nearly make it sound like there isn\u2019t a deadline tonight.\u201D"
     nextScene: {fileID: 11400000, guid: ded8d54cd77235f46b9361696fcfc9f7, type: 2}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CIt\u2019s hard just to switch it off like that.\u201D"
     nextScene: {fileID: 11400000, guid: b20030837a9b0aa4c8c72d65c03df6de, type: 2}
     StressChange: 0
@@ -29,6 +30,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

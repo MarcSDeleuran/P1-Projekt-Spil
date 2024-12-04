@@ -24,7 +24,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 200}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -64,10 +64,20 @@ MonoBehaviour:
     StressChange: 5
     AcademicChange: 0
     SocialChange: 0
-  - text: 'As the lecture ends, life springs back to the classroom, you walk up over
-      to Jake and Gabe.  '
+  - text: As the lecture ends, life springs back to the classroom, you walk up over
+      to Jake and Gabe.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 150, y: 150}
+      MoveSpeed: 0
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: -150, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

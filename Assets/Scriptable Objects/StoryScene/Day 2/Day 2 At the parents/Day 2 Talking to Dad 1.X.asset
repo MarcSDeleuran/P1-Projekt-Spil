@@ -15,9 +15,9 @@ MonoBehaviour:
   Options:
   - text: "\u201CDoing great dad! Just busy, you remember how it is.\u201D"
     nextScene: {fileID: 11400000, guid: ac382045277f2454c9542a7e8e5e6fb3, type: 2}
-    StressChange: 1
+    StressChange: 2
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 1403bd5498534004bb3ae9747ceeb366, type: 2}
     StressChange: -3
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 2
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: a818e51385faefc4fa06656da550cdb3, type: 2}
     StressChange: 5
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0

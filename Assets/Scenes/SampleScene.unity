@@ -12310,7 +12310,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4281479730
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -12323,7 +12323,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -13548,7 +13548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1817562488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14647,11 +14647,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 704293672610073752, guid: 889be31009564214c8069f3a60e06330, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
+    - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: c7c6d51008ba15d4db71c4cdb6e8cd9b, type: 2}
+    - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239136732271793861, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
+    - target: {fileID: 5239136732271793861, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: c7c6d51008ba15d4db71c4cdb6e8cd9b, type: 2}
+    - target: {fileID: 5239136732271793861, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508631820324881000, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
+    - target: {fileID: 5508631820324881000, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: c7c6d51008ba15d4db71c4cdb6e8cd9b, type: 2}
+    - target: {fileID: 5508631820324881000, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6297516106386381569, guid: 889be31009564214c8069f3a60e06330, type: 3}
       propertyPath: m_Name
       value: EndScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7435293038009048291, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
+    - target: {fileID: 7435293038009048291, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: c7c6d51008ba15d4db71c4cdb6e8cd9b, type: 2}
+    - target: {fileID: 7435293038009048291, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

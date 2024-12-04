@@ -47,7 +47,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 200}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -57,12 +57,7 @@ MonoBehaviour:
   - text: "\u201CAlright, everyone, settle down please. I know this week is a lot,
       but let\u2019s stay on track.\u201D"
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
-      ActionType: 1
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -70,7 +65,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: While the teacher scribbles some notes on the blackboard you look around.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

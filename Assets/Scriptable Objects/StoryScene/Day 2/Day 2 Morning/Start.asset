@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Start
   m_EditorClassIdentifier: 
   Sentences:
-  - text: You get message. OMG
+  - text: You get a message. OMG
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

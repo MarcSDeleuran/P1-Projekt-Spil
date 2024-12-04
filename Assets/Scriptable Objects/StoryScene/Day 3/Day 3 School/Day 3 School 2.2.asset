@@ -18,7 +18,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -3
     AcademicChange: 0
     SocialChange: 0
   - text: "\u201CFair enough. I hope the surviving part involves som coffee.\u201D"
@@ -28,6 +28,9 @@ MonoBehaviour:
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
   nextScene: {fileID: 11400000, guid: 8afd7c4898dbf214b8838198fddcbc54, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

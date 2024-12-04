@@ -21,7 +21,7 @@ MonoBehaviour:
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
-    AcademicChange: 0
+    AcademicChange: 5
     SocialChange: 0
   - text: "He hesitates a bit before continuing. \u201CAnd.... you know thanks for
       sticking with me. I know I can be a bit ouch when deadlines a close.\u201D"
@@ -34,3 +34,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: b5e0bf903fca83a438e7731d62a954f1, type: 3}
   nextScene: {fileID: 11400000, guid: dcc6f65e44b582b478c050d060175ee3, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

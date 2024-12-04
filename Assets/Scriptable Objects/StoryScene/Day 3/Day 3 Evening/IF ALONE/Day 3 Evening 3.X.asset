@@ -15,20 +15,22 @@ MonoBehaviour:
   Options:
   - text: Stay up late.
     nextScene: {fileID: 11400000, guid: 30a64ab22dc8e424db658b60705427ae, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: 5
+    AcademicChange: 5
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: Submit what you have.
     nextScene: {fileID: 11400000, guid: 5ae23f0a6d301ed458973d1a5b87dd03, type: 2}
-    StressChange: 0
-    AcademicChange: 0
+    StressChange: -5
+    AcademicChange: -5
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you do?
   Music: {fileID: 0}
   Sound: {fileID: 0}

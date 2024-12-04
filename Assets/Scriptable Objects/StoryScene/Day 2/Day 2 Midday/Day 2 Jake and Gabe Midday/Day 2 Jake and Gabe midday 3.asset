@@ -67,25 +67,26 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: 'The weight of expectations sets in as you think about all the possible
-      questions they might ask.  '
+  - text: The weight of expectations sets in as you think about all the possible
+      questions they might ask.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 0
     SocialChange: 0
   - text: "The day continues, you try your best to get work done after class, before
-      you know it, it\u2019s time to go to your parents. "
+      you know it, it\u2019s time to go to your parents."
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
-    AcademicChange: 0
+    AcademicChange: 5
     SocialChange: 0
   background: {fileID: 21300000, guid: a34a4d0cae49cae4ab9a0fc2aee9df51, type: 3}
   nextScene: {fileID: 11400000, guid: 4602da05f8767724d8c615a63fbf019c, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

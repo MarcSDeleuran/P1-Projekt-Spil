@@ -35,7 +35,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 3
     AcademicChange: 0
     SocialChange: 0
   - text: And you think to yourself.... What a wonderful world.
@@ -61,7 +61,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -3
     AcademicChange: 0
     SocialChange: 0
   - text: As the sun is starting to go down you get a notification, it's a reminder

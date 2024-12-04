@@ -23,7 +23,7 @@ MonoBehaviour:
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
   - text: "\u201CWe\u2019re not getting out of this one. We better start praying
-      and planning.\u201D "
+      and planning.\u201D"
     nextScene: {fileID: 11400000, guid: 65e2fd07c5c1eee42b270ae5cca59ba1, type: 2}
     StressChange: -2
     AcademicChange: 2

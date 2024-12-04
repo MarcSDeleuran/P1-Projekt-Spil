@@ -15,20 +15,22 @@ MonoBehaviour:
   Options:
   - text: "\u201CA nice hot drink sounds like a plan, let\u2019s go.\u201D"
     nextScene: {fileID: 11400000, guid: aef0eeed25344ef468e3096b69b87d69, type: 2}
-    StressChange: 0
+    StressChange: 3
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI really should get started now. Maybe later?\u201D"
     nextScene: {fileID: 11400000, guid: 737991186356dbb4e8e076fc2779e33a, type: 2}
-    StressChange: 0
-    AcademicChange: 0
+    StressChange: -3
+    AcademicChange: 5
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}
