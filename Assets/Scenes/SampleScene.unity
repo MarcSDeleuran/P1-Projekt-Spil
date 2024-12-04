@@ -30143,7 +30143,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 6560860374627393339}
   lockedUI: {fileID: 7510449459922437595}
   dayText: {fileID: 4447993795600766821}
-  ChapterStartScene: {fileID: 11400000, guid: 09228bd5cdf03c444b1967b63a7438a9, type: 2}
+  ChapterStartScene: {fileID: 11400000, guid: d61453d4ae172894586bca4f4d01f46c, type: 2}
 --- !u!224 &7012209236200235190
 RectTransform:
   m_ObjectHideFlags: 0
