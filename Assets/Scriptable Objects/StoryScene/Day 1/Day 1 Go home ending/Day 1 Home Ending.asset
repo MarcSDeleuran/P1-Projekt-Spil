@@ -27,3 +27,4 @@ MonoBehaviour:
   nextScene: {fileID: 0}
   OpenJournal: 0
   FinalScene: 1
+  FinalSceneChapterId: 0

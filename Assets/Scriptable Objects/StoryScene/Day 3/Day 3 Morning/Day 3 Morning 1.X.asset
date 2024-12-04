@@ -15,21 +15,23 @@ MonoBehaviour:
   Options:
   - text: "\u201CMights as well take these... maybe some of my favorite playlists
       can help me survive today.\u201D "
-    nextScene: {fileID: 11400000, guid: fd82c32e61772b343930db4fa2f2a7be, type: 2}
+    nextScene: {fileID: 11400000, guid: 7759fb3fece22944ba90ed5a83da1517, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI should not, I don\u2019t need any distractions today. Just focus.\u201D "
-    nextScene: {fileID: 11400000, guid: fd82c32e61772b343930db4fa2f2a7be, type: 2}
+    nextScene: {fileID: 11400000, guid: 347467e1e1f61c64782dc8f63ad5ca52, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: Do you bring the earphones?
   Music: {fileID: 0}
   Sound: {fileID: 0}
