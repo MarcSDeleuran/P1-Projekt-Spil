@@ -16,7 +16,7 @@ MonoBehaviour:
   - text: Follow Jake and Gabe to the cafeteria
     nextScene: {fileID: 11400000, guid: 45bacea81cc84bb43b38e78cad86f3e6, type: 2}
     StressChange: 0
-    AcademicChange: 0
+    AcademicChange: 2
     SocialChange: 4
     flag: 0
     setFlagTrue: 0

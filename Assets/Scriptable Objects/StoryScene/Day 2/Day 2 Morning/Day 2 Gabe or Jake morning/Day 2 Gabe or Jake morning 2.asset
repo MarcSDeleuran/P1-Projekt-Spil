@@ -28,7 +28,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 200}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 150}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -95,3 +95,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: a69dac27c74e69646ac2d7c74f440b50, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

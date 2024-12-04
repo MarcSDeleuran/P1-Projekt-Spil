@@ -36,7 +36,7 @@ MonoBehaviour:
   - text: "\u201CEnough about school! What\u2019s going on with you two.\u201D You
       try to sell it with a big smile."
     nextScene: {fileID: 11400000, guid: 87e277f3f1c7693498ed91e4faadfe3e, type: 2}
-    StressChange: 3
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
     flag: 0

@@ -10,28 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: Day 2 Gabe or Jake Filler 1
+  m_Name: Day 2 Talking with Parents bonus
   m_EditorClassIdentifier: 
   Options:
-  - text: "\u201CI mean, maybe if we combined our forces, we would equal half a Gabe\u201D "
-    nextScene: {fileID: 11400000, guid: ee4cb05592401dd4faa21e7a554d3a17, type: 2}
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: 7b75097748313cf409b8e8e94e9da403, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 2
-    flag: 0
-    setFlagTrue: 0
-    FlagToSet: 0
-    ChoiceIcon: {fileID: 0}
-  - text: "\u201CWe\u2019re not getting out of this one. We better start praying
-      and planning.\u201D"
-    nextScene: {fileID: 11400000, guid: 65e2fd07c5c1eee42b270ae5cca59ba1, type: 2}
-    StressChange: -2
-    AcademicChange: 2
     SocialChange: 0
-    flag: 0
+    flag: 1
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  QuestionText: Crack a joke or answer seriously?
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: e25a79f5df3242b40a50476e9d4d2ba8, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 2
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: 4c34f50d80107034a8004dcae02e3519, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 3
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

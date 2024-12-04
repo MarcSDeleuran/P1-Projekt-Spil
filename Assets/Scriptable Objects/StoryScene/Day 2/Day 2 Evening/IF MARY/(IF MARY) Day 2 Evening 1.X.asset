@@ -16,26 +16,32 @@ MonoBehaviour:
   - text: "\u201CSame.... They only wanted to talk about school.... It\u2019s like
       they know what they know is stressing me out.\u201D "
     nextScene: {fileID: 11400000, guid: d564950eaf476cc4bade934220fd0f15, type: 2}
+    StressChange: 3
+    AcademicChange: 0
+    SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CIt wasn't that bad. You know the usual, school, expectations, you
       know how it is.\u201D "
     nextScene: {fileID: 11400000, guid: 3d2250d51312b6541b3ec4f76b5843db, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CEnough about our parents haha, you got any good ideas for tonight\u201D "
     nextScene: {fileID: 11400000, guid: 7732fab699097e74a849900794c7ab26, type: 2}
+    StressChange: -2
+    AcademicChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-    statChange: 0
-    changeAmount: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What is your reply to Mary?
   Music: {fileID: 0}
   Sound: {fileID: 0}
