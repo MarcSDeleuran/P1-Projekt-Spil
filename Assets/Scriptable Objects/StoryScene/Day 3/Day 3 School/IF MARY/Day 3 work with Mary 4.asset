@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - text: "You step outside the caf\xE9, the cold air making Mary pull her jacket
-      tighter around her. You look around, the campus is quiet, most are still in
-      class or trying their best on the assignment."
+      tighter around her."
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: You look around, the campus is quiet, most are still in class or trying
+      their best on the assignment.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -52,3 +60,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: b5e0bf903fca83a438e7731d62a954f1, type: 3}
   nextScene: {fileID: 11400000, guid: cf08d4aeeab6b984fa42737481e44cd3, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

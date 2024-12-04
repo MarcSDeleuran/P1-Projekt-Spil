@@ -33,8 +33,16 @@ MonoBehaviour:
     SocialChange: 0
   - text: "\u201CJust as the last reminder from me, tonight assignment is due at
       midnight, so remember to make sure not to wait until the last minute if you
-      need to make some changes. And again, your main project is due this Friday
-      so if you haven't started, you need to begin.\u201D"
+      need to make some changes.\""
+    speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CAnd again, your main project is due this Friday so if you haven't
+      started, you need to begin.\u201D "
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -53,7 +61,7 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: 'As the lecture ends, life springs back to the classroom, you walk up over
@@ -62,7 +70,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: Jake tosses everything in his bag again...
@@ -70,7 +78,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: 'While Gabe precisely tucks his notebooks in his bag. '
@@ -78,7 +86,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: "\u201CAlright, alright, who\u2019s up for ditching the assignment for
@@ -87,7 +95,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: 'He winks at you, clearly trying to lighten the damp mood. '
@@ -95,7 +103,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: "Gabe rolls his eyes and replies \u201CGrabbing food now is not going to
@@ -104,7 +112,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: His tone is sharp, but not unkind.
@@ -112,7 +120,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: "Jake says while, throwing his hands up dramatically. \u201COkay, we got
@@ -123,7 +131,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: 'You step in, as the tension is cleary out of hand between you two friends. '
@@ -131,7 +139,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 2
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}

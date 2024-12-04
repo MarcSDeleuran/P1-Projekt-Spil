@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: 4.3
+  m_Name: MH 4.3
   m_EditorClassIdentifier: 
   Sentences:
   - text: Mary is sitting on her bed in the opposite site of the room.
@@ -251,5 +251,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: a5d593cf1b6c84e8babc85787d0ccb56, type: 3}
+  background: {fileID: 21300000, guid: 4f4a8b94fd411f6419a5725dea89367d, type: 3}
   nextScene: {fileID: 11400000, guid: a2015622af01e4562925e3201ae231c6, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0
