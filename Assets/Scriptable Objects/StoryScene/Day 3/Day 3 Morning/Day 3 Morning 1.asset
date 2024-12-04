@@ -56,8 +56,16 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: '[At least Jake and Gabe make things feel less boring.... in their own
-      unhealthy ways. And Mary? I have no idea how she stays so positive with everything
-      going on. I could only wish for half her energy right now.] '
+      unhealthy ways.]'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '[And Mary? I have no idea how she stays so positive with everything going
+      on. I could only wish for half her energy right now.] '
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -84,3 +92,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
   nextScene: {fileID: 11400000, guid: fd82c32e61772b343930db4fa2f2a7be, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0
