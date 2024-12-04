@@ -17,18 +17,20 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: a8abb256c79520240841c145d4331fad, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CWho really needs fun when you got assignment to work on, right?\u201D "
     nextScene: {fileID: 11400000, guid: 8318e767b8e3dab45ac8b095ced83b0a, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

@@ -30,16 +30,7 @@ MonoBehaviour:
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
-  - text: "\u201CSee? This is what I have been talking about all this time. Just
-      good vibes, no stress. Let it fade away for a bit.\u201D"
-    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
   - text: You sit across from him, there are still a few students left loudly chatting
       away.
     speaker: {fileID: 0}
@@ -51,3 +42,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 0c34b2171c3664644bf92949f5b66053, type: 3}
   nextScene: {fileID: 11400000, guid: a3b0bd16282309040b5355fc81063eab, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

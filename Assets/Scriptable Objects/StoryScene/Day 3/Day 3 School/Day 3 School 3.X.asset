@@ -16,29 +16,32 @@ MonoBehaviour:
   - text: "\u201CHe got a good point. More often than not a break does better than
       just stare at a screen.\u201D"
     nextScene: {fileID: 11400000, guid: 6db59531ba67b0b4aab4525be86642e2, type: 2}
-    StressChange: 0
+    StressChange: -3
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CGabe is right, food can wait right now, this deadline will not.\u201D"
     nextScene: {fileID: 11400000, guid: 95b24516928fd43468042823aacbd99a, type: 2}
     StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    AcademicChange: 3
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CIs it not possible to do both? Grab food and do work? We need to
       compromise come on!\u201D"
     nextScene: {fileID: 11400000, guid: 624443a7cfd712d4f9ccfc6c483513fb, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: -3
+    AcademicChange: 3
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

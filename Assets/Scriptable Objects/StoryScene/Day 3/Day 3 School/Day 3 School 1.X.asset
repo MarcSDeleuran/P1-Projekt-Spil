@@ -17,28 +17,31 @@ MonoBehaviour:
       lot of work. But he still has a good point, Jake.\""
     nextScene: {fileID: 11400000, guid: 7d0b72352e5f4f54386dd3fd29b686ea, type: 2}
     StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    AcademicChange: 3
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CHonestly, it does feel a bit diabolical, we\u2019re only human after
       all.\u201D"
     nextScene: {fileID: 11400000, guid: ab46ae6f4730dd84fb64ec7519b70219, type: 2}
     StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    AcademicChange: -3
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI just think we all are just trying to survive at this point.\u201D"
     nextScene: {fileID: 11400000, guid: 993e9d855aa82e6418125fedaa0abc17, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you say to the group?
   Music: {fileID: 0}
   Sound: {fileID: 0}

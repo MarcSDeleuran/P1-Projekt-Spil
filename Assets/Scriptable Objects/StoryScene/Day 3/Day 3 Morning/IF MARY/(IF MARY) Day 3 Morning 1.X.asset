@@ -21,7 +21,8 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
-  - text: "\u201CI don\u2019t know..... fells like there\u2019s too much going on
+    ChoiceIcon: {fileID: 0}
+  - text: "\u201CI don\u2019t know..... feels like there\u2019s too much going on
       right now\u201D "
     nextScene: {fileID: 11400000, guid: 425815cce2fe7cc4f9e4562ca0ef064f, type: 2}
     StressChange: 0
@@ -30,6 +31,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you reply?
   Music: {fileID: 0}
   Sound: {fileID: 0}

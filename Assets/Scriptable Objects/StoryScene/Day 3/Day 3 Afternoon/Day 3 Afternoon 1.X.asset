@@ -15,12 +15,13 @@ MonoBehaviour:
   Options:
   - text: "\u201CSo, what are you up to? I could really use a quick break from this\u201D"
     nextScene: {fileID: 11400000, guid: 7d13fa5b1ffa55d499d49bf1aa7583ce, type: 2}
-    StressChange: 0
+    StressChange: -3
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CDeadline is killing me. Idk how to can stay sane through all this.\u201D"
     nextScene: {fileID: 11400000, guid: 1ab78db50697377478c031961ee55643, type: 2}
     StressChange: 0
@@ -29,6 +30,7 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

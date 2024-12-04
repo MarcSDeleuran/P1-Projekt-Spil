@@ -20,7 +20,7 @@ MonoBehaviour:
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
-    AcademicChange: 0
+    AcademicChange: 5
     SocialChange: 0
   - text: "He closes the book before saying \u201CI\u2019m heading off to the library
       finish tonight's assignment. What about you two?\u201D"

@@ -15,29 +15,32 @@ MonoBehaviour:
   Options:
   - text: "\u201CI will join you, Gabe, Let\u2019s get this done.\u201D"
     nextScene: {fileID: 11400000, guid: cbcd8fe66bf793245a8f7097b86b43d5, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: 3
+    AcademicChange: 10
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI really think I need a break first.\u201D"
     nextScene: {fileID: 11400000, guid: 5b38e039e778d4643a679a52722a8f9b, type: 2}
-    StressChange: 0
+    StressChange: -10
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CI really need to figure this out on my own first, I will catch up
       with you later.\u201D"
     nextScene: {fileID: 11400000, guid: c661e1aef1d792e459e9f012e140fed9, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: -5
+    AcademicChange: 5
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}
