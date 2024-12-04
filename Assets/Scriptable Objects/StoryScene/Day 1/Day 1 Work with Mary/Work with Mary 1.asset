@@ -19,7 +19,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 135}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -52,12 +52,7 @@ MonoBehaviour:
     SocialChange: 0
   - text: '"Yeah, let''s do that"'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-      ActionType: 4
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -66,7 +61,12 @@ MonoBehaviour:
   - text: The bell rings and the student rush out of the class room. Mary spots you
       and waves, a bright smile speading across her face.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -79,7 +79,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 135}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -125,3 +125,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 757d2ed5a5d25f446984041ca781f516, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

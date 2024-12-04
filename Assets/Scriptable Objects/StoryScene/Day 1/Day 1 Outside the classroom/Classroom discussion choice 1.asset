@@ -19,7 +19,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 500, y: 0}
+      Coords: {x: 500, y: 150}
       MoveSpeed: 0
     - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
       ActionType: 1
@@ -29,7 +29,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 500, y: 0}
+      Coords: {x: -500, y: 135}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -56,3 +56,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 293ccd037a1305846856146f4034f28a, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

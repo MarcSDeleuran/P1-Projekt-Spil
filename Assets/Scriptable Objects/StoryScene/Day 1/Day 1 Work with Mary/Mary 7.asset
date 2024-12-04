@@ -29,7 +29,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 135}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -40,7 +40,12 @@ MonoBehaviour:
       After a few minutes, Mary looks over, noticing you staring intensely at your
       notes.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -49,7 +54,12 @@ MonoBehaviour:
   - text: "\"Hey, don\u2019t burn out in the first five minutes. We\u2019ve got a
       whole week ahead of us.\" She chuckles."
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -59,3 +69,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 9ea82f25b4c45584290bb1699b49123c, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0
