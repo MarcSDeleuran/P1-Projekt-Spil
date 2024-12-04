@@ -241,18 +241,38 @@ public class GameManager : MonoBehaviour
     {
         DateTime dataCurrent = DateTime.Now; // Få datoen
 
-        if (dataCurrent.Day >= startDate + buttonId)
+        if (buttonId == 0 && dataCurrent.Day >= startDate + 0)
         {  // Hvis datoen er over startDatoen + ugedag
-            mainMenuUI.SetActive(false);
-            mainMenuCanvas.SetActive(false);
-            gameSceneUI.SetActive(true);
-            SD.VNACTIVE = true;
-            SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
+            StartGame(0);
+        }
+        else if (buttonId == 1 && dataCurrent.Day >= startDate + 1 && SAJ.chapter2Completed)
+        {
+            StartGame(1);
+        }
+        else if (buttonId == 2 && dataCurrent.Day >= startDate + 2 && SAJ.chapter3Completed)
+        {
+            StartGame(2);
+        }
+        else if (buttonId == 3 && dataCurrent.Day >= startDate + 3 && SAJ.chapter4Completed)
+        {
+            StartGame(3);
+        }
+        else if (buttonId == 4 && dataCurrent.Day >= startDate + 4 && SAJ.chapter5Completed)
+        {
+            StartGame(4);
         }
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
             Debug.LogWarning("You can't enter this Chapter");
         }
+    }
+
+    private void StartGame(int buttonId){
+        mainMenuUI.SetActive(false);
+        mainMenuCanvas.SetActive(false);
+        gameSceneUI.SetActive(true);
+        SD.VNACTIVE = true;
+        SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
     }
 
     public void MainMenuButton(){
