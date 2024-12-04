@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 308217503090395549}
   - component: {fileID: 6698701167956862900}
   m_Layer: 5
-  m_Name: EndScreen
+  m_Name: EndScreenprev
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

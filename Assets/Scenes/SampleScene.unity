@@ -2639,6 +2639,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330485650}
   m_CullTransparentMesh: 1
+--- !u!224 &337330619 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2257953105135590973, guid: 889be31009564214c8069f3a60e06330, type: 3}
+  m_PrefabInstance: {fileID: 1956271648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &343995377
 GameObject:
   m_ObjectHideFlags: 0
@@ -13025,6 +13030,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 704293672610073752, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6297516106386381569, guid: 889be31009564214c8069f3a60e06330, type: 3}
       propertyPath: m_Name
       value: EndScreen
@@ -13034,22 +13043,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 889be31009564214c8069f3a60e06330, type: 3}
---- !u!114 &1956271649 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6698701167956862900, guid: 889be31009564214c8069f3a60e06330, type: 3}
-  m_PrefabInstance: {fileID: 1956271648}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b431da8f98d61de4082b31c471c65b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!224 &1956271650 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 308217503090395549, guid: 889be31009564214c8069f3a60e06330, type: 3}
-  m_PrefabInstance: {fileID: 1956271648}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1959307696
 GameObject:
   m_ObjectHideFlags: 0
@@ -16031,7 +16024,7 @@ RectTransform:
   - {fileID: 49203156}
   - {fileID: 3773771000728381735}
   - {fileID: 9076502575168403249}
-  - {fileID: 1956271650}
+  - {fileID: 337330619}
   m_Father: {fileID: 1817562488}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -19168,10 +19161,25 @@ MonoBehaviour:
   NameField: {fileID: 363106816}
   SwitchTime: 1
   journalUI: {fileID: 1572351529776139385}
-  ES: {fileID: 1956271649}
+  ES: {fileID: 0}
   mainMenuCanvas: {fileID: 154076387}
   SAJ: {fileID: 4109519949287827626}
   InGameUI: {fileID: 49203155}
+  TimeManagementReward: {fileID: 0}
+  socialReward: {fileID: 0}
+  academicReward: {fileID: 0}
+  stressReward: {fileID: 0}
+  goldMedal: {fileID: 0}
+  silverMedal: {fileID: 0}
+  bronzeMedal: {fileID: 0}
+  socialGoal: {fileID: 0}
+  academicGoal: {fileID: 0}
+  stressGoal: {fileID: 0}
+  notAchievedGoal: {fileID: 0}
+  academicGoalReached: 0
+  socialGoalReached: 0
+  stressGoalReached: 0
+  rewardText: {fileID: 0}
 --- !u!1 &2399869860871314333
 GameObject:
   m_ObjectHideFlags: 0
@@ -19298,6 +19306,17 @@ MonoBehaviour:
   animationMultiplier: 2
   MustAssignStats: 0
   SaveFileId: 0
+  day1Achievement: 0
+  day2Achievement: 0
+  day3Achievement: 0
+  day4Achievement: 0
+  day5Achievement: 0
+  day1Trophy: {fileID: 0}
+  day2Trophy: {fileID: 0}
+  day3Trophy: {fileID: 0}
+  day4Trophy: {fileID: 0}
+  day5Trophy: {fileID: 0}
+  currentChapter: 0
 --- !u!1 &2463731466394336344
 GameObject:
   m_ObjectHideFlags: 0
