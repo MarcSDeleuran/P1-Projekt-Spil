@@ -10,20 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: DoctorsAppointment_C2
+  m_Name: DoctorsAppointment_C1
   m_EditorClassIdentifier: 
   Options:
-  - text: Really? What can I do to find more balance?
-    nextScene: {fileID: 11400000, guid: 696dbf3676a2df447b037e5bd41dbb89, type: 2}
-    StressChange: 40
-    AcademicChange: -21
-    SocialChange: 6
-    flag: 0
-    setFlagTrue: 0
-    FlagToSet: 0
-    ChoiceIcon: {fileID: 0}
-  - text: "I\u2019ve tried ignoring it, but that doesn\u2019t help."
-    nextScene: {fileID: 11400000, guid: 696dbf3676a2df447b037e5bd41dbb89, type: 2}
+  - text: "I\u2019ve just had a hard time finding balance between my studies and
+      everything else."
+    nextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
@@ -31,6 +23,16 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  QuestionText: There are ways to manage it.
+  - text: "It feels like there\u2019s always something I should be doing, and I rarely
+      have time to relax."
+    nextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: "Can you tell me more about what\u2019s going on?"
   Music: {fileID: 0}
   Sound: {fileID: 0}
