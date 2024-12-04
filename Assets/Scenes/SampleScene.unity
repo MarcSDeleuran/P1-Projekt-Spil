@@ -19892,8 +19892,8 @@ MonoBehaviour:
   bronzeMedal: {fileID: 21300000, guid: 26fa9fdf75095dd4894032d88e8d1345, type: 3}
   socialGoal: {fileID: 21300000, guid: 63b456a191c8aca41850d5d8f84dbbe9, type: 3}
   academicGoal: {fileID: 21300000, guid: 90bc5c2564da01e49a87aec2b5c87502, type: 3}
-  stressGoal: {fileID: 21300000, guid: 4185866ff083d9e42bacb45e12633899, type: 3}
-  notAchievedGoal: {fileID: 0}
+  stressGoal: {fileID: 21300000, guid: e8ebe5b08dd169940bb48945e0dfb3dc, type: 3}
+  notAchievedGoal: {fileID: 21300000, guid: 4185866ff083d9e42bacb45e12633899, type: 3}
   academicGoalReached: 0
   socialGoalReached: 0
   stressGoalReached: 0
