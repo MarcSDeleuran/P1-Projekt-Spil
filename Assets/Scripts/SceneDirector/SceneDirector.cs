@@ -1,8 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 namespace SceneDirection
 {
@@ -23,6 +27,21 @@ namespace SceneDirection
         public EndScreen ES;
         public StatsAndJournal SAJ;
         public GameObject InGameUI;
+        public Image TimeManagementReward;
+        public Image socialReward;
+        public Image academicReward;
+        public Image stressReward;
+        public Sprite goldMedal;
+        public Sprite silverMedal;
+        public Sprite bronzeMedal;
+        public Sprite socialGoal;
+        public Sprite academicGoal;
+        public Sprite stressGoal;
+        public Sprite notAchievedGoal;
+        public bool academicGoalReached = false;
+        public bool socialGoalReached = false;
+        public bool stressGoalReached = false;
+        public TextMeshProUGUI rewardText;
         private enum SceneState
         {
             IDLE, ANIMATE, CHOOSE
@@ -59,6 +78,154 @@ namespace SceneDirection
                                     ES.Goals.text = goals;
                                     InGameUI.SetActive(false);
                                     ES.gameObject.SetActive(true);
+
+                                    int stressAmoutLower = SAJ.relaxPoints - 10;
+                                    int stressAmoutUpper = SAJ.relaxPoints + 10;
+                                    int socialAmountLower = SAJ.socialPoints - 10;
+                                    int socialAmountUpper = SAJ.socialPoints + 10;
+                                    int schoolAmountLower = SAJ.schoolPoints - 10;
+                                    int schoolAmountUpper = SAJ.schoolPoints + 10;
+
+                                    if (GameManager.Instance.StressAmount <= stressAmoutUpper)
+                                    {
+                                        stressGoalReached = true;
+                                        
+
+                                        
+                                        Debug.Log("You have achieved something");
+                                        
+                                        
+                                    }
+
+                                   
+                                    
+                                    if (GameManager.Instance.SocialAmount >= socialAmountLower)
+                                    {
+                                        
+                                        socialGoalReached = true;
+                                        
+                                        
+
+                                        
+                                        Debug.Log("You have achieved something");
+                                        TimeManagementReward.gameObject.SetActive(true);
+                                        
+                                    }
+                                    
+                                   
+                                    if (GameManager.Instance.AcademicAmount >= schoolAmountLower)
+                                    {
+                                        academicGoalReached = true;
+                                        
+                                        
+
+                                        
+                                        Debug.Log("You have achieved something");
+                                        TimeManagementReward.gameObject.SetActive(true);
+                                        
+                                    }
+
+                                    else
+                                    {
+                                        rewardText.text = "You didn't reach your targeted stress goal for today. You might want to change it up for tommorrow. Try setting a more realistic goal or prioritize you choices";
+                                    }
+                                    
+                                    
+                                    
+                                    
+                                    if(academicGoalReached && socialGoalReached && stressGoalReached)
+                                    {
+                                        rewardText.text = "Congratulations! You have reached your targeted stress goal for today. Now that you know the goal is reasonable, you might want to change it up for tommorrow.";
+                                        TimeManagementReward.sprite = goldMedal;
+                                        academicReward.sprite = academicGoal;
+                                        socialReward.sprite = socialGoal;
+                                        stressReward.sprite = stressGoal;
+                                        
+                                    }
+                                    else if (academicGoalReached)
+                                    {
+                                        TimeManagementReward.sprite = bronzeMedal;
+                                        rewardText.text = "Today you have achieved your academic goal. But you seem to have left the social aspect unattended. As it can be seen on your stress level, this might be something to change up tommorrow.";
+                                        academicReward.sprite = academicGoal;
+                                        stressReward.sprite = notAchievedGoal;
+                                        socialReward.sprite = notAchievedGoal;
+                                    }
+                                    else if (stressGoalReached)
+                                    {
+                                        TimeManagementReward.sprite = bronzeMedal;
+                                        stressReward.sprite = stressGoal;
+                                        socialReward.sprite = notAchievedGoal;
+                                        academicReward.sprite = notAchievedGoal;
+                                        rewardText.text = "Today you have achieved your stress goal. But it has come on the cost of your social and academic life. It is important to remember to balance your life";
+                                    }
+                                    else if (socialGoalReached)
+                                    {
+                                        TimeManagementReward.sprite = bronzeMedal;
+                                        socialReward.sprite = socialGoal;
+                                        academicReward.sprite = notAchievedGoal;
+                                        stressReward.sprite = notAchievedGoal;
+                                        rewardText.text = "Today you have achieved your social goal. But is has come on the cost of your academic performance. As it can be seen on your stress level, this have had a negative effect on your stress. The social aspect is important, but you need to prioritise your academic life aswell";
+                                    }
+                                    else if (academicGoalReached && socialGoalReached)
+                                    {
+                                        TimeManagementReward.sprite = silverMedal;
+                                        socialReward.sprite = socialGoal;
+                                        academicReward.sprite = academicGoal;
+                                        stressReward.sprite = notAchievedGoal;
+                                        rewardText.text = "Today you have achieved your academic and social goal. That is quite impressive. However you seem to have overestimated the effects on the stress level. Reducing stress is something that takes time and consistency. Keep doing what you are doing and you will see the stress bar fall";
+                                    }
+                                    else if (academicGoalReached && stressGoalReached)
+                                    {
+                                        TimeManagementReward.sprite = silverMedal;
+                                        stressReward.sprite = stressGoal;
+                                        academicReward.sprite = academicGoal;
+                                        socialReward.sprite = notAchievedGoal;
+                                        rewardText.text = "Today you have achieved your academic and stress goals for today. That is very impressive. However, you need to remember that your social life also is important. It could have consequenses for your stress levels going forward...";
+                                    }
+                                    else if (socialGoalReached && stressGoalReached)
+                                    {
+                                        TimeManagementReward.sprite = silverMedal;
+                                        stressReward.sprite = stressGoal;
+                                        socialReward.sprite = socialGoal;
+                                        academicReward.sprite = notAchievedGoal;
+                                        rewardText.text = "Today you have achieved you social and stress goals. However you seem to be behind on your academic level. Only prioritizing your social life may reduce stress for awhile. But being behind in your academic life will eventuelly catch up to you.";
+                                    }
+                                    else
+                                    {
+                                        TimeManagementReward.sprite = notAchievedGoal;
+                                        rewardText.text = "You have not reached any of your goals today. Try setting more realistic expectations for yourself";
+                                    }
+                                    
+                                    switch (GameManager.Instance.currentChapter)
+                                    {
+                                        case 1:
+                                            GameManager.Instance.day1Achievement = true;
+                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day1Trophy.SetActive(true);
+                                                
+                                            break;
+                                        case 2:
+                                            GameManager.Instance.day2Achievement = true;
+                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day2Trophy.SetActive(true);
+                                            break;
+                                        case 3:
+                                            GameManager.Instance.day3Achievement = true;
+                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day3Trophy.SetActive(true);
+                                            break;
+                                        case 4:
+                                            GameManager.Instance.day4Achievement = true;
+                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day4Trophy.SetActive(true);
+                                            break;
+                                        case 5:
+                                            GameManager.Instance.day5Achievement = true;
+                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day5Trophy.SetActive(true);
+                                            break;
+                                    }
+
 
                                 }
                                 else

@@ -30,6 +30,18 @@ public class GameManager : MonoBehaviour
     public float animationMultiplier;
     public bool MustAssignStats = false;
     
+    public bool day1Achievement = false;
+    public bool day2Achievement = false;
+    public bool day3Achievement = false;
+    public bool day4Achievement = false;
+    public bool day5Achievement = false;
+    public GameObject day1Trophy;
+    public GameObject day2Trophy;
+    public GameObject day3Trophy;
+    public GameObject day4Trophy;
+    public GameObject day5Trophy;
+    public int currentChapter;
+    
     public void Awake()
     {
         if (Instance != null && Instance != this)
@@ -194,6 +206,8 @@ public class GameManager : MonoBehaviour
     public void EnterChapter(int buttonId)
     {
         DateTime dataCurrent = DateTime.Now; // Få datoen
+        
+        SD.TimeManagementReward.gameObject.SetActive(false);
 
         if (dataCurrent.Day >= startDate + buttonId)
         {  // Hvis datoen er over startDatoen + ugedag
@@ -202,6 +216,7 @@ public class GameManager : MonoBehaviour
             gameSceneUI.SetActive(true);
             SD.VNACTIVE = true;
             SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
+            currentChapter = buttonId + 1;
         }
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
