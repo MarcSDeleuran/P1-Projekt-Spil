@@ -128,6 +128,7 @@ namespace SceneDirection
             if (scene is CheckScene)
             {
                 CheckScene checkScene = (CheckScene)scene;
+                bool reqFound = false;
                 foreach (var req in checkScene.Requirement)
                 {
                     if (req.AcademicReq != 0)
@@ -135,6 +136,7 @@ namespace SceneDirection
                         if (GameManager.Instance.AcademicAmount >= req.AcademicReq)
                         {
                             PlayScene(req.nextScene);
+                            reqFound = true;
                             break;
                         }
                     }
@@ -144,6 +146,7 @@ namespace SceneDirection
                         if (GameManager.Instance.SocialAmount >= req.SocialReq)
                         {
                             PlayScene(req.nextScene);
+                            reqFound = true;
                             break;
                         }
                     }
@@ -153,6 +156,7 @@ namespace SceneDirection
                         if (GameManager.Instance.StressAmount >= req.StressReq)
                         {
                             PlayScene(req.nextScene);
+                            reqFound = true;
                             break;
                         }
                     }
@@ -162,6 +166,7 @@ namespace SceneDirection
                         if (GameManager.Instance.AcademicAmount <= req.AcademicUnderReq)
                         {
                             PlayScene(req.nextScene);
+                            reqFound = true;
                             break;
                         }
                     }
@@ -171,6 +176,7 @@ namespace SceneDirection
                         if (GameManager.Instance.SocialAmount <= req.SocialUnderReq)
                         {
                             PlayScene(req.nextScene);
+                            reqFound = true;
                             break;
                         }
                     }
@@ -180,11 +186,13 @@ namespace SceneDirection
                         if (GameManager.Instance.StressAmount <= req.StressUnderReq)
                         {
                             PlayScene(req.nextScene);
+                            reqFound = true;
                             break;
                         }
                     }
                 }
-                PlayScene(checkScene.DefaultScene);
+                if (!reqFound)
+                    PlayScene(checkScene.DefaultScene);
             }
             if (scene is WriteScene)
             {
@@ -213,7 +221,7 @@ namespace SceneDirection
                             DC.spritesPrefab.transform.GetChild(i).GetComponent<Animator>().SetTrigger("HideCharacter");
                             DC.spritesPrefab.transform.GetChild(i).GetComponent<SpriteController>().hidden = true;
                         }
-                            
+
                     }
                     yield return new WaitForSeconds(SwitchTime);
                 }
