@@ -13,8 +13,108 @@ MonoBehaviour:
   m_Name: Day5.0
   m_EditorClassIdentifier: 
   Sentences:
-  - text: You wake up early, the exam day finally here
+  - text: You wake up, the sound of your alarm going off annoys you a little bit
+      extra today.
     speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: 'The sunlight coming through your window gives you the last push to get
+      out of bed. '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: Today is the day, The final exam. The whole week hangs densely with all
+      the events that happened throughout the week, but now you feel a sense of clarity.
+      It is soon over.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "You reflect [It\u2019s been a week, Stress, deadlines, choices.... It
+      all led to this moment. I really don\u2019t know if I made all the right decisions,
+      but I'm still here, and I got to face it now.]"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: You think about different choices you made this week...
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "[Maybe it wasn\u2019t about being perfect. Maybe it was about figuring
+      out how to keep going, no matter what.]"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: As you are getting ready for school. Your phone vibrates to life with messages
+      from your friends.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: As you are getting ready for school. Your phone vibrates to life with messages
+      from your friends.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "It's from Mary \"Good luck today! You\u2019ve got this. I believe in you.\u201D "
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CText me when you are done, we need to celebrate\u201D "
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Jake follows up \u201CD-day, huh? Remember, if you can\u2019t stun them
+      with your brilliances, then bemuse them with.... Ehm... you know! You\u2019ll
+      crush it!\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CToday is the big one. Stay focused, you need to trust in what you
+      know, and you will be fine. Let me know how it goes.\u201D"
+    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -23,3 +123,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
   nextScene: {fileID: 0}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0
