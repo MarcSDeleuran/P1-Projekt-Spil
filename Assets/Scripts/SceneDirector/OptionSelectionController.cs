@@ -33,7 +33,8 @@ namespace SceneDirection
             choicesBackground.sizeDelta = new Vector3(1720, choicesBackgroundHeight);
             QuestionText.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, choicesBackgroundHeight + 490);
 
-            foreach (Transform child in ChoiceContainer.transform){
+            foreach (Transform child in ChoiceContainer.transform)
+            {
                 GameObject referencedButton = child.gameObject;
                 OptionController optionController = referencedButton.GetComponent<OptionController>();
                 optionController.textMesh.text = "";
@@ -46,7 +47,8 @@ namespace SceneDirection
                 referencedButton.SetActive(false);
             }
 
-            for (int i = 0; i < scene.Options.Count; i++){
+            for (int i = 0; i < scene.Options.Count; i++)
+            {
                 GameObject referencedButton = ChoiceContainer.transform.GetChild(i).gameObject;
                 OptionController optionController = referencedButton.GetComponent<OptionController>();
                 optionController.textMesh.text = scene.Options[i].text;
@@ -59,22 +61,27 @@ namespace SceneDirection
                 optionController.AcademicChange = scene.Options[i].AcademicChange;
                 optionController.SocialChange = scene.Options[i].SocialChange;
 
-                if (scene.Options[i].ChoiceIcon != null){
+                if (scene.Options[i].ChoiceIcon != null)
+                {
                     optionController.ChoiceIcon.sprite = scene.Options[i].ChoiceIcon;
                     optionController.ChoiceIcon.gameObject.SetActive(true);
-                } else {
+                }
+                else
+                {
                     optionController.ChoiceIcon.gameObject.SetActive(false);
                 }
- 
+
                 optionController.textMesh.text = scene.Options[i].text;
-                if (option[i].flag != STORYFLAG.NONE /*|| FM.CheckFlag(option[i].flag)*/){
+                if (option[i].flag != STORYFLAG.NONE || !FM.CheckFlag(option[i].flag))
+                {
+                    referencedButton.SetActive(false);
                     optionController.textMesh.color = Color.red;
                 }
             }
 
             animator.SetTrigger("ShowSelection");
         }
-        
+
         public void PerformOption(StoryScene scene)
         {
             SC.PlayScene(scene);

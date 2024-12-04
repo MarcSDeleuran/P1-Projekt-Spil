@@ -6,17 +6,19 @@ using UnityEngine.UI;
 public class StatsAndJournal : MonoBehaviour
 {
 
-    [SerializeField] private bool chapter1Completed;
-    [SerializeField] private bool chapter2Completed;
-    [SerializeField] private bool chapter3Completed;
-    [SerializeField] private bool chapter4Completed;
-    [SerializeField] private bool chapter5Completed;
+    [SerializeField] public bool chapter1Completed;
+    [SerializeField] public bool chapter2Completed;
+    [SerializeField] public bool chapter3Completed;
+    [SerializeField] public bool chapter4Completed;
+    [SerializeField] public bool chapter5Completed;
+    [SerializeField] public bool[] chaptersCompleted;
     [Space(5)]
     [SerializeField] private GameObject chapter1Locked;
     [SerializeField] private GameObject chapter2Locked;
     [SerializeField] private GameObject chapter3Locked;
     [SerializeField] private GameObject chapter4Locked;
     [SerializeField] private GameObject chapter5Locked;
+    
     [Space(5)]
     [SerializeField] private Button statsButton;
     [SerializeField] private Button statsBackButton;
