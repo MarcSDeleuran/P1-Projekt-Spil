@@ -16115,8 +16115,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 300, y: 450}
+  m_AnchoredPosition: {x: -0.000017166, y: -126.3}
+  m_SizeDelta: {x: 270.462, y: 366.658}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &502991024254544205
 GameObject:
@@ -20766,8 +20766,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: text text text text text text text text text text text text text text text
-    text text text text text text text text text
+  m_text: One day left. The pressure of the exam is at an all time high. You have
+    to structure your day effectively to be ready for tommorow. But an unexpected
+    event may change yout priorities...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 26a4da52b26ffaa498be1fe2801619fd, type: 2}
@@ -20794,8 +20795,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25.75
+  m_fontSizeBase: 25.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21717,8 +21718,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: text text text text text text text text text text text text text text text
-    text text text text text text text text text
+  m_text: Half of the week has gone by. If you were not stressed enough, another
+    assignment is due this evening. A choice between the social and academic life
+    has to be made...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 26a4da52b26ffaa498be1fe2801619fd, type: 2}
@@ -21745,8 +21747,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25.75
+  m_fontSizeBase: 25.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21892,8 +21894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 300, y: 450}
+  m_AnchoredPosition: {x: 0.000015736, y: -108.1}
+  m_SizeDelta: {x: 270.462, y: 373.069}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &3001557558855313278
 RectTransform:
@@ -22223,8 +22225,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 300, y: 450}
+  m_AnchoredPosition: {x: -0.0000030994, y: -160.1}
+  m_SizeDelta: {x: 270.462, y: 330.208}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &3125961443454960448
 RectTransform:
@@ -25614,8 +25616,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 300, y: 450}
+  m_AnchoredPosition: {x: 0, y: -78.4}
+  m_SizeDelta: {x: 270.462, y: 368.794}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &4828451331723170439
 MonoBehaviour:
@@ -29089,8 +29091,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: text text text text text text text text text text text text text text text
-    text text text text text text text text text
+  m_text: ' You meet your best friends Jake, Gabe and Mary. One could maybe be more
+    than a friend.... It is a standard week until a unexpected deadline emerges....'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 26a4da52b26ffaa498be1fe2801619fd, type: 2}
@@ -29117,8 +29119,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25.75
+  m_fontSizeBase: 25.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -30752,8 +30754,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: text text text text text text text text text text text text text text text
-    text text text text text text text text text
+  m_text: Four days to the exam. Hope you have been efficient. Another day of studying
+    and socializing with your friends. A meeting with high expecting parents lures
+    at the end of the day...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 26a4da52b26ffaa498be1fe2801619fd, type: 2}
@@ -30780,8 +30783,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25.75
+  m_fontSizeBase: 25.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32999,8 +33002,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: text text text text text text text text text text text text text text text
-    text text text text text text text text text
+  m_text: All of your choices have led you to this moment. The day of the exam has
+    come. Use all you have learned this week. You are going to need it.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 26a4da52b26ffaa498be1fe2801619fd, type: 2}
@@ -33027,8 +33030,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25.75
+  m_fontSizeBase: 25.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -33355,8 +33358,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 300, y: 450}
+  m_AnchoredPosition: {x: 0.000002861, y: -133.3}
+  m_SizeDelta: {x: 270.462, y: 318.722}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &8354641260830469654
 MonoBehaviour:
