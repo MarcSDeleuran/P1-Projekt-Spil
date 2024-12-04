@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 3 work with Mary 4.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CYeah, it feels like they are just guessing, and they expect us to
+      know everything.\u201D"
+    nextScene: {fileID: 11400000, guid: 052276e8c70fa2445ab22c85938c5333, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  - text: "\u201CI think they just want what\u2019s best for us, i know it really
+      does not always feels like that.\u201D"
+    nextScene: {fileID: 11400000, guid: 61e24a9cfb2d5104cbe72e96b0633110, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  QuestionText: 
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

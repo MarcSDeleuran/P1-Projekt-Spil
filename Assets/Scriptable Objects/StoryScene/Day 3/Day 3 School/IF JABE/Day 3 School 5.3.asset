@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 3 School 5
+  m_Name: Day 3 School 5.3
   m_EditorClassIdentifier: 
   Sentences:
-  - text: A little later you three walk towards the park at the campus. The late
-      sun casts long shadows across the ground. There are some students still around.
+  - text: Jake looks at you, Gabe not happy, but nods.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -22,18 +21,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: Jake stuffs his hands into his pockets, his words from earlier still hanging
-      in the air. Gabe keeps looking briefly at Jake, he is clearly debating whether
-      to say something, while you walk in between them.
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: "Jake is first to break the silence \u201CMan, all this pressure really
-      is killing the vibe, huh?\u201D"
+  - text: "\u201CLet\u2019s gooooo, now we are talking! Compromise is the key to
+      enteral happiness, right, Gabe?\""
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -41,9 +30,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "He tries to force a smile before continuing \u201CAnyways, what\u2019s
-      next? Work? Crying in the library?\u201D"
-    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+  - text: "\u201CMore like the key to narrowly hard work, but fine, I\u2019m ready.\u201D"
+    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -51,4 +39,4 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: b5e0bf903fca83a438e7731d62a954f1, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 0369c4b745a6fb74d8d30b1234344bf4, type: 2}

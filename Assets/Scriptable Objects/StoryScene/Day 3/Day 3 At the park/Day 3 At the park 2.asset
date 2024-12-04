@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 3 School 1.3
+  m_Name: Day 3 At the park 2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Both chuckle, clearly for different reasons
+  - text: Your conversation takes another heading as the evening draws closer. Gabe
+      takes out his schedule book, everything is planned to the smallest detail.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,8 +22,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "Gabe sighs, muttering to himself. \u201CFair, but I know survial is simple
-      with preparation.\u201D"
+  - text: "He closes the book before saying \u201CI\u2019m heading off to the library
+      finish tonight's assignment. What about you two?\u201D"
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -30,7 +31,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "Jake replies \u201CSurvive? Now that something I can get behind.\u201D "
+  - text: "Jake leans back and points at the book \u201CDepends what\u2019s on your
+      list? If a break is on your list, or am I on my own with that one?\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -38,5 +40,13 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
-  nextScene: {fileID: 11400000, guid: 4150f2abe7ce66f4a97020626fc13649, type: 2}
+  - text: You need to decide what you are going to do...
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 9d3f9b2e0abd48f41ad176acf71b0ae4, type: 3}
+  nextScene: {fileID: 0}

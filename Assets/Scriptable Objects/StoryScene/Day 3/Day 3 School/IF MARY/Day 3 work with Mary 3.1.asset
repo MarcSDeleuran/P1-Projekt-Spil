@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 3 School 4.1
+  m_Name: Day 3 work with Mary 3.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "Jake nods, though it\u2019s a small nod."
+  - text: Mary nods, her expression more serious.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,14 +21,14 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CYeah, Yeah. Thanks teacher, Guess i should get my act together then,
-      huh..\u201D he says while looking at the floor."
-    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+  - text: "\u201CFair. Just don\u2019t forget to take a break now and then, okay?
+      Burnouts\u2019s are probably the worst.\u201D"
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
-  nextScene: {fileID: 11400000, guid: 19834cc0dc09ee44493234a4b8e86265, type: 2}
+  background: {fileID: 21300000, guid: 0c34b2171c3664644bf92949f5b66053, type: 3}
+  nextScene: {fileID: 11400000, guid: 97d46e67964941443a9235e8fc0596ee, type: 2}

@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 3 School 4.1
+  m_Name: Day 3 work with Mary 2.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "Jake nods, though it\u2019s a small nod."
-    speaker: {fileID: 0}
+  - text: "Mary smiles faintly \u201CExactly, makes it a bit more bearable to know,
+      that it is not just me.\u201D "
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CYeah, Yeah. Thanks teacher, Guess i should get my act together then,
-      huh..\u201D he says while looking at the floor."
-    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+  - text: "\u201CSometimes I feel like I'm being stretched in a million directions.\u201D"
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -31,4 +31,4 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
-  nextScene: {fileID: 11400000, guid: 19834cc0dc09ee44493234a4b8e86265, type: 2}
+  nextScene: {fileID: 11400000, guid: e917e3d093176f74ba20a7d86b23b36e, type: 2}

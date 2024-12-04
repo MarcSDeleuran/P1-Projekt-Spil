@@ -10,19 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 3 School 4.1
+  m_Name: Day 3 At the park 1.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "Jake nods, though it\u2019s a small nod."
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: "\u201CYeah, Yeah. Thanks teacher, Guess i should get my act together then,
-      huh..\u201D he says while looking at the floor."
+  - text: "Jake smiles at you and says \u201CYeah... yeah, maybe you\u2019re right.
+      Now I just got to prove it, huh?\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -30,5 +22,5 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
-  nextScene: {fileID: 11400000, guid: 19834cc0dc09ee44493234a4b8e86265, type: 2}
+  background: {fileID: 21300000, guid: 9d3f9b2e0abd48f41ad176acf71b0ae4, type: 3}
+  nextScene: {fileID: 11400000, guid: 90a5c039495dde94181465198c442d6e, type: 2}

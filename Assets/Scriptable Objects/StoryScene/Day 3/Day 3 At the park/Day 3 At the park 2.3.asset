@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 3 School 4.1
+  m_Name: Day 3 At the park 2.3
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "Jake nods, though it\u2019s a small nod."
+  - text: They both do a small nod. Almost in sync.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,8 +21,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CYeah, Yeah. Thanks teacher, Guess i should get my act together then,
-      huh..\u201D he says while looking at the floor."
+  - text: "\u201CLone wolf, don\u2019t let it eat you alive.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -30,5 +29,14 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 3bcb8464e2a5d4e7586e936124e2821a, type: 3}
-  nextScene: {fileID: 11400000, guid: 19834cc0dc09ee44493234a4b8e86265, type: 2}
+  - text: "Gabe shares his help \u201CMake sure to stay on point, time is running
+      out.\u201D"
+    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 9d3f9b2e0abd48f41ad176acf71b0ae4, type: 3}
+  nextScene: {fileID: 11400000, guid: 3e627da9e9df3054da8740c833e01f92, type: 2}

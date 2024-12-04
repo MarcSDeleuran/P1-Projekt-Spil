@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 3 School 1.3
+  m_Name: Day 3 working with Gabe 2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Both chuckle, clearly for different reasons
+  - text: You sit in the library working away for hours, you enjoy Gabes company
+      and his fantastic work ethic.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,22 +22,23 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "Gabe sighs, muttering to himself. \u201CFair, but I know survial is simple
-      with preparation.\u201D"
-    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+  - text: As you think to yourself you can't help smiling. [It feels so good to be
+      ahead on the assignment for once, i definitely made the right choice].
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "Jake replies \u201CSurvive? Now that something I can get behind.\u201D "
-    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+  - text: As the sun is going down, you get a notification, it's a reminder about
+      the assignment due tonight.
+    speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
-  nextScene: {fileID: 11400000, guid: 4150f2abe7ce66f4a97020626fc13649, type: 2}
+  background: {fileID: 21300000, guid: 73ace7d55bb76e8469a24cb7bb8ab173, type: 3}
+  nextScene: {fileID: 0}
