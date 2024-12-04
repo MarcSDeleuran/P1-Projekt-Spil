@@ -28,6 +28,8 @@ namespace SceneDirection
         public GameObject spritesPrefab;
         public float TextSpeed;
         private Coroutine typingCoroutine;
+        public AudioClip sound;
+        public AudioSource source;
 
         private enum DialogueState
         {
@@ -251,12 +253,18 @@ namespace SceneDirection
             DialogueText.text = "";
             state = DialogueState.PLAYING;
             int wordIndex = 0;
+            bool playOnNextLetter = false;
 
             while (state != DialogueState.COMPLETED)
             {
                 DialogueText.text += text[wordIndex];
+                if (playOnNextLetter){ // Bare sådan det kun er hvert andet bogstav, ellers bliver det for meget
+                    source.PlayOneShot(sound);
+                    playOnNextLetter = false;
+                } else {
+                    playOnNextLetter = true;
+                }
                 yield return new WaitForSeconds(TextSpeed * 0.05f);
-                //ska g�res til en public variabel for indstillinger
                 if (++wordIndex == text.Length)
                 {
                     state = DialogueState.COMPLETED;
