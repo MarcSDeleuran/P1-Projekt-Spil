@@ -15,7 +15,10 @@ public class FlagManager : MonoBehaviour
 
     public bool CheckFlag(STORYFLAG flag)
     {
-        if (!flags.ContainsKey(flag)) return false;
+        if (!flags.ContainsKey(flag))
+        {
+            return false;
+        }
         return flags.TryGetValue(flag, out bool value) ? value : false;
     }
 

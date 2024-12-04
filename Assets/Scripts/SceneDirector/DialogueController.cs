@@ -41,7 +41,10 @@ namespace SceneDirection
             SpeakerNameText = LeftSpeakerNameText;
             animator.SetTrigger("Start");
         }
-
+        public void ResetSprites()
+        {
+            sprites = new Dictionary<Speaker, SpriteController>();
+        }
         public void SetIndex(int i)
         {
             sentenceIndex = i;
