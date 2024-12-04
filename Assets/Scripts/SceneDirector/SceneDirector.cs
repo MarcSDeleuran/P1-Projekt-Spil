@@ -384,8 +384,6 @@ namespace SceneDirection
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
-                if (storyScene.startscene)
-                    DC.ShowBox();
                 if (storyScene.OpenJournal)
                 {
                     journalUI.SetActive(true);
