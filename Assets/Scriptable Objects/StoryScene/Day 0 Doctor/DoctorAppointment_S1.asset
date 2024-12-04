@@ -21,7 +21,7 @@ MonoBehaviour:
       SpriteIndex: 1
       Coords: {x: 0, y: 0}
       MoveSpeed: 0
-    Music: {fileID: 8300000, guid: 45f34178c4a62824b91c6875475bcd14, type: 3}
+    Music: {fileID: 8300000, guid: 92d0a9af8edd4344e8467cea3c885b34, type: 3}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
