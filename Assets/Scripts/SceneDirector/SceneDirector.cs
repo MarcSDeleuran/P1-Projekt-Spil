@@ -221,22 +221,22 @@ namespace SceneDirection
                                             break;
                                         case 2:
                                             GameManager.Instance.day2Achievement = true;
-                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day2Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
                                             GameManager.Instance.day2Trophy.SetActive(true);
                                             break;
                                         case 3:
                                             GameManager.Instance.day3Achievement = true;
-                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day3Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
                                             GameManager.Instance.day3Trophy.SetActive(true);
                                             break;
                                         case 4:
                                             GameManager.Instance.day4Achievement = true;
-                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day4Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
                                             GameManager.Instance.day4Trophy.SetActive(true);
                                             break;
                                         case 5:
                                             GameManager.Instance.day5Achievement = true;
-                                            GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
+                                            GameManager.Instance.day5Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
                                             GameManager.Instance.day5Trophy.SetActive(true);
                                             break;
                                     }
