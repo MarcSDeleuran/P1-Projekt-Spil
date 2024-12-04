@@ -52,7 +52,12 @@ MonoBehaviour:
   - text: "\u201CAlright, everyone, settle down please. I know this week is a lot,
       but let\u2019s stay on track.\u201D"
     speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -68,3 +73,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
   nextScene: {fileID: 11400000, guid: e2c976fcd93cc464eb67452ef46043eb, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

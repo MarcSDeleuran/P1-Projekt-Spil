@@ -1,0 +1,1 @@
+{"saveFileId":1,"flags":[],"sentence":-1,"prevScenes":[],"stressAmount":50,"academicAmount":100,"socialAmount":100,"characterName":"","chapterCompletes":[false,false,false,false,false]}
