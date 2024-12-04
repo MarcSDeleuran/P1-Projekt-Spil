@@ -53,4 +53,5 @@ MonoBehaviour:
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
   nextScene: {fileID: 11400000, guid: 8154401f2c1f08d4faeb1bf1aa8ef9b7, type: 2}
   OpenJournal: 0
-  FinalScene: 0
+  FinalScene: 1
+  FinalSceneChapterId: 0
