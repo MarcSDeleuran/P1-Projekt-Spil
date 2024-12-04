@@ -9,26 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Script: {fileID: 11500000, guid: a2b281b63ea762b47aa49978601bbdf0, type: 3}
   m_Name: 4.1 C
   m_EditorClassIdentifier: 
-  Options:
-  - text: (Low academic score)
-    nextScene: {fileID: 11400000, guid: 08480a0ef751f8c4db1bf5dcc47ee886, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-    flag: 0
-    setFlagTrue: 0
-    FlagToSet: 0
-  - text: (High stress score)
+  Requirement:
+  - text: (High academic score)
     nextScene: {fileID: 11400000, guid: 40a0be7a9325d88408b745eff200801d, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
     flag: 0
-    setFlagTrue: 0
-    FlagToSet: 0
-  QuestionText: "(SKAL V\xC6LGES AUTOMATISK)"
+    StressReq: 0
+    AcademicReq: 150
+    SocialReq: 0
+    StressUnderReq: 0
+    AcademicUnderReq: 0
+    SocialUnderReq: 0
+  QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}
+  DefaultScene: {fileID: 11400000, guid: 08480a0ef751f8c4db1bf5dcc47ee886, type: 2}
