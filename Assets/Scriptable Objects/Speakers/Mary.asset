@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Mary
   m_EditorClassIdentifier: 
   speakerName: Mary
-  nameColor: {r: 0.23529412, g: 0.30588236, b: 0.3529412, a: 1}
-  textColor: {r: 0.33333334, g: 0.5019608, b: 0.6156863, a: 1}
+  nameColor: {r: 0.3529412, g: 0.23529412, b: 0.23871472, a: 1}
+  textColor: {r: 0.6156863, g: 0.33333334, b: 0.33333334, a: 1}
   sprites:
   - {fileID: 21300000, guid: 5160f7bb429dcef459980dea33ec6179, type: 3}
   - {fileID: 21300000, guid: 64d0b17840d89d84e95e598f8093781f, type: 3}

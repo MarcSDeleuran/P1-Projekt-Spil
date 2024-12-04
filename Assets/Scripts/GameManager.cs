@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
-        chaptersCompleted = new bool[5];
+        chaptersCompleted = new bool[4];
         Application.targetFrameRate = 60;
         UpdateSaveFiles();
 
@@ -92,10 +92,18 @@ public class GameManager : MonoBehaviour
         {
             chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(false);
             chapterButtons[i].GetComponent<ChapterButtonUI>().lockedUI.SetActive(false);
-            chapterButtons[i].GetComponent<ChapterButtonUI>().dayText.text = "Unlocks: " + (dataCurrent.Day + i - 1) + ". nov";
+            chapterButtons[i].GetComponent<ChapterButtonUI>().dayText.text = "Unlocks: " + (dataCurrent.Day + i - 1) + ". dec";
             if (dataCurrent.Day >= startDate + i)
             { // Hvis datoen er over startDatoen + ugedage
-                chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(true);
+                if (i != 0){
+                    if (chaptersCompleted[i - 1]){
+                        chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(true);
+                    } else {
+                        chapterButtons[i].GetComponent<ChapterButtonUI>().lockedUI.SetActive(true);
+                    }
+                } else {
+                    chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(true);
+                }
             }
             else
             { // Hvis datoen ikke er over startDatoen + ugedage
@@ -170,13 +178,12 @@ public class GameManager : MonoBehaviour
             SocialAmount = saveObject.socialAmount;
             CharacterName = saveObject.characterName;
             SD.VNACTIVE = true;
-            bool[] CC = new bool[5];
-            CC[0] = true;
-            CC[1] = saveObject.chapterCompletes[0];
-            CC[2] = saveObject.chapterCompletes[1];
-            CC[3] = saveObject.chapterCompletes[2];
-            CC[4] = saveObject.chapterCompletes[3];
-            chaptersCompleted = new bool[5];
+            bool[] CC = new bool[4];
+            CC[0] = saveObject.chapterCompletes[0];
+            CC[1] = saveObject.chapterCompletes[1];
+            CC[2] = saveObject.chapterCompletes[2];
+            CC[3] = saveObject.chapterCompletes[3];
+            chaptersCompleted = new bool[4];
             chaptersCompleted = CC;
             
             SaveFileId = saveFileId;
@@ -257,34 +264,14 @@ public class GameManager : MonoBehaviour
         
         SD.TimeManagementReward.gameObject.SetActive(false);
 
-        if (buttonId == 0 && dataCurrent.Day >= startDate + 0)
+        if (buttonId == 0 && dataCurrent.Day >= startDate)
         {  // Hvis datoen er over startDatoen + ugedag
 
             StartGame(0);
         }
-        else if (buttonId == 1 && dataCurrent.Day >= startDate + 1 && chaptersCompleted[0])
+        else if (dataCurrent.Day >= startDate + buttonId && chaptersCompleted[buttonId - 1])
         {
-            StartGame(1);
-        }
-        else if (buttonId == 2 && dataCurrent.Day >= startDate + 2 && chaptersCompleted[1])
-        {
-            StartGame(2);
-        }
-        else if (buttonId == 3 && dataCurrent.Day >= startDate + 3 && chaptersCompleted[2])
-        {
-            StartGame(3);
-        }
-        else if (buttonId == 4 && dataCurrent.Day >= startDate + 4 && chaptersCompleted[3])
-        {
-            StartGame(4);
-
-            mainMenuUI.SetActive(false);
-            mainMenuCanvas.SetActive(false);
-            gameSceneUI.SetActive(true);
-            SD.VNACTIVE = true;
-            SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
-            currentChapter = buttonId + 1;
-
+            StartGame(buttonId);
         }
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
@@ -294,23 +281,20 @@ public class GameManager : MonoBehaviour
 
 
     private void StartGame(int buttonId){
-       // mainMenuUI.SetActive(false);
-       // mainMenuCanvas.SetActive(false);
-       // gameSceneUI.SetActive(true);
-      //  SD.VNACTIVE = true;
-      //  SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
+        /*
         mainMenuUI.SetActive(false);
-            mainMenuCanvas.SetActive(false);
-            gameSceneUI.SetActive(true);
-            SD.VNACTIVE = true;
-            SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
-            currentChapter = buttonId + 1;
+        mainMenuCanvas.SetActive(false);
+        gameSceneUI.SetActive(true);
+        SD.VNACTIVE = true;
+        SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
+        currentChapter = buttonId + 1;
+        */
+        Debug.Log("Can enter");
     }
 
 
     public void MainMenuButton()
     {
-
         mainMenuUI.SetActive(true);
         gameSceneUI.SetActive(false);
         mainMenuCanvas.SetActive(true);

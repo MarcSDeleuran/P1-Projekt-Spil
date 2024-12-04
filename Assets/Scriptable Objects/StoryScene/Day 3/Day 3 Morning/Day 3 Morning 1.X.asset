@@ -24,7 +24,7 @@ MonoBehaviour:
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
   - text: "\u201CI should not, I don\u2019t need any distractions today. Just focus.\u201D "
-    nextScene: {fileID: 11400000, guid: fd82c32e61772b343930db4fa2f2a7be, type: 2}
+    nextScene: {fileID: 11400000, guid: 347467e1e1f61c64782dc8f63ad5ca52, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
