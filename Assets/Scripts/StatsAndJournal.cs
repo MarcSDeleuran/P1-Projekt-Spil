@@ -59,7 +59,7 @@ public class StatsAndJournal : MonoBehaviour
             stressSlider.value = 0;
             academicSlider.value = 0;
             socialSlider.value = 0;
-            chapter1Locked.SetActive(true);
+            chapter1Locked.SetActive(false);
             if (!GameManager.Instance.chaptersCompleted[0])
             {
                 chapter2Locked.SetActive(true);

@@ -269,6 +269,10 @@ public class GameManager : MonoBehaviour
 
             StartGame(0);
         }
+        else if (buttonId == 4 && dataCurrent.Day >= startDate + buttonId && chaptersCompleted[buttonId - 1])
+        {
+            StartGame(buttonId);
+        }
         else if (dataCurrent.Day >= startDate + buttonId && chaptersCompleted[buttonId - 1] && !chaptersCompleted[buttonId])
         {
             StartGame(buttonId);
