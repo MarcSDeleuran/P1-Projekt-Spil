@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -124,7 +125,75 @@ namespace SceneDirection
             }
 
             currentScene = scene;
+            if (scene is CheckScene)
+            {
+                CheckScene checkScene = (CheckScene)scene;
+                bool reqFound = false;
+                foreach (var req in checkScene.Requirement)
+                {
+                    if (req.AcademicReq != 0)
+                    {
+                        if (GameManager.Instance.AcademicAmount >= req.AcademicReq)
+                        {
+                            PlayScene(req.nextScene);
+                            reqFound = true;
+                            break;
+                        }
+                    }
 
+                    if (req.SocialReq != 0)
+                    {
+                        if (GameManager.Instance.SocialAmount >= req.SocialReq)
+                        {
+                            PlayScene(req.nextScene);
+                            reqFound = true;
+                            break;
+                        }
+                    }
+
+                    if (req.StressReq != 0)
+                    {
+                        if (GameManager.Instance.StressAmount >= req.StressReq)
+                        {
+                            PlayScene(req.nextScene);
+                            reqFound = true;
+                            break;
+                        }
+                    }
+
+                    if (req.AcademicUnderReq != 0)
+                    {
+                        if (GameManager.Instance.AcademicAmount <= req.AcademicUnderReq)
+                        {
+                            PlayScene(req.nextScene);
+                            reqFound = true;
+                            break;
+                        }
+                    }
+
+                    if (req.SocialUnderReq != 0)
+                    {
+                        if (GameManager.Instance.SocialAmount <= req.SocialUnderReq)
+                        {
+                            PlayScene(req.nextScene);
+                            reqFound = true;
+                            break;
+                        }
+                    }
+
+                    if (req.StressUnderReq != 0)
+                    {
+                        if (GameManager.Instance.StressAmount <= req.StressUnderReq)
+                        {
+                            PlayScene(req.nextScene);
+                            reqFound = true;
+                            break;
+                        }
+                    }
+                }
+                if (!reqFound)
+                    PlayScene(checkScene.DefaultScene);
+            }
             if (scene is WriteScene)
             {
                 VNACTIVE = false;
@@ -152,7 +221,7 @@ namespace SceneDirection
                             DC.spritesPrefab.transform.GetChild(i).GetComponent<Animator>().SetTrigger("HideCharacter");
                             DC.spritesPrefab.transform.GetChild(i).GetComponent<SpriteController>().hidden = true;
                         }
-                            
+
                     }
                     yield return new WaitForSeconds(SwitchTime);
                 }
