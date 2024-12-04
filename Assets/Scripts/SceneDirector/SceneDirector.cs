@@ -21,6 +21,7 @@ namespace SceneDirection
         public float SwitchTime;
         public GameObject journalUI;
         public EndScreen ES;
+        public GameObject mainMenuCanvas;
         public StatsAndJournal SAJ;
         public GameObject InGameUI;
         private enum SceneState
@@ -59,6 +60,7 @@ namespace SceneDirection
                                     ES.Goals.text = goals;
                                     InGameUI.SetActive(false);
                                     ES.gameObject.SetActive(true);
+                                    mainMenuCanvas.SetActive(true);
 
                                 }
                                 else

@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mainMenuUI;
     [SerializeField] private GameObject gameSceneUI;
     [SerializeField] private GameObject mainMenuCanvas;
+    [SerializeField] private GameObject endSceneUI;
+    [SerializeField] private GameObject InGameUI;
     [SerializeField] private GameObject[] saveFileButtons;
     [SerializeField] private GameObject[] chapterButtons;
     public SceneDirector SD;
@@ -207,5 +209,13 @@ public class GameManager : MonoBehaviour
         { // Hvis datoen ikke er over startDatoen + ugedag
             Debug.LogWarning("You can't enter this Chapter");
         }
+    }
+
+    public void MainMenuButton(){
+        mainMenuUI.SetActive(true);
+        gameSceneUI.SetActive(false);
+        mainMenuCanvas.SetActive(true);
+        endSceneUI.SetActive(false);
+        InGameUI.SetActive(true);
     }
 }

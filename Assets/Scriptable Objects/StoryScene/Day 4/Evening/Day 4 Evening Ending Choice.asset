@@ -12,7 +12,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
   m_Name: Day 4 Evening Ending Choice
   m_EditorClassIdentifier: 
-  Options: []
+  Options:
+  - text: (High academic)
+    nextScene: {fileID: 11400000, guid: 395b7022280a94325b31c36e9405ca10, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: (High stress)
+    nextScene: {fileID: 11400000, guid: e76d60b1ca8b14157b61a0eedae97164, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: (Low academic)
+    nextScene: {fileID: 11400000, guid: 933cca614083a49a093e16e75b54121e, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: (Low stress)
+    nextScene: {fileID: 11400000, guid: 8d788a6a8a1cd46bd98052e006fe3965, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}
