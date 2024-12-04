@@ -12,6 +12,7 @@ public class DataHolder : ScriptableObject
 
 public struct SaveData
 {
+    public int saveFileId;
     public Dictionary<STORYFLAG, Boolean> flags;
     public int sentence;
     public List<int> prevScenes;
@@ -19,4 +20,5 @@ public struct SaveData
     public int academicAmount;
     public int socialAmount;
     public string characterName;
+    public bool[] chapterCompletes;
 }
