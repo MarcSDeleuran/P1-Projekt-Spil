@@ -48,6 +48,12 @@ namespace SceneDirection
             IDLE, ANIMATE, CHOOSE
         }
 
+        private void Start(){
+            if (PlayerPrefs.HasKey("PlayerName")){
+                NameField.GetComponentInChildren<TMPro.TMP_InputField>().text = PlayerPrefs.GetString("PlayerName");
+            }
+        }
+
         private void Update()
         {
             if (VNACTIVE)
@@ -279,12 +285,11 @@ namespace SceneDirection
             if (NameField.GetComponentInChildren<TMPro.TMP_InputField>().text == "")
                 return;
             GameManager.Instance.CharacterName = NameField.GetComponentInChildren<TMPro.TMP_InputField>().text;
+            PlayerPrefs.SetString("PlayerName", GameManager.Instance.CharacterName);
             VNACTIVE = true;
             WriteScene ws = currentScene as WriteScene;
             PlayScene(ws.NextScene);
             NameField.SetActive(false);
-
-
         }
         public void PlayScene(GameScene scene)
         {

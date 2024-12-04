@@ -48,8 +48,8 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Update(){
-        if (musicSource.pitch != 1f - GameManager.Instance.StressAmount/400f){
-            musicSource.pitch = 1f - GameManager.Instance.StressAmount/400f;
+        if (musicSource.pitch != 1.13f - GameManager.Instance.StressAmount/400f){
+            musicSource.pitch = 1.13f - GameManager.Instance.StressAmount/400f;
         }
         if (GameManager.Instance.StressAmount >= 160 && !heartbeat.activeSelf){
             heartbeat.SetActive(true);

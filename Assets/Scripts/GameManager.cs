@@ -46,7 +46,8 @@ public class GameManager : MonoBehaviour
     public GameObject day4Trophy;
     public GameObject day5Trophy;
     public int currentChapter;
-    
+    public TextMeshProUGUI journalCurrentDayText;
+    public GameObject[] journalMethods;
 
     public void Awake()
     {
@@ -291,8 +292,28 @@ public class GameManager : MonoBehaviour
         SD.VNACTIVE = true;
         SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
         currentChapter = buttonId + 1;
+        foreach (GameObject journalMethod in journalMethods){
+            journalMethod.SetActive(false);
+        }
+        journalMethods[buttonId].SetActive(true);
+        switch (currentChapter){
+            case 1:
+                journalCurrentDayText.text = "Monday";
+                break;
+            case 2:
+                journalCurrentDayText.text = "Tuesday";
+                break;
+            case 3:
+                journalCurrentDayText.text = "Wednesday";
+                break;
+            case 4:
+                journalCurrentDayText.text = "Thursday";
+                break;
+            case 5:
+                journalCurrentDayText.text = "Friday";
+                break;
+        }
     }
-
 
     public void MainMenuButton()
     {
