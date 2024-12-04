@@ -298,11 +298,11 @@ namespace SceneDirection
                 Debug.Log("nextScene Not available");
                 yield break;
             }
-
+            
             state = SceneState.ANIMATE;
-            if (currentScene == null)
+            if (currentScene != null)
             {
-                DC.ShowBox();
+                DC.HideBox();
                 yield return new WaitForSeconds(SwitchTime);
             }
 
@@ -384,6 +384,8 @@ namespace SceneDirection
             if (scene is StoryScene)
             {
                 StoryScene storyScene = (StoryScene)scene;
+                if (storyScene.startscene)
+                    DC.ShowBox();
                 if (storyScene.OpenJournal)
                 {
                     journalUI.SetActive(true);
