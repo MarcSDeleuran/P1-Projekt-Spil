@@ -1,1 +1,0 @@
-{"saveFileId":1,"sentence":-1,"prevScenes":[],"stressAmount":90,"academicAmount":79,"socialAmount":106,"characterName":"gh","chapterCompletes":[true,false,false,false,false]}

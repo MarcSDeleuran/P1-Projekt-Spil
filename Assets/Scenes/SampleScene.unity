@@ -19869,7 +19869,7 @@ MonoBehaviour:
   DC: {fileID: 3541394706249804973}
   BackgroundSwitcher: {fileID: 5737901218490267982}
   OSC: {fileID: 1588265719216675041}
-  AudioManager: {fileID: 6840329135266423412}
+  audioManager: {fileID: 6840329135266423412}
   history: []
   VNACTIVE: 0
   NameField: {fileID: 363106816}
@@ -19992,6 +19992,7 @@ MonoBehaviour:
   - {fileID: 6203394941954707615}
   - {fileID: 4429688134668202707}
   - {fileID: 2158235060572828711}
+  chaptersCompleted: 
   SD: {fileID: 2392239762029088324}
   DH: {fileID: 11400000, guid: 49850149ffb56dd4888312d343a7bda5, type: 2}
   FM: {fileID: 1750162135}
@@ -24503,7 +24504,6 @@ MonoBehaviour:
   chapter3Completed: 0
   chapter4Completed: 0
   chapter5Completed: 0
-  chaptersCompleted: 
   chapter1Locked: {fileID: 537452346}
   chapter2Locked: {fileID: 1051906040}
   chapter3Locked: {fileID: 853056282}

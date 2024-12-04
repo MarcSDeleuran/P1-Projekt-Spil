@@ -1,1 +1,0 @@
-{"saveFileId":2,"flags":[{"key":"Gabe","value":true}],"sentence":-1,"prevScenes":[],"stressAmount":90,"academicAmount":79,"socialAmount":106,"characterName":"jkm","chapterCompletes":[true,false,false,false,false]}
