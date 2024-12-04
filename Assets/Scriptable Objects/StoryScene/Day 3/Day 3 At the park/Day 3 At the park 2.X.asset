@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 3 At the park 2.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CI will join you, Gabe, Let\u2019s get this done.\u201D"
+    nextScene: {fileID: 11400000, guid: cbcd8fe66bf793245a8f7097b86b43d5, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  - text: "\u201CI really think I need a break first.\u201D"
+    nextScene: {fileID: 11400000, guid: 5b38e039e778d4643a679a52722a8f9b, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  - text: "\u201CI really need to figure this out on my own first, I will catch up
+      with you later.\u201D"
+    nextScene: {fileID: 11400000, guid: c661e1aef1d792e459e9f012e140fed9, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+  QuestionText: 
+  Music: {fileID: 0}
+  Sound: {fileID: 0}
