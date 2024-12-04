@@ -264,12 +264,12 @@ public class GameManager : MonoBehaviour
         
         SD.TimeManagementReward.gameObject.SetActive(false);
 
-        if (buttonId == 0 && dataCurrent.Day >= startDate)
+        if (buttonId == 0 && dataCurrent.Day >= startDate && !chaptersCompleted[0])
         {  // Hvis datoen er over startDatoen + ugedag
 
             StartGame(0);
         }
-        else if (dataCurrent.Day >= startDate + buttonId && chaptersCompleted[buttonId - 1])
+        else if (dataCurrent.Day >= startDate + buttonId && chaptersCompleted[buttonId - 1] && !chaptersCompleted[buttonId])
         {
             StartGame(buttonId);
         }
@@ -281,15 +281,12 @@ public class GameManager : MonoBehaviour
 
 
     private void StartGame(int buttonId){
-        /*
         mainMenuUI.SetActive(false);
         mainMenuCanvas.SetActive(false);
         gameSceneUI.SetActive(true);
         SD.VNACTIVE = true;
         SD.PlayScene(chapterButtons[buttonId].GetComponent<ChapterButtonUI>().ChapterStartScene);
         currentChapter = buttonId + 1;
-        */
-        Debug.Log("Can enter");
     }
 
 

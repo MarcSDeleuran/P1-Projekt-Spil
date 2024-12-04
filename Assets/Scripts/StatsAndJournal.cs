@@ -5,13 +5,6 @@ using UnityEngine.UI;
 
 public class StatsAndJournal : MonoBehaviour
 {
-
-    [SerializeField] public bool chapter1Completed;
-    [SerializeField] public bool chapter2Completed;
-    [SerializeField] public bool chapter3Completed;
-    [SerializeField] public bool chapter4Completed;
-    [SerializeField] public bool chapter5Completed;
-    [Space(5)]
     [SerializeField] private GameObject chapter1Locked;
     [SerializeField] private GameObject chapter2Locked;
     [SerializeField] private GameObject chapter3Locked;
@@ -66,15 +59,8 @@ public class StatsAndJournal : MonoBehaviour
             stressSlider.value = 0;
             academicSlider.value = 0;
             socialSlider.value = 0;
-            if (!chapter1Completed)
-            {
-                chapter1Locked.SetActive(true);
-            }
-            else
-            {
-                chapter1Locked.SetActive(false);
-            }
-            if (!chapter2Completed)
+            chapter1Locked.SetActive(true);
+            if (!GameManager.Instance.chaptersCompleted[0])
             {
                 chapter2Locked.SetActive(true);
             }
@@ -82,7 +68,7 @@ public class StatsAndJournal : MonoBehaviour
             {
                 chapter2Locked.SetActive(false);
             }
-            if (!chapter3Completed)
+            if (!GameManager.Instance.chaptersCompleted[1])
             {
                 chapter3Locked.SetActive(true);
             }
@@ -90,7 +76,7 @@ public class StatsAndJournal : MonoBehaviour
             {
                 chapter3Locked.SetActive(false);
             }
-            if (!chapter4Completed)
+            if (!GameManager.Instance.chaptersCompleted[2])
             {
                 chapter4Locked.SetActive(true);
             }
@@ -98,7 +84,7 @@ public class StatsAndJournal : MonoBehaviour
             {
                 chapter4Locked.SetActive(false);
             }
-            if (!chapter5Completed)
+            if (!GameManager.Instance.chaptersCompleted[3])
             {
                 chapter5Locked.SetActive(true);
             }
