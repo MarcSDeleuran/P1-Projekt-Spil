@@ -21,12 +21,12 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: -150, y: 0}
+      Coords: {x: -200, y: 0}
       MoveSpeed: 0
     - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 150, y: 150}
+      Coords: {x: 200, y: 150}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -37,7 +37,12 @@ MonoBehaviour:
       the last minute. You are smart, so you shouldn\u2019t really struggle like
       this.\u201D"
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -46,7 +51,17 @@ MonoBehaviour:
   - text: "Jake stops mid sip and puts down the Faxe Kondi. \u201CI feel like it
       is easier to pretend that I'm not trying than to fail even when I do try.\u201D "
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -55,7 +70,12 @@ MonoBehaviour:
   - text: You feel the air grow heavy, as Jakes words sink in. Gabes expression switches,
       the severity of his tone replaced by an understanding one.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -65,7 +85,12 @@ MonoBehaviour:
       not good enough. If you think about it, it just means you did not plan well
       enough, there is a difference.\u201D "
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -73,7 +98,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: Jake pulls a half smile, he looks at you for support.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

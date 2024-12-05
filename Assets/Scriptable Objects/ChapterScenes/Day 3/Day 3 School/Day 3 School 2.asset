@@ -47,7 +47,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: "\u201CMorning, champ, are we ready to conquer the world?\u201D"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -55,7 +60,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: "\u201COr are we just aiming to survive today?\u201D"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 0}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

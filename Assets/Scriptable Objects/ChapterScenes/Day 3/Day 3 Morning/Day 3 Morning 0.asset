@@ -14,14 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - text: You try to move around as sunlight blinds you through the curtains. The
-      city traffic ensures you that the city has awoken, the occasional hum of birds
-      ease your mind before the weight of the deadlines presses your calm mind in
-      a stay of panic again.
+      city traffic ensures you that the city has awoken.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 8300000, guid: 92d0a9af8edd4344e8467cea3c885b34, type: 3}
     StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: The occasional hum of birds ease your mind before the weight of the deadlines
+      presses your calm mind in a stay of panic again.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 8300000, guid: 92d0a9af8edd4344e8467cea3c885b34, type: 3}
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
