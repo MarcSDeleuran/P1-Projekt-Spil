@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day 1 Home Ending
+  m_Name: Day 1 HomePartyScene
   m_EditorClassIdentifier: 
   Sentences:
-  - text: 'You arrive at home and get ready for sleep. '
+  - text: You arrive home after the party
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -21,7 +21,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[I am so happy I got to work on the exam]'
+  - text: '[That was fun]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -29,15 +29,15 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: '[I wished I could have gone to that party though]'
+  - text: '[What about the exam though? Now I am behind]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 40
     AcademicChange: 0
     SocialChange: 0
-  - text: '[I need to find a balance so I have time for both]'
+  - text: '[Was the party worth it?]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
