@@ -269,6 +269,7 @@ public class GameManager : MonoBehaviour
                 saveFileId = saveFileId,
 
             };
+            chaptersCompleted = saveObject.chapterCompletes;
             StressAmount = saveObject.stressAmount;
             AcademicAmount = saveObject.academicAmount;
             SocialAmount = saveObject.socialAmount;
