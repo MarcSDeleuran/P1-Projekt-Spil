@@ -65,7 +65,7 @@ MonoBehaviour:
     SocialChange: 0
   - text: "As loud as she can, she says \u201CPhones away. You have two hours to
       complete the exam. You have to remain in your seats until time is up.\u201D"
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}

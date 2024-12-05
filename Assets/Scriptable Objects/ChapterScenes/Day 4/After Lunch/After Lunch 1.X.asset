@@ -16,9 +16,9 @@ MonoBehaviour:
   - text: "\u201CHey, I would love to, but I must work on the exam. I need to prioritize
       school.\u201D"
     nextScene: {fileID: 11400000, guid: 24f6be2c8ff0b6c4dbce7a1a8aea30d7, type: 2}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 15
-    SocialChange: -10
+    SocialChange: -15
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
   - text: "\u201CYeah of course. But I must work on my exam as well. Can you just
       give me an hour more and then I am ready?\u201D"
     nextScene: {fileID: 11400000, guid: 0157941c1d8f70d4d930e8fcef3adc55, type: 2}
-    StressChange: 0
-    AcademicChange: 5
+    StressChange: 10
+    AcademicChange: 10
     SocialChange: 5
     flag: 0
     setFlagTrue: 0

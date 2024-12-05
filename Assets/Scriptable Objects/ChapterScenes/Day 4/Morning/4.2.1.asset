@@ -30,14 +30,21 @@ MonoBehaviour:
     StressChange: -5
     AcademicChange: 10
     SocialChange: 0
-  - text: As you continue in the process, you begin to feel tired. The words in your
-      presentation starts to blur, the letters in your study books starts to jump
-      around making everything unreadable.
+  - text: 'As you continue in the process, you begin to feel tired. '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 5
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: The words in your presentation starts to blur, the letters in your study
+      books starts to jump around making everything unreadable.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: '"Rghh. This is so frustrating. I know what to do, but I''m just stuck."'

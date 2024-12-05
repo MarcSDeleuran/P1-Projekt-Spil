@@ -49,7 +49,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CThere you are! Sooooo, did we survie, or do we need to reconsider
+  - text: "\u201CThere you are! Sooooo, did we survive, or do we need to reconsider
       our future.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []

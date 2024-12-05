@@ -41,9 +41,9 @@ MonoBehaviour:
     StressChange: 10
     AcademicChange: 0
     SocialChange: 0
-  - text: "You reflect [It\u2019s been a week. Stress, deadlines, choices.... It
-      all led to this moment. I really don\u2019t know if I made all the right decisions,
-      but I'm still here, and I got to face it now.]"
+  - text: "[It\u2019s been a week. Stress, deadlines, choices.... It all led to this
+      moment. I really don\u2019t know if I made all the right decisions, but I'm
+      still here, and I got to face it now.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}

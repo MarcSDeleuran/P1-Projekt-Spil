@@ -98,7 +98,7 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: -10
+    StressChange: -40
     AcademicChange: 10
     SocialChange: 0
   - text: As you walk out, the air is heavier, second-guessing everything you did

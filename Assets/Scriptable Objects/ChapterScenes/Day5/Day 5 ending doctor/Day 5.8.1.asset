@@ -15,7 +15,7 @@ MonoBehaviour:
   Sentences:
   - text: "\u201CI feel good! It\u2019s been a challenge, but I think I managed pretty
       well.\u201D "
-    speaker: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}

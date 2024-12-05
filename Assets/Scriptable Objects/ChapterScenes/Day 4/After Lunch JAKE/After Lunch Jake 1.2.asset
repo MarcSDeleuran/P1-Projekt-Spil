@@ -45,8 +45,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CI am just worried that you end up a place you don\u2019t want to
-      be.\u201D"
+  - text: "\u201CI am just worried that you end up in a place you don\u2019t want
+      to be.\u201D"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}

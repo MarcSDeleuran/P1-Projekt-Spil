@@ -42,7 +42,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CThank you. You are a really good friend.\u201D"
+  - text: "\u201CThanks. You are a really good friend.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}

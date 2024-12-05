@@ -19,7 +19,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 15
     AcademicChange: 0
     SocialChange: 0
   - text: '[Oh no. Not this. Not now. I barely studied this part. What should I do

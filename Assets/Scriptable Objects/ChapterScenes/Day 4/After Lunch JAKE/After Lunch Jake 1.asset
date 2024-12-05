@@ -43,7 +43,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 10
+    StressChange: 15
     AcademicChange: 0
     SocialChange: 0
   - text: '[He would be left behind in the system.]'

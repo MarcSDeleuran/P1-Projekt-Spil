@@ -44,7 +44,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 5
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: '[Maybe I should just eat something quick and then keep working.]'
