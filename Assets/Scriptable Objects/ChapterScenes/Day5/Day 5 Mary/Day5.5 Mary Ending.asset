@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: MH 4.0 _Mary's House
+  m_Name: Day5.5 Mary Ending
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "As you walk toward Mary\u2019s house, a lot of thoughts go through your
-      head."
+  - text: The two of you walk off together, your voices fading into the atmosphere.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -22,7 +21,24 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\"I can\u2019t believe this is actually happening.\""
+  - text: Your silhouettes fade away, as the scene turns black.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: As a final thought echos on the scene.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "[It\u2019s not about having all the answers. It\u2019s about the people
+      who help you find your way. And maybe... maybe that\u2019s enough.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -30,16 +46,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "You feel your heart beating faster as you get closer to Mary\u2019s house."
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 5
-    AcademicChange: 0
-    SocialChange: 0
-  background: {fileID: 21300000, guid: 3fa6088da00f49b4f9539a519cfb3497, type: 3}
-  nextScene: {fileID: 11400000, guid: bb790ae65cecc4c018916b45a3063cfb, type: 2}
+  background: {fileID: 21300000, guid: 56733ca6335f5594cbc8de8658d68992, type: 3}
+  nextScene: {fileID: 11400000, guid: 09228bd5cdf03c444b1967b63a7438a9, type: 2}
   OpenJournal: 0
   FinalScene: 0
   FinalSceneChapterId: 0

@@ -26,7 +26,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: You walk slowly towards the frontdoor of the house.
@@ -50,7 +50,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -5
     AcademicChange: 0
     SocialChange: 0
   - text: You knock on the door and takes a step back. You wait with anticipation
@@ -68,7 +68,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: The door opens...
@@ -85,7 +85,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 135}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}

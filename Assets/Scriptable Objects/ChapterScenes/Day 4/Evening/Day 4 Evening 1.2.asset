@@ -34,7 +34,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: You try to memorize everything, but it feels impossible.
@@ -60,7 +60,7 @@ MonoBehaviour:
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
-    AcademicChange: 0
+    AcademicChange: 5
     SocialChange: 0
   - text: You look over at the clock.
     speaker: {fileID: 0}
@@ -90,3 +90,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 3b7cdccf2c348a5439e4c93c8bcfd640, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

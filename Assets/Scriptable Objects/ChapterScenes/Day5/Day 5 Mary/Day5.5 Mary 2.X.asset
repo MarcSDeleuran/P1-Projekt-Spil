@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: MH 4.0 C
+  m_Name: Day5.5 Mary 2.X
   m_EditorClassIdentifier: 
   Options:
-  - text: '[Okay, I have to calm down. We are just friends hanging out]'
-    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
-    StressChange: -5
+  - text: "\u201CThanks for always knowing the right thing to say. You\u2019ve been
+      a huge help for me this week.\""
+    nextScene: {fileID: 11400000, guid: fbd0340b74532d946a621f01e118741f, type: 2}
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: '[This is a big deal. What if... we take the next step]'
-    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
-    StressChange: 5
+  - text: "\u201COkay, you have vinced me, what\u2019s the plan now?\u201D"
+    nextScene: {fileID: 11400000, guid: c9d399feec93bb5449e9da5c1608f0e0, type: 2}
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0

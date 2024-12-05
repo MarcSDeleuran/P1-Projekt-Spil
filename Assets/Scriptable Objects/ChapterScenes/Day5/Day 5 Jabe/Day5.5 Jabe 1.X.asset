@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: MH 4.0 C
+  m_Name: Day5.5 Jabe 1.X
   m_EditorClassIdentifier: 
   Options:
-  - text: '[Okay, I have to calm down. We are just friends hanging out]'
-    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
-    StressChange: -5
+  - text: "\u201CSurvived. Barely. You?\""
+    nextScene: {fileID: 11400000, guid: 7a7b445f849c6a945a84d6f2dc2a934c, type: 2}
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: '[This is a big deal. What if... we take the next step]'
-    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
-    StressChange: 5
+  - text: "\u201CI think I did okay. I\u2019m positive that i passed.\u201D"
+    nextScene: {fileID: 11400000, guid: e4ad3a14c297b634d830326780aac1d4, type: 2}
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0

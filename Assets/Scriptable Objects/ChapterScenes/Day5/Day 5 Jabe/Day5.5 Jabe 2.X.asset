@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
-  m_Name: MH 4.0 C
+  m_Name: Day5.5 Jabe 2.X
   m_EditorClassIdentifier: 
   Options:
-  - text: '[Okay, I have to calm down. We are just friends hanging out]'
-    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
-    StressChange: -5
+  - text: "\u201CI\u2019m with Jake on this one, food now.\u201D"
+    nextScene: {fileID: 11400000, guid: a3fbeebf5b977bc4b9beaa6a39094b50, type: 2}
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: '[This is a big deal. What if... we take the next step]'
-    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
-    StressChange: 5
+  - text: "\u201CI\u2019m sorry Jake, Gabe is right, we should not lose nomentum
+      now.\u201D"
+    nextScene: {fileID: 11400000, guid: 3c27683dc17c7da4388225ad104ae69e, type: 2}
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 0

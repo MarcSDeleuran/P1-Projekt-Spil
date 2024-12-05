@@ -17,18 +17,20 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 22159c4a91e524c5ea2e3f610b971869, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\"Well, I couldn\u2019t say no to you\""
     nextScene: {fileID: 11400000, guid: 0cab6b8797a0e469f8e1cb37793c7851, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}
