@@ -44,7 +44,7 @@ MonoBehaviour:
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
   - text: "\u201CI know I haven\u2019t been easy to work with. But I really needed
       this push.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
@@ -56,3 +56,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 9b58e1b3e6fd42241bd4ef52ebe68b1f, type: 3}
   nextScene: {fileID: 11400000, guid: caecf4bd69dad8a4c8e5dba17e32006c, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0
