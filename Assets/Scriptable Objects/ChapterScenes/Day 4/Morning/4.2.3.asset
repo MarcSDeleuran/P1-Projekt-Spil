@@ -21,7 +21,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: 'As you work, you look at the clock and realize that it is time for a break. '
+  - text: 'After a while, you look at the clock and realize that it is time for a
+      break. '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -33,3 +34,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: d46b01c98a2434e9ca0caa6d6414e793, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

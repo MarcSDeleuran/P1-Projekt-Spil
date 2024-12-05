@@ -323,7 +323,7 @@ public class GameManager : MonoBehaviour
         endSceneUI.SetActive(false);
         InGameUI.SetActive(true);
         SaveCompletionData();
-        UpdateSaveFiles();
+        UpdateAvailableChapters();
         SAJ.ChangeAllowed = true;
     }
 }

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: After Lunch 1 (High academic)
   m_EditorClassIdentifier: 
   Sentences:
-  - text: '[I really want to hang out with (Chosen person), but I am in such a good
-      flow.]'
+  - text: '[I really want to hang out with them, but I am in such a good flow.]'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
