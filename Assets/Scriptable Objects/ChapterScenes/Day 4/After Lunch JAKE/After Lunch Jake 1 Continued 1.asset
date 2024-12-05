@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: After Lunch Jake 1 Continued 1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: You arrive at Jakes house.
+  - text: You arrive at Jake's house.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

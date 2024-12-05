@@ -15,7 +15,12 @@ MonoBehaviour:
   Sentences:
   - text: "\u201CHey, what\u2019s up?\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 150}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -63,3 +68,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: a91a78957b5dd0342b2cdadddd76ab6c, type: 3}
   nextScene: {fileID: 11400000, guid: 57331cc1bf07b6a4293e81be1253f80b, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

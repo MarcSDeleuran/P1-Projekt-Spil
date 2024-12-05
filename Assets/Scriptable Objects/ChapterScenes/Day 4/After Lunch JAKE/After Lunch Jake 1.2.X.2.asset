@@ -29,9 +29,14 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: 'Jake smiles '
+  - text: Jake smiles.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 150}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

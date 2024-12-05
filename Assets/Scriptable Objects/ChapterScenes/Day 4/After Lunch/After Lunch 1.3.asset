@@ -23,7 +23,7 @@ MonoBehaviour:
     SocialChange: 0
   - text: You quickly pack your things and head out. [The exam can wait], you think
       to yourself.
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: OutsideDoctors
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Click on the right side of the screen, or use your space bar to advance
+  - text: Click on the right side of the screen to advance.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -25,3 +25,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 943695e70e893d54a8133a8ab8805094, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0
