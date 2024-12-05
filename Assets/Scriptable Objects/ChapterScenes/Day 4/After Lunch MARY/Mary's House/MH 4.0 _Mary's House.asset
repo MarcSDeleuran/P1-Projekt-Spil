@@ -35,7 +35,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 3fa6088da00f49b4f9539a519cfb3497, type: 3}

@@ -30,7 +30,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 4f4a8b94fd411f6419a5725dea89367d, type: 3}
-  nextScene: {fileID: 11400000, guid: 78468f4ccad724aaebd4b688a2c685e6, type: 2}
+  nextScene: {fileID: 11400000, guid: d544316a2a23041f1b258f2abce01ffc, type: 2}
   OpenJournal: 0
   FinalScene: 0
   FinalSceneChapterId: 0

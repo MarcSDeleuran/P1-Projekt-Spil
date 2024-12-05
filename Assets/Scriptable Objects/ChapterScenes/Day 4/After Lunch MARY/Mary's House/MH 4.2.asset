@@ -75,7 +75,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: "You take a moment to gather yourself before you continue through Mary\u2019s
@@ -95,8 +95,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  background: {fileID: 21300000, guid: 4f4a8b94fd411f6419a5725dea89367d, type: 3}
-  nextScene: {fileID: 11400000, guid: bb790ae65cecc4c018916b45a3063cfb, type: 2}
+  background: {fileID: 21300000, guid: a91a78957b5dd0342b2cdadddd76ab6c, type: 3}
+  nextScene: {fileID: 11400000, guid: 78468f4ccad724aaebd4b688a2c685e6, type: 2}
   OpenJournal: 0
   FinalScene: 0
   FinalSceneChapterId: 0

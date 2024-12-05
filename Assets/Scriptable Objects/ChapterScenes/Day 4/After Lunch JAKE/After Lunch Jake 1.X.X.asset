@@ -18,19 +18,21 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: a87b4908911f5d94d8899f7d45d7ab2a, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CThe decisions we make now make an impact on the rest of our lives.
       We have to be responsible.\u201D"
     nextScene: {fileID: 11400000, guid: ed0b1e2db111d9942a0e0ae597913c00, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you tell Jake?
   Music: {fileID: 0}
   Sound: {fileID: 0}

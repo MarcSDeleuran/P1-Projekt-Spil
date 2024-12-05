@@ -15,20 +15,22 @@ MonoBehaviour:
   Options:
   - text: Help Jake with the exam
     nextScene: {fileID: 11400000, guid: ddf71ab1fd08f0943954649be368b5ee, type: 2}
-    StressChange: 2
-    AcademicChange: 2
-    SocialChange: 5
+    StressChange: 4
+    AcademicChange: 5
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: ' Let Jake study and go home and study individually'
     nextScene: {fileID: 11400000, guid: e627369ccd4a7854b95c96ec18e65684, type: 2}
-    StressChange: 0
+    StressChange: -5
     AcademicChange: 5
-    SocialChange: 0
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: Do you help Jake or go home?
   Music: {fileID: 0}
   Sound: {fileID: 0}

@@ -21,14 +21,16 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: Review exam notes
     nextScene: {fileID: 11400000, guid: 9dc2fd8c0c38a954ab32ade3d0bddb22, type: 2}
-    StressChange: 3
-    AcademicChange: 5
+    StressChange: 10
+    AcademicChange: 10
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

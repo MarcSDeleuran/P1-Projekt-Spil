@@ -24,17 +24,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: Before you are fully aware of your surroundings. Your phone springing to
-      life as a message notification lights up the screen.
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
-  nextScene: {fileID: 11400000, guid: ea70b73d45a76b24c893158e0bd311bc, type: 2}
-  OpenJournal: 0
-  FinalScene: 1
+  nextScene: {fileID: 11400000, guid: ed17caf00baf0754c9e167933954dd46, type: 2}
+  OpenJournal: 1
+  FinalScene: 0
   FinalSceneChapterId: 0

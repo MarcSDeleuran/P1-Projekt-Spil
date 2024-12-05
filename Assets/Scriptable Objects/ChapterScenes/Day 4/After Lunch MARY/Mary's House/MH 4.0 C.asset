@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Options:
   - text: '[Okay, I have to calm down. We are just friends hanging out]'
-    nextScene: {fileID: 11400000, guid: 22159c4a91e524c5ea2e3f610b971869, type: 2}
-    StressChange: 0
+    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
+    StressChange: -5
     AcademicChange: 0
     SocialChange: 0
     flag: 0
@@ -23,8 +23,8 @@ MonoBehaviour:
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
   - text: '[This is a big deal. What if... we take the next step]'
-    nextScene: {fileID: 11400000, guid: 0cab6b8797a0e469f8e1cb37793c7851, type: 2}
-    StressChange: 0
+    nextScene: {fileID: 11400000, guid: 00bc00a9043ac49508fe960065280575, type: 2}
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
     flag: 0

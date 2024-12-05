@@ -17,7 +17,7 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: 029fac198b8fa46e1b81badb4bd31bef, type: 2}
     flag: 0
     StressReq: 0
-    AcademicReq: 150
+    AcademicReq: 125
     SocialReq: 0
     StressUnderReq: 0
     AcademicUnderReq: 0

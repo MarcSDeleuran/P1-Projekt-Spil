@@ -52,7 +52,7 @@ MonoBehaviour:
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
-    AcademicChange: 0
+    AcademicChange: 5
     SocialChange: 0
   - text: 'You might not get so much done as you would have done alone. '
     speaker: {fileID: 0}
@@ -62,13 +62,16 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: 'But you get to help out a friend in need. '
+  - text: But you get to help out a friend in need.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
   background: {fileID: 21300000, guid: 9b58e1b3e6fd42241bd4ef52ebe68b1f, type: 3}
   nextScene: {fileID: 11400000, guid: caecf4bd69dad8a4c8e5dba17e32006c, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

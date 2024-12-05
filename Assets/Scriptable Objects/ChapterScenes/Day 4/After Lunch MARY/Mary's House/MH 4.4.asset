@@ -26,7 +26,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: The tension builds till your lips meet.
@@ -34,7 +34,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: At that moment everything else disappears.
@@ -42,7 +42,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: The anxiety, the pressure. Gone.
@@ -50,7 +50,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -10
     AcademicChange: 0
     SocialChange: 0
   - text: The only thing left is Mary.
@@ -58,7 +58,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -50
     AcademicChange: 0
     SocialChange: 0
   - text: Mary pulls away after a while, laughing to herself, blushing.
@@ -114,7 +114,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 0
     SocialChange: 0
   - text: Mary smiles.
@@ -130,9 +130,9 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -10
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 10
   background: {fileID: 21300000, guid: 4f4a8b94fd411f6419a5725dea89367d, type: 3}
   nextScene: {fileID: 11400000, guid: f2725e56aa6d46541a140a881e49b749, type: 2}
   OpenJournal: 0

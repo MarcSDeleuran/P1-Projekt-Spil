@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day5.5 Mary 1.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CI think it went well. Better than expected.\u201D"
+    nextScene: {fileID: 11400000, guid: 5c2b3a1dea107514f9ddf5b10a76146d, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "I don\u2019t know... some of the questions caught me off guard.\u201D"
+    nextScene: {fileID: 11400000, guid: 0351916b7a9cad0429bcc8ae2bb2f824, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: 
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

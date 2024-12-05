@@ -79,3 +79,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
   nextScene: {fileID: 0}
+  OpenJournal: 0
+  FinalScene: 1
+  FinalSceneChapterId: 4
