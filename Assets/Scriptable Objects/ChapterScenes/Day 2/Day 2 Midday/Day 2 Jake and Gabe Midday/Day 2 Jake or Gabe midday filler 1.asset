@@ -17,7 +17,7 @@ MonoBehaviour:
       Jake, oh wait you don\u2019t have one\u201D "
     nextScene: {fileID: 11400000, guid: ce0808602a9c40140b5b8ca5dc66c39a, type: 2}
     StressChange: 0
-    AcademicChange: -2
+    AcademicChange: -5
     SocialChange: 5
     flag: 0
     setFlagTrue: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
   - text: "Side with Gabe: \u201CHonestly, I should be more like Gabe right now.
       These two assignments are no joke.\u201D "
     nextScene: {fileID: 11400000, guid: 7c19fd0fff965d74e87120c2a444aa88, type: 2}
-    StressChange: 1
-    AcademicChange: 2
+    StressChange: 0
+    AcademicChange: 5
     SocialChange: -5
     flag: 0
     setFlagTrue: 0

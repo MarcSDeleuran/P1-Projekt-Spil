@@ -18,7 +18,11 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    statChange: 0
-    changeAmount: 0
+    StressChange: -10
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
   nextScene: {fileID: 11400000, guid: 55edab572a2c57a4fa0360479c0f3475, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0
