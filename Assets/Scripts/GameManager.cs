@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
     [SerializeField] private AudioMixer audioMixer;
+    public GameObject creditsUI;
+    public GameObject audioManager;
     private bool paused = false;
 
     public void Awake()
@@ -265,10 +267,11 @@ public class GameManager : MonoBehaviour
                 academicAmount = 100,
                 socialAmount = 100,
                 characterName = CharacterName,
-                chapterCompletes = new bool[5],
+                chapterCompletes = new bool[4],
                 saveFileId = saveFileId,
 
             };
+            chaptersCompleted = saveObject.chapterCompletes;
             StressAmount = saveObject.stressAmount;
             AcademicAmount = saveObject.academicAmount;
             SocialAmount = saveObject.socialAmount;
@@ -376,16 +379,29 @@ public class GameManager : MonoBehaviour
 
     public void MainMenuButton()
     {
-        mainMenuUI.SetActive(true);
-        gameSceneUI.SetActive(false);
-        mainMenuCanvas.SetActive(true);
-        endSceneUI.SetActive(false);
-        InGameUI.SetActive(true);
-        SaveCompletionData();
-        UpdateAvailableChapters();
-        SAJ.ChangeAllowed = true;
-        paused = false;
-        pauseUI.SetActive(false);
-        SD.VNACTIVE = false;
+        if (currentChapter == 5){
+            creditsUI.SetActive(true);
+            audioManager.SetActive(false);
+        } else {
+            mainMenuUI.SetActive(true);
+            gameSceneUI.SetActive(false);
+            mainMenuCanvas.SetActive(true);
+            endSceneUI.SetActive(false);
+            InGameUI.SetActive(true);
+            SaveCompletionData();
+            UpdateAvailableChapters();
+            SAJ.ChangeAllowed = true;
+            paused = false;
+            pauseUI.SetActive(false);
+            SD.VNACTIVE = false;
+        }
+    }
+
+    public void OpenLink(){
+        Application.OpenURL("https://www.survey-xact.dk/LinkCollector?key=J6AM2TAQJ69J");
+    }
+
+    public void Quit(){
+        Application.Quit();
     }
 }
