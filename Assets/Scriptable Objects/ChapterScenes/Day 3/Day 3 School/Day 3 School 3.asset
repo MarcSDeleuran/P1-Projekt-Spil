@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - text: "The teacher\u2019s voice cuts through the faint conversations in class."
-    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    speaker: {fileID: 0}
     Actions:
     - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
       ActionType: 4
@@ -71,12 +71,12 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 150, y: 150}
+      Coords: {x: 200, y: 150}
       MoveSpeed: 0
     - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: -150, y: 0}
+      Coords: {x: -200, y: 0}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -102,7 +102,12 @@ MonoBehaviour:
   - text: "\u201CAlright, alright, who\u2019s up for ditching the assignment for
       now and grabbing some food?? Its good for our morale.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -110,7 +115,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: 'He winks at you, clearly trying to lighten the damp mood. '
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -119,7 +129,12 @@ MonoBehaviour:
   - text: "Gabe rolls his eyes and replies \u201CGrabbing food now is not going to
       boost our morale, here is a idea, should we get some work done?\u201D "
     speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -127,16 +142,33 @@ MonoBehaviour:
     SocialChange: 0
   - text: His tone is sharp, but not unkind.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: "Jake says while, throwing his hands up dramatically. \u201COkay, we got
-      Mr. Perfect here. Not everyone can run on pure textbooks. Us norms nned to
-      eat, and heres a idea, maybe don\u2019t think about the deadline for like five
-      seconds!?\u201D"
+      Mr. Perfect here. Not everyone can run on pure textbooks.\""
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Us norms need to eat, and heres a idea, maybe don\u2019t think about
+      the deadline for like five seconds!?\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -146,7 +178,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: 'You step in, as the tension is cleary out of hand between you two friends. '
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

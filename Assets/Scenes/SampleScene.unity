@@ -28749,6 +28749,7 @@ MonoBehaviour:
   schoolPoints: 100
   socialPoints: 100
   relaxPoints: 100
+  ChangeAllowed: 1
 --- !u!1 &4118758232667666117
 GameObject:
   m_ObjectHideFlags: 0
