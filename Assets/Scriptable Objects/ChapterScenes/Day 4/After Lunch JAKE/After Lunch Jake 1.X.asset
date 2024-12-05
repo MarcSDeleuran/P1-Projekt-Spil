@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: After Lunch Jake 1.X
   m_EditorClassIdentifier: 
   Options:
-  - text: "\u201CThink of what it will do to our friendship if you get kicked out?\u201D"
+  - text: "\u201CThink of what it will do to our friendship if you get kicked out\u201D"
     nextScene: {fileID: 11400000, guid: fcd3a43682fe63b48b66ed181c6bc34f, type: 2}
     StressChange: 0
     AcademicChange: 0

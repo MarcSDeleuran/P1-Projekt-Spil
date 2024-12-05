@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 4.2.3.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "[I could work more. I need to get this done. Maybe I don\u2019t need the
-      break]"
+  - text: "[I should work more. I need to get this done. Maybe I don\u2019t need
+      the break]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}

@@ -31,7 +31,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  QuestionText: "\"I could work more. I need to get this done. Maybe I don\u2019t
+  QuestionText: "\"I should work more. I need to get this done. Maybe I don\u2019t
     need the break\""
   Music: {fileID: 0}
   Sound: {fileID: 0}

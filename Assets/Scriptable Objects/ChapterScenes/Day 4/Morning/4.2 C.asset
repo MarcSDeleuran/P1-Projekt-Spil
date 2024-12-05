@@ -31,7 +31,6 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  QuestionText: 'You have to make your last choice in the structure of your day.
-    You have 2 options:'
+  QuestionText: You have to make your last choice in the structure of your day.
   Music: {fileID: 0}
   Sound: {fileID: 0}
