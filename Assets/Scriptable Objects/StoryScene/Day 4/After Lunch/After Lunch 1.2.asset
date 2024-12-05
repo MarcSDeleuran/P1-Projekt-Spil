@@ -46,7 +46,7 @@ MonoBehaviour:
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
-    AcademicChange: 0
+    AcademicChange: 5
     SocialChange: 0
   - text: The hour runs out and you quickly pack your things together and head out.
     speaker: {fileID: 0}
@@ -57,4 +57,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 525ffbed30162324bb40fee120ab41bc, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

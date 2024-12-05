@@ -15,20 +15,22 @@ MonoBehaviour:
   Options:
   - text: Go for a walk
     nextScene: {fileID: 11400000, guid: b93dabbefb56fd742a4d8807a08a66ff, type: 2}
-    StressChange: -4
+    StressChange: -10
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: Watch TV
     nextScene: {fileID: 11400000, guid: ecda33cdb159e4c4a93e061a20be8066, type: 2}
-    StressChange: -2
+    StressChange: -5
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What to do after lunch?
   Music: {fileID: 0}
   Sound: {fileID: 0}

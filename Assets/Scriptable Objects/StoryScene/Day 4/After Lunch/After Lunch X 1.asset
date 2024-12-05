@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2b281b63ea762b47aa49978601bbdf0, type: 3}
-  m_Name: 4.0 C
+  m_Name: After Lunch X 1
   m_EditorClassIdentifier: 
   Requirement:
-  - text: (High academic score)
-    nextScene: {fileID: 11400000, guid: b8d5aaa104c293e4a81ee819d53854af, type: 2}
+  - text: After lunch academic check
+    nextScene: {fileID: 11400000, guid: 4efb5159d1c9acd45a4030eff238e51c, type: 2}
     flag: 0
     StressReq: 0
     AcademicReq: 125
@@ -25,4 +25,4 @@ MonoBehaviour:
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}
-  DefaultScene: {fileID: 11400000, guid: c3de41208bed65748a395648cb1c8a1e, type: 2}
+  DefaultScene: {fileID: 11400000, guid: 23d7ffed2eff1b745920829657411114, type: 2}

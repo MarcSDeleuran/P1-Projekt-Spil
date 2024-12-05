@@ -15,20 +15,22 @@ MonoBehaviour:
   Options:
   - text: Take the break
     nextScene: {fileID: 11400000, guid: 61943870fc0660f43b4c96566f7d6d3a, type: 2}
-    StressChange: -5
+    StressChange: -10
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: Work through it
     nextScene: {fileID: 11400000, guid: 5177924d7baab04449729d48dc57d311, type: 2}
     StressChange: 10
-    AcademicChange: 5
+    AcademicChange: 10
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: "\"I could work more. I need to get this done. Maybe I don\u2019t
     need the break\""
   Music: {fileID: 0}

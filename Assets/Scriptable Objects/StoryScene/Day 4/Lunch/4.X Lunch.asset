@@ -15,7 +15,7 @@ MonoBehaviour:
   Options:
   - text: Take the full lunch to refuel and refocus
     nextScene: {fileID: 11400000, guid: e2e91b77fe27759408dcc1d002a312cc, type: 2}
-    StressChange: -10
+    StressChange: -15
     AcademicChange: 0
     SocialChange: 0
     flag: 0
@@ -24,8 +24,8 @@ MonoBehaviour:
     ChoiceIcon: {fileID: 0}
   - text: Cut lunch short
     nextScene: {fileID: 11400000, guid: 807e6b11e8c1c3f4db0dd9c4f96f4cc9, type: 2}
-    StressChange: 5
-    AcademicChange: 5
+    StressChange: 10
+    AcademicChange: 10
     SocialChange: 0
     flag: 0
     setFlagTrue: 0

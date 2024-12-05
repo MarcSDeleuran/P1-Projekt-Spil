@@ -53,7 +53,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -5
     AcademicChange: 0
     SocialChange: 0
   - text: '[After this, I am definitely ready to get back to work.]'
@@ -68,3 +68,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 07899d7b927cba049954f9bf50d7862f, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

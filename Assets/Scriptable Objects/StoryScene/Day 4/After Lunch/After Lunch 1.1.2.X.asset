@@ -15,28 +15,31 @@ MonoBehaviour:
   Options:
   - text: 1 hour study / 10 minutes break.
     nextScene: {fileID: 11400000, guid: 6178a0ee87c7c6542bdcd88d9361eb7c, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: 10
+    AcademicChange: 10
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: 45 minutes study / 15 minutes break.
     nextScene: {fileID: 11400000, guid: 6178a0ee87c7c6542bdcd88d9361eb7c, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: 8
+    AcademicChange: 8
+    SocialChange: -3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: 30 minutes study / 30 minutes break.
     nextScene: {fileID: 11400000, guid: 6178a0ee87c7c6542bdcd88d9361eb7c, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: -5
+    AcademicChange: 3
+    SocialChange: 3
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What is your study strategy
   Music: {fileID: 0}
   Sound: {fileID: 0}

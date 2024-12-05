@@ -17,18 +17,20 @@ MonoBehaviour:
     nextScene: {fileID: 11400000, guid: fcd3a43682fe63b48b66ed181c6bc34f, type: 2}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CDo you even know what to do with your life?\u201D"
     nextScene: {fileID: 11400000, guid: dfa4c9491bd3fe546879a6cf0a39a12e, type: 2}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
-    SocialChange: 0
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you tell Jake?
   Music: {fileID: 0}
   Sound: {fileID: 0}

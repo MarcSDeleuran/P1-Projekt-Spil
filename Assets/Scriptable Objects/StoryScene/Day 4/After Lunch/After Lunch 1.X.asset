@@ -17,11 +17,12 @@ MonoBehaviour:
       school.\u201D"
     nextScene: {fileID: 11400000, guid: 24f6be2c8ff0b6c4dbce7a1a8aea30d7, type: 2}
     StressChange: 0
-    AcademicChange: 10
-    SocialChange: -5
+    AcademicChange: 15
+    SocialChange: -10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CYeah of course. But I must work on my exam as well. Can you just
       give me an hour more and then I am ready?\u201D"
     nextScene: {fileID: 11400000, guid: 0157941c1d8f70d4d930e8fcef3adc55, type: 2}
@@ -31,14 +32,16 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: "\u201CThat sounds good, I could use a break\u201D"
     nextScene: {fileID: 11400000, guid: 95d7990acc1658047b97688ce9096d1c, type: 2}
-    StressChange: 0
-    AcademicChange: -5
+    StressChange: -5
+    AcademicChange: -10
     SocialChange: 10
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: What do you reply?
   Music: {fileID: 0}
   Sound: {fileID: 0}

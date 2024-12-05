@@ -15,28 +15,31 @@ MonoBehaviour:
   Options:
   - text: 1 hour study / 10 minutes break
     nextScene: {fileID: 11400000, guid: a3ab5dcf252bc6244827402fdd39558b, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: 10
+    AcademicChange: 10
+    SocialChange: -5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: 45 minutes study / 15 minutes break
     nextScene: {fileID: 11400000, guid: a3ab5dcf252bc6244827402fdd39558b, type: 2}
-    StressChange: 0
-    AcademicChange: 0
+    StressChange: 5
+    AcademicChange: 5
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: 30 minutes study / 30 minutes break
     nextScene: {fileID: 11400000, guid: a3ab5dcf252bc6244827402fdd39558b, type: 2}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
+    StressChange: -10
+    AcademicChange: -5
+    SocialChange: 5
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

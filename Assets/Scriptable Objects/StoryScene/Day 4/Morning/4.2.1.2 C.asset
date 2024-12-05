@@ -21,14 +21,16 @@ MonoBehaviour:
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   - text: '[This takes time, but I need this]'
     nextScene: {fileID: 11400000, guid: dae16e848f7ea184a929cbf26de820ab, type: 2}
-    StressChange: 0
+    StressChange: -5
     AcademicChange: 0
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
     FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

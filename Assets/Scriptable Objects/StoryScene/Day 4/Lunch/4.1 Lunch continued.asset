@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - text: 'As you return to your laptop and books to continue with your work, you
-      receive a notification on your phone.  '
+      receive a notification on your phone. '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -24,3 +24,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
   nextScene: {fileID: 11400000, guid: dd6ad9fc1be42bc4f96a2c93d0af87de, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

@@ -43,7 +43,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 0
     SocialChange: 0
   - text: '[He would be left behind in the system.]'
@@ -64,3 +64,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 56733ca6335f5594cbc8de8658d68992, type: 3}
   nextScene: {fileID: 11400000, guid: b4c487a878056c947bfb8ade633b80f5, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

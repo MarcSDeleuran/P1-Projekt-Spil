@@ -31,7 +31,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: Jake opens the door instantly.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 150}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -39,3 +44,6 @@ MonoBehaviour:
     SocialChange: 0
   background: {fileID: 21300000, guid: 8909677debea9e6489448532893bd0a7, type: 3}
   nextScene: {fileID: 11400000, guid: c0c9a9a155ee8e04c9d45455351ac9ab, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

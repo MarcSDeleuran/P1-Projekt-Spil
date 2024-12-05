@@ -18,7 +18,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 0
     SocialChange: 0
   - text: "[I don\u2019t want to disappoint me parents\u2026]"
@@ -26,7 +26,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 0
     SocialChange: 0
   - text: '[I need this to go well, so I have to push myself]'
@@ -41,3 +41,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: f5df1e1b431ac5b45aea90bf94323e79, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

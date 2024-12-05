@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: 4.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: The main character starts to panic, their heartbeat is rising.
+  - text: You start to panic, you can feel your heartbeat is rising.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 10
     AcademicChange: 0
     SocialChange: 0
   - text: '[Okay. I need to calm down. Take a deep breath]'
@@ -34,7 +34,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: -15
     AcademicChange: 0
     SocialChange: 0
   - text: "[I have to remember what Doc told me. I\u2019ll make a plan for what I
@@ -75,3 +75,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: ea6a76f82eefe409a9a5c7bdefd390a1, type: 2}
   OpenJournal: 1
   FinalScene: 0
+  FinalSceneChapterId: 0

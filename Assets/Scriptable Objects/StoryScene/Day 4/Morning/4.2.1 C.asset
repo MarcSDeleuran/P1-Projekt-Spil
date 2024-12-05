@@ -15,8 +15,8 @@ MonoBehaviour:
   Options:
   - text: '[I have to power through this, I have to get this done. Whatever it takes.]'
     nextScene: {fileID: 11400000, guid: 45c7e25ff7b7fc549ae2f7278bdd8587, type: 2}
-    StressChange: 0
-    AcademicChange: 0
+    StressChange: 5
+    AcademicChange: 10
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
@@ -24,8 +24,8 @@ MonoBehaviour:
     ChoiceIcon: {fileID: 0}
   - text: Take 5 minutes to calm down and then return to the assignment.
     nextScene: {fileID: 11400000, guid: 51ba305b223daa443904bccadf3067ef, type: 2}
-    StressChange: 0
-    AcademicChange: 0
+    StressChange: -5
+    AcademicChange: 5
     SocialChange: 0
     flag: 0
     setFlagTrue: 0
