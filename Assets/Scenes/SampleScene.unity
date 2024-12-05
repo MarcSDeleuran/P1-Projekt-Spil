@@ -1778,7 +1778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &123125079
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21313,9 +21313,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
     - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: c7c6d51008ba15d4db71c4cdb6e8cd9b, type: 2}
+      objectReference: {fileID: -7960924289519326761, guid: a1343f9a5f6bfe04eb327637f7e1b419, type: 2}
     - target: {fileID: 2042986938354710632, guid: 889be31009564214c8069f3a60e06330, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -28171,7 +28183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2f306666b441b4395ea4d9aafe8129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDate: -1
+  startDate: 0
   stressText: {fileID: 4685932806515806339}
   academicText: {fileID: 3312672623191912042}
   socialText: {fileID: 2519771144418735075}

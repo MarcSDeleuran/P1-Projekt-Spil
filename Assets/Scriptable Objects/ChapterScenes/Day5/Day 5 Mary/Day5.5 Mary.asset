@@ -60,7 +60,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "As you get closer she greets you \u201CHey, you made it, So? Tell me,
+  - text: "As you get closer she greets you \u201CHey, you made it! So? Tell me,
       how do you think it went?\u201D"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []

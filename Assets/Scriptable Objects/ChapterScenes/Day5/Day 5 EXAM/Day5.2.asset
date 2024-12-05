@@ -27,7 +27,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: -5
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: '[Okay, this is not so bad, I know this.]'
@@ -39,7 +39,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: You flip to page 2, the next set of questions is a bit harder, but still
-      understandable. You quckly looks at the clock, 10 minutes have passed.
+      understandable. You quickly look at the clock, 10 minutes have passed.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -47,8 +47,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "[Why didn\u2019t I speand more time on this part.... I need to focus,
-      come on, I got this.]"
+  - text: "[Why didn\u2019t I spend more time on this part.... I need to focus, come
+      on, I got this.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: -400, y: -150}
+      Coords: {x: -700, y: -150}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}

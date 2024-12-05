@@ -154,7 +154,7 @@ public class GameManager : MonoBehaviour
         {
             chapterButtons[i].GetComponent<ChapterButtonUI>().unlockedUI.SetActive(false);
             chapterButtons[i].GetComponent<ChapterButtonUI>().lockedUI.SetActive(false);
-            chapterButtons[i].GetComponent<ChapterButtonUI>().dayText.text = "Unlocks: " + (dataCurrent.Day + i - 1) + ". dec";
+            chapterButtons[i].GetComponent<ChapterButtonUI>().dayText.text = "Unlocks: " + (dataCurrent.Day + i) + ". dec";
             if (dataCurrent.Day >= startDate + i)
             { // Hvis datoen er over startDatoen + ugedage
                 if (i != 0){
@@ -341,7 +341,6 @@ public class GameManager : MonoBehaviour
         }
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
-            Debug.LogWarning("You can't enter this Chapter");
             Instantiate(errorMessagePrefab, errorTextParent);
         }
     }

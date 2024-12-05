@@ -21,8 +21,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CSo here\u2019s the plan, we food, we eat, we forget today ever happend,
-      dead?\u201D"
+  - text: "\u201CSo here\u2019s the plan, we food, we eat, we forget today ever happened,
+      deal?\u201D"
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

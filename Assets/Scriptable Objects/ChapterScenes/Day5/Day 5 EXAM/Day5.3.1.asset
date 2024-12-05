@@ -22,7 +22,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: You take a deep breath, slowly piecing together an answer
+  - text: You take a deep breath, slowly piecing together an answer.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

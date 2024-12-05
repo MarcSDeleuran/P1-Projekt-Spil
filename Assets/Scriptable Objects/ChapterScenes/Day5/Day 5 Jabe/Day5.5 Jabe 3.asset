@@ -41,7 +41,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: "[I\u2019m lucky to have them both, they are two very different kinds of
-      spupport, but it\u2019s exactly what i need.] "
+      support, but it\u2019s exactly what I need.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}

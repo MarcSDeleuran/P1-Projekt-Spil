@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "\u201CI think I did okay. I\u2019m positive that i passed.\u201D"
+  - text: "\u201CI think I did okay. I\u2019m positive that I passed.\u201D"
     nextScene: {fileID: 11400000, guid: e4ad3a14c297b634d830326780aac1d4, type: 2}
     StressChange: 0
     AcademicChange: 0

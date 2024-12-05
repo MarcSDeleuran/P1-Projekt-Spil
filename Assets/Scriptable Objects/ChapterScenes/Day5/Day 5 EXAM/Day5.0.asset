@@ -65,7 +65,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: -5
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: As you are getting ready for school. Your phone vibrates to life with messages
@@ -84,7 +84,7 @@ MonoBehaviour:
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 5
+    SocialChange: 0
   - text: "\u201CText me when you are done, we need to celebrate\u201D "
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
@@ -111,8 +111,8 @@ MonoBehaviour:
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
-    SocialChange: 5
-  - text: 'You respond briefly to each. '
+    SocialChange: 0
+  - text: You respond briefly to each of them.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

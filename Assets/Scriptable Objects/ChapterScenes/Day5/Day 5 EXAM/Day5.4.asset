@@ -56,8 +56,8 @@ MonoBehaviour:
     StressChange: -40
     AcademicChange: 0
     SocialChange: 0
-  - text: 'Students being to slowly pack their bags, all with different emotions.
-      Most with relief that it is just over.  '
+  - text: 'Students slowly pack their bags, all with different emotions. Most with
+      relief that it is over.  '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
     StressChange: -10
     AcademicChange: 10
     SocialChange: 0
-  - text: As you walk out of the air is heavier, second-guessing everything you did
+  - text: As you walk out, the air is heavier, second-guessing everything you did
       in the test.
     speaker: {fileID: 0}
     Actions: []
@@ -111,7 +111,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   - text: You manage to get ahold of your thoughts and remember the life lesson you
-      have managed to learn though out the week.
+      have managed to learn throughout the week.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

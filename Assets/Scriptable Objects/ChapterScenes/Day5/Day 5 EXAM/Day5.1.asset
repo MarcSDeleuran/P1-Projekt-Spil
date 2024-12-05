@@ -46,7 +46,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 5
+    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: Your teacher enters. With a stern look in her eyes, she places a stack
@@ -60,7 +60,7 @@ MonoBehaviour:
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: "As loud as she can, she says \u201CPhones away. You have two hours to

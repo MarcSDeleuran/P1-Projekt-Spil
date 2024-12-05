@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "\u201CI\u2019m sorry Jake, Gabe is right, we should not lose nomentum
+  - text: "\u201CI\u2019m sorry Jake, Gabe is right, we should not lose momentum
       now.\u201D"
     nextScene: {fileID: 11400000, guid: 3c27683dc17c7da4388225ad104ae69e, type: 2}
     StressChange: 0

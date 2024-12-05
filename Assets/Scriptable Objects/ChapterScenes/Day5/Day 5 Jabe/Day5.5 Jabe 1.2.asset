@@ -21,8 +21,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201COkay, okay, I seel. The so called \u2018responsible student\u2019
-      is getting all the credit, while the guy who kept you sane this hets nothing.\u201D"
+  - text: "\u201COkay, okay, I see. The so called \u2018responsible student\u2019
+      is getting all the credit, while the guy who kept you sane gets nothing.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}

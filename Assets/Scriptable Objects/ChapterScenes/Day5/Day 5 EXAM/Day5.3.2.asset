@@ -21,7 +21,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "You can\u2019t control your mind, you hand is completely frozen."
+  - text: "You can\u2019t control your mind, your hand is completely frozen."
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

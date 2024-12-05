@@ -38,7 +38,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CPlus, i need a break too... it\u2019s been a lot lately.\u201D"
+  - text: "\u201CPlus, I need a break too... it\u2019s been a lot lately.\u201D"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
