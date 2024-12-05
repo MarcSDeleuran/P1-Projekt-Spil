@@ -386,5 +386,6 @@ public class GameManager : MonoBehaviour
         SAJ.ChangeAllowed = true;
         paused = false;
         pauseUI.SetActive(false);
+        SD.VNACTIVE = false;
     }
 }
