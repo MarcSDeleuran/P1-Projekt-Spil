@@ -42,7 +42,12 @@ MonoBehaviour:
   - text: "Jake packs his bag and turns to you. \u201CMan, I feel like my brain is
       already fried, and it\u2019s only lunchtime.\u201D You nod in agreement."
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -52,7 +57,12 @@ MonoBehaviour:
       the plan, You wanna grab lunch? Or are you diving straight into this mess of
       assignments?\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -62,3 +72,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: e2e4bc4e5d58df04ca6789f0ed7b36bb, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

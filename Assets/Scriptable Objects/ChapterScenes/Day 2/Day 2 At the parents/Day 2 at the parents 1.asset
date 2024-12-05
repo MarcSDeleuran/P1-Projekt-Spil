@@ -37,12 +37,7 @@ MonoBehaviour:
     SocialChange: 0
   - text: "\u201CYour dad is in the living room, go say 'Hi' to him\u201D  "
     speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: 6f29783410db87947a02322d3c58f792, type: 2}
-      ActionType: 4
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

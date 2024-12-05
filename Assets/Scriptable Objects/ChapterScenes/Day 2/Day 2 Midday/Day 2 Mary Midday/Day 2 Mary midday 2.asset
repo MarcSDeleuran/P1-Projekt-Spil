@@ -13,21 +13,33 @@ MonoBehaviour:
   m_Name: Day 2 Mary midday 2
   m_EditorClassIdentifier: 
   Sentences:
-  - text: 'The two dive into the mountain of work. '
+  - text: 'You dive into the mountain of work. '
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201COkay, if we split the research, we might actually have a chance.
       I will take the harder part\u201D  "
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   - text: "\u201CA fair trade for you showing up, yeah?\u201D "
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
   background: {fileID: 21300000, guid: 73ace7d55bb76e8469a24cb7bb8ab173, type: 3}
   nextScene: {fileID: 11400000, guid: c4105b49a724b4a4fa46e129ff55e68b, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

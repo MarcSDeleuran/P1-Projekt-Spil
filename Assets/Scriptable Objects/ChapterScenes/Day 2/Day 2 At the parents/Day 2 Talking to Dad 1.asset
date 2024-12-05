@@ -47,3 +47,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 11ca778c584b9434e9653526a067434d, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0
