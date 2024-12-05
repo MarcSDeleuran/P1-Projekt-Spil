@@ -12,7 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
   m_Name: Day5.5
   m_EditorClassIdentifier: 
-  Options: []
+  Options:
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: 9ee6298d729c7ad4fad60562f990b685, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 1
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: bc688d6664b6e224f81b88b238498e5c, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 3
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: Continue
+    nextScene: {fileID: 11400000, guid: 9ee6298d729c7ad4fad60562f990b685, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 2
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

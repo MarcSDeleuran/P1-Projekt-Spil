@@ -16045,7 +16045,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2448199926437157726}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MainMenuButton
+        m_MethodName: ContinueButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
