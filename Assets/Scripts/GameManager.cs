@@ -379,6 +379,20 @@ public class GameManager : MonoBehaviour
 
     public void MainMenuButton()
     {
+        mainMenuUI.SetActive(true);
+        gameSceneUI.SetActive(false);
+        mainMenuCanvas.SetActive(true);
+        endSceneUI.SetActive(false);
+        InGameUI.SetActive(true);
+        SaveCompletionData();
+        UpdateAvailableChapters();
+        SAJ.ChangeAllowed = true;
+        paused = false;
+        pauseUI.SetActive(false);
+        SD.VNACTIVE = false;
+    }
+
+    public void ContinueButton(){
         if (currentChapter == 5){
             creditsUI.SetActive(true);
             audioManager.SetActive(false);
