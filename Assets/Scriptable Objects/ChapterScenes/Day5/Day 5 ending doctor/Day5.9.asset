@@ -10,25 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
-  m_Name: Day5.8
+  m_Name: Day5.9
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "You are back at the doctor\u2019s office, sitting across the familiar
-      desk. The doctor reviews the week\u2019s data on a tablet, nodding thoughtfully. "
+  - text: The doctor taps on the screen and turns it toward the player.
     speaker: {fileID: 0}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
-      ActionType: 1
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CWelcome back, [PlayerName]. It\u2019s been a week since we last
-      met. How are you feeling after everything?\u201D "
+  - text: "\u201CLet\u2019s take a look at how you did. Over the week, we tracked
+      three key areas:"
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Your stress levels, your social level, and your academic progress. Here\u2019s
+      what the data shows.\u201D"
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -37,7 +40,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
   background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
-  nextScene: {fileID: 11400000, guid: 2aa6c3d4b06e66e44862d3d642c8b6b5, type: 2}
+  nextScene: {fileID: 11400000, guid: 970ba56de2d927b468256fa6d928738a, type: 2}
   OpenJournal: 0
   FinalScene: 0
   FinalSceneChapterId: 0
