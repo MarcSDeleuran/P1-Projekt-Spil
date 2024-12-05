@@ -88,7 +88,12 @@ MonoBehaviour:
   - text: You scan the room, catching Jake a few rows away. He sits biting the end
       of his pen, staring at his paper with a mix of confusion and determination.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 200, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -97,27 +102,39 @@ MonoBehaviour:
   - text: 'Gabe on the other hand, sits calmly at his desk, his pen moving elegantly
       as he already knows every right answer. '
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: -200, y: -50}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "[Jake\u2019s trying... that\u2019s at least something. And Gabe, You sill
-      can\u2019t understand how he can stay so calm. If only I could borrow some
-      of that confidence] "
+  - text: "[Jake\u2019s trying... that\u2019s at least something.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "[Jake\u2019s trying... that\u2019s at least something. And Gabe, You sill
-      can\u2019t understand how he can stay so calm. If only I could borrow some
-      of that confidence] "
+  - text: "[And Gabe, You still can\u2019t understand how he can stay so calm. If
+      only I could borrow some of that confidence.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

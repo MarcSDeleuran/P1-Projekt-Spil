@@ -21,14 +21,6 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "[NO NO NO, this is a disaster. I can\u2019t get my head straight.]"
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 5
-    AcademicChange: 0
-    SocialChange: 0
   - text: "You can\u2019t control your mind, you hand is completely frozen."
     speaker: {fileID: 0}
     Actions: []
