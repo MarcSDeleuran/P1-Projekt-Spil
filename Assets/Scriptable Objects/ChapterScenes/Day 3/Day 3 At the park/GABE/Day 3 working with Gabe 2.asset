@@ -16,7 +16,12 @@ MonoBehaviour:
   - text: You sit in the library working away for hours, you enjoy Gabes company
       and his fantastic work ethic.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

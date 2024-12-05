@@ -15,15 +15,25 @@ MonoBehaviour:
   Sentences:
   - text: She laughs, relaxing the mood.
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 0
+      SpriteIndex: 2
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: -3
+    StressChange: -5
     AcademicChange: 0
     SocialChange: 0
   - text: "\u201CFair enough. I hope the surviving part involves som coffee.\u201D"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

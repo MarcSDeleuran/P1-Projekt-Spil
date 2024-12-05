@@ -16,7 +16,7 @@ MonoBehaviour:
   - text: "Grab a coffee. [Five minutes won\u2019t be the end of me, and the caffeine
       won\u2019t hurt either.]"
     nextScene: {fileID: 11400000, guid: 55d8670f4416a7b419d0b4b94b5e1909, type: 2}
-    StressChange: -3
+    StressChange: -5
     AcademicChange: 0
     SocialChange: 0
     flag: 0
@@ -26,8 +26,8 @@ MonoBehaviour:
   - text: Head to class. [No time for breaks. Just going to get to class and take
       it from there.]
     nextScene: {fileID: 11400000, guid: 55d8670f4416a7b419d0b4b94b5e1909, type: 2}
-    StressChange: 3
-    AcademicChange: 0
+    StressChange: 5
+    AcademicChange: 5
     SocialChange: 0
     flag: 0
     setFlagTrue: 0

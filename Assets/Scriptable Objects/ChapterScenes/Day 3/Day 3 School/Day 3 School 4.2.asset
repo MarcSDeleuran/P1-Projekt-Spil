@@ -23,7 +23,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: "\u201CSmart? Hey thanks, don\u2019t worry about me, I will make it work.\u201D "
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

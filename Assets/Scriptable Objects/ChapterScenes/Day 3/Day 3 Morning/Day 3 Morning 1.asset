@@ -27,7 +27,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: The faint sound of footsteps from the apartment above reminds you that

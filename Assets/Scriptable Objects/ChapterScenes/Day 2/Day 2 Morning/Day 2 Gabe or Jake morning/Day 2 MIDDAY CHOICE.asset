@@ -26,7 +26,7 @@ MonoBehaviour:
       will head out, see you later."
     nextScene: {fileID: 11400000, guid: 3642fc271035e7a4c87e6fa56fe0db93, type: 2}
     StressChange: 2
-    AcademicChange: 0
+    AcademicChange: -10
     SocialChange: 4
     flag: 0
     setFlagTrue: 0
