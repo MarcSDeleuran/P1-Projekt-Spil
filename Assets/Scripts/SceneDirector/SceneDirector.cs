@@ -48,8 +48,10 @@ namespace SceneDirection
             IDLE, ANIMATE, CHOOSE
         }
 
-        private void Start(){
-            if (PlayerPrefs.HasKey("PlayerName")){
+        private void Start()
+        {
+            if (PlayerPrefs.HasKey("PlayerName"))
+            {
                 NameField.GetComponentInChildren<TMPro.TMP_InputField>().text = PlayerPrefs.GetString("PlayerName");
             }
         }
@@ -93,12 +95,13 @@ namespace SceneDirection
                                         Destroy(DC.spritesPrefab.transform.GetChild(i).gameObject);
                                     }
                                     int bc = BackgroundSwitcher.gameObject.transform.childCount;
-                                    for ( int i = 0; i < bc; i++)
+                                    for (int i = 0; i < bc; i++)
                                     {
                                         BackgroundSwitcher.transform.GetChild(i).GetComponent<Image>().sprite = null;
                                     }
                                     DC.ResetSprites();
-                                    GameManager.Instance.chaptersCompleted[(currentScene as StoryScene).FinalSceneChapterId] = true;
+                                    if ((currentScene as StoryScene).FinalSceneChapterId < 4)
+                                        GameManager.Instance.chaptersCompleted[(currentScene as StoryScene).FinalSceneChapterId] = true;
                                     currentScene = null;
 
                                     int stressAmoutLower = SAJ.relaxPoints - 10;
@@ -111,58 +114,58 @@ namespace SceneDirection
                                     if (GameManager.Instance.StressAmount <= stressAmoutUpper)
                                     {
                                         stressGoalReached = true;
-                                        
 
-                                        
+
+
                                         Debug.Log("You have achieved something");
-                                        
-                                        
+
+
                                     }
 
-                                   
-                                    
+
+
                                     if (GameManager.Instance.SocialAmount >= socialAmountLower)
                                     {
-                                        
-                                        socialGoalReached = true;
-                                        
-                                        
 
-                                        
+                                        socialGoalReached = true;
+
+
+
+
                                         Debug.Log("You have achieved something");
                                         TimeManagementReward.gameObject.SetActive(true);
-                                        
+
                                     }
-                                    
-                                   
+
+
                                     if (GameManager.Instance.AcademicAmount >= schoolAmountLower)
                                     {
                                         academicGoalReached = true;
-                                        
-                                        
 
-                                        
+
+
+
                                         Debug.Log("You have achieved something");
                                         TimeManagementReward.gameObject.SetActive(true);
-                                        
+
                                     }
 
                                     else
                                     {
                                         rewardText.text = "You didn't reach your targeted stress goal for today. You might want to change it up for tommorrow. Try setting a more realistic goal or prioritize you choices";
                                     }
-                                    
-                                    
-                                    
-                                    
-                                    if(academicGoalReached && socialGoalReached && stressGoalReached)
+
+
+
+
+                                    if (academicGoalReached && socialGoalReached && stressGoalReached)
                                     {
                                         rewardText.text = "Congratulations! You have reached your targeted stress goal for today. Now that you know the goal is reasonable, you might want to change it up for tommorrow.";
                                         TimeManagementReward.sprite = goldMedal;
                                         academicReward.sprite = academicGoal;
                                         socialReward.sprite = socialGoal;
                                         stressReward.sprite = stressGoal;
-                                        
+
                                     }
                                     else if (academicGoalReached)
                                     {
@@ -217,14 +220,14 @@ namespace SceneDirection
                                         TimeManagementReward.sprite = notAchievedGoal;
                                         rewardText.text = "You have not reached any of your goals today. Try setting more realistic expectations for yourself";
                                     }
-                                    
+
                                     switch (GameManager.Instance.currentChapter)
                                     {
                                         case 1:
                                             GameManager.Instance.day1Achievement = true;
                                             GameManager.Instance.day1Trophy.GetComponent<Image>().sprite = TimeManagementReward.sprite;
                                             GameManager.Instance.day1Trophy.SetActive(true);
-                                                
+
                                             break;
                                         case 2:
                                             GameManager.Instance.day2Achievement = true;
@@ -304,7 +307,7 @@ namespace SceneDirection
                 Debug.Log("nextScene Not available");
                 yield break;
             }
-            
+
             state = SceneState.ANIMATE;
             if (currentScene != null)
             {
