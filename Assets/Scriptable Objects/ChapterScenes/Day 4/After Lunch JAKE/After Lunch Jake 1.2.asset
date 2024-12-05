@@ -54,16 +54,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CI am just worried that you end up a place you don\u2019t want to
-      be.\u201D"
-    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
-  - text: Jakes eases up.
+  - text: Jake eases up.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -104,7 +95,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CIt actuelly works.\u201D"
+  - text: "\u201CIt actually works.\u201D"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -112,8 +103,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CAll of this \u201CI don\u2019t care about the exam\u201D stuff is
-      a facade.\u201D"
+  - text: "\u201CAll of this 'I don\u2019t care about the exam' stuff is a facade.\u201D"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}

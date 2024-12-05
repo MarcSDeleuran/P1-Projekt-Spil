@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 4.1 Lunch Walk
   m_EditorClassIdentifier: 
   Sentences:
-  - text: 'You put on your jacket and go outside. You walk down the street, feeling
-      the fresh air on you face.  '
+  - text: You put on your jacket and go outside. You walk down the street, feeling
+      the fresh air on your face.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

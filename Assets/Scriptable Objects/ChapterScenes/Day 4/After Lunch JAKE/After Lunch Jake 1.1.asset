@@ -29,7 +29,7 @@ MonoBehaviour:
     StressChange: 5
     AcademicChange: 0
     SocialChange: 0
-  - text: You can see that Jake was hurt be your comment.
+  - text: You can see that Jake was hurt by your comment.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -37,7 +37,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: -5
-  - text: "\u201CThat is not what I\u2019m saying.. I am just worried about you.\u201D"
+  - text: "\u201CThat is not what I\u2019m saying... I am just worried about you.\u201D"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -70,7 +70,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "\u201CI... I hadn't thought about that.\u201D"
+  - text: "\u201CI... I haven't thought about that.\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
     Actions: []
     Music: {fileID: 0}
