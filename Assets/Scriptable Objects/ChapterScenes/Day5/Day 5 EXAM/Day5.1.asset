@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Day5.1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: You walk into the classroom, the whole week is decided here. The classroom
-      is quieter than usual, with the students sitting at their desks. The clock
-      ticks loudly.
+  - text: "You walk into the classroom, the whole week is decided here. It\u2019s
+      quieter than usual, with some students sitting at their desks. The clock ticks
+      loudly easily heard throughout the whole room. "
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}
@@ -63,8 +63,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "As loud as she can she says \u201CPhones away. You have two hours to complete
-      the exam. You have to stay in your seats until time is up.\u201D"
+  - text: "As loud as she can, she says \u201CPhones away. You have two hours to
+      complete the exam. You have to remain in your seats until time is up.\u201D"
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

@@ -31,7 +31,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: Today is the day, The final exam. The whole week hangs densely with all
+  - text: Today is the day. The final exam. The whole week hangs densely with all
       the events that happened throughout the week, but now you feel a sense of clarity.
       It is soon over.
     speaker: {fileID: 0}
@@ -41,7 +41,7 @@ MonoBehaviour:
     StressChange: 10
     AcademicChange: 0
     SocialChange: 0
-  - text: "You reflect [It\u2019s been a week, Stress, deadlines, choices.... It
+  - text: "You reflect [It\u2019s been a week. Stress, deadlines, choices.... It
       all led to this moment. I really don\u2019t know if I made all the right decisions,
       but I'm still here, and I got to face it now.]"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
@@ -66,15 +66,6 @@ MonoBehaviour:
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: -5
-    AcademicChange: 0
-    SocialChange: 0
-  - text: As you are getting ready for school. Your phone vibrates to life with messages
-      from your friends.
-    speaker: {fileID: 0}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
     AcademicChange: 0
     SocialChange: 0
   - text: As you are getting ready for school. Your phone vibrates to life with messages

@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: Panick
+  - text: Panic
     nextScene: {fileID: 11400000, guid: e5c4e592a3fb33d4486dc77b62935c4a, type: 2}
     StressChange: 20
     AcademicChange: -10
