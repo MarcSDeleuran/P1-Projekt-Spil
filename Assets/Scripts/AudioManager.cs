@@ -5,6 +5,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource musicSource;
     public AudioSource soundSource;
+    public GameObject heartbeat;
     public void PlayAudio(AudioClip music, AudioClip sound)
     {
         if (sound != null)
@@ -43,6 +44,17 @@ public class AudioManager : MonoBehaviour
         {
             musicSource.volume += 0.05f;
             yield return new WaitForSeconds(0.05f);
+        }
+    }
+
+    private void Update(){
+        if (musicSource.pitch != 1.13f - GameManager.Instance.StressAmount/400f){
+            musicSource.pitch = 1.13f - GameManager.Instance.StressAmount/400f;
+        }
+        if (GameManager.Instance.StressAmount >= 160 && !heartbeat.activeSelf){
+            heartbeat.SetActive(true);
+        } else if (GameManager.Instance.StressAmount < 160 && heartbeat.activeSelf){
+            heartbeat.SetActive(false);
         }
     }
 }

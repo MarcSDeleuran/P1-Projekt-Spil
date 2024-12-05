@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 2 Gabe or Jake Filler 3
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CI\u2019m thinking of starting tomorrow assignment during the lunch
+      break\u201D "
+    nextScene: {fileID: 11400000, guid: 5768cf35f7507d94798e3960f23dd725, type: 2}
+    StressChange: 3
+    AcademicChange: 5
+    SocialChange: -2
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "\u201CLunch first, then I will figure the rest out later\u201D "
+    nextScene: {fileID: 11400000, guid: 8ff3ba4e6e140f34a96e2af08eee61d5, type: 2}
+    StressChange: -2
+    AcademicChange: -5
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "\u201CHonestly, no clue where to start, it\u2019s all just so much.\u201D "
+    nextScene: {fileID: 11400000, guid: 94882ff7f9402f04dafc6b9f616604bf, type: 2}
+    StressChange: 2
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: What is your response?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

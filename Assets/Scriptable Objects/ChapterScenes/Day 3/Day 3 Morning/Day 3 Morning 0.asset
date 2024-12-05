@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Day 3 Morning 0
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: You try to move around as sunlight blinds you through the curtains. The
+      city traffic ensures you that the city has awoken, the occasional hum of birds
+      ease your mind before the weight of the deadlines presses your calm mind in
+      a stay of panic again.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 8300000, guid: 92d0a9af8edd4344e8467cea3c885b34, type: 3}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: Before you are fully aware of your surroundings. Your phone springing to
+      life as a message notification lights up the screen.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 712a9ccca4871ea49ad6b2f5bedc9855, type: 3}
+  nextScene: {fileID: 11400000, guid: ea70b73d45a76b24c893158e0bd311bc, type: 2}
+  OpenJournal: 0
+  FinalScene: 1
+  FinalSceneChapterId: 0

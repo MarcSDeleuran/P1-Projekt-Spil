@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Day 3 At the park 2
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: Your conversation takes another heading as the evening draws closer. Gabe
+      takes out his schedule book, everything is planned to the smallest detail.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 5
+    SocialChange: 0
+  - text: "He closes the book before saying \u201CI\u2019m heading off to the library
+      finish tonight's assignment. What about you two?\u201D"
+    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Jake leans back and points at the book \u201CDepends what\u2019s on your
+      list? If a break is on your list, or am I on my own with that one?\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: You need to decide what you are going to do...
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 9d3f9b2e0abd48f41ad176acf71b0ae4, type: 3}
+  nextScene: {fileID: 11400000, guid: 243b8240b01bf1e469c8700ea2291cf3, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

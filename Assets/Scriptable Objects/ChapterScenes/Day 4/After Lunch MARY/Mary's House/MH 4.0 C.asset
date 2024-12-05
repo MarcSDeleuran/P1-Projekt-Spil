@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: MH 4.0 C
+  m_EditorClassIdentifier: 
+  Options:
+  - text: '[Okay, I have to calm down. We are just friends hanging out]'
+    nextScene: {fileID: 11400000, guid: 22159c4a91e524c5ea2e3f610b971869, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: '[This is a big deal. What if... we take the next step]'
+    nextScene: {fileID: 11400000, guid: 0cab6b8797a0e469f8e1cb37793c7851, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: 
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

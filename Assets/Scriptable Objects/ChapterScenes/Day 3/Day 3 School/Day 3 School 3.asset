@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Day 3 School 3
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: "The teacher\u2019s voice cuts through the faint conversations in class."
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 200}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CJust as the last reminder from me, tonight assignment is due at
+      midnight, so remember to make sure not to wait until the last minute if you
+      need to make some changes.\""
+    speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CAnd again, your main project is due this Friday so if you haven't
+      started, you need to begin.\u201D "
+    speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: The words hang in the air as the students looks around. You feel a familiar
+      knot in your chest
+    speaker: {fileID: 0}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 0ecb6b5de50549b4abd8948724a115ca, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 5
+    AcademicChange: 0
+    SocialChange: 0
+  - text: As the lecture ends, life springs back to the classroom, you walk up over
+      to Jake and Gabe.
+    speaker: {fileID: 0}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 150, y: 150}
+      MoveSpeed: 0
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: -150, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: Jake tosses everything in his bag again...
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: 'While Gabe precisely tucks his notebooks in his bag. '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CAlright, alright, who\u2019s up for ditching the assignment for
+      now and grabbing some food?? Its good for our morale.\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: 'He winks at you, clearly trying to lighten the damp mood. '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Gabe rolls his eyes and replies \u201CGrabbing food now is not going to
+      boost our morale, here is a idea, should we get some work done?\u201D "
+    speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: His tone is sharp, but not unkind.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Jake says while, throwing his hands up dramatically. \u201COkay, we got
+      Mr. Perfect here. Not everyone can run on pure textbooks. Us norms nned to
+      eat, and heres a idea, maybe don\u2019t think about the deadline for like five
+      seconds!?\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: 'You step in, as the tension is cleary out of hand between you two friends. '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 5092f697f5a480c40bffb9e1d511becc, type: 3}
+  nextScene: {fileID: 11400000, guid: 7a1193d8d8e460c49b13f9b38f88c928, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

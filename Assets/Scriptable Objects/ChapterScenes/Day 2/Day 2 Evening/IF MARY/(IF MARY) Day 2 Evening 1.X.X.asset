@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: (IF MARY) Day 2 Evening 1.X.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: '"I''d love to get out of here, where do we meet up?"'
+    nextScene: {fileID: 11400000, guid: d5136365f2b9d564386c97f5ff4e8dd0, type: 2}
+    StressChange: -3
+    AcademicChange: -5
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: '"I really need to do this assignment, i finally have some free time to
+      get it done."'
+    nextScene: {fileID: 11400000, guid: 01c38bb693825964885e26ee38c9bc4b, type: 2}
+    StressChange: 2
+    AcademicChange: 5
+    SocialChange: -5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: Do you go to the city with Mary or stay home and study?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

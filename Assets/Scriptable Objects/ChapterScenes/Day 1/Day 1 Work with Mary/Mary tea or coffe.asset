@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Mary tea or coffe
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\"Coffee, for sure. Can\u2019t live without it.\""
+    nextScene: {fileID: 11400000, guid: 2c3039e1f5c6199489e605d65f326f5c, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: '"Tea! Calms the nerves, you know?"'
+    nextScene: {fileID: 11400000, guid: 5eb1c1d4650741b40b048b045245a6ad, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: Coffee or tea?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

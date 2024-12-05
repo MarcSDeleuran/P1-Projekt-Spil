@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: 4.2 C
+  m_EditorClassIdentifier: 
+  Options:
+  - text: Cram as much as possible into one session
+    nextScene: {fileID: 11400000, guid: 7c389eaf4ea1cb24aa7aafd27147853e, type: 2}
+    StressChange: 10
+    AcademicChange: -5
+    SocialChange: 10
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: Break the study into smaller sessions with breaks
+    nextScene: {fileID: 11400000, guid: 1f76b6b95fb5c694eb45f8f709ff5db4, type: 2}
+    StressChange: -10
+    AcademicChange: 5
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: 'You have to make your last choice in the structure of your day.
+    You have 2 options:'
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

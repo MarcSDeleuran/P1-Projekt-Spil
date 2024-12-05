@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 2 Gabe or Jake Filler 2
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CLunch, obviously, can\u2019t stress on an empty stomach\u201D you
+      jokingly answer"
+    nextScene: {fileID: 11400000, guid: 408fc684040dcac48b61df7ce2f12e5f, type: 2}
+    StressChange: 2
+    AcademicChange: -5
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "\u201CI'm considering finding a quiet corner and starting on one of these
+      assignments, time is not on our side\u201D "
+    nextScene: {fileID: 11400000, guid: 0b86cf2b7d9c73947a27840e956f73d3, type: 2}
+    StressChange: -2
+    AcademicChange: 5
+    SocialChange: -5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: What is your response?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

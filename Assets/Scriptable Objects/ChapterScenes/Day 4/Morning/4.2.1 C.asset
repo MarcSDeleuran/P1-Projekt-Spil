@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: 4.2.1 C
+  m_EditorClassIdentifier: 
+  Options:
+  - text: '[I have to power through this, I have to get this done. Whatever it takes.]'
+    nextScene: {fileID: 11400000, guid: 45c7e25ff7b7fc549ae2f7278bdd8587, type: 2}
+    StressChange: 5
+    AcademicChange: 10
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: Take 5 minutes to calm down and then return to the assignment.
+    nextScene: {fileID: 11400000, guid: 51ba305b223daa443904bccadf3067ef, type: 2}
+    StressChange: -5
+    AcademicChange: 5
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: 
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

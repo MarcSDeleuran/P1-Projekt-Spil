@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Party 2
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: "Mary barely has a sip before she bursts out singing \u201CUnder my umberella,
+      ella, ella, EH, EH, EH\u201D I love this song!\u201C"
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "The 3 musketeers raise their glasses to each other, and quickly chuck
+      down the rest of their drinks. \u201DLets hit the dance floor guys \u201C you
+      suggest."
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: 'Jake holds his arms out to stop you. He has a cheeky look on his face. '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CWait wait wait, I got a joke\u201D"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CWhy did the scarecrow win an award?\u201D Jake says with a big grin
+      on his face."
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '*Mary ponders... Her facial expression showing deep thought...* '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Jake can't hold the puncline any longer \u201CBecause he was OUTSTANDING
+      in his FIELD!\u201D He shouts, as Mary bursts out laughing"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 16551fc882a41f547a9470830c3dc5e1, type: 3}
+  nextScene: {fileID: 11400000, guid: aafe63bd374b4c24fabfb8613c5439a4, type: 2}
+  OpenJournal: 0
+  FinalScene: 0

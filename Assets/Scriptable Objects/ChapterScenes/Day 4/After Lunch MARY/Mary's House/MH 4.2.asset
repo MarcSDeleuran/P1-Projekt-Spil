@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: MH 4.2
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: '"Well come on in!"'
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: You step inside Marys house.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: As you walk in, you look around.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: It is a big house with lots of space. On the walls there are pictures of
+      Mary and her family.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '[She looks so happy in these pictures]'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: Mary catches you staring at the pictures
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"When you are done staring, my room is over here."'
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '[Her room? Okay calm down. I can do this]'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "You take a moment to gather yourself before you continue through Mary\u2019s
+      house."
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "You walk into Mary\u2019s room."
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 4f4a8b94fd411f6419a5725dea89367d, type: 3}
+  nextScene: {fileID: 11400000, guid: bb790ae65cecc4c018916b45a3063cfb, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0

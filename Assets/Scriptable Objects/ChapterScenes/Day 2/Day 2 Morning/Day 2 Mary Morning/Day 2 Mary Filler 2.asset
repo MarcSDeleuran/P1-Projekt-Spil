@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 2 Mary Filler 2
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CYeah, my bad for missing it. But hey i got my quality sleep. Yeah
+      im ready to dive in!\u201D "
+    nextScene: {fileID: 11400000, guid: 6ad45b971efe2544191b02fa9af45af3, type: 2}
+    StressChange: 3
+    AcademicChange: 0
+    SocialChange: 2
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "\u201CHope you guys had a fun evening. Let\u2019s focus on this assignment
+      now\u201D "
+    nextScene: {fileID: 11400000, guid: 9fac44771b735e64ba1844c4b2305687, type: 2}
+    StressChange: 3
+    AcademicChange: 0
+    SocialChange: -3
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: What do you reply?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

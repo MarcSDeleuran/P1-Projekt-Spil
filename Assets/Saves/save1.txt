@@ -1,1 +1,1 @@
-{"saveFileId":1,"flags":[],"sentence":-1,"prevScenes":[],"stressAmount":50,"academicAmount":100,"socialAmount":100,"characterName":"","chapterCompletes":[false,false,false,false,false]}
+{"saveFileId":1,"flags":[{"key":"Jake","value":true}],"sentence":-1,"prevScenes":[],"stressAmount":115,"academicAmount":95,"socialAmount":145,"characterName":"Alexander","chapterCompletes":[true,true,false,false,false]}

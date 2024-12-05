@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 3 Working with Jake 1.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CYou nearly make it sound like there isn\u2019t a deadline tonight.\u201D"
+    nextScene: {fileID: 11400000, guid: ded8d54cd77235f46b9361696fcfc9f7, type: 2}
+    StressChange: 5
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "\u201CIt\u2019s hard just to switch it off like that.\u201D"
+    nextScene: {fileID: 11400000, guid: b20030837a9b0aa4c8c72d65c03df6de, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: 
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

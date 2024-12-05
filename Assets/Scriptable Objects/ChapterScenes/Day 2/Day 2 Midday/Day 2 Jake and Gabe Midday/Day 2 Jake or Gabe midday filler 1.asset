@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: Day 2 Jake or Gabe midday filler 1
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "Side with Jake: \u201CYeah, because I'm here to ruin your productive streak
+      Jake, oh wait you don\u2019t have one\u201D "
+    nextScene: {fileID: 11400000, guid: ce0808602a9c40140b5b8ca5dc66c39a, type: 2}
+    StressChange: 0
+    AcademicChange: -2
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "Side with Gabe: \u201CHonestly, I should be more like Gabe right now.
+      These two assignments are no joke.\u201D "
+    nextScene: {fileID: 11400000, guid: 7c19fd0fff965d74e87120c2a444aa88, type: 2}
+    StressChange: 1
+    AcademicChange: 2
+    SocialChange: -5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: Pick a side
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

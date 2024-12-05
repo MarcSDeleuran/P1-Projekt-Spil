@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Day5.8
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: "You are back at the doctor\u2019s office, sitting across the familiar
+      desk. The doctor reviews the week\u2019s data on a tablet, nodding thoughtfully. "
+    speaker: {fileID: 0}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CWelcome back, [PlayerName]. It\u2019s been a week since we last
+      met. How are you feeling after everything?\u201D "
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '[I feel surprisingly calm. Maybe I handled things better than I thought.]'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"I feel good! It\u2019s been a challenge, but I think I managed pretty
+      well.\""
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "[I\u2019m still feeling tense. Maybe I could\u2019ve handled things differently.]"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\u201CHonestly? I\u2019m still pretty stressed. This week was tough.\u201D "
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: 'The doctor taps on the screen and turns it toward you. '
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: 52061000d4f30134885340348126dcfd, type: 3}
+  nextScene: {fileID: 0}

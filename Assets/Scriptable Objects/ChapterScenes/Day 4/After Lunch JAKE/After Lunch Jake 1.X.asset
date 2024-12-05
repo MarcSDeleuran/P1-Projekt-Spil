@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: After Lunch Jake 1.X
+  m_EditorClassIdentifier: 
+  Options:
+  - text: "\u201CThink of what it will do to our friendship if you get kicked out?\u201D"
+    nextScene: {fileID: 11400000, guid: fcd3a43682fe63b48b66ed181c6bc34f, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 10
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "\u201CDo you even know what to do with your life?\u201D"
+    nextScene: {fileID: 11400000, guid: dfa4c9491bd3fe546879a6cf0a39a12e, type: 2}
+    StressChange: 5
+    AcademicChange: 0
+    SocialChange: 5
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: What do you tell Jake?
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

@@ -46,7 +46,7 @@ public class StatsAndJournal : MonoBehaviour
     public int schoolPoints = 100;
     public int socialPoints = 100;
     public int relaxPoints = 100;
-    private bool ChangeAllowed = true;
+    public bool ChangeAllowed = true;
 
     private void Awake()
     {
@@ -122,9 +122,9 @@ public class StatsAndJournal : MonoBehaviour
         {
             if (schoolPoints >= 1 && ChangeAllowed)
             {
-                pointsRemaining++;
+                pointsRemaining += 5;
                 totalPointsText.text = pointsRemaining.ToString();
-                schoolPoints--;
+                schoolPoints -= 5;
                 schoolPointsText.text = schoolPoints.ToString();
             }
         });
@@ -132,9 +132,9 @@ public class StatsAndJournal : MonoBehaviour
         {
             if (pointsRemaining >= 1 && ChangeAllowed)
             {
-                pointsRemaining--;
+                pointsRemaining -= 5;
                 totalPointsText.text = pointsRemaining.ToString();
-                schoolPoints++;
+                schoolPoints += 5;
                 schoolPointsText.text = schoolPoints.ToString();
             }
         });
@@ -142,9 +142,9 @@ public class StatsAndJournal : MonoBehaviour
         {
             if (socialPoints >= 1 && ChangeAllowed)
             {
-                pointsRemaining++;
+                pointsRemaining += 5;
                 totalPointsText.text = pointsRemaining.ToString();
-                socialPoints--;
+                socialPoints -= 5;
                 socialPointsText.text = socialPoints.ToString();
             }
         });
@@ -152,9 +152,9 @@ public class StatsAndJournal : MonoBehaviour
         {
             if (pointsRemaining >= 1 && ChangeAllowed)
             {
-                pointsRemaining--;
+                pointsRemaining -= 5;
                 totalPointsText.text = pointsRemaining.ToString();
-                socialPoints++;
+                socialPoints += 5;
                 socialPointsText.text = socialPoints.ToString();
             }
         });
@@ -162,9 +162,9 @@ public class StatsAndJournal : MonoBehaviour
         {
             if (relaxPoints >= 1 && ChangeAllowed)
             {
-                pointsRemaining++;
+                pointsRemaining +=5;
                 totalPointsText.text = pointsRemaining.ToString();
-                relaxPoints--;
+                relaxPoints -= 5;
                 relaxPointsText.text = relaxPoints.ToString();
             }
         });
@@ -172,9 +172,9 @@ public class StatsAndJournal : MonoBehaviour
         {
             if (pointsRemaining >= 1 && ChangeAllowed)
             {
-                pointsRemaining--;
+                pointsRemaining -= 5;
                 totalPointsText.text = pointsRemaining.ToString();
-                relaxPoints++;
+                relaxPoints += 5;
                 relaxPointsText.text = relaxPoints.ToString();
             }
         });

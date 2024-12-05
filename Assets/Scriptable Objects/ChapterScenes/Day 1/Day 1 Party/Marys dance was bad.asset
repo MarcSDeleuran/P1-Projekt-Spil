@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: Marys dance was bad
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: "\u201Coh...\u201D\L*Mary clearly upset at your response*"
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: "\u201CI.. I had to get going anyway.\u201D\LMary seems completely broken."
+    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: "Mary walks away with her head down \u201C...Maybe... Maybe you should
+      go talk to her\u201D\LJake says slowly"
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: "Somewhat ashamed of yourself you nod at him\L\u201DI will see you tomorrow\u201D\LYou
+      tell him and rush out to find Mary"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  - text: You look around outside the club, Mary is nowhere to be seen... Head down
+      you walk home filled with regret.
+    speaker: {fileID: 0}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    statChange: 0
+    changeAmount: 0
+  background: {fileID: 21300000, guid: e06d561787c6fdd41867b14a4281d31b, type: 3}
+  nextScene: {fileID: 11400000, guid: d3cfebf62849c2a47b67dcce0f593cc6, type: 2}

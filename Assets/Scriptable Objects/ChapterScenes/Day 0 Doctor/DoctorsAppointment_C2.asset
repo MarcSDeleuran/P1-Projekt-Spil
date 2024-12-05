@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf879ca83dccaa40823b5d9a64b7627, type: 3}
+  m_Name: DoctorsAppointment_C2
+  m_EditorClassIdentifier: 
+  Options:
+  - text: '"Really? What can I do to find more balance?"'
+    nextScene: {fileID: 11400000, guid: 696dbf3676a2df447b037e5bd41dbb89, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: "\"I\u2019ve tried ignoring it, but that doesn\u2019t help.\""
+    nextScene: {fileID: 11400000, guid: 696dbf3676a2df447b037e5bd41dbb89, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  QuestionText: There are ways to manage it.
+  Music: {fileID: 0}
+  Sound: {fileID: 0}

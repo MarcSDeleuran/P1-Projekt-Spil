@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0877b9f5d3e5aff4a99c86aae0676754, type: 3}
+  m_Name: "P\xE5 vej i skole 1"
+  m_EditorClassIdentifier: 
+  Sentences:
+  - text: '[Where is he? We are going to be late again]'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Hey, how''s it going?"'
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 3
+      Coords: {x: 0, y: 150}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Jake, man.. you are late again!"'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Relax man, being late has never hurt anyone"'
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"That is.... so not true!"'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Well... I am here now"'
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Okay, so spill it. Are you ever going to actually talk to Mary?"'
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions: []
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Laughs, looking embarrassed \"I don\u2019t know. Every time I even think
+      about it, my brain freezes up.\""
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Oh, come on! You talk to everyone else just fine!"'
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Yeah, but they\u2019re not\u2026 you know, her.\""
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Come on! You have known her for years. There is nothing to be afraid
+      of."'
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Easy for you to say. You\u2019re not the one risking total humiliation.\""
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Trust me, Mary likes you too. Didn\u2019t she laugh at that joke you
+      made in class last week?\""
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"You think that counts? She laughs at anything."'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Nah, I saw it. She laughed at yours just a little longer. I\u2019m telling
+      you, there\u2019s hope.\""
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: Smiling nervously "Maybe. But what if I say something stupid?"
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Then we\u2019ll laugh about it later! Look, life is short, right? Just
+      walk up, be your usual, awkwardly charming self, and see what happens.\""
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: Pauses, thinking, "You know, you make it sound so easy."
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "Grins \"That\u2019s because it is easy. Besides, what\u2019s the worst
+      that could happen?\""
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"You mean other than being remembered as the weirdo who choked in front
+      of the whole school?"'
+    speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Pfft, please. If you mess it up, we\u2019ll just give them a better
+      memory next time. You\u2019ve got this.\""
+    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 4
+      SpriteIndex: 3
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  background: {fileID: 21300000, guid: b5e0bf903fca83a438e7731d62a954f1, type: 3}
+  nextScene: {fileID: 11400000, guid: 1ab09ca3c09be0941b0489ed8ed24266, type: 2}
+  OpenJournal: 0
+  FinalScene: 0
+  FinalSceneChapterId: 0
