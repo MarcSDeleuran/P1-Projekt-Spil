@@ -80,8 +80,8 @@ namespace SceneDirection
                                     ES.Stats.text = stats;
 
                                     string goals = $"Stress {SAJ.relaxPoints} \n" +
-                                        $"social {SAJ.schoolPoints} \n" +
-                                        $"school {SAJ.schoolPoints}";
+                                        $"Academics {SAJ.schoolPoints} \n" +
+                                        $"Social {SAJ.schoolPoints}";
                                     ES.Goals.text = goals;
                                     InGameUI.SetActive(false);
                                     ES.gameObject.SetActive(true);
