@@ -265,7 +265,7 @@ public class GameManager : MonoBehaviour
                 academicAmount = 100,
                 socialAmount = 100,
                 characterName = CharacterName,
-                chapterCompletes = new bool[5],
+                chapterCompletes = new bool[4],
                 saveFileId = saveFileId,
 
             };
