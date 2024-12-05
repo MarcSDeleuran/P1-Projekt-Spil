@@ -60,7 +60,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: The player sits down, feeling the different energies from the two friends.
+  - text: You sit down, feeling the different energies from the two friends.
     speaker: {fileID: 0}
     Actions: []
     Music: {fileID: 0}

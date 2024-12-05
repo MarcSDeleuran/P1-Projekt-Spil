@@ -41,7 +41,7 @@ namespace SceneDirection
             sprites = new Dictionary<Speaker, SpriteController>();
             animator = GetComponent<Animator>();
             SpeakerNameText = LeftSpeakerNameText;
-            animator.SetTrigger("ShowBox");
+            animator.SetTrigger("Show");
         }
         public void ResetSprites()
         {
@@ -91,7 +91,7 @@ namespace SceneDirection
 
         public void ShowBox()
         {
-            animator.SetTrigger("ShowBox");
+            animator.SetTrigger("Show");
             isHidden = false;
         }
 
@@ -155,7 +155,7 @@ namespace SceneDirection
 
             if (stress > 0 && stress != 0)
                 STA.ShowStatChange("Stress", true);
-            else if (stress != 0)
+            else if (stress != 0 && stress < 0)
                 STA.ShowStatChange("Stress", false);
 
             GameManager.Instance.AcademicAmount += academic;
@@ -166,7 +166,7 @@ namespace SceneDirection
 
             if (academic > 0 && academic != 0)
                 STA.ShowStatChange("Academics", true);
-            else if (academic != 0)
+            else if (academic != 0 && academic <0)
                 STA.ShowStatChange("Academics", false);
 
             GameManager.Instance.SocialAmount += social;
@@ -177,7 +177,7 @@ namespace SceneDirection
 
             if (social > 0 && social != 0)
                 STA.ShowStatChange("Social", true);
-            else if (social != 0)
+            else if (social != 0 && social < 0)
                 STA.ShowStatChange("Social", false);
         }
             

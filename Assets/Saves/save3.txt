@@ -1,1 +1,1 @@
-{"saveFileId":3,"flags":[{"key":"Mary","value":true}],"sentence":-1,"prevScenes":[],"stressAmount":128,"academicAmount":118,"socialAmount":172,"characterName":"Alexander","chapterCompletes":[true,true,true,true,false]}
+{"saveFileId":3,"flags":[{"key":"Mary","value":true}],"sentence":-1,"prevScenes":[],"stressAmount":159,"academicAmount":102,"socialAmount":147,"characterName":"Alexander","chapterCompletes":[true,true,true,false,false]}
