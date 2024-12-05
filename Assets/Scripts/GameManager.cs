@@ -6,6 +6,8 @@ using System.IO;
 using SceneDirection;
 using UnityEditor.Animations;
 using System.Linq;
+using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,6 +50,14 @@ public class GameManager : MonoBehaviour
     public int currentChapter;
     public TextMeshProUGUI journalCurrentDayText;
     public GameObject[] journalMethods;
+    public GameObject errorMessagePrefab;
+    public Transform errorTextParent;
+    public GameObject pauseUI;
+    [SerializeField] private Slider masterVolumeSlider;
+    [SerializeField] private Slider sfxVolumeSlider;
+    [SerializeField] private Slider musicVolumeSlider;
+    [SerializeField] private AudioMixer audioMixer;
+    private bool paused = false;
 
     public void Awake()
     {
@@ -69,6 +79,55 @@ public class GameManager : MonoBehaviour
         { // Opret 'Save' mappe hvis den ikke findes
             Directory.CreateDirectory(Application.dataPath + "/Saves/");
         }
+
+        masterVolumeSlider.onValueChanged.AddListener( delegate {
+            SetMasterVolume(masterVolumeSlider.value);
+        });
+        sfxVolumeSlider.onValueChanged.AddListener( delegate {
+            SetSFXVolume(sfxVolumeSlider.value);
+        });
+        musicVolumeSlider.onValueChanged.AddListener( delegate {
+            SetMusicVolume(musicVolumeSlider.value);
+        });
+    }
+
+    private void Update(){
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            Pause();
+        }
+    }
+
+    private void Pause(){
+        paused = !paused;
+        if (paused){
+            pauseUI.SetActive(true);
+            if (PlayerPrefs.HasKey("MasterVolume")){ // Har spilleren en gemt playerPref (Hvis den ikke har MasterVolume har den ikke nogle af dem)
+                masterVolumeSlider.value = PlayerPrefs.GetFloat("MasterVolume");
+                sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume"); // Juster sliderne til den gemte værdi
+                musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+            } else { // Hvis spilleren ikke har gemt nogle playerPref (Det er første boot-up)
+                PlayerPrefs.SetFloat("MasterVolume", 1f);
+                PlayerPrefs.SetFloat("SFXVolume", 1f); // Sæt standard values
+                PlayerPrefs.SetFloat("MusicVolume", 1f);
+            }
+        } else {
+            pauseUI.SetActive(false);
+        }
+    }
+
+    private void SetMasterVolume(float value){
+        audioMixer.SetFloat("MasterVolume", Mathf.Log10(value)*20);
+        PlayerPrefs.SetFloat("MasterVolume", value);
+    }
+
+    private void SetSFXVolume(float value){
+        audioMixer.SetFloat("SFXVolume", Mathf.Log10(value)*20);
+        PlayerPrefs.SetFloat("SFXVolume", value);
+    }
+
+    private void SetMusicVolume(float value){
+        audioMixer.SetFloat("MusicVolume", Mathf.Log10(value)*20);
+        PlayerPrefs.SetFloat("MusicVolume", value);
     }
 
     public void ChangeAnimationMultiplier(float f)
@@ -247,11 +306,10 @@ public class GameManager : MonoBehaviour
         saveObject.characterName = CharacterName;
         SD.VNACTIVE = false;
         
-        saveObject.chapterCompletes[0] = true;
-        saveObject.chapterCompletes[1] = chaptersCompleted[0];
-        saveObject.chapterCompletes[2] = chaptersCompleted[1];
-        saveObject.chapterCompletes[3] = chaptersCompleted[2];
-        saveObject.chapterCompletes[4] = chaptersCompleted[3];
+        saveObject.chapterCompletes[0] = chaptersCompleted[0];
+        saveObject.chapterCompletes[1] = chaptersCompleted[1];
+        saveObject.chapterCompletes[2] = chaptersCompleted[2];
+        saveObject.chapterCompletes[3] = chaptersCompleted[3];
         string json = JsonUtility.ToJson(saveObject);
         File.WriteAllText(Application.dataPath + "/Saves/save" + saveObject.saveFileId + ".txt", json);
 
@@ -281,6 +339,7 @@ public class GameManager : MonoBehaviour
         else
         { // Hvis datoen ikke er over startDatoen + ugedag
             Debug.LogWarning("You can't enter this Chapter");
+            Instantiate(errorMessagePrefab, errorTextParent);
         }
     }
 
@@ -325,5 +384,7 @@ public class GameManager : MonoBehaviour
         SaveCompletionData();
         UpdateAvailableChapters();
         SAJ.ChangeAllowed = true;
+        paused = false;
+        pauseUI.SetActive(false);
     }
 }

@@ -41,7 +41,7 @@ namespace SceneDirection
             sprites = new Dictionary<Speaker, SpriteController>();
             animator = GetComponent<Animator>();
             SpeakerNameText = LeftSpeakerNameText;
-            animator.SetTrigger("ShowBox");
+            animator.SetTrigger("Show");
         }
         public void ResetSprites()
         {
@@ -91,7 +91,7 @@ namespace SceneDirection
 
         public void ShowBox()
         {
-            animator.SetTrigger("ShowBox");
+            animator.SetTrigger("Show");
             isHidden = false;
         }
 

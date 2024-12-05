@@ -99,6 +99,7 @@ namespace SceneDirection
                                     }
                                     DC.ResetSprites();
                                     GameManager.Instance.chaptersCompleted[(currentScene as StoryScene).FinalSceneChapterId] = true;
+                                    currentScene = null;
 
                                     int stressAmoutLower = SAJ.relaxPoints - 10;
                                     int stressAmoutUpper = SAJ.relaxPoints + 10;
