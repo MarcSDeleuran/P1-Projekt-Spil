@@ -38,7 +38,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: "\u201CAnd again, your main project is due this Friday so if you haven't
@@ -47,7 +47,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 5
     AcademicChange: 0
     SocialChange: 0
   - text: The words hang in the air as the students looks around. You feel a familiar

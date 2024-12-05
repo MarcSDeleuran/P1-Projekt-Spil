@@ -17,7 +17,17 @@ MonoBehaviour:
       guys? It's called the griddy\u201D You say, now mimicking a dance move you
       saw on TikTok weeks ago"
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: -200, y: 135}
+      MoveSpeed: 0
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 200, y: 150}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -45,3 +55,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 2bbe735cd6a0f684980f43d530b560ca, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

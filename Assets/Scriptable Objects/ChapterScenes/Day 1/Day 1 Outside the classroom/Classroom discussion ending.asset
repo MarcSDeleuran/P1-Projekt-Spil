@@ -63,22 +63,7 @@ MonoBehaviour:
     SocialChange: 0
   - text: '"[PlayerName], the choice is yours."'
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-      ActionType: 4
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
-    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-      ActionType: 4
-      SpriteIndex: 0
-      Coords: {x: 500, y: 0}
-      MoveSpeed: 0
-    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
-      ActionType: 4
-      SpriteIndex: 0
-      Coords: {x: -500, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

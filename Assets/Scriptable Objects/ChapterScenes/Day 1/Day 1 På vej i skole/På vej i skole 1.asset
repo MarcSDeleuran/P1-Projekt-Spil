@@ -273,12 +273,7 @@ MonoBehaviour:
   - text: "\"Pfft, please. If you mess it up, we\u2019ll just give them a better
       memory next time. You\u2019ve got this.\""
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-      ActionType: 4
-      SpriteIndex: 3
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0

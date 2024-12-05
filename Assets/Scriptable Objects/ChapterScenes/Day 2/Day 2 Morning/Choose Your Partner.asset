@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Choose Your Partner
   m_EditorClassIdentifier: 
   Options:
-  - text: Continue
+  - text: Jake
     nextScene: {fileID: 11400000, guid: 8dd1bc240db07c34ca25c8e089484f45, type: 2}
     StressChange: 0
     AcademicChange: 0
@@ -22,7 +22,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 21300000, guid: 0ce26c608a7ef54429611c6ae93efa3f, type: 3}
-  - text: Continue
+  - text: Gabe
     nextScene: {fileID: 11400000, guid: 8dd1bc240db07c34ca25c8e089484f45, type: 2}
     StressChange: 0
     AcademicChange: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 21300000, guid: b947069556396864a817da13a3a3c57b, type: 3}
-  - text: Continue
+  - text: Mary
     nextScene: {fileID: 11400000, guid: 4cd7b7f0ddb1eca4bab3fa0e61d3e68a, type: 2}
     StressChange: 0
     AcademicChange: 0
