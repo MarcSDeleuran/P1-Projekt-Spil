@@ -14,21 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Options:
   - text: Continue
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 8dd1bc240db07c34ca25c8e089484f45, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 2
-    setFlagTrue: 1
+    setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 21300000, guid: 0ce26c608a7ef54429611c6ae93efa3f, type: 3}
   - text: Continue
-    nextScene: {fileID: 0}
+    nextScene: {fileID: 11400000, guid: 8dd1bc240db07c34ca25c8e089484f45, type: 2}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
     flag: 1
-    setFlagTrue: 1
+    setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 21300000, guid: b947069556396864a817da13a3a3c57b, type: 3}
   - text: Continue
@@ -37,7 +37,7 @@ MonoBehaviour:
     AcademicChange: 0
     SocialChange: 0
     flag: 3
-    setFlagTrue: 1
+    setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 21300000, guid: 4870b70c73584ea499e04a16118c64c5, type: 3}
   QuestionText: 
