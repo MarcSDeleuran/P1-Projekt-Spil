@@ -1,1 +1,0 @@
-{"saveFileId":1,"flags":[{"key":"Jake","value":true}],"sentence":-1,"prevScenes":[],"stressAmount":91,"academicAmount":168,"socialAmount":200,"characterName":"Jonas","chapterCompletes":[true,true,true,true]}

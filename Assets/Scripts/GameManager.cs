@@ -264,8 +264,8 @@ public class GameManager : MonoBehaviour
                 prevScenes = historyIndices,
 
                 stressAmount = 50,
-                academicAmount = 100,
-                socialAmount = 100,
+                academicAmount = 50,
+                socialAmount = 50,
                 characterName = CharacterName,
                 chapterCompletes = new bool[4],
                 saveFileId = saveFileId,

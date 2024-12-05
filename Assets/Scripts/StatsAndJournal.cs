@@ -43,9 +43,9 @@ public class StatsAndJournal : MonoBehaviour
     public Image Vignette;
     private bool inStats;
     private int pointsRemaining = 0;
-    public int schoolPoints = 100;
-    public int socialPoints = 100;
-    public int relaxPoints = 100;
+    public int schoolPoints = 50;
+    public int socialPoints = 50;
+    public int relaxPoints = 50;
     public bool ChangeAllowed = true;
 
     private void Awake()
