@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DoctorsAppointment_C1
   m_EditorClassIdentifier: 
   Options:
-  - text: "I\u2019ve just had a hard time finding balance between my studies and
-      everything else."
+  - text: "\"I\u2019ve just had a hard time finding balance between my studies and
+      everything else.\""
     nextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
     StressChange: 0
     AcademicChange: 0
@@ -23,8 +23,8 @@ MonoBehaviour:
     setFlagTrue: 0
     FlagToSet: 0
     ChoiceIcon: {fileID: 0}
-  - text: "It feels like there\u2019s always something I should be doing, and I rarely
-      have time to relax."
+  - text: "\"It feels like there\u2019s always something I should be doing, and I
+      rarely have time to relax.\""
     nextScene: {fileID: 11400000, guid: 7bf6cd5723ba16e408ccc3261a7a1de7, type: 2}
     StressChange: 0
     AcademicChange: 0

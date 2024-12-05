@@ -166,7 +166,7 @@ MonoBehaviour:
     Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
-    StressChange: 0
+    StressChange: 60
     AcademicChange: 0
     SocialChange: 0
   - text: '"It would be a good idea to find a study partner. Good luck everyone!"'

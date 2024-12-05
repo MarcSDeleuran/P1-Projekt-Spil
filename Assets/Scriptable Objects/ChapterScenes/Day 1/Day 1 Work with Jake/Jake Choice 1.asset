@@ -15,12 +15,7 @@ MonoBehaviour:
   Sentences:
   - text: "\u201CHell yeah. I\u2019ll wait for you after class\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions:
-    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-      ActionType: 4
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -28,7 +23,12 @@ MonoBehaviour:
     SocialChange: 0
   - text: Later, in the school hallway
     speaker: {fileID: 0}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 4
+      SpriteIndex: 0
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -41,7 +41,7 @@ MonoBehaviour:
     - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
       ActionType: 1
       SpriteIndex: 0
-      Coords: {x: 0, y: 0}
+      Coords: {x: 0, y: 150}
       MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
@@ -52,3 +52,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: 9b1db7c9ffd87cc45aaf106658a2c955, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

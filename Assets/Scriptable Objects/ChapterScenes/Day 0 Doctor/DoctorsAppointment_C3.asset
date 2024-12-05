@@ -13,10 +13,24 @@ MonoBehaviour:
   m_Name: DoctorsAppointment_C3
   m_EditorClassIdentifier: 
   Options:
-  - text: This sounds like a good challenge.
+  - text: '"This sounds like a good challenge."'
     nextScene: {fileID: 11400000, guid: 4cefb441938d5ba40bceb611a1e6af22, type: 2}
-  - text: I hope it helps me get more control over my daily life.
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
+  - text: '"I hope it helps me get more control over my daily life."'
     nextScene: {fileID: 11400000, guid: 4cefb441938d5ba40bceb611a1e6af22, type: 2}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+    flag: 0
+    setFlagTrue: 0
+    FlagToSet: 0
+    ChoiceIcon: {fileID: 0}
   QuestionText: 
   Music: {fileID: 0}
   Sound: {fileID: 0}

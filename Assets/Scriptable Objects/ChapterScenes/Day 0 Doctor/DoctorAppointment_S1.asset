@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S1
   m_EditorClassIdentifier: 
   Sentences:
-  - text: Yes? Ah, Thank you for coming in today.
+  - text: '"Yes? Ah, Thank you for coming in today."'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -26,8 +26,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "I understand you\u2019ve been feeling a bit overwhelmed lately, Mr...
-      uhh..."
+  - text: "\"I understand you\u2019ve been feeling a bit overwhelmed lately, Mr...
+      uhh...\""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -35,7 +35,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: I'm terribly sorry, but would you remind me. What is your name again?
+  - text: '"I''m terribly sorry, but would you remind me. What is your name again?"'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}

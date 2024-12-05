@@ -15,7 +15,12 @@ MonoBehaviour:
   Sentences:
   - text: "Rolling his eyes \u201CYou really don\u2019t talk about anything but her\u201D"
     speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 0
+      SpriteIndex: 0
+      Coords: {x: 0, y: 150}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -112,3 +117,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: b19009af46acf2241a186e3c123fa6cc, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

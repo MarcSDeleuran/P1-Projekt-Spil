@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S4A
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "I think it definitely will. Remember, there are no right or wrong answers
+  - text: "\"I think it definitely will. Remember, there are no right or wrong answers
       here \u2013 it\u2019s about what makes the most sense for you. So, take it
-      easy, listen to yourself, and be mindful of your choices. "
+      easy, listen to yourself, and be mindful of your choices. \""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -28,8 +28,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "I\u2019ll see you in a week \u2013 I look forward to hearing what you\u2019ve
-      discovered."
+  - text: "\"I\u2019ll see you in a week \u2013 I look forward to hearing what you\u2019ve
+      discovered.\""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -37,7 +37,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: Good luck!
+  - text: '"Good luck!"'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}

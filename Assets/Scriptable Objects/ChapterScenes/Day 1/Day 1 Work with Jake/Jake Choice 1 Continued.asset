@@ -14,13 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sentences:
   - text: You start walking along the forest on the beautiful way home to Jake
-    speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
-    Actions:
-    - Speaker: {fileID: 0}
-      ActionType: 1
-      SpriteIndex: 0
-      Coords: {x: 0, y: 0}
-      MoveSpeed: 0
+    speaker: {fileID: 0}
+    Actions: []
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -29,7 +24,12 @@ MonoBehaviour:
   - text: "\u201CMy bad, had to speak to Gabe, he gave me some really good notes
       for the exam\u201D you say and show the stack of papers you borrowed from Gabe."
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 62fa1c37503c1bc4896f97f498b20035, type: 2}
+      ActionType: 1
+      SpriteIndex: 0
+      Coords: {x: 0, y: 150}
+      MoveSpeed: 0
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -76,3 +76,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: e6c5c0bd897620b43a1a5ad95535ed8a, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

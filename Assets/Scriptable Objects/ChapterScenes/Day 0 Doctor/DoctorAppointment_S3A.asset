@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DoctorAppointment_S3A
   m_EditorClassIdentifier: 
   Sentences:
-  - text: "The first step is actually becoming more aware of how your daily choices
-      affect you. Here\u2019s what I'd suggest for this week:"
+  - text: "\"The first step is actually becoming more aware of how your daily choices
+      affect you. Here\u2019s what I'd suggest for this week:\""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -27,8 +27,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "Every day, you\u2019ll make choices that impact your well-being in different
-      ways."
+  - text: "\"Every day, you\u2019ll make choices that impact your well-being in different
+      ways.\""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -36,7 +36,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: How will that work?
+  - text: '"How will that work?"'
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -49,8 +49,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: 'I will give you a smartwatch that will track your: Stress levels, Social,
-      and Grades.'
+  - text: '"I will give you a smartwatch that will track your: Stress levels, Social,
+      and Grades."'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -63,8 +63,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "Throughout the week, you\u2019ll be able to see how your choices impact
-      these three areas."
+  - text: "\"Throughout the week, you\u2019ll be able to see how your choices impact
+      these three areas.\""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -72,7 +72,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: To view these three areas, simply click on your watch.
+  - text: '"To view these three areas, simply click on your watch."'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -80,7 +80,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: 'The red bar on your avatar is the most important stat: Stress level.'
+  - text: '"The red bar on your avatar is the most important stat: Stress level."'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -88,9 +88,35 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "Try experimenting to see what works best for you. After each day, you\u2019ll
+  - text: '"I will also be giving you a time management book"'
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: '"Try to set goals for your different bars at the start of each day."'
+    speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
+      ActionType: 0
+      SpriteIndex: 1
+      Coords: {x: 0, y: 0}
+      MoveSpeed: 0
+    Music: {fileID: 0}
+    Sound: {fileID: 0}
+    StressChange: 0
+    AcademicChange: 0
+    SocialChange: 0
+  - text: "\"Try experimenting to see what works best for you. After each day, you\u2019ll
       get a summary to reflect on your choices. At the end of the week, we\u2019ll
-      meet again to discuss what you\u2019ve learned."
+      meet again to discuss what you\u2019ve learned.\""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
     Music: {fileID: 0}
@@ -98,8 +124,8 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "What should I do if my stress level gets too high? And what about happiness
-      \u2013 how can I increase that?"
+  - text: "\"What should I do if my stress level gets too high? And what about happiness
+      \u2013 how can I increase that?\""
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -112,7 +138,7 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "That\u2019s exactly what we\u2019ll be exploring."
+  - text: "\"That\u2019s exactly what we\u2019ll be exploring.\""
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -120,30 +146,30 @@ MonoBehaviour:
       SpriteIndex: 1
       Coords: {x: 0, y: 0}
       MoveSpeed: 0
-    Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
+    Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: For example, some choices will reduce your stress but might come at the
+  - text: '"For example, some choices will reduce your stress but might come at the
       cost of other things, like your grades. Some choices will boost your happiness,
-      while others will help improve your grades.
+      while others will help improve your grades."'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
-    Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
+    Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: The goal is to find a balance.
+  - text: '"The goal is to find a balance."'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions: []
-    Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
+    Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: "So I\u2019ll need to constantly consider what\u2019s most important?"
+  - text: "\"So I\u2019ll need to constantly consider what\u2019s most important?\""
     speaker: {fileID: 11400000, guid: 4e60b212002e57d4e98d751b81219055, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -151,12 +177,12 @@ MonoBehaviour:
       SpriteIndex: 0
       Coords: {x: 0, y: 0}
       MoveSpeed: 0
-    Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
+    Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: Exactly!
+  - text: '"Exactly!"'
     speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
     Actions:
     - Speaker: {fileID: 11400000, guid: 3400cca7214642149b2fc7a6c0b0420c, type: 2}
@@ -164,7 +190,7 @@ MonoBehaviour:
       SpriteIndex: 1
       Coords: {x: 0, y: 0}
       MoveSpeed: 0
-    Music: {fileID: 8300000, guid: b48dd89ee4df6904ca2835e6a0617b4e, type: 3}
+    Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
     AcademicChange: 0

@@ -16,7 +16,7 @@ MonoBehaviour:
   - text: "\u201CYeah, I think teaming up could work. You seem like you\u2019ve got
       a solid plan.\u201D  "
     nextScene: {fileID: 11400000, guid: 6a6b11aae3ef221468cadca87485b323, type: 2}
-    StressChange: 0
+    StressChange: -10
     AcademicChange: 0
     SocialChange: 0
     flag: 0
