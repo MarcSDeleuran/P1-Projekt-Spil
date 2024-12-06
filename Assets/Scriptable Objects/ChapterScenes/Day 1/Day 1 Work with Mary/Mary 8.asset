@@ -64,14 +64,6 @@ MonoBehaviour:
     StressChange: 0
     AcademicChange: 0
     SocialChange: 0
-  - text: Tekst mangler her
-    speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
-    Music: {fileID: 0}
-    Sound: {fileID: 0}
-    StressChange: 0
-    AcademicChange: 0
-    SocialChange: 0
   - text: " \"Alright, I think that\u2019s enough studying for today. What do you
       say we go blow off some steam in the city? A few friends are going to a party,
       and it could be fun.\""
