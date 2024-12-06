@@ -4,7 +4,6 @@ using TMPro;
 using UnityEngine;
 using System.IO;
 using SceneDirection;
-using UnityEditor.Animations;
 using System.Linq;
 using UnityEngine.UI;
 using UnityEngine.Audio;
