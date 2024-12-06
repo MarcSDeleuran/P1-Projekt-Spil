@@ -35,7 +35,7 @@ MonoBehaviour:
     ChoiceIcon: {fileID: 0}
   - text: "\u201CIt\u2019s fine, nothing I haven\u2019t heard before, so what about
       you, still trying to nap your way through life?\u201D "
-    nextScene: {fileID: 11400000, guid: a974f5c01a7ef6e45b4b74d6ebadd2b0, type: 2}
+    nextScene: {fileID: 0}
     StressChange: 0
     AcademicChange: 0
     SocialChange: 5
