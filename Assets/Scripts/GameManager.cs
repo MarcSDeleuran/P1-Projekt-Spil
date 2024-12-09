@@ -76,9 +76,9 @@ public class GameManager : MonoBehaviour
 
 
 
-        if (!Directory.Exists(Application.dataPath + "/Saves/"))
+        if (!Directory.Exists(Application.persistentDataPath + "/Saves/"))
         { // Opret 'Save' mappe hvis den ikke findes
-            Directory.CreateDirectory(Application.dataPath + "/Saves/");
+            Directory.CreateDirectory(Application.persistentDataPath + "/Saves/");
         }
 
         masterVolumeSlider.onValueChanged.AddListener( delegate {
@@ -178,9 +178,9 @@ public class GameManager : MonoBehaviour
         int maxFiles = 3;
         for (int i = 1; i < maxFiles + 1; i++)
         {
-            if (File.Exists(Application.dataPath + "/Saves/save" + i + ".txt"))
+            if (File.Exists(Application.persistentDataPath + "/Saves/save" + i + ".txt"))
             { // Hvis man har save-filen (i)
-                string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + i + ".txt");
+                string saveString = File.ReadAllText(Application.persistentDataPath + "/Saves/save" + i + ".txt");
                 SaveData saveObject = JsonUtility.FromJson<SaveData>(saveString);
 
                 // Visuelt opdater Save File knapperne
@@ -202,7 +202,7 @@ public class GameManager : MonoBehaviour
         SocialAmount = saveObject.socialAmount;
         // Undersøg Json fil
         string json = JsonUtility.ToJson(saveObject);
-        File.WriteAllText(Application.dataPath + "/Saves/save" + activeSave + ".txt", json);
+        File.WriteAllText(Application.persistentDataPath + "/Saves/save" + activeSave + ".txt", json);
 
         // Visuelt opdater tekst og knapper
         stressText.text = "Stress: " + saveObject.stressAmount + "%";
@@ -215,10 +215,10 @@ public class GameManager : MonoBehaviour
     {
         SaveData saveObject;
 
-        if (File.Exists(Application.dataPath + "/Saves/save" + saveFileId + ".txt"))
+        if (File.Exists(Application.persistentDataPath + "/Saves/save" + saveFileId + ".txt"))
         { // Load en Save
             // Undersøg Json fil
-            string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt");
+            string saveString = File.ReadAllText(Application.persistentDataPath + "/Saves/save" + saveFileId + ".txt");
             saveObject = JsonUtility.FromJson<SaveData>(saveString);
 
                 FM.flags = saveObject.flags.ToDictionary(f => Enum.Parse<STORYFLAG>(f.key), f => f.value);
@@ -277,7 +277,7 @@ public class GameManager : MonoBehaviour
             SaveFileId = saveFileId;
             // Konverter til Json fil
             string json = JsonUtility.ToJson(saveObject);
-            File.WriteAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt", json);
+            File.WriteAllText(Application.persistentDataPath + "/Saves/save" + saveFileId + ".txt", json);
 
             // Visuelt opdater knapper
             UpdateSaveFiles();
@@ -295,7 +295,7 @@ public class GameManager : MonoBehaviour
     public void SaveCompletionData()
     {
         SaveData saveObject;
-        string saveString = File.ReadAllText(Application.dataPath + "/Saves/save" + GameManager.Instance.SaveFileId + ".txt");
+        string saveString = File.ReadAllText(Application.persistentDataPath + "/Saves/save" + GameManager.Instance.SaveFileId + ".txt");
         saveObject = JsonUtility.FromJson<SaveData>(saveString);
 
         saveObject.flags = FM.flags.Select(kvp => new StoryFlag { key = kvp.Key.ToString(), value = kvp.Value }).ToList();
@@ -313,9 +313,7 @@ public class GameManager : MonoBehaviour
         saveObject.chapterCompletes[2] = chaptersCompleted[2];
         saveObject.chapterCompletes[3] = chaptersCompleted[3];
         string json = JsonUtility.ToJson(saveObject);
-        File.WriteAllText(Application.dataPath + "/Saves/save" + saveObject.saveFileId + ".txt", json);
-
-
+        File.WriteAllText(Application.persistentDataPath + "/Saves/save" + saveObject.saveFileId + ".txt", json);
     }
     #endregion
 
