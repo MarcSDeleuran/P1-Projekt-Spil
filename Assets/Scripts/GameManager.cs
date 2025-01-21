@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public FlagManager FM;
     public StatsAndJournal SAJ;
     private int activeSave;
-    public static GameManager Instance { get; private set; }
+    
     [Range(0, 200)] public int StressAmount = -1;
     [Range(0, 200)] public int AcademicAmount = -1;
     [Range(0, 200)] public int SocialAmount = -1;
@@ -59,16 +59,21 @@ public class GameManager : MonoBehaviour
     public GameObject creditsUI;
     public GameObject audioManager;
     private bool paused = false;
-
+    public static GameManager Instance { get; private set; }
+    //Et singleton skal have static modifier på den reference der hentyder til den. Static betyder at man refere til selve typen og ikke en specifik instans. dvs. sige at der kun er en
+    //enkel instans af typen.
     public void Awake()
     {
+        //monobehaviour understøtter ikke vores egne constructors, så derfor bruge vi Awake() i stedet
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            //hvis der findes en Instance der referer til noget, der ikke er dette objekt, så skal det slette sig selv
         }
         else
         {
             Instance = this;
+            //På den her måde, vil Instance altid hentyde til den rigtige GameManager, uden at Gamemanager behøver at være en static klasse
         }
         chaptersCompleted = new bool[4];
         Application.targetFrameRate = 60;
@@ -254,11 +259,15 @@ public class GameManager : MonoBehaviour
           // Sæt default værdier (Skal nok ændres)
             List<int> historyIndices = new List<int>();
             SD.history.ForEach(scene => historyIndices.Add(this.DH.scenes.IndexOf(scene)));
+            //lavet til at gemme hvilken scene man er på, men vi valgte at gå fra det her, da vi gerne vil have folk spillet et kapitel i en enkel mundbid
 
             saveObject = new SaveData
             {
-
+                // SaveData er et struct, der indeholder alle de værdier vi ønsker at gemme. Et struct er ligesom en klasse, men den har mindre funktionalitet. de reele forskelle er 
+                //går udover hva de forventer i ved til eksamen, bare ved at structs er mere effektive, hvis man bare skal give nogle værdier videre
                 flags = FM.flags.Select(kvp => new StoryFlag { key = kvp.Key.ToString(), value = kvp.Value }).ToList(),
+                //fordi vores flags er i et dictionary, og man kan ikke gemme et dictionary på en json-fil, så laver vi en liste med "StoryFlag", som er et struct, der indeholder
+                // en string og en bool værdi, som tilsvare key og value'et på hvert item i dictionary'et
                 sentence = SD.DC.SentenceIndex,
                 prevScenes = historyIndices,
 
@@ -269,15 +278,18 @@ public class GameManager : MonoBehaviour
                 chapterCompletes = new bool[4],
                 saveFileId = saveFileId,
 
+                
             };
             chaptersCompleted = saveObject.chapterCompletes;
             StressAmount = saveObject.stressAmount;
             AcademicAmount = saveObject.academicAmount;
             SocialAmount = saveObject.socialAmount;
             SaveFileId = saveFileId;
-            // Konverter til Json fil
+            // Konverter til Json fil. Json fil er et tekst format, der er let for mennesker at læse og skrive, og let for computer parse og generer. parsing er at bryde data ned og ændre til
+            //et andet format, som computeren bedre kan arbejde med. Det det vi gør nedenunder, når vi skriver txt.fil ud fra vores json-objekt
             string json = JsonUtility.ToJson(saveObject);
             File.WriteAllText(Application.dataPath + "/Saves/save" + saveFileId + ".txt", json);
+            //skriver teksten i et txt-fil på den angivne directory
 
             // Visuelt opdater knapper
             UpdateSaveFiles();

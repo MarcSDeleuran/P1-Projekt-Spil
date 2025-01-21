@@ -1,0 +1,1 @@
+{"saveFileId":1,"flags":[{"key":"Mary","value":true}],"sentence":-1,"prevScenes":[],"stressAmount":80,"academicAmount":35,"socialAmount":60,"characterName":"","chapterCompletes":[true,false,false,false]}

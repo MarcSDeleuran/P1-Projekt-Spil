@@ -99,6 +99,10 @@ public class StatsAndJournal : MonoBehaviour
             inStats = false;
             statsUI.SetActive(false);
         });
+        //OnClick er et event. AddListener tilføjer en listener, som har formålet at vente på eventet bliver raised. Når eventet bliver raised, vil den metode der er forbundet til listeneren
+        //bliver invoked(dvs kørt). i det her tilfælde det kode der står skrevet her. grunden til det er muligt at skrive det sådan her, er fordi det bliver brugt "=>" som gør det til et
+        //lambda udtryk, men det behøver i ikke sætte jer ind i hvad er
+
         journalButton.onClick.AddListener(() =>
         {
             journalUI.SetActive(true);
@@ -113,7 +117,7 @@ public class StatsAndJournal : MonoBehaviour
                     GameManager.Instance.SD.VNACTIVE = true;
                     ChangeAllowed = false;
                 }
-
+                int i = 2;
             }
             else
                 journalUI.SetActive(false);

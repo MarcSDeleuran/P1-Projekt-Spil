@@ -16,7 +16,12 @@ MonoBehaviour:
   - text: "Mary barely has a sip before she bursts out singing \u201CUnder my umberella,
       ella, ella, EH, EH, EH\u201D I love this song!\u201C"
     speaker: {fileID: 11400000, guid: e724d5a98870e1249836d7b5c98969e0, type: 2}
-    Actions: []
+    Actions:
+    - Speaker: {fileID: 11400000, guid: 241178cf8be0b1e49a79f2df1ec6f431, type: 2}
+      ActionType: 2
+      SpriteIndex: 1
+      Coords: {x: 400, y: 0}
+      MoveSpeed: 2
     Music: {fileID: 0}
     Sound: {fileID: 0}
     StressChange: 0
@@ -78,3 +83,4 @@ MonoBehaviour:
   nextScene: {fileID: 11400000, guid: aafe63bd374b4c24fabfb8613c5439a4, type: 2}
   OpenJournal: 0
   FinalScene: 0
+  FinalSceneChapterId: 0

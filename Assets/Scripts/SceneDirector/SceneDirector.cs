@@ -62,13 +62,16 @@ namespace SceneDirection
             {
                 if (state == SceneState.IDLE)
                 {
+                    // Scenestate er et enum. dens værdi afhænger af om scenedirectoren er igang med at skifte scene, er i en choosescene eller er idle.
                     if (currentScene == null) return;
-
+                    // if'et nedenunder, ser om du trykker på venstre musetast, og om din mus er på venstre side af skærmen
                     if (/*Input.GetKeyDown(KeyCode.Space) ||*/ Input.GetMouseButtonDown(0) && CheckSideOfMouse())
                         if (DC.IsCompleted())
                         {
+                            //IsCompleted, returnere sandt, hvis dialougecontrolleren er færdig med at skrive tekst.
                             DC.StopTyping();
-
+                            // Stop typing gør teksten færdig i et hug. den er nødvendig her, fordi systemet originalt var sat op til at man kunne gøre teksten hurtigere, og så blev den kun
+                            // stoppet når man skulle til at skifte scene
                             if (DC.IsLastSentence())
                             {
                                 if ((currentScene as StoryScene).FinalScene)
@@ -103,7 +106,7 @@ namespace SceneDirection
                                     if ((currentScene as StoryScene).FinalSceneChapterId < 4)
                                         GameManager.Instance.chaptersCompleted[(currentScene as StoryScene).FinalSceneChapterId] = true;
                                     currentScene = null;
-
+                                    #region
                                     int stressAmoutLower = SAJ.relaxPoints - 10;
                                     int stressAmoutUpper = SAJ.relaxPoints + 10;
                                     int socialAmountLower = SAJ.socialPoints - 10;
@@ -251,22 +254,26 @@ namespace SceneDirection
                                             break;
                                     }
 
-
+                                    #endregion
                                 }
                                 else
                                     PlayScene((currentScene as StoryScene).nextScene);
-
+                                //DC.IsLastSentence retunere sandt, hvis det er den sidste sentence for den nuværende scene. hvis det er, begynder den at spille den næste scene istedet
+                                //hvis det er den sidste scene i kapitlet, så vil den vise journalen og generer de trophies og ting der skal til for det
                             }
                             else
                             {
                                 DC.PlayNextSentence();
+                                //hvis det ikke er den sidste sentence
                                 PlayAudio((currentScene as StoryScene).Sentences[DC.SentenceIndex]);
+                                //spiller lyden for den næste sentence
                             }
 
 
                         }
                         else
                         {
+                            //hvis den stadig er i gang med at skrive dialog, og man trykker vil dialogen blive færdig på stedet, men man går ik videre før man trykker igen
                             DC.StopTyping();
                         }
                 }
@@ -284,6 +291,7 @@ namespace SceneDirection
                 return true;
             else return false;
         }
+
         public void SaveName()
         {
             if (NameField.GetComponentInChildren<TMPro.TMP_InputField>().text == "")

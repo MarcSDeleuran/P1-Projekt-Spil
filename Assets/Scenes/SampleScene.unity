@@ -29501,7 +29501,7 @@ MonoBehaviour:
   unlockedUI: {fileID: 3947361390659278203}
   lockedUI: {fileID: 3106476385740003029}
   dayText: {fileID: 7932098161279872844}
-  ChapterStartScene: {fileID: 11400000, guid: 11266ddef0895f74e845ba077ace15b2, type: 2}
+  ChapterStartScene: {fileID: 11400000, guid: 15c4dfc9ae52c81479f7582dfeef366e, type: 2}
 --- !u!224 &2864727319206142116
 RectTransform:
   m_ObjectHideFlags: 0

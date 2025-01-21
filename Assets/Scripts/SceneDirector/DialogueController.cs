@@ -193,13 +193,22 @@ namespace SceneDirection
         private void HandleSpeakerAction(StoryScene.Sentence.Action action)
         {
             SpriteController controller = null;
+            //laver en ny lokal spritecontroller, og sætter værdien til at være null. det er lavet udenfor switch casen, sådan at vi ikke behøver at instantiere det i hvert case, og sådan man
+            //man kan bruge den udenfor den bagefter. SpriteController er den klasse, der er ansvarlig for spritesne på vores karaktere. den ka skifte sprite, flytte sig osv.
             switch (action.ActionType)
             {
                 case StoryScene.Sentence.Action.Type.APPEAR:
                     if (!sprites.ContainsKey(action.Speaker))
                     {
+                        //sprites er et dictionary. en dictionary fungere som en liste med 2 værdier på hver plads i stedet for en. dvs. en Key og en Value, og det er lavet sådan
+                        //let at finde en value ud fra en key. ligesom det er lidt at finde et bestemt sted i en bog, når du kender sidetallet. Key'et i det her tilfælde er en speaker, så
+                        //den kigger om sprites-dictionary'et allerede indeholder den speaker, der hænger på den nuværende action.
                         controller = Instantiate(action.Speaker.prefab.gameObject, spritesPrefab.transform).GetComponent<SpriteController>();
                         sprites.Add(action.Speaker, controller);
+                        //hvis den ikke indeholder det, så instantiere den en nyt gameobject ud fra prefabet charactersprites. det det "action.speaker.PREFAB.gameObject" hentyder til. bagefter 
+                        //finder den komponentet SpriteController i det nye objekt, og sætter vores lokale  værdi "controller" til at være den. til sidst tilføjer den controller-værdien til vores
+                        //sprites dictionary, hvor key'et er den speaker, der tilsvarer den nuværende action. Så næste gang der er en action med den her speaker, ka den hurtigt finde den tilsvarende
+                        //spritecontroller, den ska ha fat i
                     }
                     else
                     {
@@ -207,12 +216,15 @@ namespace SceneDirection
                     }
                     controller.Setup(action.Speaker.sprites[action.SpriteIndex]);
                     controller.Show(action.Coords);
+                    //setup giver den det rigtige sprite, og show får den til at fade ind på de koordinater den er blevet givet
                     return;
+                    //vi returner her fordi vi ikke skal køre koden efter switchcasen i det her tilfælde
                 case StoryScene.Sentence.Action.Type.MOVE:
                     if (sprites.ContainsKey(action.Speaker))
                     {
                         controller = sprites[action.Speaker];
                         controller.Move(action.Coords, action.MoveSpeed);
+                        //move får spritet til at flytte sig imod de nye koordinater, med den hastighed der bliver givet i movespeed
                         controller = sprites[action.Speaker];
                     }
                     break;
@@ -222,6 +234,7 @@ namespace SceneDirection
                         controller = sprites[action.Speaker];
                         Debug.Log(action.SpriteIndex);
                         controller.Hide();
+                        //hide får spritet til at fade ud
                     }
                     break;
                 case StoryScene.Sentence.Action.Type.FLIP:
@@ -229,12 +242,14 @@ namespace SceneDirection
                     {
                         controller = sprites[action.Speaker];
                         controller.gameObject.transform.Rotate(0, 180, 0);
+                        //flip får spritet til at vende den anden retning
                     }
                     break;
                 case StoryScene.Sentence.Action.Type.NONE:
                     if (sprites.ContainsKey(action.Speaker))
                     {
                         controller = sprites[action.Speaker];
+                        //sjovt nok ingen handling her. er her hvis man vil ændre den nuværende sprite og intet andet.
                     }
                     break;
             }
@@ -250,14 +265,18 @@ namespace SceneDirection
 
         private IEnumerator TypeText(string text)
         {
+            //for at lave en coroutine, skal metoden returnere IEnumerator
             DialogueText.text = "";
+            //sætter teksten i vores dialogue-box til at være tom
             state = DialogueState.PLAYING;
+            //dette enum bliver brugt, for at se hvor lang tid det skal blive ved med at skrive, men også sådan andre klasser kan se om DC'en er igang.
             int wordIndex = 0;
+            //index for hvor langt vi er i den nuværende sentence's tekst
             bool playOnNextLetter = false;
-
             while (state != DialogueState.COMPLETED)
             {
                 DialogueText.text += text[wordIndex];
+                //hvis wordindex nu var 23, så ville den finde det 23. bogstav i texten og tilføje det til vores text i dialogue boksen, og så plusser vi wordindex med en og køre det igen. 
                 if (playOnNextLetter){ // Bare sådan det kun er hvert andet bogstav, ellers bliver det for meget
                     source.PlayOneShot(sound);
                     playOnNextLetter = false;
@@ -265,10 +284,12 @@ namespace SceneDirection
                     playOnNextLetter = true;
                 }
                 yield return new WaitForSeconds(TextSpeed * 0.05f);
+                //dette sætter coroutinen på pause, så det går en smule tid imellem hvert bogstav bliver skrevet.
                 if (++wordIndex == text.Length)
                 {
                     state = DialogueState.COMPLETED;
                     break;
+                    //når vi har skrevet alle de bogstaver der i vores tekst, sætter vi vores dialoguestate til at være complete, så while-loopet holder og coroutinen dør
                 }
             }
         }
